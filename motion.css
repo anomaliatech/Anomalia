@@ -177,7 +177,7 @@
 
    Solapa las ventanas (~4%) para que el lienzo nunca quede vacío.
    ============================================================ */
-.mk-film { position: relative; height: calc(var(--mk-shots, 8) * 120vh); }
+.mk-film { position: relative; height: calc(var(--mk-shots, 8) * 150vh); }
 .mk-film-stage { position: sticky; top: 0; height: 100vh; overflow: hidden; }
 
 .mk-shot {
@@ -232,11 +232,12 @@
      f<0: aún lejos, al fondo · f=0: en foco · f>0: lo estamos atravesando */
   --f: calc(var(--mk-p, 0) * (var(--mk-nshots, 10) - 1) - var(--zi, 0));
   position: absolute; inset: 0; display: grid; place-items: center;
-  transform: translateZ(calc(var(--f) * 760px));
-  /* nace desde el fondo (~1,7 shots de profundidad) y muere al atravesarlo */
+  transform: translateZ(calc(var(--f) * 820px));
+  /* aparece justo antes del foco y se desvanece al atravesarlo. Ventana
+     estrecha: cada pantalla se lee nítida sin solaparse con la anterior/siguiente. */
   opacity: min(
-    clamp(0, calc((var(--f) + 1.7) / 0.9), 1),
-    clamp(0, calc((0.42 - var(--f)) / 0.3), 1)
+    clamp(0, calc((var(--f) + 0.72) / 0.42), 1),
+    clamp(0, calc((0.5 - var(--f)) / 0.35), 1)
   );
   pointer-events: none;
   will-change: transform, opacity;

@@ -121,7 +121,7 @@
               s.querySelectorAll(".mk-zshot").forEach(function (shot) {
                 var zi = parseFloat(shot.style.getPropertyValue("--zi")) || 0;
                 var f = p * (n - 1) - zi;
-                if (f > -0.7 && f < 0.42) shot.setAttribute("data-live", "");
+                if (f > -0.6 && f < 0.5) shot.setAttribute("data-live", "");
                 else shot.removeAttribute("data-live");
               });
             }
