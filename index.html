@@ -1,0 +1,747 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Anomalia — estudio de diseño web, automatización e inteligencia artificial para pymes en Alicante. Más clientes, menos tareas manuales.">
+<title>Anomalia — Diseño web y automatización para negocios · Alicante</title>
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,900;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="motion.css">
+<style>
+:root{
+  --bg:#0A0A0A; --bg2:#151515;
+  --paper:#FDFDFC; --mist:#C2C2C2; --mist-dim:#9B9B9B;
+  --gold:#C6A15B; --gold-deep:#8A6D2C; --gold-light:#D9C08A;
+  --line:rgba(255,255,255,.12);
+
+  /* motion-kit lee estas variables */
+  --mk-primario:#C6A15B; --mk-secundario:#8A6D2C; --mk-fondo:#0A0A0A; --mk-texto:#FDFDFC;
+
+  --font-display:'Fraunces',ui-serif,Georgia,serif;
+  --font-body:'Manrope',system-ui,-apple-system,sans-serif;
+  --pad:clamp(1.4rem,4vw,3.5rem);
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+button{font:inherit;color:inherit;cursor:pointer}
+body{
+  font-family:var(--font-body);
+  background:var(--bg);
+  color:var(--paper);
+  font-size:1.0625rem;line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+h1,h2,h3{font-family:var(--font-display);font-weight:600;line-height:1.05;letter-spacing:-.015em;text-wrap:balance}
+p{text-wrap:pretty}
+::selection{background:var(--gold);color:#111}
+:focus-visible{outline:2px solid var(--gold-light);outline-offset:3px;border-radius:4px}
+
+/* ============ BARRA FIJA ============ */
+.bar{
+  position:fixed;top:0;left:0;right:0;z-index:300;
+  display:flex;align-items:center;justify-content:space-between;gap:.6rem;
+  padding:.8rem clamp(.9rem,4vw,3.5rem);
+  background:linear-gradient(to bottom,rgba(10,10,10,.92),rgba(10,10,10,.55) 70%,transparent);
+  backdrop-filter:blur(10px);
+}
+.bar-brand{display:inline-flex;align-items:center;gap:.55em}
+.bar-brand svg{width:24px;height:24px;flex-shrink:0}
+.bar-word{font-family:var(--font-body);font-weight:800;letter-spacing:.06em;text-transform:uppercase;font-size:1rem}
+.bar-word i{color:var(--gold-light);font-style:normal}
+.bar-actions{display:flex;align-items:center;gap:.6rem}
+.bar-tel{
+  display:inline-flex;align-items:center;gap:.5em;
+  font-weight:600;font-size:.95rem;padding:.55em .9em;border-radius:100px;
+  border:1px solid var(--line);color:var(--paper);white-space:nowrap;
+  transition:border-color .3s,background .3s;
+}
+.bar-tel:hover{border-color:var(--gold-light);background:rgba(255,255,255,.05)}
+.bar-tel svg{width:15px;height:15px}
+.bar-tel .num{display:inline}
+.btn-gold{
+  display:inline-flex;align-items:center;gap:.5em;white-space:nowrap;
+  font-weight:700;font-size:.95rem;padding:.62em 1.2em;border-radius:100px;
+  background:var(--gold);color:#141007;
+  box-shadow:0 8px 24px -10px rgba(198,161,91,.6);
+  transition:transform .3s var(--ease),background .3s;
+}
+.btn-gold:hover{background:var(--gold-light);transform:translateY(-2px)}
+@media(max-width:600px){
+  .bar-tel .num{display:none}
+  .bar-tel{padding:.55em .62em}
+  .bar-actions{gap:.45rem}
+  .bar-word{display:none}
+  .btn-gold{padding:.6em .95em;font-size:.9rem}
+}
+
+/* ============ PELÍCULA / TÚNEL ============ */
+.mk-film-stage{background:radial-gradient(130% 100% at 50% 25%,#17130d 0%,#0A0A0A 62%)}
+.mk-zshot{transform-style:preserve-3d;padding:clamp(4.5rem,10vw,7rem) var(--pad) clamp(2rem,6vw,4rem)}
+.z-inner{
+  width:min(62rem,92vw);text-align:center;
+  text-shadow:0 2px 34px rgba(0,0,0,.6);
+}
+.z-eyebrow{
+  display:inline-block;font-family:var(--font-body);
+  font-size:.74rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--gold-light);margin-bottom:1.4em;
+}
+.z-h{font-size:clamp(2rem,5.5vw,4.4rem);color:#fff}
+.z-h.huge{font-size:clamp(2.6rem,8vw,6.6rem)}
+.z-claim{
+  font-family:var(--font-display);font-style:italic;font-weight:500;
+  color:var(--gold-light);font-size:clamp(1.15rem,2.4vw,1.7rem);margin-top:.9rem;
+}
+.z-lead{font-size:clamp(1.05rem,1.8vw,1.4rem);color:var(--mist);margin-top:1.3rem;max-width:44rem;margin-inline:auto}
+.z-list{
+  margin:2rem auto 0;max-width:34rem;display:flex;flex-direction:column;gap:.9rem;
+  text-align:left;
+}
+.z-list li{display:flex;gap:.75rem;align-items:flex-start;color:var(--mist);font-size:1.02rem;line-height:1.45}
+.z-list li svg{flex-shrink:0;margin-top:.28rem;color:var(--gold-light);width:17px;height:17px}
+
+/* motif de fondo dentro de un zshot */
+.z-motif{
+  position:absolute;inset:0;display:grid;place-items:center;
+  pointer-events:none;opacity:.5;
+}
+.z-motif svg{width:min(80vw,720px);height:auto}
+
+/* acento por palabra en los mk-split marcados */
+.mk-zshot[data-accent] .mk-split .mk-w:last-child > span{color:var(--gold-light);font-style:italic}
+
+/* contadores */
+.z-counters{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(1.6rem,5vw,3.5rem);margin-top:1rem}
+.z-count b{
+  display:block;font-family:var(--font-display);font-weight:600;
+  font-size:clamp(2.6rem,7vw,4.6rem);color:#fff;line-height:1;
+}
+.z-count span{display:block;margin-top:.6rem;color:var(--mist);font-size:.98rem;max-width:15rem;margin-inline:auto}
+@media(min-width:760px){.z-counters{grid-template-columns:repeat(4,1fr)}}
+
+/* marquee sectores */
+.z-sectors{width:100vw;margin-inline:calc(50% - 50vw)}
+.z-sectors .mk-marquee-track span{
+  font-family:var(--font-display);font-size:clamp(1.6rem,4vw,3rem);
+  color:#fff;opacity:.9;
+}
+.z-sectors .mk-marquee-track span::after{content:"·";margin:0 1.4rem;color:var(--gold)}
+
+/* proceso */
+.z-steps{margin:2rem auto 0;max-width:40rem;text-align:left;display:flex;flex-direction:column}
+.z-step{display:grid;grid-template-columns:3rem 1fr;gap:1rem;padding:1.15rem 0;border-top:1px solid var(--line)}
+.z-step:last-child{border-bottom:1px solid var(--line)}
+.z-step b{font-family:var(--font-body);font-weight:700;color:var(--gold-light);font-size:1rem}
+.z-step h3{font-family:var(--font-display);font-size:1.2rem;color:#fff;margin-bottom:.15rem}
+.z-step p{color:var(--mist);font-size:.97rem}
+
+/* testimonios */
+.z-quote{font-family:var(--font-display);font-style:italic;font-weight:400;font-size:clamp(1.3rem,3vw,2.1rem);color:#fff;line-height:1.4}
+.z-who{margin-top:1.5rem;font-size:.95rem;color:var(--gold-light);font-weight:600;letter-spacing:.02em}
+.z-pair{display:grid;gap:1.6rem;margin-top:1rem}
+@media(min-width:780px){.z-pair{grid-template-columns:1fr 1fr;gap:2.4rem}}
+.z-pair .z-quote{font-size:clamp(1.05rem,1.8vw,1.35rem)}
+
+/* CTA final */
+.z-phone{
+  display:inline-flex;align-items:center;gap:.4em;margin-top:1.6rem;max-width:100%;
+  font-family:var(--font-display);font-weight:600;
+  font-size:clamp(1.55rem,6vw,4.4rem);color:#fff;white-space:nowrap;
+  padding:.2em .5em;border-radius:100px;
+}
+.z-sub{margin-top:1.4rem;color:var(--mist);font-size:1rem}
+.z-email{display:inline-block;margin-top:.5rem;color:var(--gold-light);border-bottom:1px solid var(--line)}
+
+/* ============ BLOQUE ESTÁTICO (SIN EFECTOS) ============ */
+.static{background:var(--bg);border-top:1px solid var(--line)}
+.wrap{max-width:1140px;margin-inline:auto;padding:clamp(3.5rem,8vw,6rem) var(--pad)}
+
+.contact{display:grid;gap:clamp(2rem,5vw,3.5rem)}
+@media(min-width:900px){.contact{grid-template-columns:.9fr 1.1fr}}
+.contact h2{font-size:clamp(1.9rem,3.5vw,2.8rem);color:#fff}
+.contact .lead{color:var(--mist);margin-top:1rem;max-width:34rem}
+.contact-direct{margin-top:1.8rem;display:flex;flex-direction:column;gap:.7rem;font-size:1.05rem}
+.contact-direct a{display:inline-flex;align-items:center;gap:.6em;width:fit-content}
+.contact-direct a:hover{color:var(--gold-light)}
+.contact-direct svg{width:17px;height:17px;color:var(--gold-light)}
+.contact-direct .addr{color:var(--mist);font-size:.98rem}
+
+form{background:var(--bg2);border:1px solid var(--line);border-radius:20px;padding:clamp(1.6rem,3.5vw,2.4rem);position:relative}
+.frow{display:grid;gap:1rem}
+@media(min-width:560px){.frow{grid-template-columns:1fr 1fr}}
+.f{display:flex;flex-direction:column;gap:.45rem;margin-bottom:1rem}
+.f label{font-size:.8rem;font-weight:700;letter-spacing:.02em}
+.f input,.f select,.f textarea{
+  background:var(--bg);border:1px solid var(--line);border-radius:10px;
+  padding:.8em .95em;font-family:var(--font-body);font-size:.96rem;color:var(--paper);
+  transition:border-color .3s,box-shadow .3s;
+}
+.f input:focus,.f select:focus,.f textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(198,161,91,.18)}
+.f textarea{resize:vertical;min-height:96px}
+.f select{appearance:none}
+form .btn-gold{width:100%;justify-content:center;margin-top:.3rem}
+.fnote{font-size:.78rem;color:var(--mist-dim);margin-top:.9rem;text-align:center}
+.fnote button{background:none;border:0;color:var(--gold-light);border-bottom:1px solid currentColor;padding:0;font-size:inherit}
+.fok{
+  position:absolute;inset:0;display:none;flex-direction:column;align-items:center;justify-content:center;
+  gap:.9rem;text-align:center;padding:2rem;background:var(--bg2);border-radius:20px;
+}
+.fok.show{display:flex}
+.fok .tick{width:52px;height:52px;border-radius:50%;background:var(--gold);display:grid;place-items:center;color:#141007}
+.fok h3{font-size:1.3rem;color:#fff}
+.fok p{color:var(--mist);max-width:22rem}
+
+/* FAQ */
+.faq{margin-top:clamp(3rem,7vw,5rem);border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{
+  display:flex;justify-content:space-between;align-items:center;gap:1rem;
+  padding:1.35rem 0;font-family:var(--font-display);font-size:1.1rem;font-weight:500;
+  cursor:pointer;list-style:none;color:#fff;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--font-body);font-size:1.4rem;color:var(--gold-light);transition:transform .3s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq .a{padding-bottom:1.5rem;color:var(--mist);max-width:44rem}
+
+/* footer */
+.foot{border-top:1px solid var(--line)}
+.foot-grid{display:grid;gap:2.2rem;grid-template-columns:1fr;padding-bottom:2.5rem;border-bottom:1px solid var(--line)}
+@media(min-width:760px){.foot-grid{grid-template-columns:1.5fr 1fr 1fr}}
+.foot-brand .bar-brand{margin-bottom:.9rem}
+.foot-brand p{color:var(--mist-dim);max-width:24rem;font-size:.94rem}
+.foot-col h4{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mist-dim);margin-bottom:1rem;font-weight:700}
+.foot-col a,.foot-col span{display:block;color:var(--mist);font-size:.93rem;margin-bottom:.6rem}
+.foot-col a:hover{color:#fff}
+.foot-bottom{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;align-items:center;padding-top:1.6rem}
+.foot-bottom span,.foot-bottom button{font-size:.8rem;color:var(--mist-dim)}
+.foot-legal{display:flex;gap:1.2rem}
+.foot-legal button{background:none;border:0;padding:0}
+.foot-legal button:hover{color:#fff}
+
+/* cookie banner */
+.cookie{
+  position:fixed;left:0;right:0;bottom:0;z-index:350;
+  background:var(--bg2);border-top:1px solid var(--line);padding:1.3rem var(--pad);
+  transform:translateY(120%);transition:transform .5s var(--ease);
+}
+.cookie.show{transform:none}
+.cookie-in{max-width:1140px;margin-inline:auto;display:flex;flex-wrap:wrap;gap:1.4rem;align-items:center;justify-content:space-between}
+.cookie p{color:var(--mist);font-size:.86rem;max-width:52rem;line-height:1.6}
+.cookie p button{background:none;border:0;color:var(--gold-light);border-bottom:1px solid currentColor;padding:0;font-size:inherit}
+.cookie-act{display:flex;gap:.6rem;flex-shrink:0}
+.btn-ghost{border:1px solid var(--line);border-radius:100px;padding:.6em 1.1em;font-size:.85rem;font-weight:600;background:none;color:var(--paper)}
+.btn-ghost:hover{border-color:var(--gold-light)}
+.cookie .btn-gold{padding:.6em 1.2em;font-size:.85rem}
+@media(max-width:640px){.cookie-in{flex-direction:column;align-items:stretch}.cookie-act{width:100%}.cookie-act>*{flex:1}}
+
+/* legal modal */
+.modal{position:fixed;inset:0;z-index:400;display:none;align-items:center;justify-content:center;padding:1.5rem var(--pad)}
+.modal.show{display:flex}
+.modal-scrim{position:absolute;inset:0;background:rgba(0,0,0,.75)}
+.modal-card{position:relative;background:var(--bg2);border:1px solid var(--line);border-radius:18px;max-width:720px;width:100%;max-height:82vh;display:flex;flex-direction:column}
+.modal-head{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.4rem 1.7rem;border-bottom:1px solid var(--line)}
+.modal-head h3{font-size:1.2rem;color:#fff}
+.modal-close{width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:none;display:grid;place-items:center;flex-shrink:0}
+.modal-close:hover{border-color:var(--gold-light)}
+.modal-body{padding:1.4rem 1.7rem 2rem;overflow-y:auto;color:var(--mist);font-size:.93rem;line-height:1.7}
+.modal-body h4{font-family:var(--font-display);color:#fff;font-size:1rem;margin:1.5rem 0 .5rem;font-weight:600}
+.modal-body h4:first-child{margin-top:0}
+.modal-body p{margin-bottom:.85rem}
+.modal-body a{color:var(--gold-light)}
+.modal-updated{font-size:.75rem;color:var(--mist-dim);margin-top:1.4rem}
+body.locked{overflow:hidden}
+
+@media (prefers-reduced-motion:reduce){
+  .z-motif{opacity:.35}
+}
+</style>
+</head>
+<body id="top">
+
+<!-- ===================== BARRA FIJA (fuera de la película) ===================== -->
+<header class="bar">
+  <a href="#top" class="bar-brand" aria-label="Anomalia — inicio">
+    <svg viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="M83 90 L50 14 L30 62" stroke="#FDFDFC" stroke-width="15" stroke-linejoin="miter"/><path d="M18 73 L11 90" stroke="#C6A15B" stroke-width="13"/></svg>
+    <span class="bar-word">Anomal<i>IA</i></span>
+  </a>
+  <div class="bar-actions">
+    <a class="bar-tel" href="tel:+34601449173" aria-label="Llamar al +34 601 449 173">
+      <svg viewBox="0 0 16 16" fill="none"><path d="M5.5 2 7 5 5.5 6.5a8 8 0 0 0 4 4L11 9l3 1.5V13a1.5 1.5 0 0 1-1.6 1.5A11 11 0 0 1 1.5 3.6 1.5 1.5 0 0 1 3 2h2.5Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+      <span class="num">601 449 173</span>
+    </a>
+    <a class="btn-gold" href="#contacto">Hablemos</a>
+  </div>
+</header>
+
+<!-- ===================== LA PELÍCULA · TÚNEL 3D ===================== -->
+<div class="mk-film" data-mk-scrolly data-mk-shots="16" style="--mk-nshots:16">
+  <div class="mk-film-stage mk-tunnel">
+
+    <!-- 0 · logo emergiendo -->
+    <div class="mk-zshot" style="--zi:0">
+      <div class="z-inner">
+        <svg viewBox="0 0 100 100" fill="none" style="width:clamp(84px,14vw,140px);margin:0 auto 1.6rem" aria-hidden="true"><path d="M83 90 L50 14 L30 62" stroke="#FDFDFC" stroke-width="13" stroke-linejoin="miter"/><path d="M18 73 L11 90" stroke="#C6A15B" stroke-width="12"/></svg>
+        <div style="font-family:var(--font-body);font-weight:800;letter-spacing:.1em;text-transform:uppercase;font-size:clamp(1.3rem,4vw,2rem);color:#fff">Anomal<span style="color:var(--gold-light)">IA</span></div>
+        <div class="z-eyebrow" style="margin:.7em 0 0">Estudio digital · Alicante</div>
+      </div>
+    </div>
+
+    <!-- 1 · titular editorial + motivo curva -->
+    <div class="mk-zshot" style="--zi:1" data-accent>
+      <div class="z-motif mk-zdepth mk-zfog" style="--z:-280px" aria-hidden="true">
+        <svg viewBox="0 0 560 260" fill="none">
+          <line x1="20" y1="210" x2="360" y2="210" stroke="rgba(255,255,255,.14)"/>
+          <g fill="rgba(255,255,255,.35)">
+            <circle cx="60" cy="198" r="4"/><circle cx="100" cy="198" r="4"/><circle cx="100" cy="184" r="4"/>
+            <circle cx="140" cy="198" r="4"/><circle cx="140" cy="184" r="4"/><circle cx="140" cy="170" r="4"/><circle cx="140" cy="156" r="4"/>
+            <circle cx="180" cy="198" r="4"/><circle cx="180" cy="184" r="4"/><circle cx="180" cy="170" r="4"/><circle cx="180" cy="156" r="4"/><circle cx="180" cy="142" r="4"/><circle cx="180" cy="128" r="4"/>
+            <circle cx="220" cy="198" r="4"/><circle cx="220" cy="184" r="4"/><circle cx="220" cy="170" r="4"/><circle cx="220" cy="156" r="4"/>
+            <circle cx="260" cy="198" r="4"/><circle cx="260" cy="184" r="4"/><circle cx="260" cy="170" r="4"/>
+            <circle cx="300" cy="198" r="4"/><circle cx="300" cy="184" r="4"/>
+            <circle cx="340" cy="198" r="4"/>
+          </g>
+          <line x1="356" y1="188" x2="470" y2="70" stroke="rgba(217,192,138,.5)" stroke-dasharray="2 5"/>
+          <circle cx="482" cy="60" r="7" fill="#D9C08A"/>
+        </svg>
+      </div>
+      <div class="z-inner">
+        <h1 class="mk-split z-h huge">Fuera de la curva.</h1>
+      </div>
+    </div>
+
+    <!-- 2 · lead -->
+    <div class="mk-zshot" style="--zi:2">
+      <div class="z-inner">
+        <p class="z-h" style="font-size:clamp(1.5rem,3.2vw,2.5rem);color:#fff;font-weight:500">Diseñamos webs y sistemas de automatización que consiguen más clientes, ahorran horas de trabajo cada semana y hacen que tu negocio deje de parecerse a todos los demás.</p>
+      </div>
+    </div>
+
+    <!-- 3 · statement + posicionamiento -->
+    <div class="mk-zshot" style="--zi:3" data-accent>
+      <div class="z-inner">
+        <h2 class="mk-split z-h">No vendemos páginas web. Vendemos negocios que crecen.</h2>
+        <p class="z-lead">La mayoría compite con la web de siempre y los mismos procesos manuales de todos los demás. Nosotros combinamos diseño y automatización para cambiar eso.</p>
+      </div>
+    </div>
+
+    <!-- 4 · valor 1 -->
+    <div class="mk-zshot" style="--zi:4">
+      <div class="z-inner">
+        <div class="z-eyebrow">Lo que nos mueve · 01</div>
+        <h2 class="z-h">Diseño que convierte</h2>
+        <p class="z-lead">Cada elemento de tu web está pensado para transformar visitas en llamadas, reservas y clientes reales — no solo para verse bien.</p>
+      </div>
+    </div>
+
+    <!-- 5 · valor 2 -->
+    <div class="mk-zshot" style="--zi:5">
+      <div class="z-inner">
+        <div class="z-eyebrow">Lo que nos mueve · 02</div>
+        <h2 class="z-h">Automatización real</h2>
+        <p class="z-lead">Las tareas que hoy haces a mano —agenda, mensajes, seguimientos— pasan a funcionar solas, todos los días del año.</p>
+      </div>
+    </div>
+
+    <!-- 6 · valor 3 -->
+    <div class="mk-zshot" style="--zi:6">
+      <div class="z-inner">
+        <div class="z-eyebrow">Lo que nos mueve · 03</div>
+        <h2 class="z-h">Resultados medibles</h2>
+        <p class="z-lead">Más reservas, más consultas, más ventas. Trabajamos sobre objetivos de negocio, no sobre métricas vacías.</p>
+      </div>
+    </div>
+
+    <!-- 7 · servicio 01 -->
+    <div class="mk-zshot" style="--zi:7">
+      <div class="z-motif mk-zdepth mk-zfog" style="--z:-260px" aria-hidden="true">
+        <svg viewBox="0 0 520 320" fill="none">
+          <rect x="10" y="20" width="500" height="280" rx="12" stroke="rgba(255,255,255,.13)"/>
+          <line x1="10" y1="64" x2="510" y2="64" stroke="rgba(255,255,255,.13)"/>
+          <circle cx="34" cy="42" r="4" fill="rgba(255,255,255,.25)"/><circle cx="50" cy="42" r="4" fill="rgba(255,255,255,.25)"/><circle cx="66" cy="42" r="4" fill="rgba(255,255,255,.25)"/>
+          <path d="M40 250 L120 180 L190 214 L300 120 L400 168 L480 96" stroke="rgba(217,192,138,.5)" stroke-width="2"/>
+        </svg>
+      </div>
+      <div class="z-inner">
+        <div class="z-eyebrow">Servicio 01 · Desarrollo web</div>
+        <h2 class="z-h">Tu mejor comercial, trabajando 24 horas.</h2>
+        <p class="z-claim">«La web es el primer empleado que nunca duerme.»</p>
+        <ul class="z-list">
+          <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Diseño a medida para tu negocio, no una plantilla reciclada</li>
+          <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Pensada para convertir visitas en llamadas y reservas</li>
+          <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Rápida y perfecta desde el móvil, donde está tu cliente</li>
+          <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Precio cerrado, sin costes ocultos ni letra pequeña</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 8 · servicio 02 -->
+    <div class="mk-zshot" style="--zi:8">
+      <div class="z-motif mk-zdepth mk-zfog" style="--z:-260px" aria-hidden="true">
+        <svg viewBox="0 0 520 200" fill="none">
+          <g stroke="rgba(255,255,255,.14)" stroke-width="1.4">
+            <rect x="30" y="80" width="46" height="46" rx="9"/><rect x="180" y="80" width="46" height="46" rx="9"/><rect x="330" y="80" width="46" height="46" rx="9"/><rect x="452" y="80" width="46" height="46" rx="9"/>
+          </g>
+          <g stroke="rgba(217,192,138,.45)" stroke-width="1.4" stroke-dasharray="3 5"><line x1="76" y1="103" x2="180" y2="103"/><line x1="226" y1="103" x2="330" y2="103"/><line x1="376" y1="103" x2="452" y2="103"/></g>
+          <circle cx="140" cy="103" r="3.5" fill="#D9C08A"/><circle cx="292" cy="103" r="3.5" fill="#D9C08A"/>
+        </svg>
+      </div>
+      <div class="z-inner">
+        <div class="z-eyebrow">Servicio 02 · Automatización e IA</div>
+        <h2 class="z-h">Recupera las horas que hoy pierdes en tareas repetitivas.</h2>
+        <p class="z-claim">«Lo que se repite, se automatiza.»</p>
+        <ul class="z-list">
+          <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Respuestas y reservas automáticas para tus clientes</li>
+          <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Gestión de citas, pedidos y seguimientos sin esfuerzo</li>
+          <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Procesos internos manuales, ahora funcionando solos</li>
+          <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Información de tu negocio siempre ordenada y a mano</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 9 · contadores -->
+    <div class="mk-zshot" style="--zi:9">
+      <div class="z-inner">
+        <div class="z-eyebrow">En cifras</div>
+        <div class="z-counters">
+          <div class="z-count"><b><span class="mk-counter" data-value="3">3</span></b><span>semanas de media para tener tu web lista</span></div>
+          <div class="z-count"><b><span class="mk-counter" data-value="24">24</span> h</b><span>es lo que tardamos en responderte</span></div>
+          <div class="z-count"><b><span class="mk-counter" data-value="7">7</span></b><span>sectores que conocemos a fondo</span></div>
+          <div class="z-count"><b><span class="mk-counter" data-value="5">5</span></b><span>pasos claros, sin sorpresas</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 10 · sectores marquee -->
+    <div class="mk-zshot" style="--zi:10">
+      <div class="z-inner">
+        <div class="z-eyebrow">Para quién trabajamos</div>
+        <div class="z-sectors mk-marquee">
+          <div class="mk-marquee-track">
+            <span>Restaurantes</span><span>Clínicas</span><span>Gimnasios</span><span>Inmobiliarias</span><span>Hoteles</span><span>Comercios</span><span>Despachos profesionales</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 11 · proceso -->
+    <div class="mk-zshot" style="--zi:11">
+      <div class="z-inner">
+        <div class="z-eyebrow">Cómo trabajamos</div>
+        <h2 class="z-h">Un proceso claro, sin sorpresas.</h2>
+        <div class="z-steps">
+          <div class="z-step"><b>01</b><div><h3>Diagnóstico</h3><p>Analizamos tu negocio, tu web actual y dónde pierdes clientes o tiempo cada semana.</p></div></div>
+          <div class="z-step"><b>02</b><div><h3>Propuesta</h3><p>Una solución concreta, con alcance y precio cerrado desde el primer momento.</p></div></div>
+          <div class="z-step"><b>03</b><div><h3>Diseño y desarrollo</h3><p>Creamos tu web y tus automatizaciones, con revisiones contigo en cada fase.</p></div></div>
+          <div class="z-step"><b>04</b><div><h3>Lanzamiento</h3><p>Publicamos, probamos todo a fondo y nos aseguramos de que cada detalle funciona.</p></div></div>
+          <div class="z-step"><b>05</b><div><h3>Acompañamiento</h3><p>Seguimos a tu lado con soporte, mejoras y ajustes a medida que tu negocio crece.</p></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 12 · testimonio grande -->
+    <div class="mk-zshot" style="--zi:12">
+      <div class="z-inner">
+        <div class="z-eyebrow">Voces · Restauración</div>
+        <p class="z-quote">«Antes perdíamos reservas todos los fines de semana. Ahora la web y el sistema de reservas trabajan solos, y nosotros solo nos preocupamos de atender las mesas.»</p>
+        <div class="z-who">Laura Ibáñez · Casa Ferrán, Restaurante</div>
+      </div>
+    </div>
+
+    <!-- 13 · dos testimonios -->
+    <div class="mk-zshot" style="--zi:13">
+      <div class="z-inner">
+        <div class="z-eyebrow">Voces · Otros sectores</div>
+        <div class="z-pair">
+          <div>
+            <p class="z-quote">«Con la nueva web, la gente entiende en cinco segundos por qué somos diferentes. Las consultas de compradores se han multiplicado.»</p>
+            <div class="z-who">Nuria Prats · Inmobiliaria Horizonte</div>
+          </div>
+          <div>
+            <p class="z-quote">«Ya no perdemos altas por no responder a tiempo. El sistema contesta y agenda la primera clase en segundos.»</p>
+            <div class="z-who">Iván Costa · Gimnasio Núcleo</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 14 · dónde estamos / cercanía -->
+    <div class="mk-zshot" style="--zi:14" data-accent>
+      <div class="z-inner">
+        <div class="z-eyebrow">Cercanía real</div>
+        <h2 class="mk-split z-h">Estamos en Alicante.</h2>
+        <p class="z-lead">Hablas directamente con las personas que construyen tu proyecto — no con un departamento de atención al cliente. Diseño, desarrollo y automatización bajo un mismo techo.</p>
+      </div>
+    </div>
+
+    <!-- 15 · CTA final -->
+    <div class="mk-zshot" style="--zi:15">
+      <div class="z-inner">
+        <div class="z-eyebrow">Empecemos</div>
+        <h2 class="z-h huge">Hablemos de tu negocio.</h2>
+        <a class="z-phone mk-pulse" href="tel:+34601449173">+34 601 449 173</a>
+        <p class="z-sub">Tu competencia sigue haciendo lo mismo de siempre.<br>Respondemos en menos de 24 h laborables.</p>
+        <a class="z-email" href="mailto:anomalia.tech@gmail.com">anomalia.tech@gmail.com</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===================== CIERRE ESTÁTICO (sin efectos) ===================== -->
+<section class="static" id="contacto">
+  <div class="wrap">
+    <div class="contact">
+      <div>
+        <h2>Cuéntanos sobre tu negocio.</h2>
+        <p class="lead">Sin compromiso. Una conversación de 20 minutos para entender dónde estás y qué podemos mejorar.</p>
+        <div class="contact-direct">
+          <a href="tel:+34601449173"><svg viewBox="0 0 16 16" fill="none"><path d="M5.5 2 7 5 5.5 6.5a8 8 0 0 0 4 4L11 9l3 1.5V13a1.5 1.5 0 0 1-1.6 1.5A11 11 0 0 1 1.5 3.6 1.5 1.5 0 0 1 3 2h2.5Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>+34 601 449 173</a>
+          <a href="mailto:anomalia.tech@gmail.com"><svg viewBox="0 0 16 16" fill="none"><rect x="1.5" y="3" width="13" height="10" rx="1.5" stroke="currentColor" stroke-width="1.3"/><path d="m2 4 6 5 6-5" stroke="currentColor" stroke-width="1.3"/></svg>anomalia.tech@gmail.com</a>
+          <span class="addr">Avenida de la Deportista Miriam Blasco, 14 · Alicante (España)</span>
+          <a href="https://www.google.com/maps/search/?api=1&query=Avenida+de+la+Deportista+Miriam+Blasco+14+Alicante" target="_blank" rel="noopener">Ver en el mapa →</a>
+        </div>
+      </div>
+
+      <form id="contactForm" action="https://formsubmit.co/anomalia.tech@gmail.com" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="Nuevo contacto desde la web de Anomalia">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+        <div class="frow">
+          <div class="f"><label for="n">Nombre</label><input id="n" name="Nombre" type="text" required placeholder="Tu nombre"></div>
+          <div class="f"><label for="e">Empresa</label><input id="e" name="Empresa" type="text" required placeholder="Nombre del negocio"></div>
+        </div>
+        <div class="frow">
+          <div class="f"><label for="m">Email</label><input id="m" name="Email" type="email" required placeholder="tu@email.com"></div>
+          <div class="f"><label for="t">Teléfono <span style="font-weight:400;color:var(--mist-dim)">(opcional)</span></label><input id="t" name="Teléfono" type="tel" placeholder="600 000 000"></div>
+        </div>
+        <div class="f">
+          <label for="s">Sector</label>
+          <select id="s" name="Sector" required>
+            <option value="" disabled selected>Selecciona tu sector</option>
+            <option>Restaurante</option><option>Clínica</option><option>Gimnasio</option>
+            <option>Inmobiliaria</option><option>Hotel</option><option>Comercio</option>
+            <option>Despacho profesional</option><option>Otro</option>
+          </select>
+        </div>
+        <div class="f">
+          <label for="msg">Cuéntanos brevemente qué necesitas <span style="font-weight:400;color:var(--mist-dim)">(opcional)</span></label>
+          <textarea id="msg" name="Mensaje" placeholder="Por ejemplo: quiero una web nueva y automatizar las reservas por WhatsApp..."></textarea>
+        </div>
+        <button type="submit" class="btn-gold">Enviar mensaje</button>
+        <p class="fnote">Al enviarlo aceptas nuestra <button type="button" data-legal="privacidad">política de privacidad</button>; no compartimos tus datos con terceros.</p>
+        <div class="fok" id="formOk">
+          <div class="tick"><svg width="24" height="24" viewBox="0 0 26 26" fill="none"><path d="M5 13.5l5.5 5.5L21 8" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Mensaje enviado</h3>
+          <p>Gracias. Te escribimos en menos de 24 horas laborables para hablar sobre tu negocio.</p>
+        </div>
+      </form>
+    </div>
+
+    <div class="faq" id="faq">
+      <details open><summary>¿Cuánto tiempo tarda un proyecto?</summary><div class="a">Depende del alcance, pero la mayoría de webs están listas en 1-3 semanas. Las automatizaciones suelen integrarse en paralelo o justo después del lanzamiento.</div></details>
+      <details><summary>¿Necesito saber de tecnología para trabajar con vosotros?</summary><div class="a">No. Tú nos cuentas cómo funciona tu negocio y nosotros nos encargamos de traducirlo en soluciones que funcionan, sin que tengas que tocar nada técnico.</div></details>
+      <details><summary>Ya tengo una web, ¿puedo trabajar con vosotros igualmente?</summary><div class="a">Sí. Muchos proyectos empiezan analizando lo que ya existe y mejorándolo — o sustituyéndolo por completo si no está dando resultado.</div></details>
+      <details><summary>¿La automatización es complicada de mantener?</summary><div class="a">No. Todo se diseña para funcionar solo, sin que tengas que revisarlo constantemente. Si algo necesita un ajuste, nosotros estamos para eso.</div></details>
+      <details><summary>¿Qué pasa después del lanzamiento?</summary><div class="a">No desaparecemos. Seguimos disponibles para soporte, mejoras y para que tu proyecto crezca contigo a medida que lo necesites.</div></details>
+      <details><summary>¿Cuánto cuesta?</summary><div class="a">Cada negocio es distinto, así que el precio depende del alcance real. Tras una primera conversación te damos una propuesta cerrada, sin sorpresas.</div></details>
+    </div>
+  </div>
+</section>
+
+<footer class="static foot">
+  <div class="wrap" style="padding-block:clamp(3rem,6vw,4.5rem) 2rem">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <span class="bar-brand"><svg viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="M83 90 L50 14 L30 62" stroke="#FDFDFC" stroke-width="15" stroke-linejoin="miter"/><path d="M18 73 L11 90" stroke="#C6A15B" stroke-width="13"/></svg><span class="bar-word">Anomal<i>IA</i></span></span>
+        <p>Estudio digital para negocios que quieren destacar. Diseño web, automatización e inteligencia artificial aplicada a resultados reales. Alicante, España.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Servicios</h4>
+        <span>Desarrollo web</span>
+        <span>Automatización</span>
+        <span>Inteligencia artificial</span>
+        <a href="#faq">Preguntas frecuentes</a>
+      </div>
+      <div class="foot-col">
+        <h4>Contacto</h4>
+        <a href="tel:+34601449173">+34 601 449 173</a>
+        <a href="mailto:anomalia.tech@gmail.com">anomalia.tech@gmail.com</a>
+        <span>Av. de la Deportista Miriam Blasco, 14</span>
+        <span>Alicante, España</span>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Anomalia · Marcos Mompeán López — NIF 48764433V. Todos los derechos reservados.</span>
+      <div class="foot-legal">
+        <button type="button" data-legal="aviso">Aviso legal</button>
+        <button type="button" data-legal="privacidad">Privacidad</button>
+        <button type="button" data-legal="cookies">Cookies</button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== COOKIES ===================== -->
+<div class="cookie" id="cookie" role="dialog" aria-live="polite" aria-label="Configuración de cookies">
+  <div class="cookie-in">
+    <p>Usamos cookies propias, necesarias para el funcionamiento del sitio, y cookies de analítica para entender cómo se usa la web y mejorarla. Puedes aceptarlas todas o rechazar las que no son esenciales. Más información en nuestra <button type="button" data-legal="cookies">Política de Cookies</button>.</p>
+    <div class="cookie-act">
+      <button type="button" class="btn-ghost" id="ckReject">Rechazar no esenciales</button>
+      <button type="button" class="btn-gold" id="ckAccept">Aceptar todas</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== MODAL LEGAL ===================== -->
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal-scrim" data-close></div>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-head">
+      <h3 id="modalTitle">Aviso legal</h3>
+      <button type="button" class="modal-close" data-close aria-label="Cerrar"><svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M2 2l12 12M14 2 2 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<template id="legal-aviso">
+  <h4>I. Información general</h4>
+  <p>En cumplimiento del deber de información dispuesto en la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se facilitan los siguientes datos: este sitio web (en adelante, el <strong>Sitio Web</strong>) es titularidad de <strong>Marcos Mompeán López</strong>, con NIF 48764433V.</p>
+  <p><strong>Domicilio:</strong> Avenida de la Deportista Miriam Blasco, 14, Alicante (España)<br><strong>Teléfono:</strong> +34 601 449 173<br><strong>Email:</strong> anomalia.tech@gmail.com</p>
+  <h4>II. Objeto y aceptación</h4>
+  <p>Estas condiciones regulan el acceso y el uso del Sitio Web. La navegación por el Sitio Web atribuye la condición de Usuario y supone la aceptación de estas condiciones desde el momento en que se inicia dicha navegación. Anomalia se reserva el derecho a modificar, sin previo aviso, la presentación, configuración y contenidos del Sitio Web.</p>
+  <p>El acceso es libre y gratuito, sin perjuicio del coste de conexión a internet a cargo del Usuario. El Usuario declara ser mayor de edad y disponer de capacidad jurídica suficiente para vincularse por estas condiciones; el Sitio Web no se dirige a menores de edad.</p>
+  <h4>III. Uso del sitio y responsabilidad</h4>
+  <p>El Usuario se compromete a hacer un uso correcto del Sitio Web, conforme a la ley, la moral y el orden público, y a que la información facilitada en el formulario de contacto sea veraz y lícita. Anomalia no garantiza la disponibilidad, continuidad ni ausencia de errores del Sitio Web, y no se responsabiliza de los daños derivados del acceso, la navegación o un uso indebido del mismo, incluidos los provocados por virus o fallos de telecomunicaciones ajenos a su control.</p>
+  <h4>IV. Política de enlaces</h4>
+  <p>Cualquier hipervínculo desde un sitio web de terceros hacia el Sitio Web deberá respetar los contenidos de Anomalia, no realizar manifestaciones falsas o inexactas sobre ellos, y no implicará relación, conocimiento ni aceptación por parte de Anomalia del sitio enlazante.</p>
+  <h4>V. Propiedad intelectual e industrial</h4>
+  <p>Anomalia es titular, o cuenta con la correspondiente licencia, de todos los derechos de propiedad intelectual e industrial del Sitio Web y de sus contenidos (textos, diseño, marca, logotipo, código, combinaciones de color, etc.). Queda prohibida su reproducción, distribución o comunicación pública con fines comerciales sin autorización expresa. El Usuario puede visualizar e imprimir los contenidos exclusivamente para su uso personal.</p>
+  <h4>VI. Legislación aplicable y jurisdicción</h4>
+  <p>La relación entre el Usuario y Anomalia se rige por la normativa española vigente. Cualquier controversia relativa a la interpretación o aplicación de estas condiciones se someterá a los juzgados y tribunales que correspondan conforme a derecho.</p>
+  <p class="modal-updated">Última actualización: agosto de 2026.</p>
+</template>
+
+<template id="legal-privacidad">
+  <h4>1. Responsable del tratamiento</h4>
+  <p>El responsable del tratamiento de los datos personales recogidos a través de este sitio web es <strong>Marcos Mompeán López</strong>, con NIF 48764433V.<br><strong>Domicilio:</strong> Avenida de la Deportista Miriam Blasco, 14, Alicante (España)<br><strong>Teléfono:</strong> +34 601 449 173<br><strong>Email:</strong> anomalia.tech@gmail.com</p>
+  <h4>2. Normativa aplicable</h4>
+  <p>Esta política se adapta al Reglamento (UE) 2016/679 (RGPD), a la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales (LOPD-GDD), y a la Ley 34/2002, de Servicios de la Sociedad de la Información (LSSI-CE).</p>
+  <h4>3. Datos que tratamos y con qué fin</h4>
+  <p>A través del formulario de contacto recabamos los datos identificativos que el Usuario facilite voluntariamente (nombre, empresa, email, teléfono, sector y mensaje), con la única finalidad de responder a su consulta o solicitud de presupuesto y gestionar la relación comercial que, en su caso, se derive de ella. No se tratan categorías especiales de datos.</p>
+  <h4>4. Base legal</h4>
+  <p>La base legal del tratamiento es el consentimiento del Usuario, prestado al enviar el formulario. El Usuario puede retirar su consentimiento en cualquier momento escribiendo a anomalia.tech@gmail.com, sin que ello condicione el uso del Sitio Web.</p>
+  <h4>5. Plazo de conservación</h4>
+  <p>Los datos se conservarán únicamente durante el tiempo necesario para atender la consulta y, como máximo, 6 meses desde el último contacto, o hasta que el Usuario solicite su supresión.</p>
+  <h4>6. Destinatarios y transferencias</h4>
+  <p>Los datos no se ceden a terceros salvo obligación legal. Se utilizan proveedores de servicio (envío del formulario de contacto, alojamiento web y, en su caso, analítica) que actúan como encargados del tratamiento conforme al RGPD. No se realizan transferencias internacionales de datos fuera del Espacio Económico Europeo salvo que dichos proveedores cuenten con garantías adecuadas (cláusulas contractuales tipo o decisión de adecuación de la Comisión Europea).</p>
+  <h4>7. Derechos del Usuario</h4>
+  <p>El Usuario puede ejercer en cualquier momento sus derechos de acceso, rectificación, supresión, limitación, portabilidad y oposición, así como retirar su consentimiento, escribiendo a <strong>anomalia.tech@gmail.com</strong> o a la dirección postal indicada, adjuntando un documento que acredite su identidad. También tiene derecho a presentar una reclamación ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es" target="_blank" rel="noopener">www.aepd.es</a>) si considera que el tratamiento no se ajusta a la normativa.</p>
+  <h4>8. Menores de edad</h4>
+  <p>El Sitio Web no se dirige a menores de 14 años. Solo los mayores de 14 años pueden prestar su consentimiento de forma lícita; en el caso de menores de esa edad, será necesario el consentimiento de sus padres o tutores.</p>
+  <h4>9. Seguridad</h4>
+  <p>Se aplican las medidas técnicas y organizativas razonables para proteger los datos personales frente a pérdida, uso indebido o acceso no autorizado. No obstante, ningún sistema conectado a internet es completamente seguro, por lo que no puede garantizarse una protección absoluta.</p>
+  <h4>10. Cambios en esta política</h4>
+  <p>Esta Política de Privacidad puede actualizarse para adaptarse a cambios legislativos o de criterio. Se recomienda al Usuario consultarla periódicamente.</p>
+  <p class="modal-updated">Última actualización: agosto de 2026.</p>
+</template>
+
+<template id="legal-cookies">
+  <h4>¿Qué son las cookies?</h4>
+  <p>Las cookies son pequeños archivos que este sitio web puede almacenar en tu navegador para recordar información sobre tu visita, facilitar la navegación y, si lo aceptas, entender cómo se usa la web. Ninguna cookie puede acceder por sí sola a tu disco duro ni a tus datos personales: solo puede leer la información que tú mismo le hayas facilitado.</p>
+  <h4>Cookies que utilizamos</h4>
+  <p><strong>Cookies técnicas (siempre activas):</strong> son estrictamente necesarias para el funcionamiento del Sitio Web, por ejemplo para recordar la decisión que tomes en este mismo banner. No requieren consentimiento porque no recogen datos con fines de seguimiento ni publicitarios.</p>
+  <p><strong>Cookies de analítica (requieren tu consentimiento):</strong> nos permiten medir de forma agregada las visitas y el uso del Sitio Web —páginas vistas, tiempo de permanencia, origen del tráfico— para mejorar su contenido y funcionamiento. Solo se activan si pulsas «Aceptar todas».</p>
+  <h4>Gestionar tus preferencias</h4>
+  <p>Puedes cambiar tu decisión en cualquier momento eliminando las cookies de este sitio desde la configuración de tu navegador (Chrome, Firefox, Safari, Edge); al volver a visitarnos, se te mostrará de nuevo este cuadro para que elijas otra vez. Rechazar las cookies de analítica no impide el uso del Sitio Web.</p>
+  <h4>Más información</h4>
+  <p>Para cualquier duda sobre esta política puedes escribirnos a <strong>anomalia.tech@gmail.com</strong>. Consulta también nuestra <button type="button" data-legal="privacidad" style="background:none;border:0;color:var(--gold-light);border-bottom:1px solid currentColor;padding:0;font:inherit;cursor:pointer">Política de Privacidad</button>.</p>
+  <p class="modal-updated">Última actualización: agosto de 2026.</p>
+</template>
+
+<script src="motion.js"></script>
+<script>
+(function(){
+  /* ---- barra: fondo más sólido al hacer scroll ---- */
+  var bar = document.querySelector('.bar');
+  addEventListener('scroll', function(){
+    bar.style.background = scrollY > 30
+      ? 'rgba(10,10,10,.92)'
+      : 'linear-gradient(to bottom,rgba(10,10,10,.92),rgba(10,10,10,.55) 70%,transparent)';
+  }, {passive:true});
+
+  /* ---- modales legales ---- */
+  var modal = document.getElementById('modal');
+  var body = document.getElementById('modalBody');
+  var title = document.getElementById('modalTitle');
+  var titles = {aviso:'Aviso legal', privacidad:'Política de privacidad', cookies:'Política de cookies'};
+  function open(k){
+    var tpl = document.getElementById('legal-'+k);
+    if(!tpl) return;
+    body.innerHTML = tpl.innerHTML;
+    title.textContent = titles[k] || 'Información legal';
+    modal.classList.add('show');
+    modal.setAttribute('aria-hidden','false');
+    document.body.classList.add('locked');
+    body.scrollTop = 0;
+  }
+  function close(){
+    modal.classList.remove('show');
+    modal.setAttribute('aria-hidden','true');
+    document.body.classList.remove('locked');
+  }
+  document.addEventListener('click', function(e){
+    var o = e.target.closest('[data-legal]');
+    if(o){ e.preventDefault(); open(o.getAttribute('data-legal')); return; }
+    if(e.target.closest('[data-close]')) close();
+  });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape' && modal.classList.contains('show')) close(); });
+
+  /* ---- cookies ---- */
+  var KEY = 'anomaliaCookieConsent';
+  var ck = document.getElementById('cookie');
+  function loadAnalytics(){ /* Sustituir por gtag.js con el ID de medición cuando exista. */ }
+  var stored = null;
+  try { stored = localStorage.getItem(KEY); } catch(e){}
+  if(stored === 'accepted') loadAnalytics();
+  else if(stored !== 'rejected') setTimeout(function(){ ck.classList.add('show'); }, 800);
+  document.getElementById('ckAccept').addEventListener('click', function(){
+    try { localStorage.setItem(KEY,'accepted'); } catch(e){}
+    ck.classList.remove('show'); loadAnalytics();
+  });
+  document.getElementById('ckReject').addEventListener('click', function(){
+    try { localStorage.setItem(KEY,'rejected'); } catch(e){}
+    ck.classList.remove('show');
+  });
+
+  /* ---- formulario: envío en segundo plano a FormSubmit ---- */
+  var form = document.getElementById('contactForm');
+  var ok = document.getElementById('formOk');
+  var btn = form.querySelector('button[type="submit"]');
+  var label = btn.textContent;
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if(!form.checkValidity()){ form.reportValidity(); return; }
+    btn.disabled = true; btn.textContent = 'Enviando…';
+    fetch(form.action.replace('formsubmit.co/','formsubmit.co/ajax/'), {
+      method:'POST', headers:{'Accept':'application/json'}, body:new FormData(form)
+    }).then(function(r){ if(!r.ok) throw 0; return r.json(); })
+      .then(function(){ ok.classList.add('show'); form.reset(); })
+      .catch(function(){ form.submit(); })
+      .finally(function(){ btn.disabled = false; btn.textContent = label; });
+  });
+})();
+</script>
+
+</body>
+</html>
