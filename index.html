@@ -25,9 +25,13 @@
 <meta name="twitter:description" content="Estudio de diseño web, automatización e inteligencia artificial para pymes. Más clientes, menos tareas manuales.">
 <meta name="twitter:image" content="https://anomalia.business/assets/og-cover.png">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ProfessionalService","name":"Anomalia","url":"https://anomalia.business/","image":"https://anomalia.business/assets/og-cover.png","logo":"https://anomalia.business/assets/og-cover.png","email":"anomalia.tech@gmail.com","telephone":"+34601449173","description":"Estudio de diseño web, automatización e inteligencia artificial para pymes.","founder":{"@type":"Person","name":"Marcos Mompeán López"},"areaServed":"ES","priceRange":"€€"}
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Anomalia","url":"https://anomalia.business/","image":"https://anomalia.business/assets/og-cover.png","logo":"https://anomalia.business/assets/icon-512.png","email":"anomalia.tech@gmail.com","telephone":"+34601449173","description":"Estudio de diseño web, automatización e inteligencia artificial para pymes.","founder":{"@type":"Person","name":"Marcos Mompeán López"},"areaServed":"ES","priceRange":"€€"}
 </script>
-<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="icon" href="assets/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,900;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -74,10 +78,9 @@ p{text-wrap:pretty}
   background:linear-gradient(to bottom,rgba(10,10,10,.92),rgba(10,10,10,.55) 70%,transparent);
   backdrop-filter:blur(10px);
 }
-.bar-brand{display:inline-flex;align-items:center;gap:.55em}
-.bar-brand svg{width:24px;height:24px;flex-shrink:0}
-.bar-word{font-family:var(--font-body);font-weight:800;letter-spacing:.06em;text-transform:uppercase;font-size:1rem}
-.bar-word i{color:var(--gold-light);font-style:normal}
+.bar-brand{display:inline-flex;align-items:center;gap:.6em}
+.bar-brand svg,.bar-brand img{height:21px;width:auto;flex-shrink:0}
+.bar-word{font-family:var(--font-body);font-weight:600;letter-spacing:.17em;text-transform:uppercase;font-size:.92rem;color:var(--paper)}
 .bar-actions{display:flex;align-items:center;gap:.6rem}
 .bar-tel{
   display:inline-flex;align-items:center;gap:.5em;
@@ -141,12 +144,13 @@ p{text-wrap:pretty}
 .mk-zshot[data-accent] .mk-split .mk-w:last-child > span{color:var(--gold-light);font-style:italic}
 
 /* contadores */
-.z-counters{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(1.6rem,5vw,3.5rem);margin-top:1rem}
+.z-counters{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(1.2rem,3.5vw,2.6rem);margin-top:1rem}
 .z-count b{
   display:block;font-family:var(--font-display);font-weight:600;
-  font-size:clamp(2.6rem,7vw,4.6rem);color:#fff;line-height:1;
+  font-size:clamp(2.1rem,5vw,3.5rem);color:#fff;line-height:1.04;
+  text-wrap:balance;overflow-wrap:break-word;
 }
-.z-count span{display:block;margin-top:.6rem;color:var(--mist);font-size:.98rem;max-width:15rem;margin-inline:auto}
+.z-count span{display:block;margin-top:.7rem;color:var(--mist);font-size:.98rem;max-width:15rem;margin-inline:auto}
 @media(min-width:760px){.z-counters{grid-template-columns:repeat(4,1fr)}}
 
 /* marquee sectores */
@@ -296,8 +300,8 @@ body.locked{overflow:hidden}
 <!-- ===================== BARRA FIJA (fuera de la película) ===================== -->
 <header class="bar">
   <a href="#top" class="bar-brand" aria-label="Anomalia — inicio">
-    <svg viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="M83 90 L50 14 L30 62" stroke="#FDFDFC" stroke-width="15" stroke-linejoin="miter"/><path d="M18 73 L11 90" stroke="#C6A15B" stroke-width="13"/></svg>
-    <span class="bar-word">Anomal<i>IA</i></span>
+    <img src="assets/anomalia-isotipo.png" alt="" width="27" height="21" aria-hidden="true">
+    <span class="bar-word">Anomalia</span>
   </a>
   <div class="bar-actions">
     <a class="bar-tel" href="tel:+34601449173" aria-label="Llamar al +34 601 449 173">
@@ -315,9 +319,8 @@ body.locked{overflow:hidden}
     <!-- 0 · logo emergiendo -->
     <div class="mk-zshot" style="--zi:0">
       <div class="z-inner">
-        <svg viewBox="0 0 100 100" fill="none" style="width:clamp(84px,14vw,140px);margin:0 auto 1.6rem" aria-hidden="true"><path d="M83 90 L50 14 L30 62" stroke="#FDFDFC" stroke-width="13" stroke-linejoin="miter"/><path d="M18 73 L11 90" stroke="#C6A15B" stroke-width="12"/></svg>
-        <div style="font-family:var(--font-body);font-weight:800;letter-spacing:.1em;text-transform:uppercase;font-size:clamp(1.3rem,4vw,2rem);color:#fff">Anomal<span style="color:var(--gold-light)">IA</span></div>
-        <div class="z-eyebrow" style="margin:.7em 0 0">Estudio digital</div>
+        <img src="assets/anomalia-logo.png" alt="Anomalia" style="width:clamp(240px,44vw,460px);margin:0 auto;filter:drop-shadow(0 6px 44px rgba(0,0,0,.55))">
+        <div class="z-eyebrow" style="margin:2em 0 0">Estudio digital</div>
       </div>
     </div>
 
@@ -438,10 +441,10 @@ body.locked{overflow:hidden}
       <div class="z-inner">
         <div class="z-eyebrow">En cifras</div>
         <div class="z-counters">
-          <div class="z-count"><b><span class="mk-counter" data-value="3">3</span></b><span>semanas de media para tener tu web lista</span></div>
-          <div class="z-count"><b><span class="mk-counter" data-value="24">24</span> h</b><span>es lo que tardamos en responderte</span></div>
-          <div class="z-count"><b><span class="mk-counter" data-value="7">7</span></b><span>sectores que conocemos a fondo</span></div>
-          <div class="z-count"><b><span class="mk-counter" data-value="5">5</span></b><span>pasos claros, sin sorpresas</span></div>
+          <div class="z-count"><b><span class="mk-counter" data-value="1">1</span> semana</b><span>o menos para tener tu proyecto listo</span></div>
+          <div class="z-count"><b><span class="mk-counter" data-value="24">24</span> h</b><span>o menos en responder a tu mensaje</span></div>
+          <div class="z-count"><b><span class="mk-counter" data-value="7">7</span> sectores</b><span>que conocemos a fondo</span></div>
+          <div class="z-count"><b><span class="mk-counter" data-value="5">5</span> pasos</b><span>claros, sin sorpresas</span></div>
         </div>
       </div>
     </div>
@@ -573,7 +576,7 @@ body.locked{overflow:hidden}
     </div>
 
     <div class="faq" id="faq">
-      <details open><summary>¿Cuánto tiempo tarda un proyecto?</summary><div class="a">Depende del alcance, pero la mayoría de webs están listas en 1-3 semanas. Las automatizaciones suelen integrarse en paralelo o justo después del lanzamiento.</div></details>
+      <details open><summary>¿Cuánto tiempo tarda un proyecto?</summary><div class="a">Depende del alcance, pero la mayoría de proyectos están listos en una semana o menos. Las automatizaciones suelen integrarse en paralelo o justo después del lanzamiento.</div></details>
       <details><summary>¿Necesito saber de tecnología para trabajar con vosotros?</summary><div class="a">No. Tú nos cuentas cómo funciona tu negocio y nosotros nos encargamos de traducirlo en soluciones que funcionan, sin que tengas que tocar nada técnico.</div></details>
       <details><summary>Ya tengo una web, ¿puedo trabajar con vosotros igualmente?</summary><div class="a">Sí. Muchos proyectos empiezan analizando lo que ya existe y mejorándolo — o sustituyéndolo por completo si no está dando resultado.</div></details>
       <details><summary>¿La automatización es complicada de mantener?</summary><div class="a">No. Todo se diseña para funcionar solo, sin que tengas que revisarlo constantemente. Si algo necesita un ajuste, nosotros estamos para eso.</div></details>
@@ -587,7 +590,7 @@ body.locked{overflow:hidden}
   <div class="wrap" style="padding-block:clamp(3rem,6vw,4.5rem) 2rem">
     <div class="foot-grid">
       <div class="foot-brand">
-        <span class="bar-brand"><svg viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="M83 90 L50 14 L30 62" stroke="#FDFDFC" stroke-width="15" stroke-linejoin="miter"/><path d="M18 73 L11 90" stroke="#C6A15B" stroke-width="13"/></svg><span class="bar-word">Anomal<i>IA</i></span></span>
+        <span class="bar-brand"><img src="assets/anomalia-isotipo.png" alt="" width="27" height="21" aria-hidden="true"><span class="bar-word">Anomalia</span></span>
         <p>Estudio digital para negocios que quieren destacar. Diseño web, automatización e inteligencia artificial aplicada a resultados reales.</p>
       </div>
       <div class="foot-col">
