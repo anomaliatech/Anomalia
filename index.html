@@ -25,7 +25,7 @@
 <meta name="twitter:description" content="Estudio de diseño web, automatización e inteligencia artificial para pymes. Más clientes, menos tareas manuales.">
 <meta name="twitter:image" content="https://anomalia.business/assets/og-cover.png">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ProfessionalService","name":"Anomalia","url":"https://anomalia.business/","image":"https://anomalia.business/assets/og-cover.png","logo":"https://anomalia.business/assets/icon-512.png","email":"anomalia.tech@gmail.com","telephone":"+34601449173","description":"Estudio de diseño web, automatización e inteligencia artificial para pymes.","founder":{"@type":"Person","name":"Marcos Mompeán López"},"areaServed":"ES","priceRange":"€€"}
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Anomalia","url":"https://anomalia.business/","image":"https://anomalia.business/assets/og-cover.png","logo":"https://anomalia.business/assets/icon-512.png","email":"contacto@anomalia.business","telephone":"+34601449173","description":"Estudio de diseño web, automatización e inteligencia artificial para pymes.","founder":{"@type":"Person","name":"Marcos Mompeán López"},"areaServed":"ES","priceRange":"€€"}
 </script>
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
@@ -140,8 +140,67 @@ p{text-wrap:pretty}
 }
 .z-motif svg{width:min(80vw,720px);height:auto}
 
-/* acento por palabra en los mk-split marcados */
-.mk-zshot[data-accent] .mk-split .mk-w:last-child > span{color:var(--gold-light);font-style:italic}
+/* acento por palabra en los mk-split marcados (última palabra de la última línea) */
+.mk-zshot[data-accent] .mk-split > .mk-w:last-child > span,
+.mk-zshot[data-accent] .mk-split .mk-line:last-child .mk-w:last-child > span{color:var(--gold-light);font-style:italic}
+
+/* titulares troceados: cada <br> es un salto de línea real y hay aire
+   suficiente para no recortar tildes ni los trazos de g/p/j */
+.mk-split.z-h{line-height:1.32}
+.mk-split .mk-line{display:block}
+.mk-split .mk-w{padding:.2em .09em .34em;margin:0 -.09em}
+.mk-split .mk-w > span{transform:translateY(185%)}
+
+/* ============ VENTANA QUE ENMARCA LOS SERVICIOS ============ */
+.z-win .z-frame{
+  width:min(52rem,92vw);
+  border:1px solid var(--line);
+  border-radius:16px;
+  background:radial-gradient(120% 130% at 50% 0%,rgba(198,161,91,.07),transparent 62%),var(--bg2);
+  box-shadow:0 46px 130px -50px rgba(0,0,0,.75);
+  overflow:hidden;
+  text-align:center;
+}
+.z-frame-bar{
+  position:relative;display:flex;align-items:center;gap:.5rem;
+  padding:.9rem 1.15rem;border-bottom:1px solid var(--line);
+  background:rgba(255,255,255,.02);
+}
+.z-frame-bar span{width:8px;height:8px;border-radius:50%;background:var(--mist-dim);opacity:.55}
+.z-frame-bar em{
+  position:absolute;left:0;right:0;text-align:center;
+  font-family:var(--font-body);font-style:normal;
+  font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--gold-light);
+}
+.z-frame-body{position:relative;overflow:hidden}
+.z-frame-art{position:absolute;inset:0;width:100%;height:100%;opacity:.45;pointer-events:none}
+.z-win .z-inner{
+  position:relative;z-index:1;width:auto;
+  padding:clamp(1.8rem,4.5vw,3rem);
+  text-shadow:none;
+}
+.z-win .z-h{font-size:clamp(1.65rem,3.6vw,2.9rem)}
+.z-win .z-claim{margin-top:.7rem}
+.z-win .z-list{margin-top:1.5rem;margin-inline:auto}
+
+/* tira de "cajitas" que se desplaza de fondo (servicio · automatización) */
+.z-frame-flow{position:absolute;inset:0;display:flex;align-items:center;opacity:.5;pointer-events:none}
+.z-frame-flow .mk-marquee{width:100%}
+.z-frame-flow .mk-marquee-track{gap:0;padding-right:0;align-items:center;animation-duration:38s}
+.z-frame-flow i{
+  flex:none;width:58px;height:58px;margin:0 46px;
+  border:1.4px solid rgba(255,255,255,.16);border-radius:13px;
+}
+
+/* pantalla "Un proceso claro" — más aire para que los 5 pasos respiren */
+.z-proceso .z-eyebrow{margin-bottom:.9em}
+.z-proceso .z-h{font-size:clamp(1.55rem,3.3vw,2.35rem)}
+.z-proceso .z-steps{margin-top:1.4rem}
+.z-proceso .z-step{padding:.85rem 0}
+.z-proceso .z-step h3{font-size:1.1rem}
+.z-proceso .z-step p{font-size:.92rem;line-height:1.4}
+@media(prefers-reduced-motion:reduce){.z-frame-flow{display:none}}
 
 /* contadores */
 .z-counters{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(1.2rem,3.5vw,2.6rem);margin-top:1rem}
@@ -313,7 +372,7 @@ body.locked{overflow:hidden}
 </header>
 
 <!-- ===================== LA PELÍCULA · TÚNEL 3D ===================== -->
-<div class="mk-film" data-mk-scrolly data-mk-shots="16" style="--mk-nshots:16">
+<div class="mk-film" data-mk-scrolly data-mk-shots="15" style="--mk-nshots:15">
   <div class="mk-film-stage mk-tunnel">
 
     <!-- 0 · logo emergiendo -->
@@ -324,8 +383,15 @@ body.locked{overflow:hidden}
       </div>
     </div>
 
-    <!-- 1 · titular editorial + motivo curva -->
-    <div class="mk-zshot" style="--zi:1" data-accent>
+    <!-- 1 · lead · a lo que nos dedicamos -->
+    <div class="mk-zshot" style="--zi:1">
+      <div class="z-inner">
+        <p class="z-h" style="font-size:clamp(1.5rem,3.2vw,2.5rem);color:#fff;font-weight:500">Diseñamos webs y sistemas de automatización que consiguen más clientes, ahorran horas de trabajo cada semana y hacen que tu negocio deje de parecerse a todos los demás.</p>
+      </div>
+    </div>
+
+    <!-- 2 · titular editorial + motivo curva -->
+    <div class="mk-zshot" style="--zi:2" data-accent>
       <div class="z-motif mk-zdepth mk-zfog" style="--z:-280px" aria-hidden="true">
         <svg viewBox="0 0 560 260" fill="none">
           <line x1="20" y1="210" x2="360" y2="210" stroke="rgba(255,255,255,.14)"/>
@@ -347,17 +413,10 @@ body.locked{overflow:hidden}
       </div>
     </div>
 
-    <!-- 2 · lead -->
-    <div class="mk-zshot" style="--zi:2">
-      <div class="z-inner">
-        <p class="z-h" style="font-size:clamp(1.5rem,3.2vw,2.5rem);color:#fff;font-weight:500">Diseñamos webs y sistemas de automatización que consiguen más clientes, ahorran horas de trabajo cada semana y hacen que tu negocio deje de parecerse a todos los demás.</p>
-      </div>
-    </div>
-
     <!-- 3 · statement + posicionamiento -->
     <div class="mk-zshot" style="--zi:3" data-accent>
       <div class="z-inner">
-        <h2 class="mk-split z-h">No vendemos páginas web. Vendemos negocios que crecen.</h2>
+        <h2 class="mk-split z-h">No vendemos páginas web.<br>Vendemos negocios que crecen.</h2>
         <p class="z-lead">La mayoría compite con la web de siempre y los mismos procesos manuales de todos los demás. Nosotros combinamos diseño y automatización para cambiar eso.</p>
       </div>
     </div>
@@ -380,64 +439,56 @@ body.locked{overflow:hidden}
       </div>
     </div>
 
-    <!-- 6 · valor 3 -->
-    <div class="mk-zshot" style="--zi:6">
-      <div class="z-inner">
-        <div class="z-eyebrow">Lo que nos mueve · 03</div>
-        <h2 class="z-h">Resultados medibles</h2>
-        <p class="z-lead">Más reservas, más consultas, más ventas. Trabajamos sobre objetivos de negocio, no sobre métricas vacías.</p>
+    <!-- 6 · servicio 01 -->
+    <div class="mk-zshot z-win" style="--zi:6">
+      <div class="z-frame">
+        <div class="z-frame-bar"><span></span><span></span><span></span><em>Servicio 01 · Desarrollo web</em></div>
+        <div class="z-frame-body">
+          <svg class="z-frame-art" viewBox="0 0 520 360" fill="none" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <path d="M20 300 L130 210 L215 252 L330 132 L430 196 L505 104" stroke="rgba(217,192,138,.5)" stroke-width="2"/>
+          </svg>
+          <div class="z-inner">
+            <h2 class="z-h">Tu mejor comercial, trabajando 24 horas.</h2>
+            <p class="z-claim">«La web es el primer empleado que nunca duerme.»</p>
+            <ul class="z-list">
+              <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Diseño a medida para tu negocio, no una plantilla reciclada</li>
+              <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Pensada para convertir visitas en llamadas y reservas</li>
+              <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Rápida y perfecta desde el móvil, donde está tu cliente</li>
+              <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Precio cerrado, sin costes ocultos ni letra pequeña</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- 7 · servicio 01 -->
-    <div class="mk-zshot" style="--zi:7">
-      <div class="z-motif mk-zdepth mk-zfog" style="--z:-260px" aria-hidden="true">
-        <svg viewBox="0 0 520 320" fill="none">
-          <rect x="10" y="20" width="500" height="280" rx="12" stroke="rgba(255,255,255,.13)"/>
-          <line x1="10" y1="64" x2="510" y2="64" stroke="rgba(255,255,255,.13)"/>
-          <circle cx="34" cy="42" r="4" fill="rgba(255,255,255,.25)"/><circle cx="50" cy="42" r="4" fill="rgba(255,255,255,.25)"/><circle cx="66" cy="42" r="4" fill="rgba(255,255,255,.25)"/>
-          <path d="M40 250 L120 180 L190 214 L300 120 L400 168 L480 96" stroke="rgba(217,192,138,.5)" stroke-width="2"/>
-        </svg>
-      </div>
-      <div class="z-inner">
-        <div class="z-eyebrow">Servicio 01 · Desarrollo web</div>
-        <h2 class="z-h">Tu mejor comercial, trabajando 24 horas.</h2>
-        <p class="z-claim">«La web es el primer empleado que nunca duerme.»</p>
-        <ul class="z-list">
-          <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Diseño a medida para tu negocio, no una plantilla reciclada</li>
-          <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Pensada para convertir visitas en llamadas y reservas</li>
-          <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Rápida y perfecta desde el móvil, donde está tu cliente</li>
-          <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Precio cerrado, sin costes ocultos ni letra pequeña</li>
-        </ul>
+    <!-- 7 · servicio 02 -->
+    <div class="mk-zshot z-win" style="--zi:7">
+      <div class="z-frame">
+        <div class="z-frame-bar"><span></span><span></span><span></span><em>Servicio 02 · Automatización e IA</em></div>
+        <div class="z-frame-body">
+          <div class="z-frame-flow" aria-hidden="true">
+            <div class="mk-marquee">
+              <div class="mk-marquee-track">
+                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+              </div>
+            </div>
+          </div>
+          <div class="z-inner">
+            <h2 class="z-h">Recupera las horas que hoy pierdes en tareas repetitivas.</h2>
+            <p class="z-claim">«Automatizamos procesos»</p>
+            <ul class="z-list">
+              <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Respuestas y reservas automáticas para tus clientes</li>
+              <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Gestión de citas, pedidos y seguimientos sin esfuerzo</li>
+              <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Procesos internos manuales, ahora funcionando solos</li>
+              <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Información de tu negocio siempre ordenada y a mano</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- 8 · servicio 02 -->
+    <!-- 8 · contadores -->
     <div class="mk-zshot" style="--zi:8">
-      <div class="z-motif mk-zdepth mk-zfog" style="--z:-260px" aria-hidden="true">
-        <svg viewBox="0 0 520 200" fill="none">
-          <g stroke="rgba(255,255,255,.14)" stroke-width="1.4">
-            <rect x="30" y="80" width="46" height="46" rx="9"/><rect x="180" y="80" width="46" height="46" rx="9"/><rect x="330" y="80" width="46" height="46" rx="9"/><rect x="452" y="80" width="46" height="46" rx="9"/>
-          </g>
-          <g stroke="rgba(217,192,138,.45)" stroke-width="1.4" stroke-dasharray="3 5"><line x1="76" y1="103" x2="180" y2="103"/><line x1="226" y1="103" x2="330" y2="103"/><line x1="376" y1="103" x2="452" y2="103"/></g>
-          <circle cx="140" cy="103" r="3.5" fill="#D9C08A"/><circle cx="292" cy="103" r="3.5" fill="#D9C08A"/>
-        </svg>
-      </div>
-      <div class="z-inner">
-        <div class="z-eyebrow">Servicio 02 · Automatización e IA</div>
-        <h2 class="z-h">Recupera las horas que hoy pierdes en tareas repetitivas.</h2>
-        <p class="z-claim">«Lo que se repite, se automatiza.»</p>
-        <ul class="z-list">
-          <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Respuestas y reservas automáticas para tus clientes</li>
-          <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Gestión de citas, pedidos y seguimientos sin esfuerzo</li>
-          <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Procesos internos manuales, ahora funcionando solos</li>
-          <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Información de tu negocio siempre ordenada y a mano</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- 9 · contadores -->
-    <div class="mk-zshot" style="--zi:9">
       <div class="z-inner">
         <div class="z-eyebrow">En cifras</div>
         <div class="z-counters">
@@ -449,8 +500,8 @@ body.locked{overflow:hidden}
       </div>
     </div>
 
-    <!-- 10 · sectores marquee -->
-    <div class="mk-zshot" style="--zi:10">
+    <!-- 9 · sectores marquee -->
+    <div class="mk-zshot" style="--zi:9">
       <div class="z-inner">
         <div class="z-eyebrow">Para quién trabajamos</div>
         <div class="z-sectors mk-marquee">
@@ -461,8 +512,8 @@ body.locked{overflow:hidden}
       </div>
     </div>
 
-    <!-- 11 · proceso -->
-    <div class="mk-zshot" style="--zi:11">
+    <!-- 10 · proceso -->
+    <div class="mk-zshot z-proceso" style="--zi:10">
       <div class="z-inner">
         <div class="z-eyebrow">Cómo trabajamos</div>
         <h2 class="z-h">Un proceso claro, sin sorpresas.</h2>
@@ -476,8 +527,8 @@ body.locked{overflow:hidden}
       </div>
     </div>
 
-    <!-- 12 · testimonio grande -->
-    <div class="mk-zshot" style="--zi:12">
+    <!-- 11 · testimonio grande -->
+    <div class="mk-zshot" style="--zi:11">
       <div class="z-inner">
         <div class="z-eyebrow">Voces · Restauración</div>
         <p class="z-quote">«Antes perdíamos reservas todos los fines de semana. Ahora la web y el sistema de reservas trabajan solos, y nosotros solo nos preocupamos de atender las mesas.»</p>
@@ -485,8 +536,8 @@ body.locked{overflow:hidden}
       </div>
     </div>
 
-    <!-- 13 · dos testimonios -->
-    <div class="mk-zshot" style="--zi:13">
+    <!-- 12 · dos testimonios -->
+    <div class="mk-zshot" style="--zi:12">
       <div class="z-inner">
         <div class="z-eyebrow">Voces · Otros sectores</div>
         <div class="z-pair">
@@ -502,8 +553,8 @@ body.locked{overflow:hidden}
       </div>
     </div>
 
-    <!-- 14 · dónde estamos / cercanía -->
-    <div class="mk-zshot" style="--zi:14" data-accent>
+    <!-- 13 · dónde estamos / cercanía -->
+    <div class="mk-zshot" style="--zi:13" data-accent>
       <div class="z-inner">
         <div class="z-eyebrow">Trato directo</div>
         <h2 class="mk-split z-h">Estamos para ti.</h2>
@@ -511,14 +562,14 @@ body.locked{overflow:hidden}
       </div>
     </div>
 
-    <!-- 15 · CTA final -->
-    <div class="mk-zshot" style="--zi:15">
+    <!-- 14 · CTA final -->
+    <div class="mk-zshot" style="--zi:14">
       <div class="z-inner">
         <div class="z-eyebrow">Empecemos</div>
         <h2 class="z-h huge">Hablemos de tu negocio.</h2>
         <a class="z-phone mk-pulse" href="tel:+34601449173">+34 601 449 173</a>
         <p class="z-sub">Tu competencia sigue haciendo lo mismo de siempre.<br>Respondemos en menos de 24 h laborables.</p>
-        <a class="z-email" href="mailto:anomalia.tech@gmail.com">anomalia.tech@gmail.com</a>
+        <a class="z-email" href="mailto:contacto@anomalia.business">contacto@anomalia.business</a>
       </div>
     </div>
 
@@ -534,12 +585,12 @@ body.locked{overflow:hidden}
         <p class="lead">Sin compromiso. Una conversación de 20 minutos para entender dónde estás y qué podemos mejorar.</p>
         <div class="contact-direct">
           <a href="tel:+34601449173"><svg viewBox="0 0 16 16" fill="none"><path d="M5.5 2 7 5 5.5 6.5a8 8 0 0 0 4 4L11 9l3 1.5V13a1.5 1.5 0 0 1-1.6 1.5A11 11 0 0 1 1.5 3.6 1.5 1.5 0 0 1 3 2h2.5Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>+34 601 449 173</a>
-          <a href="mailto:anomalia.tech@gmail.com"><svg viewBox="0 0 16 16" fill="none"><rect x="1.5" y="3" width="13" height="10" rx="1.5" stroke="currentColor" stroke-width="1.3"/><path d="m2 4 6 5 6-5" stroke="currentColor" stroke-width="1.3"/></svg>anomalia.tech@gmail.com</a>
+          <a href="mailto:contacto@anomalia.business"><svg viewBox="0 0 16 16" fill="none"><rect x="1.5" y="3" width="13" height="10" rx="1.5" stroke="currentColor" stroke-width="1.3"/><path d="m2 4 6 5 6-5" stroke="currentColor" stroke-width="1.3"/></svg>contacto@anomalia.business</a>
           <span class="addr">Trabajamos con negocios de toda España · 100 % en remoto</span>
         </div>
       </div>
 
-      <form id="contactForm" action="https://formsubmit.co/anomalia.tech@gmail.com" method="POST" novalidate>
+      <form id="contactForm" action="https://formsubmit.co/contacto@anomalia.business" method="POST" novalidate>
         <input type="hidden" name="_subject" value="Nuevo contacto desde la web de Anomalia">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_captcha" value="false">
@@ -603,7 +654,7 @@ body.locked{overflow:hidden}
       <div class="foot-col">
         <h4>Contacto</h4>
         <a href="tel:+34601449173">+34 601 449 173</a>
-        <a href="mailto:anomalia.tech@gmail.com">anomalia.tech@gmail.com</a>
+        <a href="mailto:contacto@anomalia.business">contacto@anomalia.business</a>
         <span>Negocios de toda España · 100 % en remoto</span>
       </div>
     </div>
@@ -646,7 +697,7 @@ body.locked{overflow:hidden}
   <h4>I. INFORMACIÓN GENERAL</h4>
   <p>En cumplimiento con el deber de información dispuesto en la Ley 34/2002 de Servicios de la Sociedad de la Información y el Comercio Electrónico (LSSI-CE) de 11 de julio, se facilitan a continuación los siguientes datos de información general de este sitio web:</p>
   <p>La titularidad de este sitio web, https://anomalia.business, (en adelante, Sitio Web) la ostenta: Marcos Mompean Lopez, con NIF: 48764433V, y cuyos datos de contacto son:</p>
-  <p>Dirección: Avenida de la Deportista Miriam Blasco 14<br>Teléfono de contacto: 601449173<br>Email de contacto: anomalia.tech@gmail.com</p>
+  <p>Dirección: Avenida de la Deportista Miriam Blasco 14<br>Teléfono de contacto: 601449173<br>Email de contacto: contacto@anomalia.business</p>
   <h4>II. TÉRMINOS Y CONDICIONES GENERALES DE USO</h4>
   <h5>El objeto de las condiciones: El Sitio Web</h5>
   <p>El objeto de las presentes Condiciones Generales de Uso (en adelante, Condiciones) es regular el acceso y la utilización del Sitio Web. A los efectos de las presentes Condiciones se entenderá como Sitio Web: la apariencia externa de los interfaces de pantalla, tanto de forma estática como de forma dinámica, es decir, el árbol de navegación; y todos los elementos integrados tanto en los interfaces de pantalla como en el árbol de navegación (en adelante, Contenidos) y todos aquellos servicios o recursos en línea que en su caso ofrezca a los Usuarios (en adelante, Servicios).</p>
@@ -697,7 +748,7 @@ body.locked{overflow:hidden}
   </ul>
   <h5>Identidad del responsable del tratamiento de los datos personales</h5>
   <p>El responsable del tratamiento de los datos personales recogidos en Anomalia es: Marcos Mompean Lopez, con NIF: 48764433V (en adelante, Responsable del tratamiento). Sus datos de contacto son los siguientes:</p>
-  <p>Dirección: Avenida de la Deportista Miriam Blasco 14 b9 p6d<br>Teléfono de contacto: 601449173<br>Email de contacto: anomalia.tech@gmail.com</p>
+  <p>Dirección: Avenida de la Deportista Miriam Blasco 14 b9 p6d<br>Teléfono de contacto: 601449173<br>Email de contacto: contacto@anomalia.business</p>
   <h5>Registro de Datos de Carácter Personal</h5>
   <p>En cumplimiento de lo establecido en el RGPD y la LOPD-GDD, le informamos que los datos personales recabados por Anomalia, mediante los formularios extendidos en sus páginas quedarán incorporados y serán tratados en nuestro fichero con el fin de poder facilitar, agilizar y cumplir los compromisos establecidos entre Anomalia y el Usuario o el mantenimiento de la relación que se establezca en los formularios que este rellene, o para atender una solicitud o consulta del mismo. Asimismo, de conformidad con lo previsto en el RGPD y la LOPD-GDD, salvo que sea de aplicación la excepción prevista en el artículo 30.5 del RGPD, se mantiene un registro de actividades de tratamiento que especifica, según sus finalidades, las actividades de tratamiento llevadas a cabo y las demás circunstancias establecidas en el RGPD.</p>
   <h5>Principios aplicables al tratamiento de los datos personales</h5>
@@ -755,7 +806,7 @@ body.locked{overflow:hidden}
     <li>Todo documento que acredite la petición que formula.</li>
   </ul>
   <p>Esta solicitud y todo otro documento adjunto podrá enviarse a la siguiente dirección y/o correo electrónico:</p>
-  <p>Dirección postal: Avenida de la Deportista Miriam Blasco 14 b9 p6d<br>Correo electrónico: anomalia.tech@gmail.com</p>
+  <p>Dirección postal: Avenida de la Deportista Miriam Blasco 14 b9 p6d<br>Correo electrónico: contacto@anomalia.business</p>
   <h5>Enlaces a sitios web de terceros</h5>
   <p>El Sitio Web puede incluir hipervínculos o enlaces que permiten acceder a páginas web de terceros distintos de Anomalia, y que por tanto no son operados por Anomalia. Los titulares de dichos sitios web dispondrán de sus propias políticas de protección de datos, siendo ellos mismos, en cada caso, responsables de sus propios ficheros y de sus propias prácticas de privacidad.</p>
   <h5>Reclamaciones ante la autoridad de control</h5>

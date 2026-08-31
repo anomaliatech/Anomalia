@@ -23,19 +23,31 @@
     document.documentElement.style.setProperty("--mk-split-base", "0.1s");
   }
 
-  // Split-text: trocea .mk-split en palabras animables
+  // Split-text: trocea .mk-split en palabras animables.
+  // Si el titular trae <br>, respeta ese corte: cada línea en su propio bloque.
   document.querySelectorAll(".mk-split").forEach(function (el) {
-    var words = el.textContent.trim().split(/\s+/);
+    var lines = el.innerHTML.split(/<br\s*\/?>/i);
+    var multiline = lines.length > 1;
     el.textContent = "";
-    words.forEach(function (w, i) {
-      var wrap = document.createElement("span");
-      wrap.className = "mk-w";
-      var inner = document.createElement("span");
-      inner.textContent = w;
-      inner.style.setProperty("--mk-i", i);
-      wrap.appendChild(inner);
-      el.appendChild(wrap);
-      el.appendChild(document.createTextNode(" "));
+    var i = 0;
+    lines.forEach(function (lineHTML) {
+      var tmp = document.createElement("div");
+      tmp.innerHTML = lineHTML;
+      var words = (tmp.textContent || "").trim().split(/\s+/).filter(Boolean);
+      if (!words.length) return;
+      var target = multiline ? document.createElement("span") : el;
+      if (multiline) target.className = "mk-line";
+      words.forEach(function (w) {
+        var wrap = document.createElement("span");
+        wrap.className = "mk-w";
+        var inner = document.createElement("span");
+        inner.textContent = w;
+        inner.style.setProperty("--mk-i", i++);
+        wrap.appendChild(inner);
+        target.appendChild(wrap);
+        target.appendChild(document.createTextNode(" "));
+      });
+      if (multiline) el.appendChild(target);
     });
   });
 
