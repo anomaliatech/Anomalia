@@ -1,0 +1,118 @@
+{
+  "nombre": "Anomalía",
+  "idioma": "es",
+  "zonaHoraria": "Europe/Madrid",
+  "servicios": [
+    {
+      "nombre": "Auditoría",
+      "duracionMin": 60,
+      "descripcion": "Revisamos tu negocio o tu web y te decimos qué está frenando el crecimiento y por dónde empezar."
+    },
+    {
+      "nombre": "Creación de página web",
+      "duracionMin": 60,
+      "descripcion": "Diseño y desarrollo de una web orientada a que tu negocio venda más. En esta cita vemos qué necesitas."
+    },
+    {
+      "nombre": "Automatización",
+      "duracionMin": 60,
+      "descripcion": "Automatizamos tareas repetitivas de tu negocio (agenda, mensajes, seguimientos). En esta cita valoramos tu caso."
+    }
+  ],
+  "duracionCitaPorDefectoMin": 60,
+  "horarioAtencion": {
+    "lun": [
+      [
+        "12:00",
+        "21:00"
+      ]
+    ],
+    "mar": [
+      [
+        "12:00",
+        "21:00"
+      ]
+    ],
+    "mie": [
+      [
+        "12:00",
+        "21:00"
+      ]
+    ],
+    "jue": [
+      [
+        "12:00",
+        "21:00"
+      ]
+    ],
+    "vie": [
+      [
+        "12:00",
+        "21:00"
+      ]
+    ],
+    "sab": [
+      [
+        "12:00",
+        "21:00"
+      ]
+    ],
+    "dom": [
+      [
+        "12:00",
+        "21:00"
+      ]
+    ]
+  },
+  "diasVistaPrevia": 10,
+  "antelacionMinimaHoras": 12,
+  "calendarioId": "anomalia.tech@gmail.com",
+  "camposLead": [
+    {
+      "id": "nombre",
+      "etiqueta": "Nombre",
+      "obligatorio": true
+    },
+    {
+      "id": "empresa",
+      "etiqueta": "Empresa",
+      "obligatorio": false
+    },
+    {
+      "id": "email",
+      "etiqueta": "Email",
+      "obligatorio": true,
+      "tipo": "email"
+    },
+    {
+      "id": "telefono",
+      "etiqueta": "Teléfono",
+      "obligatorio": false,
+      "tipo": "tel"
+    },
+    {
+      "id": "servicio",
+      "etiqueta": "Qué servicio te interesa",
+      "obligatorio": true
+    }
+  ],
+  "widget": {
+    "tema": "oscuro",
+    "acento": "#C6A15B",
+    "textoAcento": "#141007",
+    "fondo": "#151515",
+    "fondoPanel": "#0A0A0A",
+    "texto": "#FDFDFC",
+    "textoTenue": "#9B9B9B",
+    "borde": "rgba(255,255,255,.12)",
+    "radio": "18px",
+    "fuente": "'Manrope', system-ui, -apple-system, sans-serif",
+    "posicion": "abajo-derecha",
+    "titulo": "Reserva tu cita con Anomalía",
+    "saludo": "Hola, soy el asistente de Anomalía. Cuéntame qué necesita tu negocio y te busco un hueco para hablarlo.",
+    "textoBoton": "Reservar cita"
+  },
+  "emailAvisos": "contacto@anomalia.business",
+  "emailRemitente": "contacto@anomalia.business",
+  "mensajeHumano": "Para esto es mejor que hablemos directamente: escríbenos a contacto@anomalia.business o llámanos al +34 601 449 173."
+}

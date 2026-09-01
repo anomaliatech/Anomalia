@@ -261,30 +261,31 @@ p{text-wrap:pretty}
 .contact-direct svg{width:17px;height:17px;color:var(--gold-light)}
 .contact-direct .addr{color:var(--mist);font-size:.98rem}
 
-form{background:var(--bg2);border:1px solid var(--line);border-radius:20px;padding:clamp(1.6rem,3.5vw,2.4rem);position:relative}
-.frow{display:grid;gap:1rem}
-@media(min-width:560px){.frow{grid-template-columns:1fr 1fr}}
-.f{display:flex;flex-direction:column;gap:.45rem;margin-bottom:1rem}
-.f label{font-size:.8rem;font-weight:700;letter-spacing:.02em}
-.f input,.f select,.f textarea{
-  background:var(--bg);border:1px solid var(--line);border-radius:10px;
-  padding:.8em .95em;font-family:var(--font-body);font-size:.96rem;color:var(--paper);
-  transition:border-color .3s,box-shadow .3s;
-}
-.f input:focus,.f select:focus,.f textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(198,161,91,.18)}
-.f textarea{resize:vertical;min-height:96px}
-.f select{appearance:none}
-form .btn-gold{width:100%;justify-content:center;margin-top:.3rem}
+/* Chat de citas (sustituye al antiguo formulario) */
+.agchat{display:flex;flex-direction:column;background:var(--bg2);border:1px solid var(--line);border-radius:20px;overflow:hidden;height:540px;max-height:76vh}
+.agchat-head{display:flex;align-items:center;gap:.85rem;padding:1rem 1.25rem;border-bottom:1px solid var(--line);background:rgba(255,255,255,.02)}
+.agchat-head .dot{width:9px;height:9px;border-radius:50%;background:#58C583;box-shadow:0 0 0 4px rgba(88,197,131,.14);flex-shrink:0}
+.agchat-head strong{display:block;font-size:.98rem;color:#fff;line-height:1.25}
+.agchat-head span{font-size:.8rem;color:var(--mist-dim)}
+.agchat-log{flex:1;overflow-y:auto;padding:1.1rem 1.2rem;display:flex;flex-direction:column;gap:.55rem;scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+.agmsg{max-width:86%;padding:.62rem .9rem;border-radius:14px;font-size:.95rem;line-height:1.45;white-space:pre-wrap;overflow-wrap:break-word}
+.agmsg.bot{align-self:flex-start;background:var(--bg);border:1px solid var(--line);color:var(--paper);border-bottom-left-radius:5px}
+.agmsg.user{align-self:flex-end;background:var(--gold);color:#141007;font-weight:500;border-bottom-right-radius:5px}
+.agmsg.espera span{display:inline-block;width:6px;height:6px;margin-right:4px;border-radius:50%;background:var(--mist-dim);animation:agp 1s infinite}
+.agmsg.espera span:nth-child(2){animation-delay:.15s}
+.agmsg.espera span:nth-child(3){animation-delay:.3s;margin-right:0}
+@keyframes agp{0%,100%{opacity:.25;transform:translateY(0)}50%{opacity:1;transform:translateY(-3px)}}
+.agchat-sugs{display:flex;flex-wrap:wrap;gap:.5rem;padding:0 1.2rem .95rem}
+.agchat-sugs button{background:transparent;border:1px solid var(--line);border-radius:100px;padding:.45em .95em;font-size:.85rem;color:var(--mist);transition:border-color .3s,color .3s}
+.agchat-sugs button:hover{border-color:var(--gold);color:var(--gold-light)}
+.agchat-bar{display:flex;gap:.6rem;border-top:1px solid var(--line);padding:.7rem .8rem}
+.agchat-bar input{flex:1;min-width:0;background:var(--bg);border:1px solid var(--line);border-radius:100px;padding:.7em 1.1em;font-family:var(--font-body);font-size:.95rem;color:var(--paper);transition:border-color .3s,box-shadow .3s}
+.agchat-bar input:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(198,161,91,.18)}
+.agchat-bar button{border:0;background:var(--gold);color:#141007;border-radius:100px;width:46px;flex-shrink:0;display:grid;place-items:center;transition:background .3s}
+.agchat-bar button:hover{background:var(--gold-light)}
+.agchat-bar button:disabled{opacity:.55;cursor:default}
 .fnote{font-size:.78rem;color:var(--mist-dim);margin-top:.9rem;text-align:center}
 .fnote button{background:none;border:0;color:var(--gold-light);border-bottom:1px solid currentColor;padding:0;font-size:inherit}
-.fok{
-  position:absolute;inset:0;display:none;flex-direction:column;align-items:center;justify-content:center;
-  gap:.9rem;text-align:center;padding:2rem;background:var(--bg2);border-radius:20px;
-}
-.fok.show{display:flex}
-.fok .tick{width:52px;height:52px;border-radius:50%;background:var(--gold);display:grid;place-items:center;color:#141007}
-.fok h3{font-size:1.3rem;color:#fff}
-.fok p{color:var(--mist);max-width:22rem}
 
 /* FAQ */
 .faq{margin-top:clamp(3rem,7vw,5rem);border-top:1px solid var(--line)}
@@ -584,7 +585,7 @@ body.locked{overflow:hidden}
     <div class="contact">
       <div>
         <h2>Cuéntanos sobre tu negocio.</h2>
-        <p class="lead">Sin compromiso. Una conversación de 20 minutos para entender dónde estás y qué podemos mejorar.</p>
+        <p class="lead">Sin compromiso. Cuéntale a nuestro asistente qué necesita tu negocio y deja tu cita agendada al momento — te confirmamos por email.</p>
         <div class="contact-direct">
           <a href="tel:+34601449173"><svg viewBox="0 0 16 16" fill="none"><path d="M5.5 2 7 5 5.5 6.5a8 8 0 0 0 4 4L11 9l3 1.5V13a1.5 1.5 0 0 1-1.6 1.5A11 11 0 0 1 1.5 3.6 1.5 1.5 0 0 1 3 2h2.5Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>+34 601 449 173</a>
           <a href="mailto:contacto@anomalia.business"><svg viewBox="0 0 16 16" fill="none"><rect x="1.5" y="3" width="13" height="10" rx="1.5" stroke="currentColor" stroke-width="1.3"/><path d="m2 4 6 5 6-5" stroke="currentColor" stroke-width="1.3"/></svg>contacto@anomalia.business</a>
@@ -592,40 +593,25 @@ body.locked{overflow:hidden}
         </div>
       </div>
 
-      <form id="contactForm" action="https://formsubmit.co/contacto@anomalia.business" method="POST" novalidate>
-        <input type="hidden" name="_subject" value="Nuevo contacto desde la web de Anomalia">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-        <div class="frow">
-          <div class="f"><label for="n">Nombre</label><input id="n" name="Nombre" type="text" required placeholder="Tu nombre"></div>
-          <div class="f"><label for="e">Empresa</label><input id="e" name="Empresa" type="text" required placeholder="Nombre del negocio"></div>
+      <div>
+        <div class="agchat" id="agchat" aria-label="Asistente para reservar cita">
+          <div class="agchat-head">
+            <span class="dot" aria-hidden="true"></span>
+            <div><strong>Asistente de Anomalia</strong><span>Reserva tu cita en un minuto, sin formularios</span></div>
+          </div>
+          <div class="agchat-log" id="agLog" aria-live="polite"></div>
+          <div class="agchat-sugs" id="agSugs">
+            <button type="button">Quiero una auditoría</button>
+            <button type="button">Quiero una página web</button>
+            <button type="button">Quiero automatizar mi negocio</button>
+          </div>
+          <form class="agchat-bar" id="agForm" autocomplete="off">
+            <input id="agInput" name="mensaje" maxlength="600" placeholder="Escribe aquí… p. ej. «quiero una web nueva»" aria-label="Escribe tu mensaje">
+            <button type="submit" aria-label="Enviar mensaje"><svg width="17" height="17" viewBox="0 0 16 16" fill="none"><path d="M2 8h11M9 3.5 13.5 8 9 12.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </form>
         </div>
-        <div class="frow">
-          <div class="f"><label for="m">Email</label><input id="m" name="Email" type="email" required placeholder="tu@email.com"></div>
-          <div class="f"><label for="t">Teléfono <span style="font-weight:400;color:var(--mist-dim)">(opcional)</span></label><input id="t" name="Teléfono" type="tel" placeholder="600 000 000"></div>
-        </div>
-        <div class="f">
-          <label for="s">Sector</label>
-          <select id="s" name="Sector" required>
-            <option value="" disabled selected>Selecciona tu sector</option>
-            <option>Restaurante</option><option>Clínica</option><option>Gimnasio</option>
-            <option>Inmobiliaria</option><option>Hotel</option><option>Comercio</option>
-            <option>Despacho profesional</option><option>Otro</option>
-          </select>
-        </div>
-        <div class="f">
-          <label for="msg">Cuéntanos brevemente qué necesitas <span style="font-weight:400;color:var(--mist-dim)">(opcional)</span></label>
-          <textarea id="msg" name="Mensaje" placeholder="Por ejemplo: quiero una web nueva y automatizar las reservas por WhatsApp..."></textarea>
-        </div>
-        <button type="submit" class="btn-gold">Enviar mensaje</button>
-        <p class="fnote">Al enviarlo aceptas nuestra <button type="button" data-legal="privacidad">política de privacidad</button>; no compartimos tus datos con terceros.</p>
-        <div class="fok" id="formOk">
-          <div class="tick"><svg width="24" height="24" viewBox="0 0 26 26" fill="none"><path d="M5 13.5l5.5 5.5L21 8" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-          <h3>Mensaje enviado</h3>
-          <p>Gracias. Te escribimos en menos de 24 horas laborables para hablar sobre tu negocio.</p>
-        </div>
-      </form>
+        <p class="fnote">Hablas con nuestro asistente con IA: dile qué necesitas, déjale tu nombre y tu email y te agenda la cita. Al usarlo aceptas nuestra <button type="button" data-legal="privacidad">política de privacidad</button>; no compartimos tus datos con terceros.</p>
+      </div>
     </div>
 
     <div class="faq" id="faq">
@@ -898,21 +884,60 @@ body.locked{overflow:hidden}
     ck.classList.remove('show');
   });
 
-  /* ---- formulario: envío en segundo plano a FormSubmit ---- */
-  var form = document.getElementById('contactForm');
-  var ok = document.getElementById('formOk');
-  var btn = form.querySelector('button[type="submit"]');
-  var label = btn.textContent;
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
-    if(!form.checkValidity()){ form.reportValidity(); return; }
-    btn.disabled = true; btn.textContent = 'Enviando…';
-    fetch(form.action.replace('formsubmit.co/','formsubmit.co/ajax/'), {
-      method:'POST', headers:{'Accept':'application/json'}, body:new FormData(form)
-    }).then(function(r){ if(!r.ok) throw 0; return r.json(); })
-      .then(function(){ ok.classList.add('show'); form.reset(); })
-      .catch(function(){ form.submit(); })
-      .finally(function(){ btn.disabled = false; btn.textContent = label; });
+  /* ---- chat de citas: habla con /api/chat y agenda directamente en el calendario ---- */
+  var agLog = document.getElementById('agLog');
+  var agForm = document.getElementById('agForm');
+  var agInput = document.getElementById('agInput');
+  var agSend = agForm.querySelector('button');
+  var agSugs = document.getElementById('agSugs');
+  var agHistorial = [];
+  var agSesion = 'w' + Date.now().toString(36) + Math.random().toString(36).slice(2,8);
+  var agOcupado = false;
+
+  function agBurbuja(texto, quien){
+    var b = document.createElement('div');
+    b.className = 'agmsg ' + quien;
+    b.textContent = texto;
+    agLog.appendChild(b);
+    agLog.scrollTop = agLog.scrollHeight;
+    return b;
+  }
+  agBurbuja('Hola, soy el asistente de Anomalía. Cuéntame qué necesita tu negocio y te busco un hueco para hablarlo.', 'bot');
+
+  function agEnviar(msg){
+    if(!msg || agOcupado) return;
+    agOcupado = true;
+    agSugs.style.display = 'none';
+    agBurbuja(msg, 'user');
+    agInput.value = '';
+    agInput.disabled = true; agSend.disabled = true;
+    var espera = document.createElement('div');
+    espera.className = 'agmsg bot espera';
+    espera.innerHTML = '<span></span><span></span><span></span>';
+    agLog.appendChild(espera); agLog.scrollTop = agLog.scrollHeight;
+    fetch('/api/chat', {
+      method:'POST', headers:{'content-type':'application/json'},
+      body: JSON.stringify({ sessionId: agSesion, historial: agHistorial, mensaje: msg })
+    })
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      espera.remove();
+      agBurbuja(d.reply || 'Perdona, no te he entendido bien. ¿Me lo repites?', 'bot');
+      if(Array.isArray(d.historial)) agHistorial = d.historial;
+    })
+    .catch(function(){
+      espera.remove();
+      agBurbuja('Ahora mismo no puedo conectar. Escríbenos a contacto@anomalia.business o llámanos al +34 601 449 173.', 'bot');
+    })
+    .finally(function(){
+      agOcupado = false; agInput.disabled = false; agSend.disabled = false;
+      if(window.matchMedia('(min-width:900px)').matches) agInput.focus();
+    });
+  }
+  agForm.addEventListener('submit', function(e){ e.preventDefault(); agEnviar(agInput.value.trim()); });
+  agSugs.addEventListener('click', function(e){
+    var b = e.target.closest('button');
+    if(b) agEnviar(b.textContent);
   });
 })();
 </script>
