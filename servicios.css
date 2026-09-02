@@ -310,8 +310,180 @@ main{position:relative;z-index:1}
 .cookie .btn-ghost,.cookie .btn-gold{padding:.6em 1.1em;font-size:.85rem}
 @media(max-width:640px){.cookie-in{flex-direction:column;align-items:stretch}.cookie-act{width:100%}.cookie-act>*{flex:1}}
 
+/* ============================================================
+   DECORACIÓN VIVA DE LAS TARJETAS
+   Cada nicho de web y cada vía de "Visible en Google" lleva una
+   animación propia, ligada a lo que representa. CSS puro (+ algún
+   SVG): sin dependencias y sin coste de JS.
+   ============================================================ */
+.card{overflow:hidden;isolation:isolate}
+.card > *:not(.niche-art){position:relative;z-index:1}
+.niche-art{
+  position:absolute;inset:0;z-index:0;pointer-events:none;
+  color:var(--gold-light);opacity:.3;
+  transition:opacity .45s var(--ease);
+}
+.card:hover .niche-art{opacity:.82}
+.niche-art svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.niche-art i{font-style:normal}
+
+/* 1 · Restaurantes y locales — el vaho que sube de un plato caliente (esquina superior derecha) */
+.niche-art--resto i{
+  position:absolute;top:14%;width:2px;height:18px;border-radius:2px;
+  background:linear-gradient(to top,transparent,currentColor);
+  filter:blur(.4px);animation:naSteam 3.4s ease-in-out infinite;
+}
+.niche-art--resto i:nth-child(1){right:20%}
+.niche-art--resto i:nth-child(2){right:13%;height:24px;animation-delay:.8s}
+.niche-art--resto i:nth-child(3){right:7%;height:14px;animation-delay:1.6s}
+@keyframes naSteam{
+  0%{opacity:0;transform:translateY(8px) scaleY(.6)}
+  35%{opacity:.8}
+  100%{opacity:0;transform:translateY(-26px) scaleY(1.15)}
+}
+
+/* 2 · Tiendas y ecommerce — el código de barras del catálogo, desplazándose */
+.niche-art--shop{opacity:.18}
+.card:hover .niche-art--shop{opacity:.5}
+.niche-art--shop::before{
+  content:"";position:absolute;top:0;bottom:0;right:0;width:50%;
+  background:repeating-linear-gradient(90deg,
+    currentColor 0 2px,transparent 2px 5px,
+    currentColor 5px 7px,transparent 7px 13px,
+    currentColor 13px 16px,transparent 16px 22px);
+  -webkit-mask:linear-gradient(90deg,transparent,#000 72%);
+  mask:linear-gradient(90deg,transparent,#000 72%);
+  animation:naBarcode 5s linear infinite;
+}
+@keyframes naBarcode{to{background-position-x:-44px}}
+
+/* 3 · Clínicas y despachos — el latido en el monitor (franja inferior) */
+.niche-art--clinic{opacity:.26}
+.card:hover .niche-art--clinic{opacity:.72}
+.niche-art--clinic svg{top:auto;bottom:0;height:30%}
+.niche-art--clinic path{
+  stroke-dasharray:46 420;stroke-dashoffset:0;
+  animation:naPulse 2.8s linear infinite;
+}
+@keyframes naPulse{to{stroke-dashoffset:-466}}
+
+/* 4 · Inmobiliarias — el plano de la casa dibujándose (esquina inferior derecha) */
+.niche-art--realty{opacity:.24}
+.card:hover .niche-art--realty{opacity:.66}
+.niche-art--realty svg{left:auto;right:-2%;top:auto;bottom:4%;width:38%;height:52%}
+.niche-art--realty path{
+  --len:340px;stroke-dasharray:340;stroke-dashoffset:340;
+  animation:naDraw 4.6s var(--ease) infinite;
+}
+
+/* 5 · Hoteles y turismo — las estrellas de la categoría, titilando */
+.niche-art--hotel{display:flex;gap:.3rem;align-items:flex-start;justify-content:flex-end;padding:1rem 1.15rem}
+.niche-art--hotel i{font-size:.8rem;line-height:1;animation:naTwinkle 2.6s ease-in-out infinite}
+.niche-art--hotel i:nth-child(2){animation-delay:.35s}
+.niche-art--hotel i:nth-child(3){animation-delay:.7s}
+.niche-art--hotel i:nth-child(4){animation-delay:1.05s}
+.niche-art--hotel i:nth-child(5){animation-delay:1.4s}
+@keyframes naTwinkle{0%,100%{opacity:.22;transform:scale(.85)}50%{opacity:1;transform:scale(1.12)}}
+
+/* 6 · Landing pages — un solo objetivo: la diana */
+.niche-art--landing i,
+.niche-art--landing::before,
+.niche-art--landing::after{
+  content:"";position:absolute;top:28px;right:30px;border-radius:50%;
+}
+.niche-art--landing::before{width:44px;height:44px;margin:-22px -22px 0 0;border:1.5px solid currentColor;opacity:.45}
+.niche-art--landing i{width:8px;height:8px;margin:-4px -4px 0 0;background:currentColor}
+.niche-art--landing::after{width:44px;height:44px;margin:-22px -22px 0 0;border:1.5px solid currentColor;animation:naTarget 2.9s var(--ease) infinite}
+@keyframes naTarget{0%{transform:scale(.3);opacity:0}38%{opacity:1}100%{transform:scale(2);opacity:0}}
+
+/* 7 · SEO técnico — el rastreador escaneando la página */
+.niche-art--seo-tech::before{
+  content:"";position:absolute;inset:0;
+  background-image:radial-gradient(currentColor .8px,transparent .9px);
+  background-size:15px 15px;opacity:.3;
+}
+.niche-art--seo-tech::after{
+  content:"";position:absolute;top:-12%;bottom:-12%;width:2px;left:-6%;
+  background:linear-gradient(to bottom,transparent,currentColor,transparent);
+  box-shadow:0 0 12px 2px color-mix(in srgb,var(--gold-light) 45%,transparent);
+  animation:naScan 3.6s cubic-bezier(.5,0,.5,1) infinite;
+}
+@keyframes naScan{0%{left:-6%}70%,100%{left:106%}}
+
+/* 8 · SEO de contenido — el tráfico orgánico que sube con el tiempo */
+.niche-art--seo-content{opacity:.24}
+.card:hover .niche-art--seo-content{opacity:.6}
+.niche-art--seo-content svg{top:auto;bottom:0;height:60%}
+.niche-art--seo-content path{
+  --len:260px;stroke-dasharray:260;stroke-dashoffset:260;
+  animation:naDraw 5s var(--ease) infinite;
+}
+
+/* 9 · Google Ads — el clic de pago */
+.niche-art--ads .cur{inset:auto 20px 20px auto;width:15px;height:15px}
+.niche-art--ads::before,
+.niche-art--ads::after{
+  content:"";position:absolute;right:21px;bottom:21px;width:12px;height:12px;
+  border-radius:50%;border:1.6px solid currentColor;
+  animation:naRipple 2.6s var(--ease) infinite;
+}
+.niche-art--ads::after{animation-delay:1.3s}
+@keyframes naRipple{0%{transform:scale(.4);opacity:0}30%{opacity:1}100%{transform:scale(3.6);opacity:0}}
+
+/* trazos que se dibujan en bucle (casa, línea de tráfico) */
+@keyframes naDraw{
+  0%{stroke-dashoffset:var(--len)}
+  52%{stroke-dashoffset:0}
+  76%{stroke-dashoffset:0}
+  100%{stroke-dashoffset:calc(var(--len) * -1)}
+}
+
+/* menos protagonismo en móvil: el texto ocupa toda la tarjeta */
+@media(max-width:600px){
+  .niche-art{opacity:.18}
+  .card:hover .niche-art{opacity:.3}
+  .niche-art--shop{opacity:.1}
+  .niche-art--realty{opacity:.15}
+  .niche-art--clinic{opacity:.18}
+  .niche-art--seo-content{opacity:.16}
+}
+
+/* ============================================================
+   SEPARADOR VIVO ENTRE SECCIONES
+   La línea deja de ser un corte plano: se difumina en los
+   extremos y una luz dorada la recorre cada pocos segundos.
+   ============================================================ */
+.section,.statement,.marquee-sec,.cta-final{position:relative;border-top:0}
+.section::before,.statement::before,.marquee-sec::before,.cta-final::before{
+  content:"";position:absolute;left:0;right:0;top:-1px;height:1px;
+  background:linear-gradient(90deg,transparent,var(--line) 12%,var(--line) 88%,transparent);
+}
+.section::after,.statement::after,.marquee-sec::after,.cta-final::after{
+  content:"";position:absolute;top:-1px;left:-26%;width:22%;height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold-light),transparent);
+  box-shadow:0 0 10px 1px color-mix(in srgb,var(--gold-light) 45%,transparent);
+  animation:naDivider 8s var(--ease) infinite;
+}
+@keyframes naDivider{0%{left:-26%}60%,100%{left:104%}}
+.section:nth-of-type(2)::after{animation-delay:-1s}
+.section:nth-of-type(3)::after{animation-delay:-2.6s}
+.section:nth-of-type(4)::after{animation-delay:-4.1s}
+.section:nth-of-type(5)::after{animation-delay:-5.6s}
+.section:nth-of-type(6)::after{animation-delay:-3s}
+.section:nth-of-type(7)::after{animation-delay:-6.7s}
+.section:nth-of-type(8)::after{animation-delay:-1.8s}
+.statement::after{animation-delay:-4.7s}
+.cta-final::after{animation-delay:-2.2s}
+
 /* ============ MOVIMIENTO REDUCIDO / SIN JS ============ */
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   .site-bg::before,.site-bg i,.hero-motif .spin,.hero-motif .spin-rev{animation:none}
+  .niche-art,.niche-art *,.niche-art::before,.niche-art::after,.niche-art i{animation:none!important}
+  .niche-art--clinic path,.niche-art--realty path,.niche-art--seo-content path{
+    stroke-dasharray:none!important;stroke-dashoffset:0!important;
+  }
+  .niche-art--seo-tech::after,.niche-art--ads::before,.niche-art--ads::after{display:none!important}
+  .niche-art--hotel i{opacity:.65}
+  .section::after,.statement::after,.marquee-sec::after,.cta-final::after{display:none!important}
 }
