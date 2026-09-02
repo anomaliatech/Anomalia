@@ -84,6 +84,10 @@ p{text-wrap:pretty}
 .bar-brand svg,.bar-brand img{height:21px;width:auto;flex-shrink:0}
 .bar-word{font-family:var(--font-body);font-weight:600;letter-spacing:.17em;text-transform:uppercase;font-size:.92rem;color:var(--paper)}
 .bar-actions{display:flex;align-items:center;gap:.6rem}
+.bar-nav{display:none;gap:1.5rem;margin-inline:auto}
+.bar-nav a{font-size:.9rem;font-weight:600;color:var(--mist);transition:color .25s;white-space:nowrap}
+.bar-nav a:hover{color:var(--gold-light)}
+@media(min-width:1040px){.bar-nav{display:flex}}
 .bar-tel{
   display:inline-flex;align-items:center;gap:.5em;
   font-weight:600;font-size:.95rem;padding:.55em .9em;border-radius:100px;
@@ -185,6 +189,13 @@ p{text-wrap:pretty}
 .z-win .z-h{font-size:clamp(1.65rem,3.6vw,2.9rem)}
 .z-win .z-claim{margin-top:.7rem}
 .z-win .z-list{margin-top:1.5rem;margin-inline:auto}
+.z-cta{
+  display:inline-flex;align-items:center;gap:.45em;margin-top:1.7rem;
+  font-family:var(--font-body);font-weight:700;font-size:.95rem;color:var(--gold-light);
+  border-bottom:1px solid var(--line);padding-bottom:.15rem;transition:border-color .3s;
+}
+.z-cta:hover{border-color:var(--gold-light)}
+.z-cta svg{width:15px;height:15px}
 
 /* tira de "cajitas" que se desplaza de fondo (servicio · automatización) */
 .z-frame-flow{position:absolute;inset:0;display:flex;align-items:center;opacity:.5;pointer-events:none}
@@ -229,13 +240,6 @@ p{text-wrap:pretty}
 .z-step b{font-family:var(--font-body);font-weight:700;color:var(--gold-light);font-size:1rem}
 .z-step h3{font-family:var(--font-display);font-size:1.2rem;color:#fff;margin-bottom:.15rem}
 .z-step p{color:var(--mist);font-size:.97rem}
-
-/* testimonios */
-.z-quote{font-family:var(--font-display);font-style:italic;font-weight:400;font-size:clamp(1.3rem,3vw,2.1rem);color:#fff;line-height:1.4}
-.z-who{margin-top:1.5rem;font-size:.95rem;color:var(--gold-light);font-weight:600;letter-spacing:.02em}
-.z-pair{display:grid;gap:1.6rem;margin-top:1rem}
-@media(min-width:780px){.z-pair{grid-template-columns:1fr 1fr;gap:2.4rem}}
-.z-pair .z-quote{font-size:clamp(1.05rem,1.8vw,1.35rem)}
 
 /* CTA final */
 .z-phone{
@@ -365,6 +369,11 @@ body.locked{overflow:hidden}
     <img src="assets/anomalia-isotipo.png" alt="" width="27" height="21" aria-hidden="true">
     <span class="bar-word">Anomalia</span>
   </a>
+  <nav class="bar-nav" aria-label="Servicios">
+    <a href="/paginas-web">Páginas web</a>
+    <a href="/automatizacion-ia">Automatización e IA</a>
+    <a href="/auditoria-negocio">Auditoría</a>
+  </nav>
   <div class="bar-actions">
     <a class="bar-tel" href="tel:+34601449173" aria-label="Llamar al +34 601 449 173">
       <svg viewBox="0 0 16 16" fill="none"><path d="M5.5 2 7 5 5.5 6.5a8 8 0 0 0 4 4L11 9l3 1.5V13a1.5 1.5 0 0 1-1.6 1.5A11 11 0 0 1 1.5 3.6 1.5 1.5 0 0 1 3 2h2.5Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
@@ -375,7 +384,7 @@ body.locked{overflow:hidden}
 </header>
 
 <!-- ===================== LA PELÍCULA · TÚNEL 3D ===================== -->
-<div class="mk-film" data-mk-scrolly data-mk-shots="15" style="--mk-nshots:15">
+<div class="mk-film" data-mk-scrolly data-mk-shots="9" style="--mk-nshots:9">
   <div class="mk-film-stage mk-tunnel">
 
     <!-- 0 · logo emergiendo -->
@@ -386,15 +395,8 @@ body.locked{overflow:hidden}
       </div>
     </div>
 
-    <!-- 1 · lead · a lo que nos dedicamos -->
-    <div class="mk-zshot" style="--zi:1">
-      <div class="z-inner">
-        <p class="z-h" style="font-size:clamp(1.5rem,3.2vw,2.5rem);color:#fff;font-weight:500">Diseñamos webs y sistemas de automatización que consiguen más clientes, ahorran horas de trabajo cada semana y hacen que tu negocio deje de parecerse a todos los demás.</p>
-      </div>
-    </div>
-
-    <!-- 2 · titular editorial + motivo curva -->
-    <div class="mk-zshot" style="--zi:2" data-accent>
+    <!-- 1 · titular editorial + a lo que nos dedicamos -->
+    <div class="mk-zshot" style="--zi:1" data-accent>
       <div class="z-motif mk-zdepth mk-zfog" style="--z:-280px" aria-hidden="true">
         <svg viewBox="0 0 560 260" fill="none">
           <line x1="20" y1="210" x2="360" y2="210" stroke="rgba(255,255,255,.14)"/>
@@ -413,39 +415,22 @@ body.locked{overflow:hidden}
       </div>
       <div class="z-inner">
         <h1 class="mk-split z-h huge">Fuera de la curva.</h1>
+        <p class="z-lead">Diseñamos webs y sistemas de automatización que consiguen más clientes, ahorran horas de trabajo cada semana y hacen que tu negocio deje de parecerse a todos los demás.</p>
       </div>
     </div>
 
-    <!-- 3 · statement + posicionamiento -->
-    <div class="mk-zshot" style="--zi:3" data-accent>
+    <!-- 2 · statement + posicionamiento -->
+    <div class="mk-zshot" style="--zi:2" data-accent>
       <div class="z-inner">
         <h2 class="mk-split z-h">No vendemos páginas web.<br>Vendemos negocios que crecen.</h2>
         <p class="z-lead">La mayoría compite con la web de siempre y los mismos procesos manuales de todos los demás. Nosotros combinamos diseño y automatización para cambiar eso.</p>
       </div>
     </div>
 
-    <!-- 4 · valor 1 -->
-    <div class="mk-zshot" style="--zi:4">
-      <div class="z-inner">
-        <div class="z-eyebrow">Lo que nos mueve · 01</div>
-        <h2 class="z-h">Diseño que convierte</h2>
-        <p class="z-lead">Cada elemento de tu web está pensado para transformar visitas en llamadas, reservas y clientes reales — no solo para verse bien.</p>
-      </div>
-    </div>
-
-    <!-- 5 · valor 2 -->
-    <div class="mk-zshot" style="--zi:5">
-      <div class="z-inner">
-        <div class="z-eyebrow">Lo que nos mueve · 02</div>
-        <h2 class="z-h">Automatización real</h2>
-        <p class="z-lead">Las tareas que hoy haces a mano —agenda, mensajes, seguimientos— pasan a funcionar solas, todos los días del año.</p>
-      </div>
-    </div>
-
-    <!-- 6 · servicio 01 -->
-    <div class="mk-zshot z-win" style="--zi:6">
+    <!-- 3 · servicio 01 · páginas web -->
+    <div class="mk-zshot z-win" style="--zi:3">
       <div class="z-frame">
-        <div class="z-frame-bar"><span></span><span></span><span></span><em>Servicio 01 · Desarrollo web</em></div>
+        <div class="z-frame-bar"><span></span><span></span><span></span><em>Servicio 01 · Páginas web</em></div>
         <div class="z-frame-body">
           <svg class="z-frame-art" viewBox="0 0 520 360" fill="none" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
             <path d="M20 300 L130 210 L215 252 L330 132 L430 196 L505 104" stroke="rgba(217,192,138,.5)" stroke-width="2"/>
@@ -456,16 +441,17 @@ body.locked{overflow:hidden}
             <ul class="z-list">
               <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Diseño a medida para tu negocio, no una plantilla reciclada</li>
               <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Pensada para convertir visitas en llamadas y reservas</li>
-              <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Rápida y perfecta desde el móvil, donde está tu cliente</li>
+              <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Legal y segura, y visible en Google desde el primer día</li>
               <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Precio cerrado, sin costes ocultos ni letra pequeña</li>
             </ul>
+            <a class="z-cta" href="/paginas-web">Ver páginas web <svg viewBox="0 0 16 16" fill="none"><path d="M2 8h11M9 3.5 13.5 8 9 12.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- 7 · servicio 02 -->
-    <div class="mk-zshot z-win" style="--zi:7">
+    <!-- 4 · servicio 02 · automatización e IA -->
+    <div class="mk-zshot z-win" style="--zi:4">
       <div class="z-frame">
         <div class="z-frame-bar"><span></span><span></span><span></span><em>Servicio 02 · Automatización e IA</em></div>
         <div class="z-frame-body">
@@ -478,36 +464,54 @@ body.locked{overflow:hidden}
           </div>
           <div class="z-inner">
             <h2 class="z-h">Recupera las horas que hoy pierdes en tareas repetitivas.</h2>
-            <p class="z-claim">«Automatizamos procesos»</p>
+            <p class="z-claim">«Lo que hoy haces a mano, funcionando solo.»</p>
             <ul class="z-list">
               <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Respuestas y reservas automáticas para tus clientes</li>
               <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Gestión de citas, pedidos y seguimientos sin esfuerzo</li>
-              <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Procesos internos manuales, ahora funcionando solos</li>
+              <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>La herramienta con IA que se te ocurra, hecha a medida</li>
               <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Información de tu negocio siempre ordenada y a mano</li>
             </ul>
+            <a class="z-cta" href="/automatizacion-ia">Ver automatización e IA <svg viewBox="0 0 16 16" fill="none"><path d="M2 8h11M9 3.5 13.5 8 9 12.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- 8 · contadores -->
-    <div class="mk-zshot" style="--zi:8">
+    <!-- 5 · servicio 03 · auditoría de negocio -->
+    <div class="mk-zshot z-win" style="--zi:5">
+      <div class="z-frame">
+        <div class="z-frame-bar"><span></span><span></span><span></span><em>Servicio 03 · Auditoría de negocio</em></div>
+        <div class="z-frame-body">
+          <svg class="z-frame-art" viewBox="0 0 520 360" fill="none" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <circle cx="215" cy="170" r="96" stroke="rgba(217,192,138,.45)" stroke-width="2"/>
+            <path d="M287 238 380 320" stroke="rgba(217,192,138,.45)" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <div class="z-inner">
+            <h2 class="z-h">Sabrás exactamente qué frena tu negocio.</h2>
+            <p class="z-claim">«El diagnóstico con tus frases, tus números y tus contradicciones.»</p>
+            <ul class="z-list">
+              <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Auditoría completa: por fuera y por dentro, con el cruce</li>
+              <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Informe con dos cifras, dos mapas y un plan de acción</li>
+              <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Horas al mes recuperables, calculadas con tus datos</li>
+              <li><svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Precio cerrado: 450 € (350 € si después contratas un servicio)</li>
+            </ul>
+            <a class="z-cta" href="/auditoria-negocio">Ver auditoría de negocio <svg viewBox="0 0 16 16" fill="none"><path d="M2 8h11M9 3.5 13.5 8 9 12.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6 · contadores + sectores -->
+    <div class="mk-zshot" style="--zi:6">
       <div class="z-inner">
-        <div class="z-eyebrow">En cifras</div>
+        <div class="z-eyebrow">En cifras · para quién</div>
         <div class="z-counters">
           <div class="z-count"><b><span class="mk-counter" data-value="1">1</span> semana</b><span>o menos para tener tu proyecto listo</span></div>
           <div class="z-count"><b><span class="mk-counter" data-value="24">24</span> h</b><span>o menos en responder a tu mensaje</span></div>
           <div class="z-count"><b><span class="mk-counter" data-value="7">7</span> sectores</b><span>que conocemos a fondo</span></div>
           <div class="z-count"><b><span class="mk-counter" data-value="5">5</span> pasos</b><span>claros, sin sorpresas</span></div>
         </div>
-      </div>
-    </div>
-
-    <!-- 9 · sectores marquee -->
-    <div class="mk-zshot" style="--zi:9">
-      <div class="z-inner">
-        <div class="z-eyebrow">Para quién trabajamos</div>
-        <div class="z-sectors mk-marquee">
+        <div class="z-sectors mk-marquee" style="margin-top:2.6rem">
           <div class="mk-marquee-track">
             <span>Restaurantes</span><span>Clínicas</span><span>Gimnasios</span><span>Inmobiliarias</span><span>Hoteles</span><span>Comercios</span><span>Despachos profesionales</span>
           </div>
@@ -515,8 +519,8 @@ body.locked{overflow:hidden}
       </div>
     </div>
 
-    <!-- 10 · proceso -->
-    <div class="mk-zshot z-proceso" style="--zi:10">
+    <!-- 7 · proceso -->
+    <div class="mk-zshot z-proceso" style="--zi:7">
       <div class="z-inner">
         <div class="z-eyebrow">Cómo trabajamos</div>
         <h2 class="z-h">Un proceso claro, sin sorpresas.</h2>
@@ -530,48 +534,13 @@ body.locked{overflow:hidden}
       </div>
     </div>
 
-    <!-- 11 · testimonio grande -->
-    <div class="mk-zshot" style="--zi:11">
-      <div class="z-inner">
-        <div class="z-eyebrow">Voces · Restauración</div>
-        <p class="z-quote">«Antes perdíamos reservas todos los fines de semana. Ahora la web y el sistema de reservas trabajan solos, y nosotros solo nos preocupamos de atender las mesas.»</p>
-        <div class="z-who">Laura Ibáñez · Casa Ferrán, Restaurante</div>
-      </div>
-    </div>
-
-    <!-- 12 · dos testimonios -->
-    <div class="mk-zshot" style="--zi:12">
-      <div class="z-inner">
-        <div class="z-eyebrow">Voces · Otros sectores</div>
-        <div class="z-pair">
-          <div>
-            <p class="z-quote">«Con la nueva web, la gente entiende en cinco segundos por qué somos diferentes. Las consultas de compradores se han multiplicado.»</p>
-            <div class="z-who">Nuria Prats · Inmobiliaria Horizonte</div>
-          </div>
-          <div>
-            <p class="z-quote">«Ya no perdemos altas por no responder a tiempo. El sistema contesta y agenda la primera clase en segundos.»</p>
-            <div class="z-who">Iván Costa · Gimnasio Núcleo</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 13 · dónde estamos / cercanía -->
-    <div class="mk-zshot" style="--zi:13" data-accent>
-      <div class="z-inner">
-        <div class="z-eyebrow">Trato directo</div>
-        <h2 class="mk-split z-h">Estamos para ti.</h2>
-        <p class="z-lead">Hablas directamente con las personas que construyen tu proyecto — no con un departamento de atención al cliente. Diseño, desarrollo y automatización bajo un mismo techo, trabajemos donde trabajemos.</p>
-      </div>
-    </div>
-
-    <!-- 14 · CTA final -->
-    <div class="mk-zshot" style="--zi:14">
+    <!-- 8 · CTA final -->
+    <div class="mk-zshot" style="--zi:8">
       <div class="z-inner">
         <div class="z-eyebrow">Empecemos</div>
         <h2 class="z-h huge">Hablemos de tu negocio.</h2>
         <a class="z-phone mk-pulse" href="tel:+34601449173">+34 601 449 173</a>
-        <p class="z-sub">Tu competencia sigue haciendo lo mismo de siempre.<br>Respondemos en menos de 24 h laborables.</p>
+        <p class="z-sub">Hablas directamente con quien construye tu proyecto, no con un departamento de atención al cliente.<br>Respondemos en menos de 24 h laborables.</p>
         <a class="z-email" href="mailto:contacto@anomalia.business">contacto@anomalia.business</a>
       </div>
     </div>
@@ -634,9 +603,9 @@ body.locked{overflow:hidden}
       </div>
       <div class="foot-col">
         <h4>Servicios</h4>
-        <span>Desarrollo web</span>
-        <span>Automatización</span>
-        <span>Inteligencia artificial</span>
+        <a href="/paginas-web">Páginas web</a>
+        <a href="/automatizacion-ia">Automatización e IA</a>
+        <a href="/auditoria-negocio">Auditoría de negocio</a>
         <a href="#faq">Preguntas frecuentes</a>
       </div>
       <div class="foot-col">
@@ -855,10 +824,12 @@ body.locked{overflow:hidden}
     document.body.classList.add('locked');
     body.scrollTop = 0;
   }
+  var legalHash = /^#(?:legal-)?(aviso|privacidad|cookies)$/;
   function close(){
     modal.classList.remove('show');
     modal.setAttribute('aria-hidden','true');
     document.body.classList.remove('locked');
+    if(legalHash.test(location.hash)) history.replaceState(null,'',location.pathname+location.search);
   }
   document.addEventListener('click', function(e){
     var o = e.target.closest('[data-legal]');
@@ -866,6 +837,10 @@ body.locked{overflow:hidden}
     if(e.target.closest('[data-close]')) close();
   });
   document.addEventListener('keydown', function(e){ if(e.key==='Escape' && modal.classList.contains('show')) close(); });
+  /* enlaces legales desde otras páginas: anomalia.business/#legal-privacidad */
+  function openFromHash(){ var m = legalHash.exec(location.hash || ''); if(m) open(m[1]); }
+  addEventListener('hashchange', openFromHash);
+  openFromHash();
 
   /* ---- cookies ---- */
   var KEY = 'anomaliaCookieConsent';
