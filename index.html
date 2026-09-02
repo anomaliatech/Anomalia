@@ -229,25 +229,62 @@ p{text-wrap:pretty}
 }
 @media(prefers-reduced-motion:reduce){.z-frame-flow{display:none}}
 
+/* marquesina de sectores — de fondo, cruzando por detrás del esquema, sin protagonismo */
+.z-proceso .z-inner{position:relative;z-index:1}
+.z-sectors-bg{
+  position:absolute;left:0;right:0;top:calc(50% + 1.4rem);transform:translateY(-50%);
+  z-index:0;pointer-events:none;opacity:.11;
+}
+.z-sectors-bg .mk-marquee-track{animation-duration:46s}
+.z-sectors-bg .mk-marquee-track span{
+  font-family:var(--font-display);font-size:clamp(2.4rem,6vw,4.4rem);color:var(--mist);
+}
+.z-sectors-bg .mk-marquee-track span::after{content:"·";margin:0 1.6rem;color:var(--gold)}
+@media(prefers-reduced-motion:reduce){.z-sectors-bg{opacity:.07}}
+
 /* pantalla de los 3 servicios — misma "caja" (z-frame), tres en fila */
 .z-svcs .z-inner{width:min(66rem,100%)}
 .z-svc-grid{display:grid;gap:1rem;margin-top:1.6rem}
-@media(min-width:840px){.z-svc-grid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:900px){.z-svc-grid{grid-template-columns:repeat(3,1fr)}}
 .z-svc{
-  display:block;text-align:left;overflow:hidden;
+  position:relative;display:block;text-align:left;overflow:hidden;
   border:1px solid var(--line);border-radius:14px;
   background:radial-gradient(120% 130% at 50% 0%,rgba(198,161,91,.06),transparent 62%),var(--bg2);
   box-shadow:0 34px 100px -55px rgba(0,0,0,.75);
   transition:border-color .3s,transform .3s var(--ease);
 }
 .z-svc:hover{border-color:rgba(217,192,138,.42);transform:translateY(-3px)}
-.z-svc .z-frame-bar{padding:.7rem .9rem}
+.z-svc .z-frame-bar{padding:.7rem .9rem;position:relative;z-index:2}
 .z-svc .z-frame-bar em{position:static;text-align:left;padding-left:.55rem;font-size:.66rem}
-.z-svc-body{padding:1.15rem 1.1rem 1.3rem}
+.z-svc-body{padding:1.15rem 1.1rem 1.3rem;position:relative;z-index:2}
 .z-svc-body h3{font-family:var(--font-display);font-weight:600;font-size:1.08rem;color:#fff;line-height:1.22;margin-bottom:.5rem}
 .z-svc-body p{color:var(--mist);font-size:.9rem;line-height:1.45}
 .z-svc-body .z-cta{margin-top:.95rem;font-size:.82rem}
 @media(max-width:600px){.z-svc-body p{display:none}.z-svc-body h3{margin-bottom:0}}
+
+/* decoración con movimiento dentro de cada caja de servicio */
+.z-svc-art{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none;opacity:.5;transition:opacity .4s}
+.z-svc:hover .z-svc-art{opacity:.85}
+.z-svc-art svg{position:absolute;inset:0;width:100%;height:100%}
+/* 01 · datos fluyendo por la línea */
+.z-svc-art--web path{stroke-dasharray:5 7;animation:zsvcMarch 2.4s linear infinite}
+@keyframes zsvcMarch{to{stroke-dashoffset:-24}}
+/* 02 · cajitas que se desplazan (como el flujo antiguo) */
+.z-svc-art--auto{display:flex;align-items:center;opacity:.38}
+.z-svc-art--auto .mk-marquee-track{gap:0;padding-right:0;align-items:center;animation-duration:24s}
+.z-svc-art--auto i{flex:none;width:44px;height:44px;margin:0 30px;border:1.4px solid rgba(255,255,255,.18);border-radius:11px}
+/* 03 · barrido de escaneo sobre la lupa */
+.z-svc-art--audit::after{
+  content:"";position:absolute;top:-12%;bottom:-12%;width:42%;left:-42%;
+  background:linear-gradient(90deg,transparent,rgba(217,192,138,.22),transparent);
+  animation:zsvcSweep 3.8s cubic-bezier(.5,0,.5,1) infinite;
+}
+@keyframes zsvcSweep{0%{left:-42%}68%,100%{left:100%}}
+@media(prefers-reduced-motion:reduce){
+  .z-svc-art--web path{animation:none}
+  .z-svc-art--auto{display:none}
+  .z-svc-art--audit::after{display:none}
+}
 
 /* contadores */
 .z-counters{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(1.2rem,3.5vw,2.6rem);margin-top:1rem}
@@ -451,8 +488,13 @@ body.locked{overflow:hidden}
       </div>
     </div>
 
-    <!-- 3 · cómo trabajamos: proceso + cifras + sectores (antes 7 y 8) -->
+    <!-- 3 · cómo trabajamos: proceso + cifras (sectores de fondo) -->
     <div class="mk-zshot z-proceso" style="--zi:3">
+      <div class="z-sectors-bg mk-marquee" aria-hidden="true">
+        <div class="mk-marquee-track">
+          <span>Restaurantes</span><span>Clínicas</span><span>Gimnasios</span><span>Inmobiliarias</span><span>Hoteles</span><span>Comercios</span><span>Despachos profesionales</span>
+        </div>
+      </div>
       <div class="z-inner">
         <div class="z-eyebrow">Cómo trabajamos</div>
         <h2 class="z-h">Un proceso claro, sin sorpresas.</h2>
@@ -464,14 +506,8 @@ body.locked{overflow:hidden}
           <div class="z-step"><b>05</b><div><h3>Acompañamiento</h3><p>Seguimos a tu lado con soporte, mejoras y ajustes a medida que tu negocio crece.</p></div></div>
         </div>
         <div class="z-cifras-mini">
-          <div><b>1 semana</b><span>o menos para tener tu proyecto listo</span></div>
+          <div><b>Menos de 1 semana</b><span>para tener tu proyecto listo</span></div>
           <div><b>24 h</b><span>o menos en responder a tu mensaje</span></div>
-          <div><b>5 pasos</b><span>claros, sin sorpresas</span></div>
-        </div>
-        <div class="z-sectors mk-marquee" style="margin-top:1.8rem">
-          <div class="mk-marquee-track">
-            <span>Restaurantes</span><span>Clínicas</span><span>Gimnasios</span><span>Inmobiliarias</span><span>Hoteles</span><span>Comercios</span><span>Despachos profesionales</span>
-          </div>
         </div>
       </div>
     </div>
@@ -482,6 +518,11 @@ body.locked{overflow:hidden}
         <div class="z-eyebrow">Lo que hacemos</div>
         <div class="z-svc-grid">
           <a class="z-svc" href="/paginas-web">
+            <div class="z-svc-art z-svc-art--web" aria-hidden="true">
+              <svg viewBox="0 0 320 220" fill="none" preserveAspectRatio="xMidYMid slice">
+                <path d="M-14 186 L54 132 L104 154 L168 86 L226 120 L338 44" stroke="rgba(217,192,138,.55)" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
             <div class="z-frame-bar"><span></span><span></span><span></span><em>Servicio 01 · Páginas web</em></div>
             <div class="z-svc-body">
               <h3>Tu web a medida: legal, segura y visible en Google.</h3>
@@ -490,6 +531,9 @@ body.locked{overflow:hidden}
             </div>
           </a>
           <a class="z-svc" href="/automatizacion-ia">
+            <div class="z-svc-art z-svc-art--auto mk-marquee" aria-hidden="true">
+              <div class="mk-marquee-track"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
             <div class="z-frame-bar"><span></span><span></span><span></span><em>Servicio 02 · Automatización e IA</em></div>
             <div class="z-svc-body">
               <h3>Recupera las horas que pierdes en tareas repetitivas.</h3>
@@ -498,6 +542,12 @@ body.locked{overflow:hidden}
             </div>
           </a>
           <a class="z-svc" href="/auditoria-negocio">
+            <div class="z-svc-art z-svc-art--audit" aria-hidden="true">
+              <svg viewBox="0 0 320 220" fill="none" preserveAspectRatio="xMaxYMax slice">
+                <circle cx="232" cy="150" r="50" stroke="rgba(217,192,138,.5)" stroke-width="2"/>
+                <path d="M268 186 L322 240" stroke="rgba(217,192,138,.5)" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
             <div class="z-frame-bar"><span></span><span></span><span></span><em>Servicio 03 · Auditoría</em></div>
             <div class="z-svc-body">
               <h3>Sabrás exactamente qué frena tu negocio.</h3>
