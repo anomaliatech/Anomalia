@@ -65,7 +65,7 @@
     ]
   },
   "diasVistaPrevia": 10,
-  "antelacionMinimaHoras": 12,
+  "antelacionMinimaHoras": 4,
   "calendarioId": "anomalia.tech@gmail.com",
   "camposLead": [
     {
