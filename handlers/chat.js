@@ -17,7 +17,15 @@ function promptSistema(negocio) {
     promptBase = fs.readFileSync(ruta, 'utf8');
   }
   const obligatorios = (negocio.camposLead || []).filter((c) => c.obligatorio).map((c) => c.etiqueta).join(', ');
+  const ahora = new Intl.DateTimeFormat(negocio.idioma === 'es' || !negocio.idioma ? 'es-ES' : negocio.idioma, {
+    timeZone: negocio.zonaHoraria, weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit',
+  }).format(new Date());
   return `${promptBase}
+
+--- Fecha actual (interno) ---
+Ahora mismo es ${ahora} (${negocio.zonaHoraria}). Usa esta fecha para hablar de los huecos:
+di "hoy" o "mañana" SOLO si de verdad coinciden con esta fecha; si no, di el día tal cual
+("el jueves 3 a las 12:00"). Nunca adivines qué día es hoy.
 
 --- Cómo agendas (interno) ---
 Tienes dos herramientas: "ver_huecos" y "reservar_cita".
