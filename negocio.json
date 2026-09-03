@@ -96,6 +96,12 @@
       "obligatorio": true
     }
   ],
+  "voz": {
+    "modelo": "gpt-realtime-mini",
+    "voz": "marin",
+    "maxMinutos": 5,
+    "saludo": "Recepción de Anomalía, dime en qué puedo ayudarte."
+  },
   "widget": {
     "tema": "oscuro",
     "acento": "#C6A15B",
@@ -114,5 +120,5 @@
   },
   "emailAvisos": "contacto@anomalia.business",
   "emailRemitente": "contacto@anomalia.business",
-  "mensajeHumano": "Para esto es mejor que hablemos directamente: escríbenos a contacto@anomalia.business o llámanos al +34 601 449 173."
+  "mensajeHumano": "Para esto es mejor que hablemos directamente: escríbenos a contacto@anomalia.business y te respondemos enseguida."
 }

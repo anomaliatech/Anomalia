@@ -1,73 +1,12 @@
 // Orquesta la conversación con tool calling: la IA decide cuándo ver huecos y cuándo reservar.
-const fs = require('fs');
-const path = require('path');
 const { cargar } = require('../lib/config');
 const ia = require('../lib/ia');
 const calendario = require('../lib/calendario');
 const registro = require('../lib/registro');
+const agente = require('../lib/agente');
 const { reservar } = require('./reservar');
 
 const MARCA_HUECOS = '[HUECOS]'; // línea interna que viaja en el historial; el widget la oculta
-
-let promptBase = null;
-function promptSistema(negocio) {
-  if (promptBase == null) {
-    const ruta = path.join(__dirname, '..', 'prompt-sistema.md');
-    if (!fs.existsSync(ruta)) throw new Error('Falta prompt-sistema.md (lo genera el kit).');
-    promptBase = fs.readFileSync(ruta, 'utf8');
-  }
-  const obligatorios = (negocio.camposLead || []).filter((c) => c.obligatorio).map((c) => c.etiqueta).join(', ');
-  const ahora = new Intl.DateTimeFormat(negocio.idioma === 'es' || !negocio.idioma ? 'es-ES' : negocio.idioma, {
-    timeZone: negocio.zonaHoraria, weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit',
-  }).format(new Date());
-  return `${promptBase}
-
---- Fecha actual (interno) ---
-Ahora mismo es ${ahora} (${negocio.zonaHoraria}). Usa esta fecha para hablar de los huecos:
-di "hoy" o "mañana" SOLO si de verdad coinciden con esta fecha; si no, di el día tal cual
-("el jueves 3 a las 12:00"). Nunca adivines qué día es hoy.
-
---- Cómo agendas (interno) ---
-Tienes dos herramientas: "ver_huecos" y "reservar_cita".
-- En cuanto sepas qué servicio quiere el visitante, llama a "ver_huecos". No hace falta
-  tener todos sus datos todavía.
-- Recibirás una lista de huecos con "id" y "cuando". Ofrécele 2 o 3 por su "cuando"
-  (nunca menciones el "id").
-- Datos obligatorios antes de reservar: ${obligatorios}. Los demás son opcionales:
-  pídelos una vez con naturalidad, pero si no los dan, sigues sin ellos.
-- Cuando tengas los datos obligatorios y el visitante haya elegido un hueco, llama a
-  "reservar_cita" con el "id" EXACTO de ese hueco.
-- No confirmes ninguna cita hasta que "reservar_cita" responda OK. No inventes huecos.`;
-}
-
-function herramientas(negocio) {
-  const props = {};
-  for (const c of negocio.camposLead || []) props[c.id] = { type: 'string', description: c.etiqueta };
-  return [
-    {
-      name: 'ver_huecos',
-      description: 'Consulta los huecos libres reales del calendario para un servicio.',
-      parameters: {
-        type: 'object',
-        properties: { servicio: { type: 'string', description: 'Nombre del servicio' } },
-        required: ['servicio'],
-      },
-    },
-    {
-      name: 'reservar_cita',
-      description: 'Crea la cita en el calendario. Solo cuando el visitante ha elegido un hueco de la lista.',
-      parameters: {
-        type: 'object',
-        properties: {
-          slotId: { type: 'integer', description: 'id del hueco elegido, de la lista de ver_huecos' },
-          servicio: { type: 'string' },
-          lead: { type: 'object', properties: props },
-        },
-        required: ['slotId', 'servicio', 'lead'],
-      },
-    },
-  ];
-}
 
 // El historial que viaja al navegador: solo turnos de texto + las líneas [HUECOS].
 function aHistorialPublico(mensajes) {
@@ -92,8 +31,8 @@ async function chat({ sessionId, historial = [], mensaje }) {
   const id = sessionId || 'sin-id';
   if (historial.filter((m) => m.role === 'user').length === 0) await registro.anota('conversacion_inicio', { sessionId: id });
 
-  const system = promptSistema(negocio);
-  const tools = herramientas(negocio);
+  const system = agente.instrucciones(negocio, { canal: 'texto' });
+  const tools = agente.herramientas(negocio);
   let huecosOfrecidos = ultimosHuecos(historial);
   let citaHecha = null; // si se reserva en esta vuelta, guardamos el "cuando" para poder confirmar aunque falle la IA
 

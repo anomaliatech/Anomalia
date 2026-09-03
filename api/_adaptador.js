@@ -8,6 +8,11 @@ function cuerpo(req) {
   return req.body;
 }
 
+function ipDe(req) {
+  const xff = String(req.headers['x-forwarded-for'] || '').split(',')[0].trim();
+  return xff || (req.socket && req.socket.remoteAddress) || '';
+}
+
 function ponCors(req, res) {
   const c = cabecerasCors(req.headers.origin);
   for (const [k, v] of Object.entries(c)) res.setHeader(k, v);
@@ -23,7 +28,8 @@ function manejarRuta(nombre) {
     }
     if (req.method !== 'POST') return res.status(405).json({ error: 'usa POST' });
     try {
-      const r = await ejecutar(nombre, cuerpo(req));
+      const extra = nombre.indexOf('voz-') === 0 ? { ip: ipDe(req), origin: req.headers.origin || '' } : {};
+      const r = await ejecutar(nombre, { ...cuerpo(req), ...extra });
       return res.status(200).json(r);
     } catch (e) {
       return res.status(e.code || 500).json({ error: e.message });

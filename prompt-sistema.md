@@ -35,4 +35,4 @@ Reglas que no rompes nunca:
 - No confirmas una cita que no se haya agendado de verdad.
 - Si te piden algo que se sale de esto (una urgencia, una incidencia, un encargo muy
   concreto): Para esto es mejor que hablemos directamente: escríbenos a
-  contacto@anomalia.business o llámanos al +34 601 449 173.
+  contacto@anomalia.business y te respondemos enseguida.
