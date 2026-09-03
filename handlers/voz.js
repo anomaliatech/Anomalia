@@ -128,15 +128,19 @@ async function vozReservar({ firma: fVoz, firmaHuecos, slotId, servicio, lead } 
   if (!slot) { const e = new Error('Ese hueco no está en la lista. Vuelve a consultar la disponibilidad.'); e.code = 400; throw e; }
 
   const negocio = cargar();
-  const faltan = (negocio.camposLead || [])
-    .filter((c) => c.obligatorio && !(lead && lead[c.id]))
-    .map((c) => c.etiqueta);
-  if (faltan.length) { const e = new Error('Faltan datos obligatorios: ' + faltan.join(', ')); e.code = 400; throw e; }
+  const nombreServicio = servicio || info.servicio;
+  const leadCompleto = agente.completarLead(lead, nombreServicio);
+  const faltan = agente.faltanObligatorios(negocio, leadCompleto);
+  if (faltan.length) {
+    const e = new Error('Faltan datos obligatorios: ' + faltan.join(', ') + '. Pideselos al visitante y vuelve a intentarlo.');
+    e.code = 400;
+    throw e;
+  }
 
   const r = await reservar({
     inicioISO: slot.inicio,
-    servicio: servicio || info.servicio,
-    lead,
+    servicio: nombreServicio,
+    lead: leadCompleto,
     sessionId: sid,
   });
   return { ok: true, cuando: r.etiqueta, htmlLink: r.htmlLink };

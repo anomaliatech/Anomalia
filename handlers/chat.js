@@ -82,15 +82,16 @@ async function chat({ sessionId, historial = [], mensaje }) {
           resultado = { error: 'No se pudieron consultar los huecos.' };
         }
       } else if (tc.name === 'reservar_cita') {
-        const faltan = (negocio.camposLead || []).filter((c) => c.obligatorio && !(tc.args.lead && tc.args.lead[c.id]));
+        const lead = agente.completarLead(tc.args.lead, tc.args.servicio);
+        const faltan = agente.faltanObligatorios(negocio, lead);
         const hueco = huecosOfrecidos[Number(tc.args.slotId)];
         if (faltan.length) {
-          resultado = { error: 'Faltan datos obligatorios: ' + faltan.map((c) => c.etiqueta).join(', ') + '. Pídeselos.' };
+          resultado = { error: 'Faltan datos obligatorios: ' + faltan.join(', ') + '. Pídeselos.' };
         } else if (!hueco) {
           resultado = { error: 'Ese hueco no está en la lista. Llama antes a ver_huecos.' };
         } else {
           try {
-            const r = await reservar({ negocio, inicioISO: hueco.inicio, servicio: tc.args.servicio, lead: tc.args.lead, sessionId: id });
+            const r = await reservar({ negocio, inicioISO: hueco.inicio, servicio: tc.args.servicio, lead, sessionId: id });
             resultado = { ok: true, cuando: r.etiqueta };
             citaHecha = r.etiqueta;
           } catch (e) {

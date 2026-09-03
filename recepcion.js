@@ -55,7 +55,7 @@
 
   /* ------------------------------------------------------------------- estado */
   var pc = null, dc = null, micStream = null, remoteAudio = null, audioCtx = null, analyser = null, rafId = 0;
-  var firma = null, firmaHuecos = null, hechas = {};
+  var firma = null, firmaHuecos = null, hechas = {}, fallos = {};
   var activa = false, muteado = false;
   var tFin = 0, tickId = 0, inactId = 0, ocultaId = 0, focoPrevio = null;
   var maxMs = 5 * 60000, curBot = null, curUser = null, saludo = "";
@@ -169,6 +169,7 @@
     }
     activa = true;
     hechas = {};
+    fallos = {};
     restaurarUI();
     abrir();
     estado("Pidiendo permiso del micrófono…");
@@ -289,8 +290,24 @@
       } else {
         out = { error: "herramienta desconocida" };
       }
+      fallos[nombre] = 0;
     } catch (e) {
-      out = { error: String((e && e.message) || e) };
+      // Si la misma herramienta falla una y otra vez, el modelo se queda en bucle
+      // reintentando y el visitante solo oye silencio. Al tercer fallo le decimos
+      // que pare y ofrezca el correo.
+      fallos[nombre] = (fallos[nombre] || 0) + 1;
+      var msg = String((e && e.message) || e);
+      console.warn("[recepcion] herramienta", nombre, "fallo", fallos[nombre] + ":", msg);
+      if (fallos[nombre] >= 3) {
+        out = {
+          error: msg,
+          no_reintentar: true,
+          instruccion: "Esta herramienta ha fallado varias veces. NO vuelvas a llamarla. Discúlpate en una frase y dile que escriba a " + EMAIL + " para cerrar la cita.",
+        };
+        estado("Algo va mal al reservar. Escríbenos a " + EMAIL + ".");
+      } else {
+        out = { error: msg };
+      }
     }
     enviar({ type: "conversation.item.create", item: { type: "function_call_output", call_id: callId, output: JSON.stringify(out) } });
     enviar({ type: "response.create" });
