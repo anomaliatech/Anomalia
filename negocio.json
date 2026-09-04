@@ -75,8 +75,8 @@
     },
     {
       "id": "empresa",
-      "etiqueta": "Empresa",
-      "obligatorio": false
+      "etiqueta": "Empresa o entidad",
+      "obligatorio": true
     },
     {
       "id": "email",
@@ -114,5 +114,6 @@
   },
   "emailAvisos": "contacto@anomalia.business",
   "emailRemitente": "contacto@anomalia.business",
+  "telefonoContacto": "+34 601 449 173",
   "mensajeHumano": "Para esto es mejor que hablemos directamente: escríbenos a contacto@anomalia.business y te respondemos enseguida."
 }

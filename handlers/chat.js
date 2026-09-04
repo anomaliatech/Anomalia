@@ -29,12 +29,24 @@ di "hoy" o "mañana" SOLO si de verdad coinciden con esta fecha; si no, di el d�
 
 --- Cómo agendas (interno) ---
 Tienes dos herramientas: "ver_huecos" y "reservar_cita".
-- En cuanto sepas qué servicio quiere el visitante, llama a "ver_huecos". No hace falta
-  tener todos sus datos todavía.
-- Recibirás una lista de huecos con "id" y "cuando". Ofrécele 2 o 3 por su "cuando"
-  (nunca menciones el "id").
-- Datos obligatorios antes de reservar: ${obligatorios}. Los demás son opcionales:
-  pídelos una vez con naturalidad, pero si no los dan, sigues sin ellos.
+- En cuanto sepas qué servicio quiere el visitante, PREGÚNTALE qué día y a qué hora le
+  viene bien. No llames a "ver_huecos" todavía: espera su respuesta.
+- Cuando te diga un día y/o una hora (vale aunque sea aproximado: "el jueves", "por la
+  tarde", "mañana a primera hora"...), tradúcelo a una fecha y hora concretas con la
+  fecha de arriba como referencia, y llama a "ver_huecos" con "preferencia" en formato
+  ISO 8601 con la zona horaria de arriba (ej: "2026-09-10T17:00:00+02:00"). Si solo te
+  dio el día sin hora, usa las 12:00 de ese día. Si no te dio ninguna preferencia de
+  fecha, omite "preferencia" y ya está.
+- Recibirás una lista de huecos con "id" y "cuando", ya ordenados de más cercano a más
+  lejano a lo que pidió. Ofrécele 2 o 3, los primeros de la lista (nunca menciones el
+  "id"). Sé natural explicando el porqué: si su hora exacta no estaba libre, dile que
+  le ofreces la más parecida ese mismo día; si todo ese día estaba completo, dile que
+  le ofreces los días más cercanos.
+- Datos obligatorios antes de reservar: ${obligatorios}. Si alguno es la empresa o
+  entidad y el visitante es autónomo o particular, vale con que te diga eso mismo
+  ("soy autónomo", "particular") — no hace falta que tenga una empresa de verdad. El
+  teléfono, si lo pides como opcional, pídelo una vez con naturalidad, pero si no lo
+  dan, sigues sin él.
 - Cuando tengas los datos obligatorios y el visitante haya elegido un hueco, llama a
   "reservar_cita" con el "id" EXACTO de ese hueco.
 - No confirmes ninguna cita hasta que "reservar_cita" responda OK. No inventes huecos.`;
@@ -46,10 +58,16 @@ function herramientas(negocio) {
   return [
     {
       name: 'ver_huecos',
-      description: 'Consulta los huecos libres reales del calendario para un servicio.',
+      description: 'Consulta los huecos libres reales del calendario para un servicio, ordenados por cercanía a la fecha/hora que pida el visitante.',
       parameters: {
         type: 'object',
-        properties: { servicio: { type: 'string', description: 'Nombre del servicio' } },
+        properties: {
+          servicio: { type: 'string', description: 'Nombre del servicio' },
+          preferencia: {
+            type: 'string',
+            description: 'Fecha y hora que pidió el visitante, en ISO 8601 con offset (ej. 2026-09-10T17:00:00+02:00). Si solo dio el día, usa las 12:00. Omite este campo si no dio ninguna preferencia.',
+          },
+        },
         required: ['servicio'],
       },
     },
@@ -134,7 +152,7 @@ async function chat({ sessionId, historial = [], mensaje }) {
       if (tc.name === 'ver_huecos') {
         try {
           const dur = duracionServicio(negocio, tc.args.servicio);
-          const libres = await calendario.huecosLibres(negocio, { duracionMin: dur });
+          const libres = await calendario.huecosLibres(negocio, { duracionMin: dur, preferencia: tc.args.preferencia });
           huecosOfrecidos = libres.slice(0, 6).map((h, i) => ({ id: i, cuando: h.etiqueta, inicio: h.inicio }));
           await registro.anota('disponibilidad_mostrada', { sessionId: id, n: libres.length });
           resultado = { huecos: huecosOfrecidos.map((h) => ({ id: h.id, cuando: h.cuando })) };
