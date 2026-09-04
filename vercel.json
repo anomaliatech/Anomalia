@@ -6,7 +6,7 @@
     { "path": "/api/recordatorios", "schedule": "0 9 * * *" }
   ],
   "functions": {
-    "api/*.js": { "includeFiles": "{negocio.json,prompt-sistema.md}", "maxDuration": 20 }
+    "api/*.js": { "includeFiles": "{negocio.json,prompt-sistema.md}" }
   },
   "redirects": [
     {

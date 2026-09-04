@@ -79,16 +79,16 @@
       "obligatorio": false
     },
     {
-      "id": "telefono",
-      "etiqueta": "Teléfono",
-      "obligatorio": true,
-      "tipo": "tel"
-    },
-    {
       "id": "email",
       "etiqueta": "Email",
-      "obligatorio": false,
+      "obligatorio": true,
       "tipo": "email"
+    },
+    {
+      "id": "telefono",
+      "etiqueta": "Teléfono",
+      "obligatorio": false,
+      "tipo": "tel"
     },
     {
       "id": "servicio",
@@ -96,12 +96,6 @@
       "obligatorio": true
     }
   ],
-  "voz": {
-    "modelo": "gpt-realtime-mini",
-    "voz": "marin",
-    "maxMinutos": 7,
-    "saludo": "Recepción de Anomalía, dime en qué puedo ayudarte."
-  },
   "widget": {
     "tema": "oscuro",
     "acento": "#C6A15B",
