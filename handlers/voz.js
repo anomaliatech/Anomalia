@@ -102,8 +102,8 @@ async function vozHuecos({ firma: fVoz, servicio } = {}) {
   if (!servicio) { const e = new Error('Falta el servicio.'); e.code = 400; throw e; }
 
   const negocio = cargar();
-  const nombre = (negocio.servicios || []).map((s) => s.nombre)
-    .find((n) => n.toLowerCase() === String(servicio).toLowerCase()) || servicio;
+  const s = agente.resolverServicio(negocio, servicio);
+  const nombre = s ? s.nombre : servicio;
 
   const { huecos = [] } = await disponibilidad({ servicio: nombre });
   const elegidos = huecos.slice(0, 3).map((h, i) => ({ id: i, cuando: h.etiqueta, inicio: h.inicio }));
@@ -119,7 +119,7 @@ async function vozHuecos({ firma: fVoz, servicio } = {}) {
   };
 }
 
-async function vozReservar({ firma: fVoz, firmaHuecos, slotId, servicio, lead } = {}) {
+async function vozReservar({ firma: fVoz, firmaHuecos, slotId, servicio, lead, dicho } = {}) {
   const sid = sidDeVoz(fVoz);
   const info = firma.verificar(firmaHuecos);
   if (info.t !== 'huecos' || info.sid !== sid) { const e = new Error('Los huecos no son de esta llamada.'); e.code = 401; throw e; }
@@ -128,18 +128,19 @@ async function vozReservar({ firma: fVoz, firmaHuecos, slotId, servicio, lead } 
   if (!slot) { const e = new Error('Ese hueco no está en la lista. Vuelve a consultar la disponibilidad.'); e.code = 400; throw e; }
 
   const negocio = cargar();
-  const nombreServicio = servicio || info.servicio;
-  const leadCompleto = agente.completarLead(lead, nombreServicio);
-  const faltan = agente.faltanObligatorios(negocio, leadCompleto);
-  if (faltan.length) {
-    const e = new Error('Faltan datos obligatorios: ' + faltan.join(', ') + '. Pideselos al visitante y vuelve a intentarlo.');
+  const leadCompleto = agente.completarLead(negocio, lead, servicio || info.servicio);
+  // "dicho" es la transcripcion de lo que ha dicho el visitante, que manda el
+  // navegador: sirve para no reservar con datos que el modelo se haya inventado.
+  const problemas = agente.problemasLead(negocio, leadCompleto, { dicho: String(dicho || '').slice(-4000) });
+  if (problemas.length) {
+    const e = new Error('No puedo reservar todavia: ' + problemas.join('; ') + '. Pideselo al visitante de viva voz y vuelve a intentarlo.');
     e.code = 400;
     throw e;
   }
 
   const r = await reservar({
     inicioISO: slot.inicio,
-    servicio: nombreServicio,
+    servicio: leadCompleto.servicio,
     lead: leadCompleto,
     sessionId: sid,
   });

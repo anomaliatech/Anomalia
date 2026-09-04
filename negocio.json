@@ -99,7 +99,7 @@
   "voz": {
     "modelo": "gpt-realtime-mini",
     "voz": "marin",
-    "maxMinutos": 5,
+    "maxMinutos": 7,
     "saludo": "Recepción de Anomalía, dime en qué puedo ayudarte."
   },
   "widget": {

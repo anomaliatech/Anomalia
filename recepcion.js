@@ -36,6 +36,7 @@
   "scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.2) transparent}" +
   ".rcp-log:empty{display:none}" +
   ".rcp-msg{font-size:.9rem;line-height:1.45;padding:.5em .8em;border-radius:12px;max-width:86%;white-space:pre-wrap;word-wrap:break-word}" +
+  ".rcp-msg:empty{display:none}" + // burbuja reservada: aun no ha llegado su texto
   ".rcp-msg.bot{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);align-self:flex-start}" +
   ".rcp-msg.user{background:rgba(198,161,91,.16);align-self:flex-end}" +
   ".rcp-acts{display:flex;gap:.6rem;margin-top:1rem}" +
@@ -58,10 +59,19 @@
   var firma = null, firmaHuecos = null, hechas = {}, fallos = {};
   var activa = false, muteado = false;
   var tFin = 0, tickId = 0, inactId = 0, ocultaId = 0, focoPrevio = null;
-  var maxMs = 5 * 60000, curBot = null, curUser = null, saludo = "";
+  var maxMs = 5 * 60000, saludo = "";
+  var burbujas = {}, nSuelta = 0;
+  // OpenAI rechaza un "response.create" si ya hay una respuesta abierta, y las
+  // herramientas terminan justo cuando el modelo aun esta hablando. Si no lo
+  // encolamos, el resultado se queda dentro y la recepcionista enmudece.
+  var respActiva = false, pendienteRespuesta = false, ultimoError = "";
+  var nRespuestas = 0, vigilaId = 0;
+  // Todo lo que ha dicho el visitante. Viaja con la reserva para que el servidor
+  // compruebe que los datos de la cita salen de el y no de la IA.
+  var dichoVisitante = "";
 
   /* --------------------------------------------------------------------- DOM */
-  var wrap, scrim, card, elId, elTime, elOrb, elStatus, elLog, elMute, elHang, elActs, elFine;
+  var wrap, scrim, card, elId, elTime, elOrb, elStatus, elLog, elMute, elHang, elActs, elFine, finePorDefecto;
 
   function construir() {
     wrap = document.createElement("div");
@@ -93,6 +103,7 @@
     elMute = wrap.querySelector(".rcp-mute");
     elHang = wrap.querySelector(".rcp-hang");
     elFine = wrap.querySelector(".rcp-fine");
+    finePorDefecto = elFine.innerHTML;
 
     elHang.addEventListener("click", function () { colgar(); });
     elMute.addEventListener("click", alternarMute);
@@ -130,26 +141,34 @@
   function estado(t) { if (elStatus) elStatus.textContent = t; }
   function orbEscucha(on) { if (elOrb) elOrb.classList.toggle("esc", !!on); }
 
-  function linea(quien, texto) {
-    var b = document.createElement("div");
-    b.className = "rcp-msg " + quien;
-    b.textContent = texto;
-    elLog.appendChild(b);
-    elLog.scrollTop = elLog.scrollHeight;
-    return b;
+  // La transcripcion de lo que dice el visitante la hace un modelo aparte y llega
+  // mas tarde que la respuesta hablada del agente. Si colocaramos cada burbuja
+  // segun el orden de llegada, la respuesta saldria por encima de la pregunta.
+  // Por eso cada burbuja se reserva en su sitio en cuanto se conoce su turno
+  // (item_id) y luego solo se rellena.
+  function burbuja(quien, itemId) {
+    var clave = quien + ":" + (itemId || "suelta" + nSuelta++);
+    var el = burbujas[clave];
+    if (!el) {
+      el = document.createElement("div");
+      el.className = "rcp-msg " + quien;
+      elLog.appendChild(el);
+      burbujas[clave] = el;
+    }
+    return el;
   }
-  function trozo(quien, delta) {
+  function trozo(quien, itemId, delta) {
     if (!delta) return;
-    var el = quien === "bot" ? curBot : curUser;
-    if (!el) { el = linea(quien, ""); if (quien === "bot") curBot = el; else curUser = el; }
-    el.textContent += delta;
+    burbuja(quien, itemId).textContent += delta;
     elLog.scrollTop = elLog.scrollHeight;
   }
-  function cierraTrozo(quien, texto) {
-    var el = quien === "bot" ? curBot : curUser;
-    if (el && texto) el.textContent = texto;
-    if (el && !el.textContent.trim()) el.remove();
-    if (quien === "bot") curBot = null; else curUser = null;
+  function cierraTrozo(quien, itemId, texto) {
+    var el = burbujas[quien + ":" + itemId];
+    if (!el && !texto) return;
+    el = el || burbuja(quien, itemId);
+    if (texto) el.textContent = texto;
+    if (!el.textContent.trim()) el.remove();
+    elLog.scrollTop = elLog.scrollHeight;
   }
 
   /* ------------------------------------------------------------------- llamada */
@@ -170,6 +189,8 @@
     activa = true;
     hechas = {};
     fallos = {};
+    ultimoError = "";
+    dichoVisitante = "";
     restaurarUI();
     abrir();
     estado("Pidiendo permiso del micrófono…");
@@ -234,31 +255,62 @@
     var m;
     try { m = JSON.parse(ev.data); } catch (e) { return; }
     switch (m.type) {
+      case "response.created":
+        respActiva = true; nRespuestas++; clearTimeout(vigilaId); break;
       case "response.output_audio_transcript.delta":
-        trozo("bot", m.delta); break;
+        trozo("bot", m.item_id, m.delta); break;
       case "response.output_audio_transcript.done":
-        cierraTrozo("bot", m.transcript); estado("Ya puedes hablar."); break;
+        cierraTrozo("bot", m.item_id, m.transcript); estado("Ya puedes hablar."); break;
       case "conversation.item.input_audio_transcription.delta":
-        trozo("user", m.delta); break;
+        trozo("user", m.item_id, m.delta); break;
       case "conversation.item.input_audio_transcription.completed":
-        cierraTrozo("user", m.transcript); reiniciarInactividad(); break;
+        cierraTrozo("user", m.item_id, m.transcript);
+        if (m.transcript) dichoVisitante += " " + m.transcript;
+        reiniciarInactividad(); break;
       case "input_audio_buffer.speech_started":
+        // Reserva ya el sitio del visitante: su texto llegara despues del de ella.
+        if (m.item_id) burbuja("user", m.item_id);
         orbEscucha(true); estado("Te escucho…"); reiniciarInactividad(); break;
       case "input_audio_buffer.speech_stopped":
         orbEscucha(false); estado("Un momento…"); break;
       case "response.function_call_arguments.done":
         herramienta(m.call_id, m.name, m.arguments); break;
       case "response.done":
+        respActiva = false;
         ((m.response && m.response.output) || []).forEach(function (it) {
           if (it.type === "function_call") herramienta(it.call_id, it.name, it.arguments);
         });
+        // El reloj de silencio cuenta desde que ella calla, no desde que hablaste
+        // tu: si no, un turno largo suyo colgaba la llamada a media frase.
+        reiniciarInactividad();
+        if (pendienteRespuesta) pedirRespuesta();
         break;
       case "error":
-        console.warn("[recepcion] realtime:", m.error && m.error.message); break;
+        ultimoError = (m.error && (m.error.message || m.error.code)) || "error desconocido";
+        console.warn("[recepcion] realtime:", ultimoError);
+        // Si nos han rechazado la respuesta por solaparse, reintentamos al cerrar.
+        if (m.error && m.error.code === "conversation_already_has_active_response") {
+          pendienteRespuesta = true;
+        }
+        break;
     }
   }
 
   function enviar(obj) { if (dc && dc.readyState === "open") dc.send(JSON.stringify(obj)); }
+
+  // Pide turno de palabra al modelo, esperando si ya esta hablando. Si a los 8 s
+  // no ha arrancado ninguna respuesta, insiste una vez: es preferible repetirse a
+  // dejar al visitante escuchando silencio.
+  function pedirRespuesta() {
+    if (respActiva) { pendienteRespuesta = true; return; }
+    pendienteRespuesta = false;
+    enviar({ type: "response.create" });
+    var marca = nRespuestas;
+    clearTimeout(vigilaId);
+    vigilaId = setTimeout(function () {
+      if (activa && !respActiva && nRespuestas === marca) enviar({ type: "response.create" });
+    }, 8000);
+  }
 
   async function herramienta(callId, nombre, argsStr) {
     if (!callId || hechas[callId]) return;
@@ -266,6 +318,7 @@
     var args = {};
     try { args = JSON.parse(argsStr || "{}"); } catch (e) {}
     var out;
+    estado(nombre === "reservar_cita" ? "Cerrando tu cita…" : "Mirando la agenda…");
     try {
       if (nombre === "ver_huecos") {
         var r = await fetch("/api/voz-huecos", {
@@ -282,6 +335,7 @@
           body: JSON.stringify({
             firma: firma, firmaHuecos: firmaHuecos,
             slotId: args.slotId, servicio: args.servicio, lead: args.lead,
+            dicho: dichoVisitante.slice(-4000),
           }),
         });
         var j2 = await r2.json();
@@ -310,7 +364,7 @@
       }
     }
     enviar({ type: "conversation.item.create", item: { type: "function_call_output", call_id: callId, output: JSON.stringify(out) } });
-    enviar({ type: "response.create" });
+    pedirRespuesta();
   }
 
   /* --------------------------------------------------------------- visual orb */
@@ -367,7 +421,7 @@
 
   /* --------------------------------------------------------------- fin / error */
   function limpiar() {
-    clearInterval(tickId); clearTimeout(inactId); clearTimeout(ocultaId);
+    clearInterval(tickId); clearTimeout(inactId); clearTimeout(ocultaId); clearTimeout(vigilaId);
     if (rafId) cancelAnimationFrame(rafId); rafId = 0; analyser = null;
     try { if (dc) dc.close(); } catch (e) {}
     try { if (pc) pc.close(); } catch (e) {}
@@ -375,13 +429,14 @@
     if (remoteAudio) { try { remoteAudio.pause(); remoteAudio.srcObject = null; } catch (e) {} }
     if (audioCtx) { try { audioCtx.close(); } catch (e) {} audioCtx = null; }
     pc = dc = micStream = null;
-    curBot = curUser = null;
     activa = false; muteado = false;
+    respActiva = false; pendienteRespuesta = false;
   }
 
   function restaurarUI() {
     if (!wrap) return;
     elLog.innerHTML = "";
+    burbujas = {};
     elTime.hidden = true;
     elOrb.style.display = "";
     elOrb.classList.remove("esc");
@@ -392,6 +447,7 @@
     elActs.innerHTML = "";
     elActs.appendChild(elMute);
     elActs.appendChild(elHang);
+    elFine.innerHTML = finePorDefecto;
     elFine.hidden = false;
   }
 
@@ -399,7 +455,10 @@
     estado(msg);
     elOrb.style.display = "none";
     elTime.hidden = true;
-    elFine.hidden = true;
+    // Si algo ha ido mal, deja el motivo a la vista: es lo unico que tenemos
+    // para saber que paso, porque los logs de Vercel solo duran una hora.
+    if (ultimoError) { elFine.textContent = "Detalle técnico: " + ultimoError; elFine.hidden = false; }
+    else elFine.hidden = true;
     elActs.innerHTML = "";
     var retry = document.createElement("button");
     retry.type = "button";
