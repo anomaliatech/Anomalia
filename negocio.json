@@ -79,16 +79,16 @@
       "obligatorio": false
     },
     {
-      "id": "email",
-      "etiqueta": "Email",
-      "obligatorio": true,
-      "tipo": "email"
-    },
-    {
       "id": "telefono",
       "etiqueta": "Teléfono",
-      "obligatorio": false,
+      "obligatorio": true,
       "tipo": "tel"
+    },
+    {
+      "id": "email",
+      "etiqueta": "Email",
+      "obligatorio": false,
+      "tipo": "email"
     },
     {
       "id": "servicio",

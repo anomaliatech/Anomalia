@@ -53,7 +53,8 @@ async function chat({ sessionId, historial = [], mensaje }) {
   const system = agente.instrucciones(negocio, { canal: 'texto' });
   const tools = agente.herramientas(negocio);
   let huecosOfrecidos = ultimosHuecos(historial);
-  let citaHecha = null; // si se reserva en esta vuelta, guardamos el "cuando" para poder confirmar aunque falle la IA
+  let citaHecha = null;     // si se reserva en esta vuelta, guardamos el "cuando" para poder confirmar aunque falle la IA
+  let citaConEmail = false; // el email es opcional: no prometas uno que no vamos a mandar
   let intentoReservaFallido = false; // se llamó a reservar_cita y no cuajó
   const habiaCita = yaHabiaCita(historial); // ¿se reservó ya en una vuelta anterior?
 
@@ -79,7 +80,7 @@ async function chat({ sessionId, historial = [], mensaje }) {
       await registro.anota('error', { sessionId: id, donde: 'ia', msg: e.message });
       // Si la cita YA se creó en esta vuelta, confirma igualmente (no dependas de la IA).
       let reply;
-      if (citaHecha) reply = `¡Listo! Tu cita queda para ${citaHecha}. Recibirás un email de confirmación.`;
+      if (citaHecha) reply = `¡Listo! Tu cita queda para ${citaHecha}. ` + (citaConEmail ? 'Recibirás un email de confirmación.' : 'Te llamamos a ese número.');
       else if (e.status === 429) reply = 'Tengo mucho lío ahora mismo, dame unos segundos y vuelve a escribirme.';
       else reply = 'Ahora mismo no puedo atenderte bien. ' + (negocio.mensajeHumano || '');
       return { reply, historial: publicar([...mensajes, { role: 'assistant', content: reply }]) };
@@ -123,6 +124,7 @@ async function chat({ sessionId, historial = [], mensaje }) {
             const r = await reservar({ negocio, inicioISO: hueco.inicio, servicio: lead.servicio, lead, sessionId: id });
             resultado = { ok: true, cuando: r.etiqueta };
             citaHecha = r.etiqueta;
+            citaConEmail = !!lead.email;
             intentoReservaFallido = false;
           } catch (e) {
             await registro.anota('error', { sessionId: id, donde: 'reservar', msg: e.message });
