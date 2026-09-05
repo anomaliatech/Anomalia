@@ -51,6 +51,14 @@ Tienes dos herramientas: "ver_huecos" y "reservar_cita".
   "id"). Sé natural explicando el porqué: si su hora exacta no estaba libre, dile que
   le ofreces la más parecida ese mismo día; si todo ese día estaba completo, dile que
   le ofreces los días más cercanos.
+- MIENTRAS "ver_huecos" te devuelva al menos un hueco, NUNCA digas que ese día o esa
+  hora "está completo" ni "no hay disponibilidad": ofrécele lo que hay. Solo puedes
+  decir que no hay hueco si la lista vuelve vacía o con "error".
+- Las citas pueden empezar a y media o a y cuarto (14:30, 17:15...), no solo en horas
+  en punto. Si el visitante pide una hora así, pásasela a "ver_huecos" tal cual.
+- Si un hueco viene con "exacto": true, es JUSTO la fecha y hora que pidió el visitante
+  y está libre: ofrécesela directamente como disponible, sin buscarle alternativas ni
+  decir que mejor a otra hora.
 - No llames a "ver_huecos" otra vez si el visitante no te ha dado una fecha/hora nueva
   o distinta a la de la última vez (por ejemplo, si solo confirma un hueco que ya le
   ofreciste, o responde a otra pregunta): en ese caso sigue con la conversación o pasa
@@ -58,8 +66,8 @@ Tienes dos herramientas: "ver_huecos" y "reservar_cita".
 - Datos obligatorios antes de reservar: ${obligatorios}. Si alguno es la empresa o
   entidad y el visitante es autónomo o particular, vale con que te diga eso mismo
   ("soy autónomo", "particular") — no hace falta que tenga una empresa de verdad. El
-  teléfono, si lo pides como opcional, pídelo una vez con naturalidad, pero si no lo
-  dan, sigues sin él.
+  teléfono es opcional pero pídelo siempre una vez, dejando claro que no es
+  obligatorio; si no lo dan, sigues sin él.
 - Cuando tengas los datos obligatorios y el visitante haya elegido un hueco, llama a
   "reservar_cita" con el "id" EXACTO de ese hueco.
 - No confirmes ninguna cita hasta que "reservar_cita" responda OK. No inventes huecos.`;
@@ -166,9 +174,9 @@ async function chat({ sessionId, historial = [], mensaje }) {
         try {
           const dur = duracionServicio(negocio, tc.args.servicio);
           const libres = await calendario.huecosLibres(negocio, { duracionMin: dur, preferencia: tc.args.preferencia });
-          huecosOfrecidos = libres.slice(0, 6).map((h, i) => ({ id: i, cuando: h.etiqueta, inicio: h.inicio }));
+          huecosOfrecidos = libres.slice(0, 6).map((h, i) => ({ id: i, cuando: h.etiqueta, inicio: h.inicio, exacto: !!h.exacto }));
           await registro.anota('disponibilidad_mostrada', { sessionId: id, n: libres.length });
-          resultado = { huecos: huecosOfrecidos.map((h) => ({ id: h.id, cuando: h.cuando })) };
+          resultado = { huecos: huecosOfrecidos.map((h) => (h.exacto ? { id: h.id, cuando: h.cuando, exacto: true } : { id: h.id, cuando: h.cuando })) };
         } catch (e) {
           await registro.anota('error', { sessionId: id, donde: 'disponibilidad', msg: e.message });
           resultado = { error: 'No se pudieron consultar los huecos.' };
