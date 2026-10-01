@@ -31,11 +31,12 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,900;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="/assets/fonts/manrope-latin-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/fraunces-latin-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/fonts.css?v=11eb2803">
 <link rel="stylesheet" href="/motion.css?v=b866e195">
-<link rel="stylesheet" href="/servicios.css?v=40b70edf">
+<link rel="stylesheet" href="/servicios.css?v=1dab79d6">
+<link rel="stylesheet" href="/agchat.css?v=60b20c76">
 <noscript><style>.mk-reveal,.mk-unveil,.mk-statement{opacity:1!important;transform:none!important;clip-path:none!important}.mk-split .mk-w>span{transform:none!important}</style></noscript>
 </head>
 <body>
@@ -53,7 +54,7 @@
     <a href="/auditoria-negocio">Auditoría</a>
   </nav>
   <div class="bar-actions">
-    <a class="btn-gold" href="/#contacto">Hablemos</a>
+    <a class="btn-gold" href="#reservar">Hablemos</a>
   </div>
 </header>
 
@@ -74,14 +75,20 @@
         <circle cx="440" cy="300" r="4" fill="#D9C08A"/>
       </svg>
     </div>
-    <div class="wrap">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
       <p class="crumbs"><a href="/">Inicio</a> / <span>Páginas web</span></p>
       <p class="eyebrow" style="margin-top:1.4rem">Servicio · Páginas web</p>
-      <h1 class="mk-split">Tu página web, hecha a la medida de tu negocio.</h1>
+      <h1>Tu página web nueva en una semana, hecha para traer clientes.</h1>
       <p class="hero-claim">«La web es el primer empleado que nunca duerme.»</p>
       <p class="lead">Nada de plantillas recicladas. Diseñamos y desarrollamos una web pensada para tu negocio y para lo que necesitas conseguir con ella: más llamadas, más reservas, más clientes. Rápida, legal, segura y visible en Google.</p>
+      <ul class="hero-proof"><li>Lista en una semana o menos</li><li>Precio cerrado en la propuesta</li><li>Legal, segura y con SEO incluido</li></ul>
       <div class="hero-cta">
-        <a class="btn-gold" href="/#contacto">Cuéntanos tu proyecto</a>
+        <a class="btn-gold" href="#reservar">Reserva tu cita gratis</a>
+      </div>
+      </div>
+      <div class="hero-chat" id="reservar">
+        <div data-agchat data-agchat-titulo="Reserva tu cita gratis para hablar de tu web" data-agchat-sugerencias="Quiero una web nueva|Quiero mejorar mi web actual|¿Cuánto cuesta una web?" data-agchat-servicio="Creación de página web"></div>
       </div>
     </div>
   </section>
@@ -226,7 +233,7 @@
       <h2 class="mk-reveal">Sin tarifa fija, y con motivo.</h2>
       <p class="section-lead mk-reveal">Una landing de una página y un ecommerce con cientos de productos no cuestan lo mismo ni de lejos. Por eso no publicamos un número: tras una primera conversación —gratis y sin compromiso— te damos una propuesta cerrada, con el alcance y el importe por escrito antes de empezar.</p>
       <div class="hero-cta mk-reveal">
-        <a class="btn-gold" href="/#contacto">Pedir propuesta</a>
+        <a class="btn-gold" href="#reservar">Pedir propuesta</a>
         <a class="btn-ghost" href="/auditoria-negocio">¿No sabes por dónde empezar? Audita tu negocio</a>
       </div>
     </div>
@@ -253,9 +260,9 @@
     <div class="wrap">
       <p class="eyebrow">Empecemos</p>
       <h2>Cuéntanos qué necesita tu negocio.</h2>
-      <p class="lead">Sin compromiso. Habla con nuestro asistente, cuéntale tu proyecto y deja la cita agendada al momento. Te confirmamos por email.</p>
+      <p class="lead">Sin compromiso. Habla con nuestro asistente, cuéntale tu proyecto y deja la cita agendada al momento, o pide que te llamemos.</p>
       <div class="hero-cta">
-        <a class="btn-gold mk-pulse" href="/#contacto">Reservar una llamada</a>
+        <a class="btn-gold mk-pulse" href="#reservar">Reserva tu cita gratis</a>
         <a class="btn-ghost" href="mailto:contacto@anomalia.business">contacto@anomalia.business</a>
       </div>
     </div>
@@ -306,5 +313,6 @@
 
 <script src="/motion.js?v=e59f5bc3"></script>
 <script src="/servicios.js?v=fb0c6144"></script>
+<script src="/agchat.js?v=eb5f25e7" defer></script>
 </body>
 </html>

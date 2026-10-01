@@ -74,21 +74,21 @@
       "obligatorio": true
     },
     {
-      "id": "empresa",
-      "etiqueta": "Empresa o entidad",
-      "obligatorio": true
+      "id": "telefono",
+      "etiqueta": "Teléfono",
+      "obligatorio": true,
+      "tipo": "tel"
     },
     {
       "id": "email",
       "etiqueta": "Email",
-      "obligatorio": true,
+      "obligatorio": false,
       "tipo": "email"
     },
     {
-      "id": "telefono",
-      "etiqueta": "Teléfono",
-      "obligatorio": false,
-      "tipo": "tel"
+      "id": "empresa",
+      "etiqueta": "Empresa o entidad",
+      "obligatorio": false
     },
     {
       "id": "servicio",
@@ -109,7 +109,7 @@
     "fuente": "'Manrope', system-ui, -apple-system, sans-serif",
     "posicion": "abajo-derecha",
     "titulo": "Reserva tu cita con Anomalía",
-    "saludo": "Hola, soy el asistente de Anomalía. Cuéntame qué necesita tu negocio y te busco un hueco para hablarlo.",
+    "saludo": "Hola, soy el asistente de Anomalia. Cuéntame qué necesita tu negocio y te busco un hueco para hablarlo. Si lo prefieres, te llamamos nosotros.",
     "textoBoton": "Reservar cita"
   },
   "emailAvisos": "contacto@anomalia.business",

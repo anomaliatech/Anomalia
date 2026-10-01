@@ -1,0 +1,32 @@
+/* Chat de citas de Anomalia: componente compartido por la home y las páginas de
+   servicio. Lo monta agchat.js dentro de cualquier <div data-agchat>. Los tokens
+   los heredan de la página; los fallbacks son los colores de la marca. */
+.agchat{display:flex;flex-direction:column;background:var(--bg2,#151515);border:1px solid var(--line,rgba(255,255,255,.12));border-radius:20px;overflow:hidden;height:540px;max-height:76vh;text-align:left}
+.agchat-head{display:flex;align-items:center;gap:.85rem;padding:1rem 1.25rem;border-bottom:1px solid var(--line,rgba(255,255,255,.12));background:rgba(255,255,255,.02)}
+.agchat-head .dot{width:9px;height:9px;border-radius:50%;background:#58C583;box-shadow:0 0 0 4px rgba(88,197,131,.14);flex-shrink:0}
+.agchat-head strong{display:block;font-size:.98rem;color:#fff;line-height:1.25;font-family:var(--font-body,system-ui,sans-serif);font-weight:700}
+.agchat-head span{font-size:.8rem;color:var(--mist-dim,#9B9B9B)}
+.agchat-log{flex:1;overflow-y:auto;padding:1.1rem 1.2rem;display:flex;flex-direction:column;gap:.55rem;scrollbar-width:thin;scrollbar-color:var(--line,rgba(255,255,255,.12)) transparent}
+.agmsg{max-width:86%;padding:.62rem .9rem;border-radius:14px;font-size:.95rem;line-height:1.45;white-space:pre-wrap;overflow-wrap:break-word}
+.agmsg.bot{align-self:flex-start;background:var(--bg,#0A0A0A);border:1px solid var(--line,rgba(255,255,255,.12));color:var(--paper,#FDFDFC);border-bottom-left-radius:5px}
+.agmsg.user{align-self:flex-end;background:var(--gold,#C6A15B);color:#141007;font-weight:500;border-bottom-right-radius:5px}
+.agmsg.espera span{display:inline-block;width:6px;height:6px;margin-right:4px;border-radius:50%;background:var(--mist-dim,#9B9B9B);animation:agp 1s infinite}
+.agmsg.espera span:nth-child(2){animation-delay:.15s}
+.agmsg.espera span:nth-child(3){animation-delay:.3s;margin-right:0}
+@keyframes agp{0%,100%{opacity:.25;transform:translateY(0)}50%{opacity:1;transform:translateY(-3px)}}
+.agchat-sugs{display:flex;flex-wrap:wrap;gap:.5rem;padding:0 1.2rem .95rem}
+.agchat-sugs button{background:transparent;border:1px solid var(--line,rgba(255,255,255,.12));border-radius:100px;padding:.45em .95em;font-size:.85rem;color:var(--mist,#C2C2C2);transition:border-color .3s,color .3s;cursor:pointer;font-family:inherit}
+.agchat-sugs button:hover{border-color:var(--gold,#C6A15B);color:var(--gold-light,#D9C08A)}
+.agchat-sugs button.alt{border-style:dashed}
+.agchat-bar{display:flex;gap:.6rem;border-top:1px solid var(--line,rgba(255,255,255,.12));padding:.7rem .8rem}
+.agchat-bar input{flex:1;min-width:0;background:var(--bg,#0A0A0A);border:1px solid var(--line,rgba(255,255,255,.12));border-radius:100px;padding:.7em 1.1em;font-family:var(--font-body,system-ui,sans-serif);font-size:16px;color:var(--paper,#FDFDFC);transition:border-color .3s,box-shadow .3s}
+.agchat-bar input:focus{outline:none;border-color:var(--gold,#C6A15B);box-shadow:0 0 0 3px rgba(198,161,91,.18)}
+.agchat-bar button{border:0;background:var(--gold,#C6A15B);color:#141007;border-radius:100px;width:46px;flex-shrink:0;display:grid;place-items:center;transition:background .3s;cursor:pointer}
+.agchat-bar button:hover{background:var(--gold-light,#D9C08A)}
+.agchat-bar button:disabled{opacity:.55;cursor:default}
+.agchat-foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:.4rem .9rem;padding:.55rem 1.1rem .75rem;font-size:.76rem;color:var(--mist-dim,#9B9B9B);line-height:1.4}
+.agchat-foot a{color:var(--gold-light,#D9C08A);border-bottom:1px solid currentColor;text-decoration:none}
+.agchat-wa{display:inline-flex;align-items:center;gap:.4em;font-weight:600;color:var(--paper,#FDFDFC)!important;border:0!important;white-space:nowrap}
+.agchat-wa svg{width:15px;height:15px;color:#25D366}
+.agchat-wa:hover{color:var(--gold-light,#D9C08A)!important}
+@media(max-width:600px){.agchat{height:470px}.agchat-head strong{font-size:.92rem}}

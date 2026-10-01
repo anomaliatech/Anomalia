@@ -6,6 +6,7 @@ const ia = require('../lib/ia');
 const calendario = require('../lib/calendario');
 const registro = require('../lib/registro');
 const firma = require('../lib/firma');
+const email = require('../lib/email');
 const { reservar } = require('./reservar');
 
 const MARCA_HUECOS = '[HUECOS]'; // línea interna que viaja en el historial; el widget la oculta
@@ -29,7 +30,7 @@ di "hoy" o "mañana" SOLO si de verdad coinciden con esta fecha; si no, di el d�
 ("el jueves 3 a las 12:00"). Nunca adivines qué día es hoy.
 
 --- Cómo agendas (interno) ---
-Tienes dos herramientas: "ver_huecos" y "reservar_cita".
+Tienes tres herramientas: "ver_huecos", "reservar_cita" y "solicitar_llamada".
 - En cuanto sepas qué servicio quiere el visitante, PREGÚNTALE qué día y a qué hora le
   viene bien. No llames a "ver_huecos" todavía: espera su respuesta.
 - Cuando te diga un día y/o una hora (vale aunque sea aproximado: "el jueves", "por la
@@ -64,11 +65,12 @@ Tienes dos herramientas: "ver_huecos" y "reservar_cita".
   o distinta a la de la última vez (por ejemplo, si solo confirma un hueco que ya le
   ofreciste, o responde a otra pregunta): en ese caso sigue con la conversación o pasa
   a "reservar_cita", sin repetir la consulta de disponibilidad.
-- Datos obligatorios antes de reservar: ${obligatorios}. Si alguno es la empresa o
-  entidad y el visitante es autónomo o particular, vale con que te diga eso mismo
-  ("soy autónomo", "particular") — no hace falta que tenga una empresa de verdad. El
-  teléfono es opcional pero pídelo siempre una vez, dejando claro que no es
-  obligatorio; si no lo dan, sigues sin él.
+- Datos obligatorios antes de reservar: ${obligatorios}. El email es opcional: pídelo
+  una sola vez para la confirmación y, si no lo dan, sigues sin él. La empresa no se
+  pide; si la dicen, la apuntas.
+- Tercera herramienta: "solicitar_llamada". Si el visitante prefiere que le llamemos
+  (o no quiere elegir hora), NO llames a "ver_huecos": pide nombre y teléfono y llama a
+  "solicitar_llamada". Dile que le llamamos en menos de 24 h laborables.
 - Cuando tengas los datos obligatorios y el visitante haya elegido un hueco, llama a
   "reservar_cita" con el "id" EXACTO de ese hueco.
 - No confirmes ninguna cita hasta que "reservar_cita" responda OK. No inventes huecos.`;
@@ -106,7 +108,27 @@ function herramientas(negocio) {
         required: ['slotId', 'servicio', 'lead'],
       },
     },
+    {
+      name: 'solicitar_llamada',
+      description: 'Para cuando el visitante prefiere que le llamemos en vez de elegir un hueco. Deja aviso al equipo con su nombre y teléfono.',
+      parameters: {
+        type: 'object',
+        properties: {
+          nombre: { type: 'string' },
+          telefono: { type: 'string' },
+          servicio: { type: 'string', description: 'Servicio que le interesa, si lo ha dicho' },
+          cuando: { type: 'string', description: 'Cuándo le viene bien que le llamen, si lo ha dicho' },
+        },
+        required: ['nombre', 'telefono'],
+      },
+    },
   ];
+}
+
+// Teléfono con al menos 9 cifras (admite espacios, puntos, guiones y +34).
+function telefonoValido(t) {
+  const d = String(t || '').replace(/\D/g, '');
+  return d.length >= 9 && d.length <= 15;
 }
 
 // El historial que viaja al navegador: solo turnos de texto + las líneas [HUECOS].
@@ -153,6 +175,7 @@ async function chat({ sessionId, historial = [], mensaje }) {
   const system = promptSistema(negocio);
   const tools = herramientas(negocio);
   let huecosOfrecidos = ultimosHuecos(historial);
+  let llamadaHecha = false; // aviso de "llámame" enviado en esta vuelta
   let citaHecha = null; // si se reserva en esta vuelta, guardamos el "cuando" para poder confirmar aunque falle la IA
 
   // reconstruye el hilo para la IA (sin las líneas [HUECOS], que no son turnos de chat)
@@ -165,7 +188,8 @@ async function chat({ sessionId, historial = [], mensaje }) {
     const pub = aHistorialPublico(msgs);
     if (huecosOfrecidos.length) pub.push({ role: 'assistant', content: lineaHuecos(huecosOfrecidos) });
     const r = { reply, historial: pub };
-    if (citaHecha) r.cita = { cuando: citaHecha }; // el frontend dispara la conversión de Ads con esto
+    if (citaHecha) r.cita = { tipo: 'cita', cuando: citaHecha }; // el frontend dispara la conversión de Ads con esto
+    else if (llamadaHecha) r.cita = { tipo: 'llamada' };
     return r;
   };
 
@@ -212,7 +236,9 @@ async function chat({ sessionId, historial = [], mensaje }) {
         if (tc.args.servicio && !lead.servicio) lead.servicio = tc.args.servicio;
         const faltan = (negocio.camposLead || []).filter((c) => c.obligatorio && !lead[c.id]);
         const hueco = huecosOfrecidos[Number(tc.args.slotId)];
-        if (faltan.length) {
+        if (!faltan.length && lead.telefono && !telefonoValido(lead.telefono)) {
+          resultado = { error: 'El teléfono no parece válido (hacen falta 9 cifras). Pídeselo de nuevo.' };
+        } else if (faltan.length) {
           resultado = { error: 'Faltan datos obligatorios: ' + faltan.map((c) => c.etiqueta).join(', ') + '. Pídeselos.' };
         } else if (!hueco) {
           resultado = { error: 'Ese hueco no está en la lista. Llama antes a ver_huecos.' };
@@ -231,6 +257,24 @@ async function chat({ sessionId, historial = [], mensaje }) {
             } else {
               resultado = { error: 'No se pudo crear la cita. Ofrece: ' + (negocio.mensajeHumano || 'otra vía de contacto') };
             }
+          }
+        }
+      } else if (tc.name === 'solicitar_llamada') {
+        const nombre = String(tc.args.nombre || '').trim().slice(0, 120);
+        const telefono = String(tc.args.telefono || '').trim().slice(0, 40);
+        if (!nombre) resultado = { error: 'Falta el nombre. Pídeselo.' };
+        else if (!telefonoValido(telefono)) resultado = { error: 'El teléfono no parece válido (hacen falta 9 cifras). Pídeselo de nuevo.' };
+        else {
+          try {
+            const dest = process.env.EMAIL_AVISOS || negocio.emailAvisos;
+            const p = email.plantillaAvisoLlamada(negocio, { nombre, telefono, servicio: tc.args.servicio, cuando: tc.args.cuando });
+            if (dest) await email.enviar({ para: dest, asunto: p.asunto, texto: p.texto });
+            anota('llamada_solicitada', { sessionId: id, servicio: tc.args.servicio || null });
+            llamadaHecha = true;
+            resultado = { ok: true, mensaje: 'Aviso enviado. Dile que le llamamos en menos de 24 h laborables.' };
+          } catch (e) {
+            anota('error', { sessionId: id, donde: 'llamada', msg: e.message });
+            resultado = { error: 'No se pudo dejar el aviso. Ofrece: ' + (negocio.mensajeHumano || 'otra vía de contacto') };
           }
         }
       } else {

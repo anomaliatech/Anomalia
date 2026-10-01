@@ -8,13 +8,18 @@
 URL: https://anomalia.business/
 Descripción: Anomalia — estudio de diseño web, automatización e inteligencia artificial para pymes. Más clientes, menos tareas manuales.
 
-Estudio digital
+# Webs y automatización con IA que traen clientes a tu negocio.
+
+Diseñamos tu web, automatizamos las citas, las llamadas y el seguimiento, y te decimos qué frena tu negocio. Listo en una semana o menos.
+
+Reserva tu cita gratis
+o llámanos: 601 44 91 73
 
 ## No vendemos páginas web. Vendemos negocios que crecen.
 
 La mayoría compite con la web de siempre y los mismos procesos manuales de todos los demás. Nosotros combinamos diseño y automatización para cambiar eso.
 
-# Fuera de la curva.
+## Fuera de la curva.
 
 Diseñamos webs y sistemas de automatización que consiguen más clientes, ahorran horas de trabajo cada semana y hacen que tu negocio deje de parecerse a todos los demás.
 
@@ -84,23 +89,39 @@ Auditoría completa, por fuera y por dentro, con informe y plan de acción. 550 
 
 Ver auditoría de negocio
 
+Lo que ya hemos construido
+
+## Tres sistemas reales, funcionando hoy en una clínica.
+
+01
+
+### App de citas para clases de pilates
+
+Los alumnos reservan, cambian y anulan su plaza desde el móvil. La clínica dejó de llevar la agenda a mano y de perder plazas por cancelaciones de última hora.
+
+02
+
+### Asistente de WhatsApp con IA
+
+Atiende 24/7, identifica al paciente, agenda y anula citas reales en la agenda, responde dudas y toma recados fuera de horario para que nadie se quede sin respuesta.
+
+03
+
+### Recepcionista telefónica con IA
+
+Coge las llamadas que antes se perdían, reserva en la agenda real con el profesional correcto y avisa al equipo al colgar con un resumen de la llamada.
+
+Construidos y mantenidos por Anomalia. Si quieres ver uno funcionando, pídelo en el chat.
+
 ## Cuéntanos sobre tu negocio.
 
-Sin compromiso. Cuéntale a nuestro asistente qué necesita tu negocio y deja tu cita agendada al momento. Te confirmamos por email.
+Sin compromiso. Cuéntale a nuestro asistente qué necesita tu negocio y deja tu cita agendada al momento, o pide que te llamemos.
 
 Hablas directamente con quien construye tu proyecto, no con un departamento de atención al cliente. Respondemos en menos de 24 h laborables.
 
 contacto@anomalia.business
 +34 601 44 91 73
 Trabajamos con negocios de toda España · 100 % en remoto
-
-Reserva tu cita en un minuto, sin formularios Asistente de Anomalia
-
-Quiero una auditoría
-Quiero una página web
-Quiero automatizar mi negocio
-
-Hablas con nuestro asistente con IA: dile qué necesitas, déjale tu nombre y tu email y te agenda la cita. Al usarlo aceptas nuestra política de privacidad ; no compartimos tus datos con terceros.
 
 **¿Cuánto tiempo tarda un proyecto?**
 Depende del alcance, pero la mayoría de proyectos están listos en una semana o menos. Las automatizaciones suelen integrarse en paralelo o justo después del lanzamiento.
@@ -130,13 +151,17 @@ Inicio / Páginas web
 
 Servicio · Páginas web
 
-# Tu página web, hecha a la medida de tu negocio.
+# Tu página web nueva en una semana, hecha para traer clientes.
 
 «La web es el primer empleado que nunca duerme.»
 
 Nada de plantillas recicladas. Diseñamos y desarrollamos una web pensada para tu negocio y para lo que necesitas conseguir con ella: más llamadas, más reservas, más clientes. Rápida, legal, segura y visible en Google.
 
-Cuéntanos tu proyecto
+- Lista en una semana o menos
+- Precio cerrado en la propuesta
+- Legal, segura y con SEO incluido
+
+Reserva tu cita gratis
 
 Para quién
 
@@ -287,9 +312,9 @@ Empecemos
 
 ## Cuéntanos qué necesita tu negocio.
 
-Sin compromiso. Habla con nuestro asistente, cuéntale tu proyecto y deja la cita agendada al momento. Te confirmamos por email.
+Sin compromiso. Habla con nuestro asistente, cuéntale tu proyecto y deja la cita agendada al momento, o pide que te llamemos.
 
-Reservar una llamada
+Reserva tu cita gratis
 contacto@anomalia.business
 
 ---
@@ -302,13 +327,17 @@ Inicio / Automatización e IA
 
 Servicio · Automatización e IA
 
-# La herramienta de IA que tu negocio necesita, hecha a medida.
+# Automatiza las citas, las llamadas y el seguimiento de tu negocio con IA.
 
 «Que lo que hoy haces a mano funcione solo, todos los días del año.»
 
 Si hay una tarea que repites cada día o un proceso que te come horas, casi siempre se puede automatizar. Automatizamos los procesos de tu negocio con IA y desarrollamos la herramienta a medida que necesites — para pymes y autónomos, partiendo de lo que se te ocurra o de lo que te duela.
 
-Cuéntanos qué te come el tiempo
+- Agente de citas 24/7
+- Recepcionista telefónica y WhatsApp
+- A medida y funcionando en días
+
+Reserva tu cita gratis
 
 Qué procesos podemos automatizar
 
@@ -427,9 +456,9 @@ Empecemos
 
 ## ¿Qué tarea te quitarías de encima?
 
-Sin compromiso. Cuéntale a nuestro asistente qué proceso te come el tiempo y deja la cita agendada al momento. Te confirmamos por email.
+Sin compromiso. Cuéntale a nuestro asistente qué proceso te come el tiempo y deja la cita agendada al momento, o pide que te llamemos.
 
-Reservar una llamada
+Reserva tu cita gratis
 contacto@anomalia.business
 
 ---
@@ -442,13 +471,17 @@ Inicio / Auditoría de negocio
 
 Servicio · Auditoría de negocio
 
-# Una auditoría completa que puede darle un giro de 180° a tu negocio.
+# Descubre qué frena tu negocio: auditoría completa por 550 €.
 
 «El diagnóstico con tus frases, tus números y tus contradicciones, funciona .»
 
 Miramos tu negocio por las dos caras —lo que enseña al mundo y cómo funciona por dentro—, cruzamos las dos y te decimos exactamente qué está frenando el crecimiento y por dónde empezar. No es una revisión por encima: es el análisis completo, y de él sale un plan.
 
-Quiero una auditoría
+- Por fuera y por dentro, con el cruce
+- Plan de acción priorizado
+- 450 € si luego contratas web o automatización
+
+Reserva tu cita gratis
 Ver el precio
 
 Cómo se audita
@@ -608,8 +641,8 @@ Empecemos
 
 ## Vamos a ver qué frena tu negocio.
 
-Sin compromiso. Cuéntale a nuestro asistente que quieres una auditoría y deja la cita agendada al momento. Te confirmamos por email.
+Sin compromiso. Cuéntale a nuestro asistente que quieres una auditoría y deja la cita agendada al momento, o pide que te llamemos.
 
-Reservar una llamada
+Reserva tu cita gratis
 contacto@anomalia.business
 
