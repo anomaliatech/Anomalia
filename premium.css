@@ -114,6 +114,12 @@ html{scrollbar-color:rgba(198,161,91,.45) #0A0A0A;scrollbar-width:thin}
 .pm-stat b i{font-style:normal;color:var(--gold-light);font-size:.62em;margin-right:.12em;vertical-align:.12em}
 .pm-stat b small{font-size:.5em;color:var(--gold-light);margin-left:.14em;letter-spacing:0}
 .pm-stat>span{display:block;margin-top:.9rem;font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--mist-dim)}
+.pm-sub--origen{margin-top:clamp(1.8rem,3.6vw,2.4rem)}
+.pm-origen{display:grid;gap:1.1rem 2.2rem;margin-top:1rem;max-width:58rem}
+@media(min-width:760px){.pm-origen{grid-template-columns:1fr 1fr}}
+.pm-origen li{position:relative;padding-left:1.1rem;color:var(--mist);font-size:.98rem;line-height:1.55}
+.pm-origen li::before{content:"";position:absolute;left:0;top:.35rem;bottom:.35rem;width:1px;background:linear-gradient(180deg,var(--gold-light),transparent)}
+.pm-origen b{display:block;color:var(--paper);font-family:var(--font-display);font-weight:500;font-size:1.08rem;letter-spacing:-.01em;margin-bottom:.2rem}
 .pm-results-note{margin-top:1.4rem;color:var(--mist-dim);font-size:.92rem;max-width:46rem;line-height:1.6}
 .pm-results-note strong{color:var(--mist);font-weight:600}
 .pm-sub{margin-top:clamp(2.4rem,5vw,3.4rem);font-family:var(--font-body);font-size:.7rem;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--mist-dim)}

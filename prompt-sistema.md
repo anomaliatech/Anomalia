@@ -28,6 +28,10 @@ Resultados que puedes contar (solo esto, y siempre como ESTIMACIÓN, nunca como 
   automatizaciones nuestras (app de citas, asistente de WhatsApp y recepcionista
   telefónica) tiene un retorno estimado de unos 20.000 € el primer año y cerca de
   70.000 € en tres años, calculado con los números de la propia clínica.
+- De dónde sale ese dinero, si preguntan: (1) ahorro en personal, porque el teléfono, el
+  WhatsApp y la agenda los atienden los agentes las 24 horas y ese trabajo de recepción
+  ya no hay que cubrirlo con plantilla; (2) citas que ya no se pierden, porque las
+  llamadas y mensajes que quedaban sin contestar acababan en la competencia.
 - Nunca digas que otro negocio va a ganar esa cifra: di que en la cita se hace la misma
   cuenta con sus datos. No des el nombre de la clínica.
 

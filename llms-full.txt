@@ -103,6 +103,12 @@ No vendemos tecnología. Vendemos que a final de año haya entrado en tu negocio
 
 3 sistemas trabajando 24/7
 
+De dónde sale ese dinero
+
+- Ahorro en personal. El teléfono, el WhatsApp y la agenda los atienden los agentes, las 24 horas: trabajo de recepción que la clínica ya no tiene que cubrir con plantilla.
+
+- Citas que ya no se pierden. Cada llamada o mensaje sin contestar era un paciente que acababa reservando en la clínica de al lado. Ahora se le atiende y se le da cita al momento.
+
 Una clínica con tres sistemas de Anomalia. Cifras estimadas con los números de la propia clínica. En tu primera cita hacemos esta misma cuenta con los tuyos.
 
 Los tres sistemas
@@ -139,7 +145,7 @@ Trabajamos con negocios de toda España · 100 % en remoto
 Depende del alcance, pero la mayoría de proyectos están listos en una semana o menos. Las automatizaciones suelen integrarse en paralelo o justo después del lanzamiento.
 
 **¿Cuánto dinero puede ganar mi negocio con esto?**
-Depende de tu negocio, y por eso hacemos la cuenta antes de empezar. Como referencia: en una clínica con tres automatizaciones nuestras (app de citas, asistente de WhatsApp y recepcionista telefónica) la estimación es de unos 20.000 € el primer año y cerca de 70.000 € en tres. En la primera cita calculamos ese número con tus datos.
+Depende de tu negocio, y por eso hacemos la cuenta antes de empezar. Como referencia: en una clínica con tres automatizaciones nuestras (app de citas, asistente de WhatsApp y recepcionista telefónica) la estimación es de unos 20.000 € el primer año y cerca de 70.000 € en tres. Sale de dos sitios: el ahorro en personal de recepción, porque el teléfono, el WhatsApp y la agenda los atienden los agentes, y las citas que dejan de irse a la competencia por no contestar a tiempo. En la primera cita calculamos ese número con tus datos.
 
 **¿Necesito saber de tecnología para trabajar con vosotros?**
 No. Tú nos cuentas cómo funciona tu negocio y nosotros nos encargamos de traducirlo en soluciones que funcionan, sin que tengas que tocar nada técnico.
@@ -366,6 +372,12 @@ No te vendemos un bot. Te montamos un sistema que hace entrar más dinero del qu
 
 3 sistemas trabajando 24/7
 
+De dónde sale ese dinero
+
+- Ahorro en personal. El teléfono, el WhatsApp y la agenda los atienden los agentes, las 24 horas: trabajo de recepción que la clínica ya no tiene que cubrir con plantilla.
+
+- Citas que ya no se pierden. Cada llamada o mensaje sin contestar era un paciente que acababa reservando en la clínica de al lado. Ahora se le atiende y se le da cita al momento.
+
 Una clínica con tres sistemas de Anomalia: app de citas, asistente de WhatsApp y recepcionista telefónica . Cifras estimadas con los números de la propia clínica. En tu primera cita hacemos esta misma cuenta con los tuyos.
 
 Qué procesos podemos automatizar
@@ -467,7 +479,7 @@ Preguntas frecuentes
 No. Todo se diseña para funcionar solo, sin que tengas que revisarlo cada día. Si algo necesita un ajuste, para eso estamos nosotros.
 
 **¿Cuánto dinero puede ganar mi negocio con esto?**
-Depende de tu negocio, y por eso hacemos la cuenta antes de empezar. Como referencia: en una clínica con tres automatizaciones nuestras (app de citas, asistente de WhatsApp y recepcionista telefónica) la estimación es de unos 20.000 € el primer año y cerca de 70.000 € en tres. En la primera cita calculamos ese número con tus datos.
+Depende de tu negocio, y por eso hacemos la cuenta antes de empezar. Como referencia: en una clínica con tres automatizaciones nuestras (app de citas, asistente de WhatsApp y recepcionista telefónica) la estimación es de unos 20.000 € el primer año y cerca de 70.000 € en tres. Sale de dos sitios: el ahorro en personal de recepción, porque el teléfono, el WhatsApp y la agenda los atienden los agentes, y las citas que dejan de irse a la competencia por no contestar a tiempo. En la primera cita calculamos ese número con tus datos.
 
 **¿Necesito saber de tecnología?**
 No. Tú nos cuentas cómo funciona tu negocio y nosotros lo traducimos en algo que funciona sin que tengas que tocar nada técnico.

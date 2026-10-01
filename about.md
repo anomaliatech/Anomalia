@@ -27,7 +27,7 @@ Diseño y desarrollo de páginas web a medida para negocios: restaurantes, tiend
 
 ### Automatización de procesos con IA para negocios
 
-Automatización de procesos y desarrollo de soluciones de IA a medida para pymes y autónomos: agente que agenda citas 24/7 desde la web o WhatsApp, recepcionista telefónica con IA, generación de presupuestos y facturas, recordatorios y confirmaciones automáticas, seguimiento de clientes y cualquier tarea repetitiva que hoy se haga a mano. Caso real: una clínica con app de citas, asistente de WhatsApp y recepcionista telefónica de Anomalia, con un retorno estimado de unos 20.000 € el primer año y cerca de 70.000 € en tres.
+Automatización de procesos y desarrollo de soluciones de IA a medida para pymes y autónomos: agente que agenda citas 24/7 desde la web o WhatsApp, recepcionista telefónica con IA, generación de presupuestos y facturas, recordatorios y confirmaciones automáticas, seguimiento de clientes y cualquier tarea repetitiva que hoy se haga a mano. Caso real: una clínica con app de citas, asistente de WhatsApp y recepcionista telefónica de Anomalia, con un retorno estimado de unos 20.000 € el primer año y cerca de 70.000 € en tres, entre el ahorro en personal de recepción y las citas que dejan de irse a la competencia.
 
 - Plazo: Las automatizaciones se integran en paralelo a la web o justo después del lanzamiento.
 - Precio: a presupuesto cerrado tras una primera reunión gratuita (no se publica tarifa, depende del alcance).
@@ -46,6 +46,11 @@ Auditoría completa de un negocio por las dos caras: por fuera (web y experienci
 
 Anomalia mide su trabajo en dinero para el cliente. En una clínica con tres sistemas de Anomalia (App de citas para clases de pilates, Asistente de WhatsApp con IA, Recepcionista telefónica con IA), el retorno estimado es de unos **20.000 € el primer año** y cerca de **70.000 € en tres años**.
 
+De dónde sale ese dinero:
+
+- Ahorro en personal: el teléfono, el WhatsApp y la agenda los atienden los agentes de IA las 24 horas, trabajo de recepción que la clínica ya no tiene que cubrir con plantilla.
+- Citas que ya no se pierden: las llamadas y mensajes que antes quedaban sin contestar, y acababan en la clínica de al lado, ahora se atienden y se convierten en cita al momento.
+
 Cifras estimadas con los datos de la propia clínica. En la primera cita se hace la misma cuenta con los datos de cada negocio.
 
 ## Cómo trabaja (proceso en 5 pasos)
@@ -58,7 +63,7 @@ Cifras estimadas con los datos de la propia clínica. En la primera cita se hace
 
 ## Por qué Anomalia
 
-- El trabajo se mide en dinero para el cliente: en un caso real (una clínica con tres automatizaciones de Anomalia) el retorno estimado es de unos 20.000 € el primer año y cerca de 70.000 € en tres años.
+- El trabajo se mide en dinero para el cliente: en un caso real (una clínica con tres automatizaciones de Anomalia) el retorno estimado es de unos 20.000 € el primer año y cerca de 70.000 € en tres años, entre ahorro en personal y citas que ya no se pierden.
 - Diseño y automatización en el mismo equipo: la web y los procesos que la rodean (citas, recordatorios, seguimiento) se construyen juntos.
 - Plazos cortos: la mayoría de proyectos están listos en una semana o menos.
 - Precio cerrado en la propuesta, sin sorpresas; la auditoría tiene precio público (550 €, o 450 € si luego se contrata un servicio).
@@ -75,7 +80,7 @@ Depende del alcance, pero la mayoría de proyectos están listos en una semana o
 
 **¿Cuánto dinero puede ganar mi negocio con esto?**
 
-Depende de tu negocio, y por eso hacemos la cuenta antes de empezar. Como referencia: en una clínica con tres automatizaciones nuestras (app de citas, asistente de WhatsApp y recepcionista telefónica) la estimación es de unos 20.000 € el primer año y cerca de 70.000 € en tres. En la primera cita calculamos ese número con tus datos.
+Depende de tu negocio, y por eso hacemos la cuenta antes de empezar. Como referencia: en una clínica con tres automatizaciones nuestras (app de citas, asistente de WhatsApp y recepcionista telefónica) la estimación es de unos 20.000 € el primer año y cerca de 70.000 € en tres. Sale de dos sitios: el ahorro en personal de recepción, porque el teléfono, el WhatsApp y la agenda los atienden los agentes, y las citas que dejan de irse a la competencia por no contestar a tiempo. En la primera cita calculamos ese número con tus datos.
 
 **¿Necesito saber de tecnología para trabajar con vosotros?**
 

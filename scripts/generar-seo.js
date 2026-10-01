@@ -270,6 +270,7 @@ function llmsTxt(infos) {
   L.push('');
   L.push(`- Cliente: ${sitio.caso.cliente} con tres sistemas de Anomalia: ${sitio.caso.sistemas.join('; ')}.`);
   L.push(`- Retorno estimado: unos ${eur(sitio.caso.primerAnio)} el primer año y cerca de ${eur(sitio.caso.tresAnios)} en tres años.`);
+  for (const o2 of sitio.caso.origen) L.push(`- De dónde sale: ${o2}`);
   L.push(`- ${sitio.caso.nota}`);
   L.push('');
   L.push('## Por qué elegir Anomalia');
@@ -349,6 +350,10 @@ function aboutMd(infos) {
   L.push('## Resultados (caso real)');
   L.push('');
   L.push(`Anomalia mide su trabajo en dinero para el cliente. En ${sitio.caso.cliente} con tres sistemas de Anomalia (${sitio.caso.sistemas.join(', ')}), el retorno estimado es de unos **${eur(sitio.caso.primerAnio)} el primer año** y cerca de **${eur(sitio.caso.tresAnios)} en tres años**.`);
+  L.push('');
+  L.push('De dónde sale ese dinero:');
+  L.push('');
+  for (const o2 of sitio.caso.origen) L.push(`- ${o2}`);
   L.push('');
   L.push(sitio.caso.nota);
   L.push('');

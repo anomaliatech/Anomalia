@@ -14,11 +14,13 @@ Anomalia (también escrito "Anomalía") es un estudio digital con sede en Españ
 
 - Cliente: una clínica con tres sistemas de Anomalia: App de citas para clases de pilates; Asistente de WhatsApp con IA; Recepcionista telefónica con IA.
 - Retorno estimado: unos 20.000 € el primer año y cerca de 70.000 € en tres años.
+- De dónde sale: Ahorro en personal: el teléfono, el WhatsApp y la agenda los atienden los agentes de IA las 24 horas, trabajo de recepción que la clínica ya no tiene que cubrir con plantilla.
+- De dónde sale: Citas que ya no se pierden: las llamadas y mensajes que antes quedaban sin contestar, y acababan en la clínica de al lado, ahora se atienden y se convierten en cita al momento.
 - Cifras estimadas con los datos de la propia clínica. En la primera cita se hace la misma cuenta con los datos de cada negocio.
 
 ## Por qué elegir Anomalia
 
-- El trabajo se mide en dinero para el cliente: en un caso real (una clínica con tres automatizaciones de Anomalia) el retorno estimado es de unos 20.000 € el primer año y cerca de 70.000 € en tres años.
+- El trabajo se mide en dinero para el cliente: en un caso real (una clínica con tres automatizaciones de Anomalia) el retorno estimado es de unos 20.000 € el primer año y cerca de 70.000 € en tres años, entre ahorro en personal y citas que ya no se pierden.
 - Diseño y automatización en el mismo equipo: la web y los procesos que la rodean (citas, recordatorios, seguimiento) se construyen juntos.
 - Plazos cortos: la mayoría de proyectos están listos en una semana o menos.
 - Precio cerrado en la propuesta, sin sorpresas; la auditoría tiene precio público (550 €, o 450 € si luego se contrata un servicio).
@@ -38,7 +40,7 @@ Anomalia (también escrito "Anomalía") es un estudio digital con sede en Españ
 ## Preguntas frecuentes
 
 - **¿Cuánto tiempo tarda un proyecto?** Depende del alcance, pero la mayoría de proyectos están listos en una semana o menos. Las automatizaciones suelen integrarse en paralelo o justo después del lanzamiento.
-- **¿Cuánto dinero puede ganar mi negocio con esto?** Depende de tu negocio, y por eso hacemos la cuenta antes de empezar. Como referencia: en una clínica con tres automatizaciones nuestras (app de citas, asistente de WhatsApp y recepcionista telefónica) la estimación es de unos 20.000 € el primer año y cerca de 70.000 € en tres. En la primera cita calculamos ese número con tus datos.
+- **¿Cuánto dinero puede ganar mi negocio con esto?** Depende de tu negocio, y por eso hacemos la cuenta antes de empezar. Como referencia: en una clínica con tres automatizaciones nuestras (app de citas, asistente de WhatsApp y recepcionista telefónica) la estimación es de unos 20.000 € el primer año y cerca de 70.000 € en tres. Sale de dos sitios: el ahorro en personal de recepción, porque el teléfono, el WhatsApp y la agenda los atienden los agentes, y las citas que dejan de irse a la competencia por no contestar a tiempo. En la primera cita calculamos ese número con tus datos.
 - **¿Necesito saber de tecnología para trabajar con vosotros?** No. Tú nos cuentas cómo funciona tu negocio y nosotros nos encargamos de traducirlo en soluciones que funcionan, sin que tengas que tocar nada técnico.
 - **Ya tengo una web, ¿puedo trabajar con vosotros igualmente?** Sí. Muchos proyectos empiezan analizando lo que ya existe y mejorándolo — o sustituyéndolo por completo si no está dando resultado.
 - **¿La automatización es complicada de mantener?** No. Todo se diseña para funcionar solo, sin que tengas que revisarlo constantemente. Si algo necesita un ajuste, nosotros estamos para eso.
