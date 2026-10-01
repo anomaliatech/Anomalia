@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<link rel="stylesheet" href="/fonts.css">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1200px;height:630px;overflow:hidden}
+body{background:radial-gradient(90% 120% at 82% 12%,#3a2e16 0%,#17130d 38%,#0A0A0A 72%);color:#FDFDFC;font-family:'Manrope',system-ui,sans-serif;position:relative}
+.ring{position:absolute;right:-170px;top:-150px;width:640px;height:640px;border-radius:50%;border:1px solid rgba(217,192,138,.22)}
+.ring.b{right:-70px;top:-50px;width:440px;height:440px;border:1px dashed rgba(217,192,138,.3)}
+.dot{position:absolute;right:150px;top:176px;width:12px;height:12px;border-radius:50%;background:#D9C08A}
+.in{position:absolute;inset:0;padding:62px 72px;display:flex;flex-direction:column}
+.brand{display:flex;align-items:center;gap:16px}
+.brand img{height:36px;width:auto}
+.brand span{font-weight:600;letter-spacing:.2em;font-size:22px;text-transform:uppercase}
+.eyebrow{margin-top:auto;font-size:19px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:#D9C08A}
+h1{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:66px;line-height:1.08;letter-spacing:-.015em;margin-top:18px;max-width:920px;text-wrap:balance}
+.foot{display:flex;align-items:center;justify-content:space-between;margin-top:38px}
+.pill{background:#C6A15B;color:#141007;font-weight:800;font-size:23px;padding:14px 30px;border-radius:100px}
+.url{font-size:23px;font-weight:600;color:#C2C2C2;letter-spacing:.02em}
+</style></head>
+<body>
+<div class="ring"></div><div class="ring b"></div><div class="dot"></div>
+<div class="in">
+  <div class="brand"><img src="/assets/anomalia-isotipo.png" alt=""><span>Anomalia</span></div>
+  <p class="eyebrow" id="e"></p>
+  <h1 id="t"></h1>
+  <div class="foot"><span class="pill">Reserva tu cita gratis</span><span class="url">anomalia.business</span></div>
+</div>
+<script>
+var q=new URLSearchParams(location.search);
+document.getElementById('e').textContent=q.get('e')||'';
+document.getElementById('t').textContent=q.get('t')||'';
+</script>
+</body></html>

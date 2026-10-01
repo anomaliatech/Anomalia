@@ -214,7 +214,7 @@ function grafo(pag, info, fecha) {
     dateModified: fecha,
     isPartOf: { '@id': `${D}/#website` },
     about: { '@id': pag.servicio ? `${url}#service` : o.id },
-    primaryImageOfPage: { '@type': 'ImageObject', url: o.imagen, width: 1200, height: 630 },
+    primaryImageOfPage: { '@type': 'ImageObject', url: pag.imagen || o.imagen, width: 1200, height: 630 },
     ...(pag.servicio ? { breadcrumb: { '@id': `${url}#breadcrumb` } } : {}),
   });
   const faq = nodoFaq(url, info.faq);
@@ -402,6 +402,10 @@ for (const pag of sitio.paginas) {
   let html = construir(pag.fecha);
   if (html !== original) { pag.fecha = new Date().toISOString().slice(0, 10); html = construir(pag.fecha); }
   escribir(pag.archivo, html);
+}
+// Páginas fuera del sitemap que también cargan CSS/JS cacheados como inmutables.
+for (const extra of ['404.html']) {
+  if (fs.existsSync(path.join(RAIZ, extra))) escribir(extra, sellarRecursos(leer(extra)));
 }
 escribir('sitemap.xml', sitemapXml(infos));
 escribir('robots.txt', robotsTxt());

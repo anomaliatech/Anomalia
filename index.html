@@ -40,7 +40,7 @@
 <link rel="preload" href="/assets/fonts/fraunces-latin-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/fonts.css?v=11eb2803">
 <link rel="stylesheet" href="motion.css?v=b866e195">
-<link rel="stylesheet" href="agchat.css?v=60b20c76">
+<link rel="stylesheet" href="agchat.css?v=b36fe269">
 <style>
 :root{
   --bg:#0A0A0A; --bg2:#151515;
@@ -420,7 +420,7 @@ body.locked{overflow:hidden}
 <!-- ===================== BARRA FIJA (fuera de la película) ===================== -->
 <header class="bar">
   <a href="#top" class="bar-brand" aria-label="Anomalia — inicio">
-    <img src="assets/anomalia-isotipo.png" alt="" width="27" height="21" aria-hidden="true">
+    <picture><source srcset="assets/anomalia-isotipo.webp" type="image/webp"><img src="assets/anomalia-isotipo.png" alt="" width="27" height="21" aria-hidden="true"></picture>
     <span class="bar-word">Anomalia</span>
   </a>
   <nav class="bar-nav" aria-label="Servicios">
@@ -610,7 +610,7 @@ body.locked{overflow:hidden}
   <div class="wrap" style="padding-block:clamp(3rem,6vw,4.5rem) 2rem">
     <div class="foot-grid">
       <div class="foot-brand">
-        <span class="bar-brand"><img src="assets/anomalia-isotipo.png" alt="" width="27" height="21" aria-hidden="true"><span class="bar-word">Anomalia</span></span>
+        <span class="bar-brand"><picture><source srcset="assets/anomalia-isotipo.webp" type="image/webp"><img src="assets/anomalia-isotipo.png" alt="" width="27" height="21" aria-hidden="true"></picture><span class="bar-word">Anomalia</span></span>
         <p>Estudio digital para negocios que quieren destacar. Diseño web, automatización e inteligencia artificial aplicada a resultados reales.</p>
       </div>
       <div class="foot-col">
@@ -811,7 +811,8 @@ body.locked{overflow:hidden}
 </template>
 
 <script src="motion.js?v=e59f5bc3"></script>
-<script src="agchat.js?v=eb5f25e7" defer></script>
+<script src="agchat.js?v=0afe0ee7" defer></script>
+<script src="analitica.js?v=4f57128c" defer></script>
 <script>
 (function(){
   /* ---- barra: fondo más sólido al hacer scroll ---- */
@@ -858,7 +859,7 @@ body.locked{overflow:hidden}
   /* ---- cookies ---- */
   var KEY = 'anomaliaCookieConsent';
   var ck = document.getElementById('cookie');
-  function loadAnalytics(){ /* Sustituir por gtag.js con el ID de medición cuando exista. */ }
+  function loadAnalytics(){ /* la carga real vive en analitica.js, que escucha este mismo banner */ }
   var stored = null;
   try { stored = localStorage.getItem(KEY); } catch(e){}
   if(stored === 'accepted') loadAnalytics();

@@ -176,6 +176,7 @@ async function chat({ sessionId, historial = [], mensaje }) {
   const tools = herramientas(negocio);
   let huecosOfrecidos = ultimosHuecos(historial);
   let llamadaHecha = false; // aviso de "llámame" enviado en esta vuelta
+  let citaDatos = null; // inicio/fin/servicio de la cita creada, para el botón "añadir a mi calendario"
   let citaHecha = null; // si se reserva en esta vuelta, guardamos el "cuando" para poder confirmar aunque falle la IA
 
   // reconstruye el hilo para la IA (sin las líneas [HUECOS], que no son turnos de chat)
@@ -188,7 +189,7 @@ async function chat({ sessionId, historial = [], mensaje }) {
     const pub = aHistorialPublico(msgs);
     if (huecosOfrecidos.length) pub.push({ role: 'assistant', content: lineaHuecos(huecosOfrecidos) });
     const r = { reply, historial: pub };
-    if (citaHecha) r.cita = { tipo: 'cita', cuando: citaHecha }; // el frontend dispara la conversión de Ads con esto
+    if (citaHecha) r.cita = Object.assign({ tipo: 'cita', cuando: citaHecha }, citaDatos || {}); // el frontend dispara la conversión de Ads con esto
     else if (llamadaHecha) r.cita = { tipo: 'llamada' };
     return r;
   };
@@ -247,6 +248,12 @@ async function chat({ sessionId, historial = [], mensaje }) {
             const r = await reservar({ negocio, inicioISO: hueco.inicio, servicio: tc.args.servicio, lead, sessionId: id });
             resultado = { ok: true, cuando: r.etiqueta };
             citaHecha = r.etiqueta;
+            const iniMs = new Date(hueco.inicio).getTime();
+            citaDatos = {
+              inicio: new Date(iniMs).toISOString(),
+              fin: new Date(iniMs + duracionServicio(negocio, tc.args.servicio) * 60000).toISOString(),
+              servicio: String(tc.args.servicio || '').slice(0, 80),
+            };
           } catch (e) {
             anota('error', { sessionId: id, donde: 'reservar', msg: e.message });
             if (e.code === 409) {

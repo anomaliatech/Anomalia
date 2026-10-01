@@ -30,3 +30,42 @@
 .agchat-wa svg{width:15px;height:15px;color:#25D366}
 .agchat-wa:hover{color:var(--gold-light,#D9C08A)!important}
 @media(max-width:600px){.agchat{height:470px}.agchat-head strong{font-size:.92rem}}
+
+/* enlaces "añadir a mi calendario" tras confirmar la cita */
+.agmsg.agcal{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem .6rem;white-space:normal}
+.agmsg.agcal span{display:inline-flex;align-items:center;gap:.45em;width:100%;color:var(--mist,#C2C2C2);font-size:.88rem}
+.agmsg.agcal svg{width:15px;height:15px;color:var(--gold-light,#D9C08A);flex-shrink:0}
+.agmsg.agcal a{border:1px solid var(--gold,#C6A15B);color:var(--gold-light,#D9C08A);border-radius:100px;padding:.35em .9em;font-size:.86rem;font-weight:700;text-decoration:none}
+.agmsg.agcal a:hover{background:var(--gold,#C6A15B);color:#141007}
+
+/* debajo del chat: quién hay detrás y "este chat es el producto" */
+.agchat-extra{margin-top:.9rem;display:flex;flex-direction:column;gap:.7rem;text-align:left}
+.agchat-demo{font-size:.86rem;color:var(--mist,#C2C2C2);border-left:2px solid var(--gold,#C6A15B);padding:.1rem 0 .1rem .8rem;line-height:1.45}
+.agchat-autor{display:flex;align-items:center;gap:.8rem;font-size:.86rem;color:var(--mist-dim,#9B9B9B);line-height:1.45}
+.agchat-autor strong{color:var(--paper,#FDFDFC);font-weight:700}
+.agchat-autor .ini{flex-shrink:0;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:.8rem;letter-spacing:.04em;color:#141007;background:linear-gradient(135deg,var(--gold-light,#D9C08A),var(--gold,#C6A15B))}
+
+/* barra fija de móvil: CTA + WhatsApp siempre a mano */
+.agbar{display:none}
+@media(max-width:760px){
+  .agbar{position:fixed;left:0;right:0;bottom:0;z-index:340;display:flex;gap:.6rem;align-items:center;
+    padding:.6rem .8rem calc(.6rem + env(safe-area-inset-bottom));
+    background:rgba(10,10,10,.94);backdrop-filter:blur(10px);border-top:1px solid var(--line,rgba(255,255,255,.12));
+    transform:translateY(110%);transition:transform .35s cubic-bezier(.16,1,.3,1)}
+  .agbar.show{transform:none}
+  .agbar-cta{flex:1;text-align:center;background:var(--gold,#C6A15B);color:#141007;font-weight:800;font-size:.98rem;padding:.8em 1em;border-radius:100px;text-decoration:none}
+  .agbar-wa{flex-shrink:0;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:#25D366;color:#fff}
+  .agbar-wa svg{width:24px;height:24px}
+  body.con-agbar{padding-bottom:72px}
+}
+
+/* movil: las sugerencias en una sola fila deslizable, para no comerse el hilo del chat */
+@media(max-width:600px){
+  .agchat{height:500px}
+  .agchat-sugs{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .agchat-sugs::-webkit-scrollbar{display:none}
+  .agchat-sugs button{flex-shrink:0;white-space:nowrap}
+}
+/* el chat nunca ensancha la rejilla que lo contiene (los hijos de un grid no encogen por defecto) */
+.contact>*,.hero-grid>*{min-width:0}
+.agchat,.agchat-extra{min-width:0;max-width:100%}
