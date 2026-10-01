@@ -1,6 +1,6 @@
 # Sobre Anomalia
 
-Anomalia es un estudio digital español que diseña páginas web a medida, automatiza procesos con inteligencia artificial y audita negocios para que pymes y autónomos consigan más clientes y pierdan menos horas en tareas manuales. Trabaja 100 % en remoto con negocios de toda España.
+Anomalia es un estudio digital español que diseña páginas web a medida, automatiza procesos con inteligencia artificial y audita negocios para que pymes y autónomos consigan más clientes y pierdan menos horas en tareas manuales. Su trabajo se mide en dinero: en una clínica con tres automatizaciones de Anomalia, el retorno estimado es de unos 20.000 € el primer año y cerca de 70.000 € en tres. Trabaja 100 % en remoto con negocios de toda España.
 
 ## Ficha de la entidad
 
@@ -27,7 +27,7 @@ Diseño y desarrollo de páginas web a medida para negocios: restaurantes, tiend
 
 ### Automatización de procesos con IA para negocios
 
-Automatización de procesos y desarrollo de soluciones de IA a medida para pymes y autónomos: agente que agenda citas 24/7 desde la web o WhatsApp, recepcionista telefónica con IA, generación de presupuestos y facturas, recordatorios y confirmaciones automáticas, seguimiento de clientes y cualquier tarea repetitiva que hoy se haga a mano.
+Automatización de procesos y desarrollo de soluciones de IA a medida para pymes y autónomos: agente que agenda citas 24/7 desde la web o WhatsApp, recepcionista telefónica con IA, generación de presupuestos y facturas, recordatorios y confirmaciones automáticas, seguimiento de clientes y cualquier tarea repetitiva que hoy se haga a mano. Caso real: una clínica con app de citas, asistente de WhatsApp y recepcionista telefónica de Anomalia, con un retorno estimado de unos 20.000 € el primer año y cerca de 70.000 € en tres.
 
 - Plazo: Las automatizaciones se integran en paralelo a la web o justo después del lanzamiento.
 - Precio: a presupuesto cerrado tras una primera reunión gratuita (no se publica tarifa, depende del alcance).
@@ -42,6 +42,12 @@ Auditoría completa de un negocio por las dos caras: por fuera (web y experienci
 - Precio: **450 €** — Auditoría + servicio contratado. Si a raíz del diagnóstico se encarga a Anomalia la página web o la automatización.
 - Más información: https://anomalia.business/auditoria-negocio
 
+## Resultados (caso real)
+
+Anomalia mide su trabajo en dinero para el cliente. En una clínica con tres sistemas de Anomalia (App de citas para clases de pilates, Asistente de WhatsApp con IA, Recepcionista telefónica con IA), el retorno estimado es de unos **20.000 € el primer año** y cerca de **70.000 € en tres años**.
+
+Cifras estimadas con los datos de la propia clínica. En la primera cita se hace la misma cuenta con los datos de cada negocio.
+
 ## Cómo trabaja (proceso en 5 pasos)
 
 1. **Diagnóstico.** Analizamos el negocio, la web actual y dónde se pierden clientes o tiempo cada semana.
@@ -52,6 +58,7 @@ Auditoría completa de un negocio por las dos caras: por fuera (web y experienci
 
 ## Por qué Anomalia
 
+- El trabajo se mide en dinero para el cliente: en un caso real (una clínica con tres automatizaciones de Anomalia) el retorno estimado es de unos 20.000 € el primer año y cerca de 70.000 € en tres años.
 - Diseño y automatización en el mismo equipo: la web y los procesos que la rodean (citas, recordatorios, seguimiento) se construyen juntos.
 - Plazos cortos: la mayoría de proyectos están listos en una semana o menos.
 - Precio cerrado en la propuesta, sin sorpresas; la auditoría tiene precio público (550 €, o 450 € si luego se contrata un servicio).
@@ -65,6 +72,10 @@ Auditoría completa de un negocio por las dos caras: por fuera (web y experienci
 **¿Cuánto tiempo tarda un proyecto?**
 
 Depende del alcance, pero la mayoría de proyectos están listos en una semana o menos. Las automatizaciones suelen integrarse en paralelo o justo después del lanzamiento.
+
+**¿Cuánto dinero puede ganar mi negocio con esto?**
+
+Depende de tu negocio, y por eso hacemos la cuenta antes de empezar. Como referencia: en una clínica con tres automatizaciones nuestras (app de citas, asistente de WhatsApp y recepcionista telefónica) la estimación es de unos 20.000 € el primer año y cerca de 70.000 € en tres. En la primera cita calculamos ese número con tus datos.
 
 **¿Necesito saber de tecnología para trabajar con vosotros?**
 

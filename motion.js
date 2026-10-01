@@ -88,7 +88,7 @@
         var r = card.getBoundingClientRect();
         var x = (ev.clientX - r.left) / r.width - 0.5;
         var y = (ev.clientY - r.top) / r.height - 0.5;
-        card.style.transform = "translateY(-8px) rotateX(" + (-y * 7) + "deg) rotateY(" + (x * 7) + "deg)";
+        card.style.transform = "translateY(-4px) rotateX(" + (-y * 2.5) + "deg) rotateY(" + (x * 2.5) + "deg)";
       });
       card.addEventListener("mouseleave", function () { card.style.transform = ""; });
     });

@@ -1,12 +1,12 @@
 # Anomalia — contenido completo del sitio
 
-> Anomalia es un estudio digital español que diseña páginas web a medida, automatiza procesos con inteligencia artificial y audita negocios para que pymes y autónomos consigan más clientes y pierdan menos horas en tareas manuales. Trabaja 100 % en remoto con negocios de toda España.
+> Anomalia es un estudio digital español que diseña páginas web a medida, automatiza procesos con inteligencia artificial y audita negocios para que pymes y autónomos consigan más clientes y pierdan menos horas en tareas manuales. Su trabajo se mide en dinero: en una clínica con tres automatizaciones de Anomalia, el retorno estimado es de unos 20.000 € el primer año y cerca de 70.000 € en tres. Trabaja 100 % en remoto con negocios de toda España.
 
 ---
 
 # Página: Anomalia — Diseño web y automatización para negocios
 URL: https://anomalia.business/
-Descripción: Anomalia — estudio de diseño web, automatización e inteligencia artificial para pymes. Más clientes, menos tareas manuales.
+Descripción: Anomalia: webs y automatización con IA que hacen ganar dinero a tu negocio. Caso real en una clínica: unos 20.000 € estimados el primer año y 70.000 € en tres.
 
 Estudio digital · Web + IA
 
@@ -23,11 +23,11 @@ o llámanos · 601 44 91 73
 
 ## No vendemos páginas web. Vendemos negocios que crecen.
 
-La mayoría compite con la web de siempre y los mismos procesos manuales de todos los demás. Nosotros combinamos diseño y automatización para cambiar eso.
+Todo lo que montamos se mide en una sola cosa: cuánto dinero más entra en tu negocio.
 
 ## Fuera de la curva.
 
-Diseñamos webs y sistemas de automatización que consiguen más clientes, ahorran horas de trabajo cada semana y hacen que tu negocio deje de parecerse a todos los demás.
+Webs que venden y sistemas que trabajan solos, para que tu negocio deje de parecerse a todos los demás.
 
 Clínicas Gimnasios Inmobiliarias Hoteles Comercios Despachos profesionales
 
@@ -65,10 +65,6 @@ Publicamos, probamos todo a fondo y nos aseguramos de que cada detalle funciona.
 
 Seguimos a tu lado con soporte, mejoras y ajustes a medida que tu negocio crece.
 
-Menos de 1 semana para tener tu proyecto listo
-
-24 h o menos en responder a tu mensaje
-
 Lo que hacemos
 
 Servicio 01 · Páginas web
@@ -95,9 +91,21 @@ Auditoría completa, por fuera y por dentro, con informe y plan de acción. 550 
 
 Ver auditoría de negocio
 
-Lo que ya hemos construido
+Resultados
 
-## Tres sistemas reales, funcionando hoy en una clínica.
+## Lo que montamos se mide en dinero .
+
+No vendemos tecnología. Vendemos que a final de año haya entrado en tu negocio más dinero del que nos pagaste. Así sale la cuenta en un caso real:
+
+≈ 20.000 € estimados el primer año
+
+≈ 70.000 € estimados en tres años
+
+3 sistemas trabajando 24/7
+
+Una clínica con tres sistemas de Anomalia. Cifras estimadas con los números de la propia clínica. En tu primera cita hacemos esta misma cuenta con los tuyos.
+
+Los tres sistemas
 
 01
 
@@ -117,8 +125,6 @@ Atiende 24/7, identifica al paciente, agenda y anula citas reales en la agenda, 
 
 Coge las llamadas que antes se perdían, reserva en la agenda real con el profesional correcto y avisa al equipo al colgar con un resumen de la llamada.
 
-Construidos y mantenidos por Anomalia. Si quieres ver uno funcionando, pídelo en el chat.
-
 ## Cuéntanos sobre tu negocio.
 
 Sin compromiso. Cuéntale a nuestro asistente qué necesita tu negocio y deja tu cita agendada al momento, o pide que te llamemos.
@@ -131,6 +137,9 @@ Trabajamos con negocios de toda España · 100 % en remoto
 
 **¿Cuánto tiempo tarda un proyecto?**
 Depende del alcance, pero la mayoría de proyectos están listos en una semana o menos. Las automatizaciones suelen integrarse en paralelo o justo después del lanzamiento.
+
+**¿Cuánto dinero puede ganar mi negocio con esto?**
+Depende de tu negocio, y por eso hacemos la cuenta antes de empezar. Como referencia: en una clínica con tres automatizaciones nuestras (app de citas, asistente de WhatsApp y recepcionista telefónica) la estimación es de unos 20.000 € el primer año y cerca de 70.000 € en tres. En la primera cita calculamos ese número con tus datos.
 
 **¿Necesito saber de tecnología para trabajar con vosotros?**
 No. Tú nos cuentas cómo funciona tu negocio y nosotros nos encargamos de traducirlo en soluciones que funcionan, sin que tengas que tocar nada técnico.
@@ -157,7 +166,7 @@ Inicio / Páginas web
 
 Servicio · Páginas web
 
-# Tu página web nueva en una semana, hecha para traer clientes.
+# Tu página web nueva en una semana, hecha para traer clientes .
 
 «La web es el primer empleado que nunca duerme.»
 
@@ -327,13 +336,13 @@ contacto@anomalia.business
 
 # Página: Automatización de procesos con IA para pymes | Anomalia
 URL: https://anomalia.business/automatizacion-ia
-Descripción: Automatización con IA para pymes y autónomos: agenda citas 24/7, recepcionista telefónica, presupuestos, facturas y recordatorios. Todo a medida.
+Descripción: Automatización con IA para pymes: agente de citas 24/7, recepcionista telefónica y WhatsApp. Caso real en una clínica: unos 20.000 € estimados el primer año.
 
 Inicio / Automatización e IA
 
 Servicio · Automatización e IA
 
-# Automatiza las citas, las llamadas y el seguimiento de tu negocio con IA.
+# Automatiza las citas, las llamadas y el seguimiento de tu negocio con IA .
 
 «Que lo que hoy haces a mano funcione solo, todos los días del año.»
 
@@ -344,6 +353,20 @@ Si hay una tarea que repites cada día o un proceso que te come horas, casi siem
 - A medida y funcionando en días
 
 Reserva tu cita gratis
+
+Resultados
+
+## Una automatización se mide en dinero .
+
+No te vendemos un bot. Te montamos un sistema que hace entrar más dinero del que cuesta. Así sale la cuenta en un caso real:
+
+≈ 20.000 € estimados el primer año
+
+≈ 70.000 € estimados en tres años
+
+3 sistemas trabajando 24/7
+
+Una clínica con tres sistemas de Anomalia: app de citas, asistente de WhatsApp y recepcionista telefónica . Cifras estimadas con los números de la propia clínica. En tu primera cita hacemos esta misma cuenta con los tuyos.
 
 Qué procesos podemos automatizar
 
@@ -443,6 +466,9 @@ Preguntas frecuentes
 **¿Es complicado de mantener?**
 No. Todo se diseña para funcionar solo, sin que tengas que revisarlo cada día. Si algo necesita un ajuste, para eso estamos nosotros.
 
+**¿Cuánto dinero puede ganar mi negocio con esto?**
+Depende de tu negocio, y por eso hacemos la cuenta antes de empezar. Como referencia: en una clínica con tres automatizaciones nuestras (app de citas, asistente de WhatsApp y recepcionista telefónica) la estimación es de unos 20.000 € el primer año y cerca de 70.000 € en tres. En la primera cita calculamos ese número con tus datos.
+
 **¿Necesito saber de tecnología?**
 No. Tú nos cuentas cómo funciona tu negocio y nosotros lo traducimos en algo que funciona sin que tengas que tocar nada técnico.
 
@@ -477,7 +503,7 @@ Inicio / Auditoría de negocio
 
 Servicio · Auditoría de negocio
 
-# Descubre qué frena tu negocio: auditoría completa por 550 €.
+# Descubre qué frena tu negocio: auditoría completa por 550 € .
 
 «El diagnóstico con tus frases, tus números y tus contradicciones, funciona .»
 

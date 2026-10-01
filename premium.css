@@ -1,0 +1,126 @@
+/* ============================================================
+   ANOMALIA · Capa de detalle (se carga la ÚLTIMA en todas las páginas).
+   No añade piezas: afina las que hay para que toda la web tenga el
+   mismo acabado que el primer pantallazo de la home. Tipografía fina,
+   filetes, grano, tarjetas que responden al cursor y menos ruido.
+   ============================================================ */
+
+/* ---------- tipografía: trazo fino, itálica dorada para el acento ---------- */
+h1,h2,h3,h4{font-weight:460;letter-spacing:-.02em}
+.hero h1,.section h2,.cta-final h2,.contact h2,.cases h2,.z-h,.pm-results h2{font-weight:440;letter-spacing:-.022em}
+.z-h.huge{font-weight:420;letter-spacing:-.03em}
+.card h3,.price-card h3,.step h3,.z-step h3,.z-svc-body h3,.cases-grid h3{font-weight:500;letter-spacing:-.012em}
+h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--gold-light)}
+.statement p{font-weight:400}
+.price-tag,.counter b,.z-count b,.z-cifras-mini b{font-weight:420;letter-spacing:-.02em;font-variant-numeric:lining-nums}
+.hero .lead,.section-lead,.z-lead,.contact .lead{color:var(--mist);line-height:1.55}
+body{font-feature-settings:"ss01","cv11"}
+
+@media(min-width:1000px){.hero-grid h1{font-size:clamp(2.1rem,3.9vw,3.2rem);max-width:19ch;line-height:1.1}}
+
+/* ---------- etiquetas con filete, como en el hero ---------- */
+.eyebrow,.z-eyebrow{display:inline-flex;align-items:center;gap:.9rem;font-size:.7rem;font-weight:600;letter-spacing:.28em}
+.eyebrow::before,.z-eyebrow::before{content:"";flex:none;width:2.2rem;height:1px;background:linear-gradient(90deg,transparent,rgba(217,192,138,.8))}
+.cta-final .eyebrow::after,.z-inner>.z-eyebrow::after{content:"";flex:none;width:2.2rem;height:1px;background:linear-gradient(270deg,transparent,rgba(217,192,138,.8))}
+.nf-code{display:inline-flex;align-items:center;gap:.9rem}
+
+/* ---------- grano fino sobre toda la página ---------- */
+body::after{content:"";position:fixed;inset:0;z-index:5;pointer-events:none;opacity:.05;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>")}
+.mk-film-stage::after{display:none}
+
+/* ---------- fondo de las landings: más calmado ---------- */
+.site-bg i{opacity:.3}
+.site-bg::before{opacity:.7}
+.hero-motif{opacity:.42;transform:translate(calc(var(--mx,0)*-20px),calc(var(--my,0)*-14px))}
+
+/* ---------- barra: enlace con filete que se traza ---------- */
+.bar-nav a{position:relative;font-weight:500;letter-spacing:.01em}
+.bar-nav a::after{content:"";position:absolute;left:0;right:0;bottom:-.45rem;height:1px;background:var(--gold-light);transform:scaleX(0);transform-origin:left;transition:transform .45s var(--ease)}
+.bar-nav a:hover::after,.bar-nav a[aria-current="page"]::after{transform:scaleX(1)}
+.bar.solid{border-bottom:1px solid rgba(255,255,255,.06)}
+
+/* ---------- botones: oro con volumen y brillo al pasar ---------- */
+.btn-gold,.agbar-cta{background:linear-gradient(180deg,#DCC591 0%,#C6A15B 55%,#B8924A 100%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.4),0 10px 30px -14px rgba(198,161,91,.75);letter-spacing:.005em}
+.btn-gold:hover{background:linear-gradient(180deg,#E6D2A4 0%,#D0AC68 55%,#C09A52 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 16px 40px -14px rgba(198,161,91,.85)}
+.btn-gold:not(.mk-pulse):not(.hx-cta){position:relative;overflow:hidden}
+.btn-gold:not(.mk-pulse):not(.hx-cta)::after{content:"";position:absolute;top:0;bottom:0;width:38%;left:-50%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.5),transparent);transform:skewX(-18deg);transition:left .7s var(--ease)}
+.btn-gold:not(.mk-pulse):not(.hx-cta):hover::after{left:125%}
+.btn-ghost{backdrop-filter:blur(6px);border-color:rgba(255,255,255,.16);font-weight:500}
+.btn-ghost:hover{border-color:rgba(217,192,138,.7);color:var(--gold-light);background:rgba(198,161,91,.06)}
+.mk-pulse::after{border-width:1px;opacity:.7}
+
+/* ---------- tarjetas: borde vivo y luz que sigue al cursor ---------- */
+.card,.price-card,.z-svc,.cases-grid article,.pm-stat{position:relative;isolation:isolate;overflow:hidden;
+  border-color:rgba(255,255,255,.1);box-shadow:inset 0 1px 0 rgba(255,255,255,.05)}
+.card::before,.price-card::before,.z-svc::before,.cases-grid article::before,.pm-stat::before{content:"";position:absolute;inset:0;z-index:-1;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .5s;
+  background:radial-gradient(380px circle at var(--cx,50%) var(--cy,0%),rgba(217,192,138,.13),transparent 62%)}
+.card:hover::before,.price-card:hover::before,.z-svc:hover::before,.cases-grid article:hover::before,.pm-stat:hover::before{opacity:1}
+.card:hover,.cases-grid article:hover{border-color:rgba(217,192,138,.34)}
+.card{border-radius:18px;padding:1.7rem 1.6rem}
+.card .ico{border-radius:50%;background:transparent;border-color:rgba(217,192,138,.3)}
+.mk-card:hover{box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 30px 70px -40px rgba(198,161,91,.45)}
+.cases-grid article{transition:border-color .45s,transform .45s var(--ease)}
+.cases-grid article:hover{transform:translateY(-3px)}
+.price-card.featured{box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 44px 110px -60px rgba(198,161,91,.6)}
+
+/* ---------- pasos, listas y FAQ: más aire, menos peso ---------- */
+.step b,.z-step b,.cases-grid b{font-weight:600;font-size:.74rem;letter-spacing:.2em;color:var(--gold-light);padding-top:.35rem}
+.step,.z-step{border-top-color:rgba(255,255,255,.09)}
+.step:last-child,.z-step:last-child{border-bottom-color:rgba(255,255,255,.09)}
+.checks li svg,.price-card li svg,.z-list li svg{opacity:.9}
+.faq summary{font-weight:440;transition:color .3s}
+.faq summary:hover{color:var(--gold-light)}
+.faq summary::after{font-weight:300;font-size:1.5rem}
+.faq details[open] .a{animation:pmIn .55s var(--ease)}
+@keyframes pmIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+
+/* ---------- home: los shots de servicios sin el "navegador de mentira" ---------- */
+.z-svc .z-frame-bar{border-bottom:0;background:transparent;padding:1.1rem 1.1rem 0}
+.z-svc .z-frame-bar span{display:none}
+.z-svc .z-frame-bar em{padding-left:0;font-size:.64rem;letter-spacing:.24em;font-weight:600}
+.z-svc-body{padding-top:.8rem}
+.z-svc{border-radius:18px}
+.z-svc-art{opacity:.34}
+.z-svc:hover .z-svc-art{opacity:.6}
+.z-cta{font-weight:600;letter-spacing:.01em}
+.z-cta svg{transition:transform .4s var(--ease)}
+a:hover>.z-svc-body .z-cta svg,.z-cta:hover svg{transform:translateX(4px)}
+
+/* ---------- pie ---------- */
+.foot-col a,.foot-legal a,.foot-legal button{transition:color .3s}
+.foot-col a:hover,.foot-legal a:hover,.foot-legal button:hover{color:var(--gold-light)}
+.foot-col h4{letter-spacing:.24em;font-size:.66rem;font-weight:600}
+
+/* ---------- detalles de sistema ---------- */
+html{scrollbar-color:rgba(198,161,91,.45) #0A0A0A;scrollbar-width:thin}
+::-webkit-scrollbar{width:9px;height:9px}
+::-webkit-scrollbar-track{background:#0A0A0A}
+::-webkit-scrollbar-thumb{background:rgba(198,161,91,.4);border-radius:9px;border:2px solid #0A0A0A}
+::-webkit-scrollbar-thumb:hover{background:rgba(217,192,138,.7)}
+.mk-progress{height:2px}
+
+/* ============================================================
+   RESULTADOS: lo que montamos se mide en dinero
+   ============================================================ */
+.pm-results h2{font-size:clamp(1.9rem,4.2vw,3.1rem);color:#fff;max-width:20ch}
+.pm-results-lead{color:var(--mist);font-size:clamp(1.02rem,1.6vw,1.2rem);margin-top:1.1rem;max-width:42rem}
+.pm-stats{display:grid;gap:1rem;margin-top:clamp(2rem,4.5vw,3rem)}
+@media(min-width:760px){.pm-stats{grid-template-columns:1.25fr 1.25fr .8fr}}
+.pm-stat{border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:clamp(1.4rem,3vw,2rem) clamp(1.3rem,2.6vw,1.9rem);
+  background:radial-gradient(120% 130% at 50% 0%,rgba(198,161,91,.07),transparent 62%),var(--bg2)}
+.pm-stat b{display:block;font-family:var(--font-display);font-weight:400;font-size:clamp(2.5rem,6vw,4.4rem);line-height:1;letter-spacing:-.03em;color:#fff;font-variant-numeric:lining-nums tabular-nums;white-space:nowrap}
+.pm-stat b i{font-style:normal;color:var(--gold-light);font-size:.62em;margin-right:.12em;vertical-align:.12em}
+.pm-stat b small{font-size:.5em;color:var(--gold-light);margin-left:.14em;letter-spacing:0}
+.pm-stat>span{display:block;margin-top:.9rem;font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--mist-dim)}
+.pm-results-note{margin-top:1.4rem;color:var(--mist-dim);font-size:.92rem;max-width:46rem;line-height:1.6}
+.pm-results-note strong{color:var(--mist);font-weight:600}
+.pm-sub{margin-top:clamp(2.4rem,5vw,3.4rem);font-family:var(--font-body);font-size:.7rem;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--mist-dim)}
+.pm-results .cases-grid{margin-top:1.2rem}
+
+@media(prefers-reduced-motion:reduce){
+  .faq details[open] .a{animation:none}
+  .hero-motif{transform:none}
+  body::after{display:none}
+}

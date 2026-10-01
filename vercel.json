@@ -76,7 +76,7 @@
       ]
     },
     {
-      "source": "/(motion.css|motion.js|servicios.css|servicios.js|agchat.css|agchat.js|fonts.css|analitica.js)",
+      "source": "/(motion.css|motion.js|servicios.css|servicios.js|agchat.css|agchat.js|fonts.css|analitica.js|premium.css|premium.js)",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
       ]

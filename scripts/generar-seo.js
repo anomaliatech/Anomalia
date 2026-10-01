@@ -248,6 +248,7 @@ function sellarRecursos(html) {
 }
 
 // ---------------------------------------------------------------- ficheros GEO
+const eur = (n) => new Intl.NumberFormat('es-ES').format(n) + ' €';
 function llmsTxt(infos) {
   const L = [];
   L.push(`# ${o.nombre}`);
@@ -264,6 +265,12 @@ function llmsTxt(infos) {
       : ' Precio: a presupuesto cerrado tras una primera reunión gratuita; no se publica tarifa.';
     L.push(`- [${s.nombre}](${D}${s.ruta}): ${s.resumen}${precio}`);
   }
+  L.push('');
+  L.push('## Resultados (caso real)');
+  L.push('');
+  L.push(`- Cliente: ${sitio.caso.cliente} con tres sistemas de Anomalia: ${sitio.caso.sistemas.join('; ')}.`);
+  L.push(`- Retorno estimado: unos ${eur(sitio.caso.primerAnio)} el primer año y cerca de ${eur(sitio.caso.tresAnios)} en tres años.`);
+  L.push(`- ${sitio.caso.nota}`);
   L.push('');
   L.push('## Por qué elegir Anomalia');
   L.push('');
@@ -339,6 +346,12 @@ function aboutMd(infos) {
     L.push(`- Más información: ${D}${s.ruta}`);
     L.push('');
   }
+  L.push('## Resultados (caso real)');
+  L.push('');
+  L.push(`Anomalia mide su trabajo en dinero para el cliente. En ${sitio.caso.cliente} con tres sistemas de Anomalia (${sitio.caso.sistemas.join(', ')}), el retorno estimado es de unos **${eur(sitio.caso.primerAnio)} el primer año** y cerca de **${eur(sitio.caso.tresAnios)} en tres años**.`);
+  L.push('');
+  L.push(sitio.caso.nota);
+  L.push('');
   L.push('## Cómo trabaja (proceso en 5 pasos)');
   L.push('');
   sitio.proceso.forEach(([t, d], i) => L.push(`${i + 1}. **${t}.** ${d}`));
