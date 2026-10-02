@@ -24,9 +24,9 @@ body{font-feature-settings:"ss01","cv11"}
 .cta-final .eyebrow::after,.z-inner>.z-eyebrow::after{content:"";flex:none;width:2.2rem;height:1px;background:linear-gradient(270deg,transparent,rgba(217,192,138,.8))}
 .nf-code{display:inline-flex;align-items:center;gap:.9rem}
 
-/* ---------- grano fino sobre toda la página ---------- */
-body::after{content:"";position:fixed;inset:0;z-index:5;pointer-events:none;opacity:.05;
-  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>")}
+/* ---------- grano fino sobre toda la página (PNG en mosaico: no se recalcula nunca) ---------- */
+body::after{content:"";position:fixed;inset:0;z-index:5;pointer-events:none;opacity:.034;background:url(/assets/grano.png) 0 0/128px 128px;transform:translateZ(0)}
+@media(hover:none){body::after{display:none}}   /* en móvil no se paga una capa a pantalla completa */
 .mk-film-stage::after{display:none}
 
 /* ---------- fondo de las landings: más calmado ---------- */
@@ -47,7 +47,7 @@ body::after{content:"";position:fixed;inset:0;z-index:5;pointer-events:none;opac
 .btn-gold:not(.mk-pulse):not(.hx-cta){position:relative;overflow:hidden}
 .btn-gold:not(.mk-pulse):not(.hx-cta)::after{content:"";position:absolute;top:0;bottom:0;width:38%;left:-50%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.5),transparent);transform:skewX(-18deg);transition:left .7s var(--ease)}
 .btn-gold:not(.mk-pulse):not(.hx-cta):hover::after{left:125%}
-.btn-ghost{backdrop-filter:blur(6px);border-color:rgba(255,255,255,.16);font-weight:500}
+.btn-ghost{border-color:rgba(255,255,255,.16);font-weight:500}
 .btn-ghost:hover{border-color:rgba(217,192,138,.7);color:var(--gold-light);background:rgba(198,161,91,.06)}
 .mk-pulse::after{border-width:1px;opacity:.7}
 
@@ -94,12 +94,29 @@ a:hover>.z-svc-body .z-cta svg,.z-cta:hover svg{transform:translateX(4px)}
 .foot-col h4{letter-spacing:.24em;font-size:.66rem;font-weight:600}
 
 /* ---------- detalles de sistema ---------- */
-html{scrollbar-color:rgba(198,161,91,.45) #0A0A0A;scrollbar-width:thin}
-::-webkit-scrollbar{width:9px;height:9px}
-::-webkit-scrollbar-track{background:#0A0A0A}
-::-webkit-scrollbar-thumb{background:rgba(198,161,91,.4);border-radius:9px;border:2px solid #0A0A0A}
-::-webkit-scrollbar-thumb:hover{background:rgba(217,192,138,.7)}
+/* barra de scroll del navegador: fina y neutra, sin protagonismo */
+html{scrollbar-color:rgba(255,255,255,.16) transparent;scrollbar-width:thin}
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:rgba(255,255,255,.14);border-radius:6px}
+::-webkit-scrollbar-thumb:hover{background:rgba(255,255,255,.28)}
 .mk-progress{height:2px}
+.mk-rail{display:none!important}   /* la barra lateral de la película, fuera */
+
+/* ============================================================
+   RENDIMIENTO: mismo aspecto, mucho menos trabajo por fotograma
+   ============================================================ */
+/* el desenfoque de lo que hay DETRÁS de la barra se recalculaba en cada fotograma de la película */
+.bar,.btn-ghost,.agbar{backdrop-filter:none;-webkit-backdrop-filter:none}
+.agbar{background:rgba(10,10,10,.97)}
+/* sombras de texto enormes y filtros ligados al scroll: obligaban a repintar los titulares al atravesarlos */
+.z-inner{text-shadow:none}
+.mk-zfog{filter:none}
+/* lo que no está en escena no se anima: marquesinas, órbitas y trazos de los shots que no se ven */
+.mk-zshot:not([data-live]) *,.mk-zshot:not([data-live]) *::before,.mk-zshot:not([data-live]) *::after{animation-play-state:paused!important}
+/* fondo de las landings: las manchas desenfocadas y la rejilla con máscara se quedan quietas (animarlas era lo más caro de la página) */
+.site-bg i,.site-bg::before{animation:none}
+.mk-glow::before{animation:none}
 
 /* ============================================================
    RESULTADOS: lo que montamos se mide en dinero

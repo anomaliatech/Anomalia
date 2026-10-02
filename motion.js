@@ -147,7 +147,7 @@
       // Raíl de progreso a la derecha (solo si hay película)
       var film = document.querySelector(".mk-film");
       var rail = null;
-      if (film) {
+      if (film && film.hasAttribute("data-mk-rail")) {   // la barra lateral ya no se crea por defecto
         rail = document.createElement("div");
         rail.className = "mk-rail";
         rail.innerHTML = '<div class="mk-rail-thumb"></div>';
