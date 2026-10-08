@@ -96,7 +96,13 @@ function aMarkdown(html) {
 // ---------------------------------------------------------------- redes sociales
 const o = sitio.org;
 // sameAs = perfiles verificados (redes del pie + otros, como la ficha de Google).
-function perfiles() { return [...new Set([...sitio.redes.map((r) => r.url), ...o.sameAs])]; }
+function perfiles() { return [...new Set([...sitio.redes.filter((r) => !r.persona).map((r) => r.url), ...o.sameAs])]; }
+function perfilesFundador() { return sitio.redes.filter((r) => r.persona).map((r) => r.url); }
+function fundador(extra) {
+  const p = { '@type': 'Person', name: o.fundador, ...extra };
+  if (perfilesFundador().length) p.sameAs = perfilesFundador();
+  return p;
+}
 
 const ICONOS = {
   linkedin: '<rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5V17M8 7.4v.1M11.5 17v-6.5m0 3a2.5 2.5 0 0 1 5 0V17"/>',
@@ -108,10 +114,11 @@ const ICONOS = {
   web: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.5 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.5-3.8-9S9.5 5.5 12 3Z"/>',
 };
 function bloqueRedes() {
-  if (!sitio.redes.length) return '';
-  const items = sitio.redes.map((r) => {
+  const visibles = sitio.redes.filter((r) => r.pie !== false);
+  if (!visibles.length) return '';
+  const items = visibles.map((r) => {
     const ico = ICONOS[r.red] || ICONOS.web;
-    return `<li><a href="${r.url}" target="_blank" rel="noopener me" aria-label="Anomalia en ${r.nombre}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ico}</svg></a></li>`;
+    return `<li><a href="${r.url}" target="_blank" rel="noopener me" aria-label="${r.etiqueta || `Anomalia en ${r.nombre}`}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ico}</svg></a></li>`;
   });
   return `\n        <ul class="foot-social" aria-label="Anomalia en redes sociales">${items.join('')}</ul>\n        `;
 }
@@ -136,7 +143,7 @@ function nodoOrganizacion(completo) {
     alternateName: o.alias,
     description: o.descripcion,
     slogan: o.eslogan,
-    founder: { '@type': 'Person', name: o.fundador },
+    founder: fundador(),
     areaServed: { '@type': 'Country', name: 'España', identifier: o.pais },
     knowsLanguage: [o.idioma],
     knowsAbout: o.categorias,
@@ -235,7 +242,7 @@ function grafo(pag, info, fecha) {
         datePublished: pag.publicado,
         dateModified: fecha,
         inLanguage: 'es',
-        author: { '@type': 'Person', name: o.fundador, jobTitle: 'Fundador de Anomalia', worksFor: { '@id': o.id } },
+        author: fundador({ jobTitle: 'Fundador de Anomalia', worksFor: { '@id': o.id } }),
         publisher: { '@id': o.id },
         mainEntityOfPage: { '@id': `${url}#webpage` },
         ...(pag.sobre ? { about: { '@id': `${D}${pag.sobre}#service` } } : {}),
@@ -349,7 +356,7 @@ function llmsTxt(infos) {
   L.push(`- Email: ${o.email}`);
   L.push(`- Teléfono: ${o.telefonoHumano}`);
   L.push(`- WhatsApp: https://wa.me/${o.telefono.replace(/D/g, '')}`);
-  for (const r of sitio.redes) L.push(`- ${r.nombre}: ${r.url}`);
+  for (const r of sitio.redes) L.push(`- ${r.nombre}${r.persona ? ` (${o.fundador}, fundador)` : ''}: ${r.url}`);
   L.push('');
   L.push('## Optional');
   L.push('');
@@ -385,7 +392,7 @@ function aboutMd(infos) {
   L.push(`- **Web:** ${o.url}`);
   L.push(`- **Email:** ${o.email}`);
   L.push(`- **Teléfono:** ${o.telefonoHumano}`);
-  if (sitio.redes.length) L.push(`- **Perfiles oficiales:** ${sitio.redes.map((r) => `${r.nombre} (${r.url})`).join(', ')}`);
+  if (sitio.redes.length) L.push(`- **Perfiles oficiales:** ${sitio.redes.map((r) => `${r.nombre}${r.persona ? ` del fundador` : ''} (${r.url})`).join(', ')}`);
   L.push(`- **Horario:** ${o.horario}`);
   L.push(`- **Sectores habituales:** ${o.sectores.join(', ')}`);
   L.push('');
