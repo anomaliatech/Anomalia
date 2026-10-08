@@ -7,8 +7,10 @@ Anomalia (también escrito "Anomalía") es un estudio digital con sede en Españ
 ## Servicios
 
 - [Creación de páginas web a medida](https://anomalia.business/paginas-web): Webs rápidas, legales, seguras y visibles en Google, pensadas para convertir visitas en clientes. Precio: a presupuesto cerrado tras una primera reunión gratuita; no se publica tarifa.
-- [Automatización de procesos con IA para negocios](https://anomalia.business/automatizacion-ia): Agentes y automatizaciones que atienden, agendan, recuerdan y hacen seguimiento sin que nadie tenga que estar encima. Precio: a presupuesto cerrado tras una primera reunión gratuita; no se publica tarifa.
+- [Automatización de procesos con IA para pymes](https://anomalia.business/automatizacion-ia): Agentes y automatizaciones que atienden, agendan, recuerdan y hacen seguimiento sin que nadie tenga que estar encima. Precio: a presupuesto cerrado tras una primera reunión gratuita; no se publica tarifa.
 - [Auditoría de negocio completa](https://anomalia.business/auditoria-negocio): Diagnóstico completo por fuera (web, anuncios, reseñas, competencia) y por dentro (captación, agenda, cobro), con plan de acción. Precio: 550 € (auditoría de negocio completa) / 450 € (auditoría + servicio contratado).
+- [Recepcionista telefónica con IA](https://anomalia.business/recepcionista-telefonica-ia): Una recepcionista con IA que coge cada llamada, informa, agenda en la agenda real del negocio y avisa al equipo con un resumen al colgar. Precio: a presupuesto cerrado tras una primera reunión gratuita; no se publica tarifa.
+- [Asistente de WhatsApp con IA](https://anomalia.business/asistente-whatsapp-ia): Un asistente de WhatsApp con IA que responde al momento, identifica al cliente, agenda y anula citas reales y toma recados fuera de horario. Precio: a presupuesto cerrado tras una primera reunión gratuita; no se publica tarifa.
 
 ## Resultados (caso real)
 
@@ -17,6 +19,10 @@ Anomalia (también escrito "Anomalía") es un estudio digital con sede en Españ
 - De dónde sale: Ahorro en personal: el teléfono, el WhatsApp y la agenda los atienden los agentes de IA las 24 horas, trabajo de recepción que la clínica ya no tiene que cubrir con plantilla.
 - De dónde sale: Citas que ya no se pierden: las llamadas y mensajes que antes quedaban sin contestar, y acababan en la clínica de al lado, ahora se atienden y se convierten en cita al momento.
 - Cifras estimadas con los datos de la propia clínica. En la primera cita se hace la misma cuenta con los datos de cada negocio.
+
+## Guías
+
+- [Cómo automatizar procesos en una pyme con IA](https://anomalia.business/como-automatizar-procesos-pyme-ia): Guía práctica: qué procesos automatizar primero, cómo hacerlo en 5 pasos, cómo calcular si compensa y qué exige la ley (RGPD y normativa europea de IA).
 
 ## Por qué elegir Anomalia
 
@@ -52,6 +58,7 @@ Anomalia (también escrito "Anomalía") es un estudio digital con sede en Españ
 - **¿Voy a salir el primero en Google?** Nadie serio puede prometerte el primer puesto. Lo que sí garantizamos es que la web sale técnicamente preparada para posicionar; llegar arriba en búsquedas competidas es trabajo de SEO de contenido o de Google Ads, y lo hablamos aparte.
 - **¿Puedo actualizarla yo luego?** Depende de lo que quieras poder tocar. Lo dejamos montado para que cambiar textos, fotos o precios sea sencillo, y para lo demás estamos nosotros.
 - **¿Necesito saber de tecnología?** No. Tú cuentas cómo funciona tu negocio y nosotros lo traducimos en una web que funciona.
+- **¿Qué es la automatización de procesos con IA para una pyme?** Es conseguir que las tareas que hoy se hacen a mano y siguen unas reglas (contestar mensajes y llamadas, dar citas, mandar recordatorios, preparar presupuestos, hacer seguimiento) las haga un sistema solo, y que la inteligencia artificial se encargue de la parte que antes necesitaba a una persona: entender lo que escribe o dice el cliente y responderle con sentido. Lo explicamos paso a paso, con cómo calcular si compensa, en la guía para automatizar procesos en una pyme con IA .
 - **¿Es complicado de mantener?** No. Todo se diseña para funcionar solo, sin que tengas que revisarlo cada día. Si algo necesita un ajuste, para eso estamos nosotros.
 - **¿Funciona con las herramientas que ya uso?** En la mayoría de casos, sí: agendas, correo, hojas de cálculo, programas de facturación y las apps de mensajería habituales se pueden conectar. En la propuesta te decimos qué encaja y qué no.
 - **¿Mis datos y los de mis clientes están seguros?** Se trabaja con lo mínimo necesario, con accesos controlados y sin sacar información a sitios donde no deba estar. Y te explicamos dónde vive cada dato.
@@ -62,6 +69,26 @@ Anomalia (también escrito "Anomalía") es un estudio digital con sede en Españ
 - **¿Y si no tengo web?** Se audita igual. La mitad de fuera se hace con lo que haya (redes, ficha de Google, anuncios) y la de dentro con el formulario. El informe señala el hueco de la web como una de las cosas a resolver.
 - **¿El informe es mío?** Sí, es tuyo y te lo quedas. Está pensado para que lo entiendas sin nosotros al lado.
 - **¿Qué pasa después de la auditoría?** Tú decides. Puedes ejecutar el plan por tu cuenta, o encargarnos lo que salga —web o automatización—; en ese caso la auditoría se queda en 450 €.
+- **¿Tengo que cambiar de número de teléfono?** No. Se conecta a tu número de siempre. Puede coger todas las llamadas o solo las que tú no coges en unos segundos, las de fuera de horario o las que entran cuando la línea está ocupada.
+- **¿Se nota que es una inteligencia artificial?** Sí, y a propósito: se presenta como asistente virtual al descolgar, como exige la normativa europea. Aun así la voz es natural, entiende cómo habla la gente de verdad y la conversación fluye sin menús ni comandos.
+- **¿Funciona con mi agenda o mi programa de gestión?** Con Google Calendar, Outlook y la mayoría de programas de citas y de gestión de clínicas que permiten conectarse. En la primera llamada nos dices cuál usas y te confirmamos si encaja y cómo.
+- **¿Y si el cliente pregunta algo que no sabe?** Lo reconoce, no se lo inventa, y toma el recado con los datos de contacto para que tu equipo le llame. Si la persona pide hablar con alguien, le pasa la llamada.
+- **¿Cuánto cuesta una recepcionista telefónica con IA?** No publicamos una tarifa porque no cuesta lo mismo atender diez llamadas al día que doscientas, ni dar información que agendar con cinco profesionales distintos. Tras una primera llamada gratis te damos el precio cerrado del montaje y el del mantenimiento mensual, por escrito. En todos los casos, muy por debajo de un puesto de recepción.
+- **¿Cuánto se tarda en tenerla funcionando?** Normalmente unos días desde que nos das tu información y los accesos a la agenda. Antes de atender a tus clientes se prueba con llamadas reales hasta que responde como quieres.
+- **¿Qué pasa con los datos de las llamadas?** Se tratan según el RGPD: solo lo necesario para dar la cita o el recado, con accesos controlados, y te explicamos dónde se guarda cada dato y durante cuánto tiempo. Tu negocio sigue siendo el responsable del tratamiento, como con cualquier herramienta.
+- **¿Qué es la automatización de procesos con IA?** Es usar un sistema que hace solo las tareas repetitivas de un negocio y usa inteligencia artificial para la parte que antes necesitaba a una persona: entender mensajes y llamadas y responder con sentido. Por ejemplo, un asistente que lee un WhatsApp, consulta la agenda y deja la cita puesta.
+- **¿Qué proceso debería automatizar primero en mi pyme?** El que más dinero te cuesta hoy, no el más llamativo. En negocios que trabajan con cita suele ser la atención de mensajes y llamadas, porque cada una que no se contesta a tiempo es un cliente que reserva en otro sitio.
+- **¿Cuánto cuesta automatizar procesos con IA?** Normalmente hay un coste de montaje y un mantenimiento mensual. Depende del volumen de conversaciones, de lo que tenga que hacer el sistema y de las herramientas a las que se conecte. Lo sensato es compararlo con lo que te cuesta hoy hacerlo a mano o no hacerlo, con la fórmula de esta guía.
+- **¿Necesito cambiar mis herramientas?** Casi nunca. Lo normal es conectar el sistema a lo que ya usas: tu agenda, tu WhatsApp Business, tu número de teléfono y tu correo.
+- **¿Cuánto se tarda en tenerlo funcionando?** Un proceso concreto, como un asistente que da citas por WhatsApp, puede estar funcionando en días si las reglas están claras. Lo que más tiempo lleva no es la tecnología, sino definir bien qué debe hacer y probarlo con casos reales.
+- **¿Es legal usar IA para atender a mis clientes?** Sí, siempre que cumplas el RGPD con los datos y avises de que el cliente habla con una IA, como exige la normativa europea. Y conviene que una persona pueda tomar el relevo cuando haga falta.
+- **¿Funciona con mi número de WhatsApp actual?** Sí. El asistente se conecta a tu número a través de WhatsApp Business (la API oficial de Meta). Tus clientes siguen escribiendo al mismo número de siempre y tú sigues viendo las conversaciones.
+- **¿Puedo seguir contestando yo cuando quiera?** Claro. Tú decides qué atiende el asistente y qué atendéis vosotros. Cuando una persona del equipo entra en una conversación, el asistente se aparta; y cuando el cliente pide hablar con alguien, avisa y espera.
+- **¿Es un chatbot de botones?** No. El cliente escribe con sus palabras, como a cualquier persona, y el asistente entiende qué quiere, lo consulta en tu agenda y actúa. Sin menús ni «pulsa 1».
+- **¿Con qué agendas o programas se conecta?** Con Google Calendar, Outlook y la mayoría de programas de citas y de gestión de clínicas y centros que permiten conectarse. En la primera llamada nos dices cuál usas y te confirmamos si encaja y cómo.
+- **¿Cuánto cuesta un asistente de WhatsApp con IA?** No publicamos una tarifa porque no es lo mismo responder dudas que agendar con varios profesionales, ni atender veinte mensajes al día que quinientos. Tras una primera llamada gratis te damos el precio cerrado del montaje y el del mantenimiento mensual, por escrito, junto con la cuenta de lo que te cuesta hoy no contestar a tiempo.
+- **¿Qué pasa con los datos de mis clientes?** Se tratan según el RGPD: solo lo necesario para atender y dar cita, con accesos controlados, y te explicamos dónde se guarda cada dato y durante cuánto tiempo. Tu negocio sigue siendo el responsable del tratamiento, como con cualquier herramienta.
+- **¿Y si quiero también que atienda el teléfono?** Ese es el siguiente paso natural: la recepcionista telefónica con IA trabaja sobre la misma agenda y la misma información, así que el teléfono y el WhatsApp responden igual.
 
 ## Contacto
 
@@ -69,6 +96,7 @@ Anomalia (también escrito "Anomalía") es un estudio digital con sede en Españ
 - Reservar una primera cita gratuita (asistente con IA, 24/7): https://anomalia.business/#contacto
 - Email: contacto@anomalia.business
 - Teléfono: +34 601 44 91 73
+- WhatsApp: https://wa.me/+34601449173
 
 ## Optional
 

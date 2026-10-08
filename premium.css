@@ -91,7 +91,7 @@ a:hover>.z-svc-body .z-cta svg,.z-cta:hover svg{transform:translateX(4px)}
 /* ---------- pie ---------- */
 .foot-col a,.foot-legal a,.foot-legal button{transition:color .3s}
 .foot-col a:hover,.foot-legal a:hover,.foot-legal button:hover{color:var(--gold-light)}
-.foot-col h4{letter-spacing:.24em;font-size:.66rem;font-weight:600}
+.foot-col h3{letter-spacing:.24em;font-size:.66rem;font-weight:600}
 
 /* ---------- detalles de sistema ---------- */
 /* barra de scroll del navegador: fina y neutra, sin protagonismo */
@@ -147,3 +147,10 @@ html{scrollbar-color:rgba(255,255,255,.16) transparent;scrollbar-width:thin}
   .hero-motif{transform:none}
   body::after{display:none}
 }
+
+/* ---------- redes en el pie (las pinta scripts/generar-seo.js desde lib/sitio.js) ---------- */
+.foot-social{display:flex;gap:.6rem;margin-top:1.2rem;padding:0;list-style:none}
+.foot-social a{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.14);color:var(--mist);transition:color .3s,border-color .3s}
+.foot-social a:hover{color:var(--gold-light);border-color:rgba(217,192,138,.6)}
+.foot-social svg{width:18px;height:18px}
+.foot-bottom .foot-social{margin-top:0}

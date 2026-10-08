@@ -93,8 +93,33 @@ function aMarkdown(html) {
   return s;
 }
 
-// ---------------------------------------------------------------- JSON-LD
+// ---------------------------------------------------------------- redes sociales
 const o = sitio.org;
+// sameAs = perfiles verificados (redes del pie + otros, como la ficha de Google).
+function perfiles() { return [...new Set([...sitio.redes.map((r) => r.url), ...o.sameAs])]; }
+
+const ICONOS = {
+  linkedin: '<rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5V17M8 7.4v.1M11.5 17v-6.5m0 3a2.5 2.5 0 0 1 5 0V17"/>',
+  instagram: '<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.3 6.7v.1"/>',
+  facebook: '<path d="M14 21v-8h2.6l.4-3H14V8.3c0-.9.3-1.5 1.6-1.5H17V4.2a20 20 0 0 0-2.3-.1C12.4 4.1 11 5.5 11 8v2H8.5v3H11v8"/>',
+  x: '<path d="M4 4h4l12 16h-4zM19.5 4 13.4 10.8M4.5 20l6.1-6.8"/>',
+  tiktok: '<path d="M14 4v10.5a3.5 3.5 0 1 1-3.5-3.5M14 4c.5 2.5 2.1 4 4.5 4.3"/>',
+  youtube: '<rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="m10.5 9.5 4 2.5-4 2.5z"/>',
+  web: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.5 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.5-3.8-9S9.5 5.5 12 3Z"/>',
+};
+function bloqueRedes() {
+  if (!sitio.redes.length) return '';
+  const items = sitio.redes.map((r) => {
+    const ico = ICONOS[r.red] || ICONOS.web;
+    return `<li><a href="${r.url}" target="_blank" rel="noopener me" aria-label="Anomalia en ${r.nombre}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ico}</svg></a></li>`;
+  });
+  return `\n        <ul class="foot-social" aria-label="Anomalia en redes sociales">${items.join('')}</ul>\n        `;
+}
+function inyectarRedes(html) {
+  return html.replace(/<!-- seo:redes -->[\s\S]*?<!-- \/seo:redes -->/g, `<!-- seo:redes -->${bloqueRedes()}<!-- /seo:redes -->`);
+}
+
+// ---------------------------------------------------------------- JSON-LD
 function nodoOrganizacion(completo) {
   const n = {
     '@type': o.tipoNegocio,
@@ -125,7 +150,7 @@ function nodoOrganizacion(completo) {
       availableLanguage: ['es'],
       areaServed: o.pais,
     },
-    ...(o.sameAs.length ? { sameAs: o.sameAs } : {}),
+    ...(perfiles().length ? { sameAs: perfiles() } : {}),
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: 'Servicios de Anomalia',
@@ -148,12 +173,16 @@ function nodoServicio(s, completo) {
     url: D + s.ruta,
     provider: { '@id': o.id },
   };
+  if (s.padre) {
+    const padre = sitio.servicios.find((x) => x.id === s.padre);
+    Object.assign(n, { category: padre.nombre, isRelatedTo: { '@id': `${D}${padre.ruta}#service` } });
+  }
   if (!completo) return Object.assign(n, { description: s.resumen });
   return Object.assign(n, {
     description: s.descripcion,
     areaServed: { '@type': 'Country', name: 'España', identifier: o.pais },
     audience: { '@type': 'BusinessAudience', audienceType: 'Pymes, autónomos y negocios locales' },
-    availableChannel: { '@type': 'ServiceChannel', serviceUrl: `${D}/#contacto`, availableLanguage: 'es' },
+    availableChannel: { '@type': 'ServiceChannel', serviceUrl: `${D}${s.ruta}#reservar`, availableLanguage: 'es' },
     ...(s.precio
       ? {
           offers: s.precio.ofertas.map((of) => ({
@@ -187,22 +216,38 @@ function nodoFaq(url, faq) {
 function grafo(pag, info, fecha) {
   const url = D + pag.ruta;
   const servicio = pag.servicio ? sitio.servicios.find((s) => s.id === pag.servicio) : null;
+  const esArticulo = pag.tipo === 'articulo';
   const nodos = [];
-  if (!pag.servicio) {
+  if (pag.ruta === '/') {
     nodos.push(nodoOrganizacion(true));
     nodos.push({ '@type': 'WebSite', '@id': `${D}/#website`, url: o.url, name: o.nombre, publisher: { '@id': o.id }, inLanguage: 'es' });
     for (const s of sitio.servicios) nodos.push(nodoServicio(s, false));
   } else {
     nodos.push(nodoOrganizacion(false));
-    nodos.push(nodoServicio(servicio, true));
-    nodos.push({
-      '@type': 'BreadcrumbList',
-      '@id': `${url}#breadcrumb`,
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Inicio', item: o.url },
-        { '@type': 'ListItem', position: 2, name: pag.nombre, item: url },
-      ],
-    });
+    if (servicio) nodos.push(nodoServicio(servicio, true));
+    if (esArticulo) {
+      nodos.push({
+        '@type': 'Article',
+        '@id': `${url}#article`,
+        headline: info.h1.slice(0, 110),
+        description: info.descripcion,
+        image: pag.imagen || o.imagen,
+        datePublished: pag.publicado,
+        dateModified: fecha,
+        inLanguage: 'es',
+        author: { '@type': 'Person', name: o.fundador, jobTitle: 'Fundador de Anomalia', worksFor: { '@id': o.id } },
+        publisher: { '@id': o.id },
+        mainEntityOfPage: { '@id': `${url}#webpage` },
+        ...(pag.sobre ? { about: { '@id': `${D}${pag.sobre}#service` } } : {}),
+      });
+    }
+    const miga = [{ '@type': 'ListItem', position: 1, name: 'Inicio', item: o.url }];
+    if (pag.padre) {
+      const padre = sitio.paginas.find((p) => p.ruta === pag.padre);
+      miga.push({ '@type': 'ListItem', position: miga.length + 1, name: padre.nombre, item: D + padre.ruta });
+    }
+    miga.push({ '@type': 'ListItem', position: miga.length + 1, name: pag.nombre, item: url });
+    nodos.push({ '@type': 'BreadcrumbList', '@id': `${url}#breadcrumb`, itemListElement: miga });
   }
   nodos.push({
     '@type': 'WebPage',
@@ -213,9 +258,9 @@ function grafo(pag, info, fecha) {
     inLanguage: 'es',
     dateModified: fecha,
     isPartOf: { '@id': `${D}/#website` },
-    about: { '@id': pag.servicio ? `${url}#service` : o.id },
+    about: { '@id': pag.servicio ? `${url}#service` : esArticulo ? `${url}#article` : o.id },
     primaryImageOfPage: { '@type': 'ImageObject', url: pag.imagen || o.imagen, width: 1200, height: 630 },
-    ...(pag.servicio ? { breadcrumb: { '@id': `${url}#breadcrumb` } } : {}),
+    ...(pag.ruta !== '/' ? { breadcrumb: { '@id': `${url}#breadcrumb` } } : {}),
   });
   const faq = nodoFaq(url, info.faq);
   if (faq) nodos.push(faq);
@@ -273,6 +318,13 @@ function llmsTxt(infos) {
   for (const o2 of sitio.caso.origen) L.push(`- De dónde sale: ${o2}`);
   L.push(`- ${sitio.caso.nota}`);
   L.push('');
+  const guias = sitio.paginas.filter((p) => p.tipo === 'articulo');
+  if (guias.length) {
+    L.push('## Guías');
+    L.push('');
+    for (const g of guias) L.push(`- [${g.nombre}](${D}${g.ruta}): ${g.resumen}`);
+    L.push('');
+  }
   L.push('## Por qué elegir Anomalia');
   L.push('');
   for (const p of sitio.porQue) L.push(`- ${p}`);
@@ -296,6 +348,8 @@ function llmsTxt(infos) {
   L.push(`- Reservar una primera cita gratuita (asistente con IA, 24/7): ${D}/#contacto`);
   L.push(`- Email: ${o.email}`);
   L.push(`- Teléfono: ${o.telefonoHumano}`);
+  L.push(`- WhatsApp: https://wa.me/${o.telefono.replace(/D/g, '')}`);
+  for (const r of sitio.redes) L.push(`- ${r.nombre}: ${r.url}`);
   L.push('');
   L.push('## Optional');
   L.push('');
@@ -331,6 +385,7 @@ function aboutMd(infos) {
   L.push(`- **Web:** ${o.url}`);
   L.push(`- **Email:** ${o.email}`);
   L.push(`- **Teléfono:** ${o.telefonoHumano}`);
+  if (sitio.redes.length) L.push(`- **Perfiles oficiales:** ${sitio.redes.map((r) => `${r.nombre} (${r.url})`).join(', ')}`);
   L.push(`- **Horario:** ${o.horario}`);
   L.push(`- **Sectores habituales:** ${o.sectores.join(', ')}`);
   L.push('');
@@ -415,7 +470,7 @@ for (const pag of sitio.paginas) {
   infos.push({ pag, info });
   // Fecha de modificación: la del último commit; pero si esta misma pasada va a
   // cambiar el fichero, la fecha real es hoy (y así la segunda pasada no cambia nada).
-  const construir = (fecha) => sellarRecursos(inyectarJsonLd(original, grafo(pag, info, fecha)));
+  const construir = (fecha) => sellarRecursos(inyectarRedes(inyectarJsonLd(original, grafo(pag, info, fecha))));
   pag.fecha = lastmod(pag.archivo);
   let html = construir(pag.fecha);
   if (html !== original) { pag.fecha = new Date().toISOString().slice(0, 10); html = construir(pag.fecha); }
@@ -423,8 +478,10 @@ for (const pag of sitio.paginas) {
 }
 // Páginas fuera del sitemap que también cargan CSS/JS cacheados como inmutables.
 for (const extra of ['404.html']) {
-  if (fs.existsSync(path.join(RAIZ, extra))) escribir(extra, sellarRecursos(leer(extra)));
+  if (fs.existsSync(path.join(RAIZ, extra))) escribir(extra, sellarRecursos(inyectarRedes(leer(extra))));
 }
+// IndexNow (Bing, Yandex, Seznam…): la clave tiene que estar publicada en la raíz.
+if (sitio.indexNow) escribir(`${sitio.indexNow}.txt`, sitio.indexNow);
 escribir('sitemap.xml', sitemapXml(infos));
 escribir('robots.txt', robotsTxt());
 escribir('llms.txt', llmsTxt(infos.map((x) => x.info)));

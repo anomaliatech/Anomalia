@@ -4,9 +4,9 @@
 
 ---
 
-# Página: Anomalia — Diseño web y automatización para negocios
+# Página: Diseño web y automatización con IA para negocios | Anomalia
 URL: https://anomalia.business/
-Descripción: Anomalia: webs y automatización con IA que hacen ganar dinero a tu negocio. Caso real en una clínica: unos 20.000 € estimados el primer año y 70.000 € en tres.
+Descripción: Webs que traen clientes y agentes de IA que atienden y agendan solos. Una clínica estima +20.000 € el primer año. Reserva tu cita gratis en un minuto.
 
 Estudio digital · Web + IA
 
@@ -139,6 +139,7 @@ Hablas directamente con quien construye tu proyecto, no con un departamento de a
 
 contacto@anomalia.business
 +34 601 44 91 73
+Escríbenos por WhatsApp
 Trabajamos con negocios de toda España · 100 % en remoto
 
 **¿Cuánto tiempo tarda un proyecto?**
@@ -164,9 +165,9 @@ Cada negocio es distinto, así que el precio depende del alcance real. Tras una 
 
 ---
 
-# Página: Creación de páginas web a medida para negocios | Anomalia
+# Página: Diseño web para negocios: lista en una semana | Anomalia
 URL: https://anomalia.business/paginas-web
-Descripción: Diseñamos tu página web a medida: rápida, legal, segura y visible en Google. Para restaurantes, tiendas, clínicas, inmobiliarias y cualquier negocio.
+Descripción: Tu web nueva en una semana o menos: rápida, legal, con SEO incluido y pensada para que te llamen. Precio cerrado antes de empezar. Reserva tu cita gratis.
 
 Inicio / Páginas web
 
@@ -342,13 +343,13 @@ contacto@anomalia.business
 
 # Página: Automatización de procesos con IA para pymes | Anomalia
 URL: https://anomalia.business/automatizacion-ia
-Descripción: Automatización con IA para pymes: agente de citas 24/7, recepcionista telefónica y WhatsApp. Caso real en una clínica: unos 20.000 € estimados el primer año.
+Descripción: Automatiza los procesos de tu pyme con IA: citas 24/7, llamadas y WhatsApp que se atienden solos. Una clínica estima +20.000 € al año. Calcula tu caso.
 
 Inicio / Automatización e IA
 
-Servicio · Automatización e IA
+Automatización de procesos con IA para pymes
 
-# Automatiza las citas, las llamadas y el seguimiento de tu negocio con IA .
+# Automatiza las citas, las llamadas y el seguimiento de tu pyme con IA .
 
 «Que lo que hoy haces a mano funcione solo, todos los días del año.»
 
@@ -388,11 +389,11 @@ No es una lista cerrada — es para que te hagas una idea. Si lo que necesitas n
 
 ### Agente de IA que agenda citas 24/7
 
-Un asistente en tu web y tu WhatsApp que atiende a cualquier hora, resuelve dudas y deja la cita puesta en tu calendario. Como el de esta misma web.
+Un asistente en tu web y tu WhatsApp que atiende a cualquier hora, resuelve dudas y deja la cita puesta en tu calendario. Como el de esta misma web. Ver el asistente de WhatsApp →
 
 ### Recepcionista telefónica con IA
 
-Coge el teléfono cuando tú no puedes, informa de horarios y precios y agenda la cita o el servicio. Ninguna llamada se queda sin respuesta.
+Coge el teléfono cuando tú no puedes, informa de horarios y precios y agenda la cita o el servicio. Ninguna llamada se queda sin respuesta. Ver la recepcionista →
 
 ### Generador de presupuestos y facturas
 
@@ -469,11 +470,14 @@ Precio
 Automatizar una confirmación de cita y montar un asistente que atiende, cotiza y agenda no se parecen en nada. Tras una primera llamada —gratis y sin compromiso— te damos el precio de montarlo y el del mantenimiento mensual, por escrito y antes de empezar.
 
 Valorar mi caso
-Ver primero dónde pierdo el tiempo
+Leer la guía: cómo automatizar tu pyme
 
 Preguntas frecuentes
 
 ## Lo que se suele preguntar.
+
+**¿Qué es la automatización de procesos con IA para una pyme?**
+Es conseguir que las tareas que hoy se hacen a mano y siguen unas reglas (contestar mensajes y llamadas, dar citas, mandar recordatorios, preparar presupuestos, hacer seguimiento) las haga un sistema solo, y que la inteligencia artificial se encargue de la parte que antes necesitaba a una persona: entender lo que escribe o dice el cliente y responderle con sentido. Lo explicamos paso a paso, con cómo calcular si compensa, en la guía para automatizar procesos en una pyme con IA .
 
 **¿Es complicado de mantener?**
 No. Todo se diseña para funcionar solo, sin que tengas que revisarlo cada día. Si algo necesita un ajuste, para eso estamos nosotros.
@@ -507,9 +511,9 @@ contacto@anomalia.business
 
 ---
 
-# Página: Auditoría de negocio: interna y externa | Anomalia
+# Página: Auditoría de negocio por 550 €: qué te frena | Anomalia
 URL: https://anomalia.business/auditoria-negocio
-Descripción: Auditoría de negocio completa: por fuera (web, redes, anuncios, reseñas) y por dentro (agenda, cobro). Informe con plan de acción. 550 €, o 450 € si luego contratas web o automatización.
+Descripción: Tu negocio por fuera (web, Google, reseñas) y por dentro (agenda, cobro) en un informe con plan de acción. 550 €, o 450 € con servicio. Reserva tu cita.
 
 Inicio / Auditoría de negocio
 
@@ -686,6 +690,622 @@ Empecemos
 ## Vamos a ver qué frena tu negocio.
 
 Sin compromiso. Cuéntale a nuestro asistente que quieres una auditoría y deja la cita agendada al momento, o pide que te llamemos.
+
+Reserva tu cita gratis
+contacto@anomalia.business
+
+---
+
+# Página: Recepcionista telefónica con IA para tu negocio | Anomalia
+URL: https://anomalia.business/recepcionista-telefonica-ia
+Descripción: Coge cada llamada, informa, agenda en tu calendario real y avisa al equipo al colgar. Ninguna llamada perdida. Calcula gratis lo que pierdes.
+
+Inicio / Automatización e IA / Recepcionista telefónica
+
+Automatización e IA · Recepcionista telefónica
+
+# Una recepcionista telefónica con IA que coge cada llamada y la convierte en cita .
+
+«La llamada que no coges es el cliente que reserva en el de al lado.»
+
+Contesta todas las llamadas de tu negocio, las 24 horas, con voz natural y en español. Informa de horarios y precios, reconoce al cliente, reserva en tu agenda real con el profesional correcto y, al colgar, te deja un resumen. Si algo se sale de su terreno, te pasa la llamada.
+
+- Atiende 24/7, también festivos
+- Agenda en tu calendario real
+- Resumen de cada llamada
+
+Reserva tu cita gratis
+
+Qué hace en cada llamada
+
+## Todo lo que haría una buena recepcionista. Sin colas, sin horarios.
+
+No es un contestador con menú de opciones. Es una conversación: el cliente habla con normalidad y la recepcionista entiende, responde y actúa sobre tu agenda.
+
+### Descuelga siempre, al primer tono
+
+Mañana, noche, domingo o con la consulta llena: cada llamada se atiende. Puede ser la primera línea o entrar solo cuando tú no coges.
+
+### Informa de horarios, servicios y precios
+
+Responde con tus datos reales, los que tú le das: qué haces, cuánto cuesta, cuándo abres, cómo llegar. Nunca inventa lo que no sabe.
+
+### Agenda en tu calendario real
+
+Mira los huecos libres de verdad, ofrece los que encajan y deja la cita puesta con el profesional correcto. También cambia o anula una cita existente.
+
+### Reconoce a quien llama
+
+Si el cliente ya está en tu sistema, lo identifica por su número y no le pide los datos otra vez. Si es nuevo, le toma lo justo para darle cita.
+
+### Toma recados y pasa la llamada
+
+Lo que no puede resolver lo apunta con nombre, teléfono y motivo. Y cuando la persona pide hablar con alguien, transfiere la llamada a tu equipo.
+
+### Resumen al colgar
+
+Al terminar cada llamada, tu equipo recibe un aviso con quién ha llamado, qué quería y qué se ha hecho. Nada se queda en el aire.
+
+Resultados
+
+## Cada llamada perdida tiene un precio .
+
+Haz la cuenta: cuántas llamadas no coges a la semana, cuántas de esas eran una cita y cuánto vale una cita en tu negocio. Así sale en un caso real:
+
+≈ 20.000 € estimados el primer año
+
+≈ 70.000 € estimados en tres años
+
+0 llamadas sin contestar
+
+De dónde sale ese dinero
+
+- Ahorro en personal. El teléfono lo atiende la recepcionista con IA las 24 horas: trabajo de recepción que la clínica ya no tiene que cubrir con plantilla.
+
+- Citas que ya no se pierden. Cada llamada sin contestar era un paciente que acababa reservando en la clínica de al lado. Ahora se le atiende y se le da cita al momento.
+
+Una clínica con tres sistemas de Anomalia: recepcionista telefónica, asistente de WhatsApp y app de citas . Cifras estimadas con los números de la propia clínica. En tu primera cita hacemos esta misma cuenta con los tuyos.
+
+Cómo suena
+
+## Una llamada normal. Solo que siempre la cogen.
+
+Así va una llamada típica a una clínica con la recepcionista en marcha.
+
+01
+
+### Saluda y se presenta
+
+«Clínica Ejemplo, buenos días. Soy la asistente virtual de la clínica, ¿en qué puedo ayudarte?». El cliente sabe desde el primer segundo que habla con una IA.
+
+02
+
+### Entiende lo que necesita
+
+«Quería una cita de fisioterapia esta semana, por la tarde si puede ser». No hay que pulsar nada ni hablar en comandos.
+
+03
+
+### Mira la agenda y ofrece huecos reales
+
+«Con Laura tengo el jueves a las 17:00 o el viernes a las 18:30. ¿Cuál te viene mejor?». Los huecos salen de tu calendario, no de una lista inventada.
+
+04
+
+### Confirma y avisa al equipo
+
+«Perfecto, jueves a las 17:00 con Laura. Te llega la confirmación al móvil». La cita queda en la agenda y tu equipo recibe el resumen de la llamada.
+
+Para quién
+
+## Para cualquier negocio al que le suena el teléfono mientras trabaja.
+
+### Clínicas y centros de salud
+
+Fisioterapia, dental, estética, psicología. La recepción está con un paciente y el teléfono suena: ahora lo coge ella y da la cita con el profesional correcto.
+
+### Despachos y asesorías
+
+Abogados, gestorías, arquitectos. Filtra el motivo de la llamada, toma los datos y agenda la primera consulta sin interrumpir al profesional.
+
+### Talleres y servicios técnicos
+
+Reparaciones, instaladores, cerrajeros. Mientras estás con las manos ocupadas, ella recoge el aviso con dirección y urgencia y te lo manda.
+
+### Restaurantes
+
+Reservas por teléfono en plena hora punta, sin que nadie deje la sala: mesa, comensales y hora quedan apuntados.
+
+### Inmobiliarias
+
+Responde a los interesados de un anuncio, cualifica lo básico y agenda la visita con el comercial que lleva ese piso.
+
+### Gimnasios y estudios
+
+Horarios de clases, precios de bonos, reserva de la primera clase de prueba. Todo sin apartar a nadie de la sala.
+
+Que nadie vuelva a oír el tono de llamada sin respuesta.
+
+Con los pies en el suelo
+
+## Lo que sí hace y lo que no.
+
+- Se presenta como IA. Lo dice al descolgar, como exige la normativa europea de inteligencia artificial. Nadie se siente engañado.
+
+- No inventa. Solo da la información que tú le has dado y solo ofrece huecos que existen en tu agenda. Si no sabe algo, lo dice y toma el recado.
+
+- Deriva a una persona. Urgencias, quejas, cosas delicadas: pasa la llamada o avisa a tu equipo al instante. No se empeña en resolverlo todo.
+
+- Tus datos siguen siendo tuyos. Trabaja con lo mínimo necesario, con accesos controlados y cumpliendo el RGPD. Te explicamos dónde vive cada dato.
+
+- Se prueba antes de salir. Llamadas reales de prueba, con tus casos y tus excepciones, hasta que responde como responderías tú.
+
+Cómo la ponemos en marcha
+
+## De la primera llamada a tener recepcionista, en días.
+
+01
+
+### Diagnóstico
+
+Cuántas llamadas recibes, cuántas se pierden, qué preguntan y qué agenda usas. Con eso sale la cuenta de lo que cuesta no cogerlas.
+
+02
+
+### Propuesta
+
+Qué hará exactamente, con qué voz, qué pasa en cada situación y el precio cerrado: montaje y mantenimiento mensual, por escrito.
+
+03
+
+### Construcción
+
+La conectamos a tu agenda y a tu número, le damos tu información y la afinamos con llamadas de prueba reales.
+
+04
+
+### Puesta en marcha
+
+Empieza a coger llamadas. Las primeras semanas revisamos los resúmenes contigo y ajustamos lo que haga falta.
+
+05
+
+### Acompañamiento
+
+Mantenimiento, mejoras y control de que lo que dice sigue siendo lo que quieres que diga. Si cambian tus precios u horarios, cambia ella.
+
+Precio
+
+## Un precio cerrado antes de empezar.
+
+Depende de cuántas llamadas recibes, de qué tiene que hacer con ellas y de la agenda a la que se conecta. Tras una primera llamada gratis y sin compromiso te damos el precio del montaje y el del mantenimiento mensual, por escrito. Y la cuenta de lo que te cuesta hoy cada llamada perdida, para que compares.
+
+Calcular mi caso
+Ver también el asistente de WhatsApp
+
+Preguntas frecuentes
+
+## Lo que se suele preguntar.
+
+**¿Tengo que cambiar de número de teléfono?**
+No. Se conecta a tu número de siempre. Puede coger todas las llamadas o solo las que tú no coges en unos segundos, las de fuera de horario o las que entran cuando la línea está ocupada.
+
+**¿Se nota que es una inteligencia artificial?**
+Sí, y a propósito: se presenta como asistente virtual al descolgar, como exige la normativa europea. Aun así la voz es natural, entiende cómo habla la gente de verdad y la conversación fluye sin menús ni comandos.
+
+**¿Funciona con mi agenda o mi programa de gestión?**
+Con Google Calendar, Outlook y la mayoría de programas de citas y de gestión de clínicas que permiten conectarse. En la primera llamada nos dices cuál usas y te confirmamos si encaja y cómo.
+
+**¿Y si el cliente pregunta algo que no sabe?**
+Lo reconoce, no se lo inventa, y toma el recado con los datos de contacto para que tu equipo le llame. Si la persona pide hablar con alguien, le pasa la llamada.
+
+**¿Cuánto cuesta una recepcionista telefónica con IA?**
+No publicamos una tarifa porque no cuesta lo mismo atender diez llamadas al día que doscientas, ni dar información que agendar con cinco profesionales distintos. Tras una primera llamada gratis te damos el precio cerrado del montaje y el del mantenimiento mensual, por escrito. En todos los casos, muy por debajo de un puesto de recepción.
+
+**¿Cuánto se tarda en tenerla funcionando?**
+Normalmente unos días desde que nos das tu información y los accesos a la agenda. Antes de atender a tus clientes se prueba con llamadas reales hasta que responde como quieres.
+
+**¿Qué pasa con los datos de las llamadas?**
+Se tratan según el RGPD: solo lo necesario para dar la cita o el recado, con accesos controlados, y te explicamos dónde se guarda cada dato y durante cuánto tiempo. Tu negocio sigue siendo el responsable del tratamiento, como con cualquier herramienta.
+
+Empecemos
+
+## ¿Cuántas llamadas se te escaparon esta semana?
+
+Sin compromiso. Cuéntale a nuestro asistente cómo es tu negocio y deja la cita agendada al momento, o pide que te llamemos.
+
+Reserva tu cita gratis
+contacto@anomalia.business
+
+---
+
+# Página: Cómo automatizar procesos en una pyme con IA | Anomalia
+URL: https://anomalia.business/como-automatizar-procesos-pyme-ia
+Descripción: Qué procesos automatizar primero, cómo hacerlo en 5 pasos y cómo calcular si te compensa, con un caso real. Guía práctica para pymes: léela en 8 minutos.
+
+Inicio / Automatización e IA / Guía
+
+Guía · Automatización de procesos con IA
+
+# Cómo automatizar procesos en una pyme con IA: guía práctica, paso a paso.
+
+Qué conviene automatizar primero, cómo hacerlo sin romper nada, cómo saber si te compensa antes de gastar un euro y qué te exige la ley. Escrita para quien lleva un negocio, no para informáticos.
+
+Por Marcos Mompeán , fundador de Anomalia · Publicada el 8 de octubre de 2026 · 8 minutos de lectura
+
+La respuesta corta
+
+Automatizar un proceso con IA es que una tarea repetitiva que hoy hace una persona (contestar, agendar, recordar, presupuestar, hacer seguimiento) la haga un sistema solo, y que la inteligencia artificial cubra la parte que antes necesitaba criterio humano: entender lo que dice el cliente y responderle bien. En una pyme se hace en cinco pasos:
+
+- Apuntar las tareas que se repiten y cuánto tiempo se llevan.
+
+- Elegir la que más dinero cuesta hoy, no la más vistosa.
+
+- Escribir sus reglas y sus límites antes de tocar ninguna herramienta.
+
+- Conectarla a lo que ya usas: agenda, WhatsApp, teléfono, correo.
+
+- Probarla con casos reales y medir el resultado antes de añadir la siguiente.
+
+## Qué significa automatizar un proceso con IA (y qué no).
+
+La automatización de toda la vida sigue reglas fijas: «si llega un pedido, manda este correo». Funciona muy bien mientras todo es predecible. Lo que no sabía hacer era lo que hace una persona en recepción: leer «¿tenéis algo el jueves por la tarde para mi hija?» y entender que hay que buscar una cita, para quién y cuándo.
+
+Eso es lo que aporta la inteligencia artificial : entiende mensajes y llamadas escritos o dichos con naturalidad, decide qué hacer con ellos dentro de los límites que tú le marcas y responde como lo haría alguien de tu equipo. La parte mecánica (consultar la agenda, apuntar la cita, mandar el recordatorio) la sigue haciendo la automatización de siempre, conectada a tus herramientas.
+
+Lo que no es: no es un chatbot de botones que obliga al cliente a «pulsar 1», no es una IA que decide sola sobre temas delicados y no sustituye el criterio del dueño del negocio. Bien montada, se ocupa de lo repetitivo y te pasa a ti lo que de verdad necesita una persona.
+
+## Qué procesos automatizar primero en una pyme.
+
+Los que mejor salen tienen tres cosas en común: se repiten muchas veces a la semana, siguen unas reglas claras y, cuando fallan, cuestan dinero . En la mayoría de pymes de servicios son estos:
+
+### 1. Atender mensajes y dar citas
+
+El cliente escribe por WhatsApp o por la web a las once de la noche y nadie contesta hasta el día siguiente; para entonces ya ha reservado en otro sitio. Un asistente de WhatsApp con IA responde al momento, consulta tu agenda y deja la cita puesta. Suele ser el proceso que antes se paga solo.
+
+### 2. Coger el teléfono
+
+Si en tu negocio suena el teléfono mientras estás con un cliente, cada llamada sin coger es una venta en riesgo. Una recepcionista telefónica con IA atiende todas, informa, agenda y te deja un resumen.
+
+### 3. Recordatorios y confirmaciones
+
+Avisar el día antes y pedir que confirmen reduce las ausencias y te deja tiempo para llenar el hueco si alguien cancela. Es de lo más sencillo de montar y de lo más agradecido.
+
+### 4. Presupuestos, facturas y documentos
+
+Si preparas presupuestos copiando y pegando de uno anterior, se puede generar el documento con tus precios y tu formato a partir de cuatro datos. Igual con facturas, contratos o fichas de cliente.
+
+### 5. Seguimiento de clientes
+
+A quien pidió presupuesto y no contestó, a quien hace meses que no vuelve: un mensaje en el momento justo recupera ventas que hoy se pierden por pura falta de tiempo.
+
+Lo que no conviene automatizar todavía : un proceso que hoy ya funciona mal (automatizarlo solo hace que falle más rápido), decisiones que dependen de tu criterio caso a caso y cualquier cosa que pase dos veces al año.
+
+## Cómo hacerlo, paso a paso.
+
+01
+
+### Haz inventario durante una semana
+
+Apunta cada tarea que se repite, quién la hace, cuántas veces y cuánto se tarda. Y lo que se queda sin hacer: llamadas perdidas, mensajes sin contestar, presupuestos sin seguimiento. Sin este dato todo lo demás es intuición.
+
+02
+
+### Elige por dinero, no por moda
+
+Ordena la lista por lo que te cuesta cada tarea al mes (la fórmula está más abajo) y empieza por la primera. Un solo proceso bien resuelto vale más que cinco a medias.
+
+03
+
+### Escribe las reglas y los límites
+
+Qué puede hacer el sistema solo, qué tiene que consultar y cuándo pasa el caso a una persona. Qué información puede dar (horarios, precios, servicios) y cuál no. Este documento es la mitad del trabajo y lo que evita sorpresas.
+
+04
+
+### Conéctalo a lo que ya usas
+
+Tu agenda (Google Calendar, Outlook o el programa de citas de tu sector), tu WhatsApp Business, tu número de teléfono, tu correo. Si hay que cambiar de herramientas para automatizar, normalmente algo se está planteando mal.
+
+05
+
+### Prueba con casos reales y mide
+
+Antes de ponerlo delante de clientes, pruébalo con las conversaciones raras de tu día a día. Luego mide lo mismo que mediste en el paso 1. Cuando el primer proceso funcione solo, pasa al siguiente.
+
+## Cuánto cuesta y cómo calcular si te compensa.
+
+Un proyecto de automatización con IA suele tener dos costes: el montaje (se paga una vez) y el mantenimiento mensual , que incluye el uso de la IA, las conexiones y los ajustes. El precio depende de cuántas conversaciones o llamadas hay, de lo que tiene que hacer el sistema con ellas y de a cuántas herramientas se conecta. Desconfía de quien te da una cifra sin preguntarte nada de esto.
+
+Lo útil es comparar ese coste con lo que te cuesta hoy no tenerlo. Para cada proceso:
+
+Coste mensual actual = horas al mes × coste de una hora de tu equipo + clientes perdidos al mes × lo que vale un cliente
+
+Si ese número es claramente mayor que el mantenimiento mensual, y el montaje se recupera en pocos meses, compensa. Si no sale, no lo hagas: no todo lo automatizable merece la pena.
+
+### Un caso real
+
+En una clínica con tres sistemas de Anomalia (asistente de WhatsApp, recepcionista telefónica y app de citas) la estimación, hecha con los números de la propia clínica, es de unos 20.000 € el primer año y cerca de 70.000 € en tres . Sale de dos sitios: el trabajo de recepción que ya no hay que cubrir con plantilla y las citas que antes se iban a la competencia por no contestar a tiempo. Son cifras estimadas, no un resultado cerrado, y en otro negocio saldrán distintas: por eso se calculan antes de empezar.
+
+## ¿Lo monto yo o lo encargo?
+
+Para automatizaciones sencillas y sin conversación (pasar los datos de un formulario a una hoja de cálculo, avisar por correo cuando llega un pedido) hay herramientas como Zapier, Make o n8n que una persona con algo de mano puede configurar por su cuenta. Si es tu caso, empieza por ahí.
+
+Cuando el sistema tiene que hablar con tus clientes (entender lo que piden, consultar tu agenda real, no inventarse huecos ni precios, saber cuándo parar y avisar a una persona) la cosa cambia. Ahí lo difícil no es la herramienta, sino las reglas, los límites y las pruebas, y un fallo se nota delante del cliente. Es el tipo de trabajo que conviene encargar a alguien que lo haya hecho antes y que se quede para mantenerlo.
+
+## Los errores más habituales.
+
+- Empezar por la herramienta y no por el problema. «Quiero un chatbot» no es un objetivo; «que no se pierda ninguna cita fuera de horario» sí.
+
+- Automatizar todo a la vez. Cinco procesos a medias generan más trabajo del que quitan.
+
+- No marcar límites a la IA. Sin reglas claras puede dar información que no toca o prometer lo que no puedes cumplir.
+
+- Esconder que es una IA. Además de ser obligatorio avisar, el cliente lo acepta mucho mejor cuando lo sabe desde el principio.
+
+- No medir. Si no sabes cuántas llamadas perdías antes, no sabrás si ha funcionado.
+
+- Olvidarse del mantenimiento. Tus precios, horarios y servicios cambian; el sistema tiene que cambiar con ellos.
+
+## Lo que exige la ley: RGPD y normativa europea de IA.
+
+Automatizar con IA no te saca de las normas que ya cumples; añade un par de cosas a tener en cuenta:
+
+- Protección de datos (RGPD). Tu negocio sigue siendo el responsable de los datos de tus clientes. Quien te monta el sistema actúa como encargado del tratamiento y debe firmarlo contigo. Se trata solo lo necesario, con accesos controlados, y tu política de privacidad tiene que contarlo.
+
+- Transparencia. La normativa europea de inteligencia artificial obliga a que la persona sepa que está hablando con una IA. En la práctica basta con que el asistente se presente como tal al empezar.
+
+- Una persona disponible. Para quejas, urgencias o decisiones importantes, el sistema debe poder pasar el caso a alguien de tu equipo.
+
+Esto es una orientación general, no asesoramiento jurídico. Si tu sector maneja datos especialmente sensibles, como los de salud, conviene revisarlo con tu asesor.
+
+## Preguntas frecuentes.
+
+**¿Qué es la automatización de procesos con IA?**
+Es usar un sistema que hace solo las tareas repetitivas de un negocio y usa inteligencia artificial para la parte que antes necesitaba a una persona: entender mensajes y llamadas y responder con sentido. Por ejemplo, un asistente que lee un WhatsApp, consulta la agenda y deja la cita puesta.
+
+**¿Qué proceso debería automatizar primero en mi pyme?**
+El que más dinero te cuesta hoy, no el más llamativo. En negocios que trabajan con cita suele ser la atención de mensajes y llamadas, porque cada una que no se contesta a tiempo es un cliente que reserva en otro sitio.
+
+**¿Cuánto cuesta automatizar procesos con IA?**
+Normalmente hay un coste de montaje y un mantenimiento mensual. Depende del volumen de conversaciones, de lo que tenga que hacer el sistema y de las herramientas a las que se conecte. Lo sensato es compararlo con lo que te cuesta hoy hacerlo a mano o no hacerlo, con la fórmula de esta guía.
+
+**¿Necesito cambiar mis herramientas?**
+Casi nunca. Lo normal es conectar el sistema a lo que ya usas: tu agenda, tu WhatsApp Business, tu número de teléfono y tu correo.
+
+**¿Cuánto se tarda en tenerlo funcionando?**
+Un proceso concreto, como un asistente que da citas por WhatsApp, puede estar funcionando en días si las reglas están claras. Lo que más tiempo lleva no es la tecnología, sino definir bien qué debe hacer y probarlo con casos reales.
+
+**¿Es legal usar IA para atender a mis clientes?**
+Sí, siempre que cumplas el RGPD con los datos y avises de que el cliente habla con una IA, como exige la normativa europea. Y conviene que una persona pueda tomar el relevo cuando haga falta.
+
+¿Hacemos la cuenta con tus números?
+
+## Te decimos qué automatizar primero y cuánto te ahorraría.
+
+En la primera cita, gratis y sin compromiso, aplicamos la fórmula de esta guía a tu negocio. Si no sale a cuenta, te lo decimos.
+
+Ver lo que montamos
+
+---
+
+# Página: Asistente de WhatsApp con IA: citas 24/7 | Anomalia
+URL: https://anomalia.business/asistente-whatsapp-ia
+Descripción: Responde al momento, identifica al cliente, agenda y anula citas reales y toma recados fuera de horario, 24/7. Reserva tu cita gratis y calcula tu caso.
+
+Inicio / Automatización e IA / Asistente de WhatsApp
+
+Automatización e IA · WhatsApp
+
+# Un asistente de WhatsApp con IA que atiende, agenda y anula citas solo .
+
+«Tus clientes ya te escriben por WhatsApp. Lo que falta es que alguien conteste al momento.»
+
+Responde en segundos, a cualquier hora, en el número de WhatsApp de tu negocio. Reconoce al cliente por su teléfono, agenda, cambia o anula citas en tu agenda real, resuelve dudas de horarios y precios y toma recados cuando toca que lo vea una persona.
+
+- Responde en segundos, 24/7
+- Citas reales en tu agenda
+- Recados fuera de horario
+
+Reserva tu cita gratis
+
+Qué hace en cada conversación
+
+## Atiende como lo harías tú. Pero contesta siempre y al momento.
+
+No es un menú de «pulsa 1 para citas». El cliente escribe con sus palabras, el asistente entiende y actúa sobre tu agenda de verdad.
+
+### Agenda, cambia y anula citas
+
+Mira los huecos libres de tu agenda, ofrece los que encajan y deja la cita puesta. Si el cliente quiere moverla o anularla, lo hace sin molestar a nadie.
+
+### Reconoce al cliente
+
+Si ya está en tu sistema, lo identifica por su número y no le pide los datos otra vez: ve sus citas y le atiende por su nombre.
+
+### Resuelve dudas al instante
+
+Horarios, precios, dónde estáis, qué hace falta traer. Responde con la información que tú le das y nunca inventa lo que no sabe.
+
+### Recordatorios y confirmaciones
+
+Avisa de la cita el día antes y pide confirmación. Menos ausencias, menos huecos vacíos en la agenda y cero mensajes mandados a mano.
+
+### Recados fuera de horario
+
+Lo que requiere a una persona lo deja apuntado con nombre, motivo y urgencia, avisa al equipo y le dice al cliente cuándo le contestarán.
+
+### Deriva a una persona cuando toca
+
+Quejas, casos delicados o lo que se salga de su terreno: para y avisa a tu equipo. Tú decides qué atiende él y qué atendéis vosotros.
+
+Resultados
+
+## Un mensaje sin contestar es una cita en otro sitio .
+
+La gente escribe a tres negocios a la vez y se queda con el primero que responde. Así sale la cuenta en un caso real:
+
+≈ 20.000 € estimados el primer año
+
+≈ 70.000 € estimados en tres años
+
+24/7 respondiendo en segundos
+
+De dónde sale ese dinero
+
+- Ahorro en personal. El WhatsApp y la agenda los atiende el asistente las 24 horas: trabajo de recepción que la clínica ya no tiene que cubrir con plantilla.
+
+- Citas que ya no se pierden. Cada mensaje que quedaba sin contestar hasta el día siguiente era un paciente que acababa reservando en la clínica de al lado. Ahora se le atiende y se le da cita al momento.
+
+Una clínica con tres sistemas de Anomalia: asistente de WhatsApp, recepcionista telefónica y app de citas . Cifras estimadas con los números de la propia clínica. En tu primera cita hacemos esta misma cuenta con los tuyos.
+
+Cómo es
+
+## Una conversación de WhatsApp normal.
+
+Así va un intercambio típico con el asistente de una clínica.
+
+01
+
+### El cliente escribe con sus palabras
+
+«Hola, quería cambiar mi cita del jueves, ¿tenéis algo el viernes por la tarde?». A las 22:40, cuando la clínica lleva horas cerrada.
+
+02
+
+### El asistente le reconoce y mira la agenda
+
+«Hola, Marta. Veo tu cita del jueves a las 17:00 con Laura. El viernes por la tarde tengo a las 16:30 o a las 18:00. ¿Cuál te viene mejor?»
+
+03
+
+### Hace el cambio de verdad
+
+«Listo: viernes a las 18:00 con Laura. La del jueves queda anulada. Te mando un recordatorio el día antes». En la agenda real, en ese mismo segundo.
+
+04
+
+### El equipo lo ve por la mañana
+
+Un resumen con los cambios de la noche y los recados que necesitan una persona. Nadie ha tenido que coger el móvil fuera de hora.
+
+Para quién
+
+## Para negocios que viven de la agenda y a los que les escriben a todas horas.
+
+### Clínicas y centros de salud
+
+Fisioterapia, dental, estética, psicología. Citas, cambios y anulaciones a cualquier hora, con el profesional correcto y sin colapsar la recepción.
+
+### Gimnasios y estudios de pilates
+
+Reserva de plazas en clases, cambios de última hora y lista de espera. Los alumnos se gestionan solos y la sala no pierde plazas.
+
+### Peluquerías y centros de estética
+
+«¿Tienes hueco el sábado?» a las once de la noche. Respondido y reservado al momento, con el servicio y la duración correctos.
+
+### Despachos y asesorías
+
+Primera consulta agendada, documentación que hay que traer explicada y recados filtrados para que el profesional no se interrumpa.
+
+### Restaurantes
+
+Reservas por WhatsApp sin que nadie salga de la sala: mesa, comensales, hora y alergias apuntadas.
+
+### Inmobiliarias
+
+Responde a los interesados de cada anuncio, cualifica lo básico y agenda la visita con el comercial que lleva el inmueble.
+
+Que el «visto» de tu negocio llegue con la respuesta .
+
+Con los pies en el suelo
+
+## Lo que sí hace y lo que no.
+
+- Trabaja sobre WhatsApp Business oficial. Con la API oficial de Meta, en tu número. Nada de trucos con un móvil enchufado que un día dejan de funcionar.
+
+- Se presenta como asistente. El cliente sabe que habla con una IA, como exige la normativa europea, y puede pedir una persona cuando quiera.
+
+- No inventa. Solo da la información que tú le has dado y solo ofrece huecos que existen en tu agenda. Si no sabe algo, lo dice y toma el recado.
+
+- Tus datos siguen siendo tuyos. Trabaja con lo mínimo necesario, con accesos controlados y cumpliendo el RGPD. Te explicamos dónde vive cada dato.
+
+- Se prueba antes de salir. Con conversaciones reales, tus casos raros y tus excepciones, hasta que responde como responderías tú.
+
+Cómo lo ponemos en marcha
+
+## De la primera llamada al asistente contestando, en días.
+
+01
+
+### Diagnóstico
+
+Cuántos mensajes recibes, qué preguntan, cuántos se quedan sin responder y qué agenda usas. Con eso sale la cuenta.
+
+02
+
+### Propuesta
+
+Qué hará exactamente, qué pasa en cada situación y el precio cerrado: montaje y mantenimiento mensual, por escrito.
+
+03
+
+### Construcción
+
+Lo conectamos a tu WhatsApp Business y a tu agenda, le damos tu información y lo afinamos con conversaciones reales.
+
+04
+
+### Puesta en marcha
+
+Empieza a contestar. Las primeras semanas revisamos las conversaciones contigo y ajustamos lo que haga falta.
+
+05
+
+### Acompañamiento
+
+Mantenimiento, mejoras y control de que lo que dice sigue siendo lo que quieres que diga. Si cambian tus precios u horarios, cambia él.
+
+Precio
+
+## Un precio cerrado antes de empezar.
+
+Depende del volumen de mensajes, de lo que tenga que hacer con ellos y de la agenda a la que se conecta. Tras una primera llamada gratis y sin compromiso te damos el precio del montaje y el del mantenimiento mensual, por escrito. Y la cuenta de lo que te cuesta hoy cada mensaje que se contesta tarde.
+
+Calcular mi caso
+Ver también la recepcionista telefónica
+
+Preguntas frecuentes
+
+## Lo que se suele preguntar.
+
+**¿Funciona con mi número de WhatsApp actual?**
+Sí. El asistente se conecta a tu número a través de WhatsApp Business (la API oficial de Meta). Tus clientes siguen escribiendo al mismo número de siempre y tú sigues viendo las conversaciones.
+
+**¿Puedo seguir contestando yo cuando quiera?**
+Claro. Tú decides qué atiende el asistente y qué atendéis vosotros. Cuando una persona del equipo entra en una conversación, el asistente se aparta; y cuando el cliente pide hablar con alguien, avisa y espera.
+
+**¿Es un chatbot de botones?**
+No. El cliente escribe con sus palabras, como a cualquier persona, y el asistente entiende qué quiere, lo consulta en tu agenda y actúa. Sin menús ni «pulsa 1».
+
+**¿Con qué agendas o programas se conecta?**
+Con Google Calendar, Outlook y la mayoría de programas de citas y de gestión de clínicas y centros que permiten conectarse. En la primera llamada nos dices cuál usas y te confirmamos si encaja y cómo.
+
+**¿Cuánto cuesta un asistente de WhatsApp con IA?**
+No publicamos una tarifa porque no es lo mismo responder dudas que agendar con varios profesionales, ni atender veinte mensajes al día que quinientos. Tras una primera llamada gratis te damos el precio cerrado del montaje y el del mantenimiento mensual, por escrito, junto con la cuenta de lo que te cuesta hoy no contestar a tiempo.
+
+**¿Qué pasa con los datos de mis clientes?**
+Se tratan según el RGPD: solo lo necesario para atender y dar cita, con accesos controlados, y te explicamos dónde se guarda cada dato y durante cuánto tiempo. Tu negocio sigue siendo el responsable del tratamiento, como con cualquier herramienta.
+
+**¿Y si quiero también que atienda el teléfono?**
+Ese es el siguiente paso natural: la recepcionista telefónica con IA trabaja sobre la misma agenda y la misma información, así que el teléfono y el WhatsApp responden igual.
+
+Empecemos
+
+## ¿Cuántos mensajes contestas tarde cada día?
+
+Sin compromiso. Cuéntale a nuestro asistente cómo es tu negocio y deja la cita agendada al momento, o pide que te llamemos.
 
 Reserva tu cita gratis
 contacto@anomalia.business
