@@ -12,7 +12,7 @@ Anomalia es un estudio digital español que diseña páginas web a medida, autom
 - **Web:** https://anomalia.business/
 - **Email:** contacto@anomalia.business
 - **Teléfono:** +34 601 44 91 73
-- **Perfiles oficiales:** LinkedIn del fundador (https://www.linkedin.com/in/marcos-mompean-lopez-b9a086436/), Instagram (https://www.instagram.com/anomalia.business/), TikTok (https://www.tiktok.com/@anomalia.business), YouTube (https://www.youtube.com/@anomaliabusiness), X (https://x.com/EstudioAnomalia), Facebook (https://www.facebook.com/profile.php?id=61594508481121)
+- **Perfiles oficiales:** LinkedIn (https://www.linkedin.com/company/anomalia-business/), LinkedIn del fundador (https://www.linkedin.com/in/marcos-mompean-lopez-b9a086436/), Instagram (https://www.instagram.com/anomalia.business/), TikTok (https://www.tiktok.com/@anomalia.business), YouTube (https://www.youtube.com/@anomaliabusiness), X (https://x.com/EstudioAnomalia), Facebook (https://www.facebook.com/profile.php?id=61594508481121)
 - **Horario:** Lunes a domingo, de 12:00 a 21:00 (hora peninsular española)
 - **Sectores habituales:** Restaurantes, Clínicas, Gimnasios, Inmobiliarias, Hoteles, Comercios, Despachos profesionales
 
