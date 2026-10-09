@@ -69,3 +69,6 @@
 /* el chat nunca ensancha la rejilla que lo contiene (los hijos de un grid no encogen por defecto) */
 .contact>*,.hero-grid>*{min-width:0}
 .agchat,.agchat-extra{min-width:0;max-width:100%}
+
+.agchat-autor .agchat-li{color:inherit;border-bottom:1px solid rgba(217,192,138,.4);transition:border-color .3s}
+.agchat-autor .agchat-li:hover{border-color:var(--gold-light,#D9C08A)}

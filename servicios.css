@@ -658,3 +658,5 @@ main{position:relative;z-index:1}
 .prosa li::marker{color:var(--gold-light)}
 .prosa .formula{font-family:var(--font-display);font-size:1.12rem;color:var(--paper);border-left:2px solid var(--gold);padding:.4rem 0 .4rem 1rem}
 .section h2 + .prosa{margin-top:1.4rem}
+.guia-meta a{border-bottom:1px solid rgba(217,192,138,.4)}
+.guia-meta a:hover{border-color:var(--gold-light)}
