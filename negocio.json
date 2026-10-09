@@ -1,5 +1,5 @@
 {
-  "nombre": "Anomalía",
+  "nombre": "Anomalia",
   "idioma": "es",
   "zonaHoraria": "Europe/Madrid",
   "servicios": [
@@ -108,7 +108,7 @@
     "radio": "18px",
     "fuente": "'Manrope', system-ui, -apple-system, sans-serif",
     "posicion": "abajo-derecha",
-    "titulo": "Reserva tu cita con Anomalía",
+    "titulo": "Reserva tu cita con Anomalia",
     "saludo": "Hola, soy el asistente de Anomalia. Cuéntame qué necesita tu negocio y te busco un hueco para hablarlo. Si lo prefieres, te llamamos nosotros.",
     "textoBoton": "Reservar cita"
   },

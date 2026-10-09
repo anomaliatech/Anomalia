@@ -178,6 +178,7 @@ async function chat({ sessionId, historial = [], mensaje }) {
   let llamadaHecha = false; // aviso de "llámame" enviado en esta vuelta
   let citaDatos = null; // inicio/fin/servicio de la cita creada, para el botón "añadir a mi calendario"
   let citaHecha = null; // si se reserva en esta vuelta, guardamos el "cuando" para poder confirmar aunque falle la IA
+  let conEmail = false; // solo se promete el correo de confirmación si dejó email
 
   // reconstruye el hilo para la IA (sin las líneas [HUECOS], que no son turnos de chat)
   const mensajes = historial
@@ -202,14 +203,15 @@ async function chat({ sessionId, historial = [], mensaje }) {
       anota('error', { sessionId: id, donde: 'ia', msg: e.message });
       // Si la cita YA se creó en esta vuelta, confirma igualmente (no dependas de la IA).
       let reply;
-      if (citaHecha) reply = `¡Listo! Tu cita queda para ${citaHecha}. Recibirás un email de confirmación.`;
+      if (citaHecha) reply = textoCitaHecha(citaHecha, conEmail);
       else if (e.status === 429 || e.status === 504) reply = 'Tengo mucho lío ahora mismo, dame unos segundos y vuelve a escribirme.';
       else reply = 'Ahora mismo no puedo atenderte bien. ' + (negocio.mensajeHumano || '');
       return terminar(respuesta(reply, [...mensajes, { role: 'assistant', content: reply }]));
     }
 
     if (!resp.toolCalls || resp.toolCalls.length === 0) {
-      const texto = resp.text || 'Perdona, ¿me lo repites?';
+      // El widget pinta texto plano: unas **negritas** saldrían con los asteriscos.
+      const texto = (resp.text || 'Perdona, ¿me lo repites?').replace(/\*\*(.+?)\*\*/g, '$1');
       mensajes.push({ role: 'assistant', content: texto });
       return terminar(respuesta(texto, mensajes));
     }
@@ -243,11 +245,14 @@ async function chat({ sessionId, historial = [], mensaje }) {
           resultado = { error: 'Faltan datos obligatorios: ' + faltan.map((c) => c.etiqueta).join(', ') + '. Pídeselos.' };
         } else if (!hueco) {
           resultado = { error: 'Ese hueco no está en la lista. Llama antes a ver_huecos.' };
+        } else if (!huecoHablado(negocio, hueco, mensajes)) {
+          resultado = { error: `El visitante no ha visto ni elegido ese hueco (${hueco.cuando}). Ofréceselo y espera a que diga que sí antes de reservar.` };
         } else {
           try {
             const r = await reservar({ negocio, inicioISO: hueco.inicio, servicio: tc.args.servicio, lead, sessionId: id });
             resultado = { ok: true, cuando: r.etiqueta };
             citaHecha = r.etiqueta;
+            conEmail = !!lead.email;
             const iniMs = new Date(hueco.inicio).getTime();
             citaDatos = {
               inicio: new Date(iniMs).toISOString(),
@@ -292,9 +297,37 @@ async function chat({ sessionId, historial = [], mensaje }) {
   }
 
   const cierre = citaHecha
-    ? `¡Listo! Tu cita queda para ${citaHecha}. Recibirás un email de confirmación.`
+    ? textoCitaHecha(citaHecha, conEmail)
     : 'Creo que ya está todo. ¿Te confirmo algo más?';
   return terminar(respuesta(cierre, [...mensajes, { role: 'assistant', content: cierre }]));
+}
+
+// Un hueco solo se reserva si su día Y su hora han salido en la conversación (lo
+// ofreció el asistente o lo pidió el visitante). Sin esto, el modelo llegó a
+// reservar un hueco de una lista vieja que nadie había mencionado ("¿el jueves a
+// las 13?" -> cita el lunes a las 13). Si falla, el modelo pregunta antes: un turno
+// de más, nunca una cita que el visitante no ha elegido.
+function huecoHablado(negocio, hueco, mensajes) {
+  const sinTildes = (t) => t.toLowerCase().normalize('NFD').replace(/\p{M}/gu, '');
+  const p = new Intl.DateTimeFormat('es-ES', {
+    timeZone: negocio.zonaHoraria, weekday: 'long', day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit', hourCycle: 'h23',
+  }).formatToParts(new Date(hueco.inicio)).reduce((a, x) => ((a[x.type] = sinTildes(x.value)), a), {});
+  const texto = sinTildes(mensajes
+    .filter((m) => (m.role === 'user' || m.role === 'assistant') && typeof m.content === 'string')
+    .map((m) => m.content).join(' '));
+  const cerca = Math.abs(new Date(hueco.inicio).getTime() - Date.now()) < 2 * 86400000;
+  const diaOk = texto.includes(p.weekday) || new RegExp(`\\b${Number(p.day)} de ${p.month}`).test(texto)
+    || (cerca && /\b(hoy|manana)\b/.test(texto));
+  const h = Number(p.hour);
+  const horaOk = p.minute === '00'
+    ? new RegExp(`\\b${h}(:00|h|\\b)`).test(texto) || (h > 12 && new RegExp(`\\b${h - 12}\\b`).test(texto))
+    : texto.includes(`${h}:${p.minute}`);
+  return diaOk && horaOk;
+}
+
+function textoCitaHecha(cuando, conEmail) {
+  return `¡Listo! Tu cita queda para ${cuando}. ` +
+    (conEmail ? 'Te llega la confirmación por email.' : 'Te llamaremos al teléfono que nos has dejado.');
 }
 
 function duracionServicio(negocio, nombre) {
@@ -302,4 +335,4 @@ function duracionServicio(negocio, nombre) {
   return (s && s.duracionMin) || negocio.duracionCitaPorDefectoMin || 30;
 }
 
-module.exports = { chat };
+module.exports = { chat, huecoHablado };
