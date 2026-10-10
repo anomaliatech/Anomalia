@@ -287,7 +287,7 @@
   var f = document.getElementById('calc');
   if (!f) return;
   var $ = function (id) { return document.getElementById(id); };
-  var eur = function (n) { return String(Math.round(n)).replace(/B(?=(d{3})+(?!d))/g, '.') + ' €'; };
+  var eur = function (n) { return String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, '.') + ' €'; };
   var num = function (id) { var v = parseFloat($(id).value); return isNaN(v) || v < 0 ? 0 : v; };
   function calcular() {
     var perdidasMes = num('c-llamadas') * 4.3;
