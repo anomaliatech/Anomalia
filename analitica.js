@@ -25,7 +25,7 @@
   'use strict';
   var CFG = {
     gtm: '',         // GTM-XXXXXXX
-    ga4: '',         // G-XXXXXXXXXX
+    ga4: 'G-FH2Z2Z473W', // GA4, flujo web anomalia.business (2026-10-10)
     ads: '',         // AW-XXXXXXXXXX
     adsCita: '',     // etiqueta de la conversión "cita" (lo que va detrás de la barra en send_to)
     adsLlamada: '',  // etiqueta de la conversión "llámame"
