@@ -85,6 +85,31 @@
     var ocupado = false;
     var empezado = false;
 
+    /* "Casi cliente": si dejó teléfono o email pero no llegó a reservar, al irse (o tras
+       un rato sin escribir) se avisa al servidor para que el equipo le llame. Solo
+       vale el lead que el propio servidor firmó en el historial. */
+    var leadPendiente = false, convertido = false, rescatado = false, tInactivo = null, tOculto = null;
+    function rescatar(motivo) {
+      if (!leadPendiente || convertido || rescatado) return;
+      rescatado = true;
+      var cuerpo = JSON.stringify({ sessionId: sesion, historial: historial, motivo: motivo });
+      try {
+        if (!(navigator.sendBeacon && navigator.sendBeacon('/api/lead-perdido', new Blob([cuerpo], { type: 'application/json' })))) {
+          fetch('/api/lead-perdido', { method: 'POST', headers: { 'content-type': 'application/json' }, body: cuerpo, keepalive: true }).catch(function () {});
+        }
+      } catch (e) { /* sin red: nada que hacer */ }
+      evento('lead_rescatado', { motivo: motivo, servicio: servicio });
+    }
+    function reprogramarInactividad() {
+      clearTimeout(tInactivo);
+      if (leadPendiente && !convertido) tInactivo = setTimeout(function () { rescatar('inactividad'); }, 8 * 60000);
+    }
+    addEventListener('pagehide', function () { rescatar('salida'); });
+    document.addEventListener('visibilitychange', function () {
+      clearTimeout(tOculto);
+      if (document.visibilityState === 'hidden') tOculto = setTimeout(function () { rescatar('salida'); }, 90000);
+    });
+
     function burbuja(texto, quien) {
       var b = document.createElement('div');
       b.className = 'agmsg ' + quien;
@@ -96,6 +121,7 @@
     burbuja(saludo, 'bot');
 
     function trasConversion(d) {
+      convertido = true; leadPendiente = false; clearTimeout(tInactivo);
       var tipo = d.cita.tipo === 'llamada' ? 'llamada_solicitada' : 'cita_creada';
       evento(tipo, { cuando: d.cita.cuando || '', servicio: d.cita.servicio || servicio });
       if (d.cita.tipo !== 'llamada' && d.cita.inicio && d.cita.fin) {
@@ -133,6 +159,7 @@
         burbuja(d.reply || 'Perdona, no te he entendido bien. ¿Me lo repites?', 'bot');
         if (Array.isArray(d.historial)) historial = d.historial;
         if (d.cita) trasConversion(d);
+        else { leadPendiente = Boolean(d.leadPendiente); reprogramarInactividad(); }
       })
       .catch(function () {
         espera.remove();

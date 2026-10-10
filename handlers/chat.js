@@ -10,6 +10,7 @@ const email = require('../lib/email');
 const { reservar } = require('./reservar');
 
 const MARCA_HUECOS = '[HUECOS]'; // línea interna que viaja en el historial; el widget la oculta
+const { MARCA_LEAD, leadDe } = require('./lead-perdido'); // datos de un visitante que aún no ha reservado (firmados)
 
 let promptBase = null;
 function promptSistema(negocio) {
@@ -145,6 +146,34 @@ function lineaHuecos(huecos) {
   return MARCA_HUECOS + JSON.stringify({ huecos, firma: firma.firmar(huecos) });
 }
 
+// Datos de contacto que el visitante ha dado pero que aún no han acabado en cita ni
+// en llamada. Viajan firmados en el historial ([LEAD]) para que, si cierra la página,
+// el widget pueda pedir el aviso de "casi cliente" sin que nadie pueda inventárselo.
+function lineaLead(lead) {
+  return MARCA_LEAD + JSON.stringify({ lead, firma: firma.firmar(lead) });
+}
+const RE_TEL = /(?:\+?\d[\d .\-]{7,}\d)/g;
+const RE_EMAIL = /[^\s@<>]+@[^\s@<>]+\.[a-z]{2,}/i;
+function fusionarLead(base, extra) {
+  const out = Object.assign({}, base || {});
+  for (const k of ['nombre', 'telefono', 'email', 'servicio']) {
+    const v = extra && extra[k] != null ? String(extra[k]).trim().slice(0, 120) : '';
+    if (v && !out[k]) out[k] = v;
+  }
+  return out;
+}
+// Lo que el visitante escribió tal cual, por si el modelo aún no ha llamado a ninguna herramienta.
+function leadEnTexto(texto) {
+  const out = {};
+  for (const m of String(texto).match(RE_TEL) || []) {
+    const d = m.replace(/\D/g, '');
+    if (d.length >= 9 && d.length <= 15) { out.telefono = m.trim(); break; }
+  }
+  const e = String(texto).match(RE_EMAIL);
+  if (e) out.email = e[0];
+  return out;
+}
+
 function ultimosHuecos(historial) {
   for (let i = historial.length - 1; i >= 0; i--) {
     const c = String(historial[i].content || '');
@@ -175,6 +204,7 @@ async function chat({ sessionId, historial = [], mensaje }) {
   const system = promptSistema(negocio);
   const tools = herramientas(negocio);
   let huecosOfrecidos = ultimosHuecos(historial);
+  let leadParcial = fusionarLead(leadDe(historial), leadEnTexto(mensaje)); // datos dados en turnos anteriores + en este
   let llamadaHecha = false; // aviso de "llámame" enviado en esta vuelta
   let citaDatos = null; // inicio/fin/servicio de la cita creada, para el botón "añadir a mi calendario"
   let citaHecha = null; // si se reserva en esta vuelta, guardamos el "cuando" para poder confirmar aunque falle la IA
@@ -182,7 +212,7 @@ async function chat({ sessionId, historial = [], mensaje }) {
 
   // reconstruye el hilo para la IA (sin las líneas [HUECOS], que no son turnos de chat)
   const mensajes = historial
-    .filter((m) => !String(m.content || '').startsWith(MARCA_HUECOS))
+    .filter((m) => { const c = String(m.content || ''); return !c.startsWith(MARCA_HUECOS) && !c.startsWith(MARCA_LEAD); })
     .map((m) => ({ role: m.role === 'assistant' ? 'assistant' : 'user', content: String(m.content || '') }));
   mensajes.push({ role: 'user', content: String(mensaje || '') });
 
@@ -190,6 +220,11 @@ async function chat({ sessionId, historial = [], mensaje }) {
     const pub = aHistorialPublico(msgs);
     if (huecosOfrecidos.length) pub.push({ role: 'assistant', content: lineaHuecos(huecosOfrecidos) });
     const r = { reply, historial: pub };
+    // Con cita o llamada ya no hay nada que rescatar: la línea [LEAD] desaparece.
+    if (!citaHecha && !llamadaHecha && (leadParcial.telefono || leadParcial.email)) {
+      pub.push({ role: 'assistant', content: lineaLead(leadParcial) });
+      r.leadPendiente = true;
+    }
     if (citaHecha) r.cita = Object.assign({ tipo: 'cita', cuando: citaHecha }, citaDatos || {}); // el frontend dispara la conversión de Ads con esto
     else if (llamadaHecha) r.cita = { tipo: 'llamada' };
     return r;
@@ -237,6 +272,7 @@ async function chat({ sessionId, historial = [], mensaje }) {
         // rechazaba pidiendo un dato que el modelo ya había dado, y reintentaba sin parar.
         const lead = Object.assign({}, tc.args.lead);
         if (tc.args.servicio && !lead.servicio) lead.servicio = tc.args.servicio;
+        leadParcial = fusionarLead(leadParcial, { nombre: lead.nombre, telefono: lead.telefono, email: lead.email, servicio: tc.args.servicio });
         const faltan = (negocio.camposLead || []).filter((c) => c.obligatorio && !lead[c.id]);
         const hueco = huecosOfrecidos[Number(tc.args.slotId)];
         if (!faltan.length && lead.telefono && !telefonoValido(lead.telefono)) {
@@ -274,6 +310,7 @@ async function chat({ sessionId, historial = [], mensaje }) {
       } else if (tc.name === 'solicitar_llamada') {
         const nombre = String(tc.args.nombre || '').trim().slice(0, 120);
         const telefono = String(tc.args.telefono || '').trim().slice(0, 40);
+        leadParcial = fusionarLead(leadParcial, { nombre, telefono, servicio: tc.args.servicio });
         if (!nombre) resultado = { error: 'Falta el nombre. Pídeselo.' };
         else if (!telefonoValido(telefono)) resultado = { error: 'El teléfono no parece válido (hacen falta 9 cifras). Pídeselo de nuevo.' };
         else {

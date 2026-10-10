@@ -325,6 +325,13 @@ function llmsTxt(infos) {
   for (const o2 of sitio.caso.origen) L.push(`- De dónde sale: ${o2}`);
   L.push(`- ${sitio.caso.nota}`);
   L.push('');
+  const sectores = sitio.paginas.filter((p) => p.tipo === 'sector');
+  if (sectores.length) {
+    L.push('## Para quién');
+    L.push('');
+    for (const s of sectores) L.push(`- [${s.nombre}](${D}${s.ruta}): ${s.resumen}`);
+    L.push('');
+  }
   const guias = sitio.paginas.filter((p) => p.tipo === 'articulo');
   if (guias.length) {
     L.push('## Guías');

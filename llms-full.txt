@@ -109,7 +109,7 @@ De dónde sale ese dinero
 
 - Citas que ya no se pierden. Cada llamada o mensaje sin contestar era un paciente que acababa reservando en la clínica de al lado. Ahora se le atiende y se le da cita al momento.
 
-Una clínica con tres sistemas de Anomalia. Cifras estimadas con los números de la propia clínica. En tu primera cita hacemos esta misma cuenta con los tuyos.
+Una clínica con tres sistemas de Anomalia. Cifras estimadas con los números de la propia clínica. En tu primera cita hacemos esta misma cuenta con los tuyos. ¿Tienes una clínica? Mira lo que montamos para clínicas →
 
 Los tres sistemas
 
@@ -471,6 +471,7 @@ Automatizar una confirmación de cita y montar un asistente que atiende, cotiza 
 
 Valorar mi caso
 Leer la guía: cómo automatizar tu pyme
+¿Tienes una clínica? Lo que montamos
 
 Preguntas frecuentes
 
@@ -802,7 +803,7 @@ Para quién
 
 ### Clínicas y centros de salud
 
-Fisioterapia, dental, estética, psicología. La recepción está con un paciente y el teléfono suena: ahora lo coge ella y da la cita con el profesional correcto.
+Fisioterapia, dental, estética, psicología. La recepción está con un paciente y el teléfono suena: ahora lo coge ella y da la cita con el profesional correcto. Lo que montamos en clínicas →
 
 ### Despachos y asesorías
 
@@ -881,7 +882,8 @@ Precio
 Depende de cuántas llamadas recibes, de qué tiene que hacer con ellas y de la agenda a la que se conecta. Tras una primera llamada gratis y sin compromiso te damos el precio del montaje y el del mantenimiento mensual, por escrito. Y la cuenta de lo que te cuesta hoy cada llamada perdida, para que compares.
 
 Calcular mi caso
-Ver también el asistente de WhatsApp
+Calcular lo que pierdes por llamadas sin coger
+Leer la guía: cómo elegir una recepcionista virtual
 
 Preguntas frecuentes
 
@@ -1275,6 +1277,7 @@ Depende del volumen de mensajes, de lo que tenga que hacer con ellos y de la age
 
 Calcular mi caso
 Ver también la recepcionista telefónica
+Leer la guía: citas por WhatsApp en una clínica
 
 Preguntas frecuentes
 
@@ -1309,4 +1312,654 @@ Sin compromiso. Cuéntale a nuestro asistente cómo es tu negocio y deja la cita
 
 Reserva tu cita gratis
 contacto@anomalia.business
+
+---
+
+# Página: IA para clínicas: teléfono, WhatsApp y citas | Anomalia
+URL: https://anomalia.business/clinicas
+Descripción: Recepcionista telefónica, asistente de WhatsApp y citas con IA para clínicas: ningún paciente sin respuesta. Caso real con cifras. Primera cita gratis.
+
+Inicio / Clínicas
+
+Para clínicas y centros de salud
+
+# Que en tu clínica no se pierda ni una llamada, ni un WhatsApp, ni una cita .
+
+«El paciente que no consigue hablar contigo no espera: reserva en la clínica de al lado.»
+
+Recepción está con un paciente y el teléfono suena. Los WhatsApps se contestan cuando se puede. Algunas citas no vienen y el hueco se queda vacío. Montamos sistemas con inteligencia artificial que cogen el teléfono, responden el WhatsApp y dan cita en tu agenda real, las 24 horas, para que tu equipo atienda a quien tiene delante.
+
+- Teléfono y WhatsApp atendidos 24/7
+- Citas en tu agenda real
+- Caso real: ≈ 20.000 € el primer año
+
+Reserva tu cita gratis
+
+Lo que pasa cada día en recepción
+
+## Tu equipo no puede estar en dos sitios. Y el paciente no espera.
+
+No es un problema de ganas ni de organización: es que una persona no puede atender a quien tiene delante, coger el teléfono y contestar WhatsApps a la vez. Y cada vez que elige, alguien se queda sin respuesta.
+
+### El teléfono suena con un paciente delante
+
+Se coge tarde o no se coge. Quien llamaba para pedir cita no suele volver a intentarlo: llama a la siguiente clínica de la lista. Y a las ocho de la tarde, los sábados y los festivos, nadie lo coge.
+
+### Los WhatsApps se contestan «cuando se puede»
+
+Un paciente escribe a las once de la noche para cambiar su cita o pedir una nueva. Se le contesta a la mañana siguiente, entre dos pacientes, mirando la agenda a mano. Para entonces, parte de ellos ya ha resuelto por otro lado.
+
+### Citas que no vienen y huecos que se quedan vacíos
+
+Sin recordatorio ni confirmación, una parte de los pacientes se olvida o no avisa. El profesional se queda con el hueco vacío y la lista de espera, sin saberlo, sigue esperando.
+
+Un caso real
+
+## Lo que montamos en una clínica se mide en dinero .
+
+No vendemos tecnología. Vendemos que a final de año haya entrado en tu clínica más dinero del que nos pagaste. Así sale la cuenta en una clínica que ya trabaja con nosotros:
+
+≈ 20.000 € estimados el primer año
+
+≈ 70.000 € estimados en tres años
+
+3 sistemas trabajando 24/7
+
+De dónde sale ese dinero
+
+- Ahorro en personal. El teléfono, el WhatsApp y la agenda los atienden los agentes de IA las 24 horas: trabajo de recepción que la clínica ya no tiene que cubrir con plantilla.
+
+- Citas que ya no se pierden. Cada llamada o mensaje sin contestar era un paciente que acababa reservando en la clínica de al lado. Ahora se le atiende y se le da cita al momento.
+
+Una clínica con tres sistemas de Anomalia: recepcionista telefónica, asistente de WhatsApp y app de citas . Cifras estimadas con los números de la propia clínica, no una promesa. En tu primera cita hacemos esta misma cuenta con los tuyos.
+
+Lo que montamos en una clínica
+
+## Tres sistemas. Se pueden montar por separado.
+
+Lo normal es empezar por lo que más duele y añadir el resto cuando el primero ya se paga solo. Los tres trabajan sobre tu misma agenda y tu misma información.
+
+### Recepcionista telefónica con IA
+
+Coge cada llamada, las 24 horas, con voz natural. Informa de horarios y precios, reconoce al paciente, le da cita con el profesional correcto y, al colgar, deja un resumen a tu equipo. Lo que no puede resolver, lo pasa a una persona.
+
+### Asistente de WhatsApp con IA
+
+Contesta al momento en el WhatsApp de la clínica. Identifica al paciente por su número, da, cambia y anula citas en la agenda real, responde dudas y toma recados fuera de horario. Sin menús ni «pulsa 1».
+
+### Citas y recordatorios
+
+Reserva desde la web o una app propia para que el paciente elija, cambie o anule su cita él mismo, y recordatorios y confirmaciones automáticos para que no falte. En una clínica con clases (pilates, fisio en grupo) se gestionan también las plazas.
+
+Pensado para una clínica
+
+## No es un chatbot genérico con tu logo.
+
+Una clínica tiene cosas que una tienda no tiene: varios profesionales, especialidades, datos de salud y pacientes que a veces llaman preocupados. El sistema se monta sabiendo eso.
+
+- Varios profesionales y especialidades. Fisioterapia, dental, estética, psicología, podología, nutrición: cada cita va con el profesional que toca, con su duración y su agenda.
+
+- Tu agenda real, no otra. Se conecta a tu programa de gestión o a Google Calendar / Outlook. Solo ofrece huecos que existen y no pisa citas puestas a mano.
+
+- Datos de salud, con cuidado. El sistema trata solo lo necesario para dar la cita (nombre, teléfono, servicio), nada clínico. Cumple el RGPD y te explicamos dónde vive cada dato.
+
+- Nunca opina de medicina. Si un paciente pregunta por su tratamiento o cuenta un síntoma, no responde ni aconseja: toma el recado o pasa la llamada a tu equipo.
+
+- Urgencias a una persona. Dolor fuerte, un paciente nervioso, una queja: lo detecta y lo deriva al instante. No se empeña en resolverlo todo.
+
+- Se presenta como IA. Al descolgar o al contestar lo dice, como exige la normativa europea. Los pacientes lo aceptan mejor cuando lo saben desde el principio.
+
+Tu equipo, con el paciente que tiene delante. El resto, atendido.
+
+Cómo lo ponemos en marcha
+
+## De la primera llamada a tener el sistema atendiendo, en días.
+
+01
+
+### La cuenta con tus números
+
+Cuántas llamadas y mensajes recibís, cuántos se quedan sin atender, cuántas citas no vienen y qué vale una cita en tu clínica. Con eso sale lo que cuesta hoy no tenerlo. Si no sale a cuenta, te lo decimos.
+
+02
+
+### Propuesta cerrada
+
+Qué sistema va primero, qué hará exactamente, qué pasa en cada situación (urgencias, preguntas médicas, fuera de horario) y el precio: montaje y mantenimiento mensual, por escrito.
+
+03
+
+### Conexión con tu clínica
+
+Tu agenda, tu número de teléfono y tu WhatsApp Business de siempre. Le damos tus profesionales, servicios, precios y horarios, y las reglas de lo que no debe hacer.
+
+04
+
+### Pruebas con casos reales
+
+Llamadas y conversaciones de prueba con vuestras situaciones de verdad, incluidas las raras, hasta que responde como respondería vuestra recepción.
+
+05
+
+### En marcha y acompañado
+
+Empieza a atender. Las primeras semanas revisamos contigo los resúmenes y ajustamos. Si cambian precios, horarios o profesionales, cambia el sistema.
+
+Para leer antes de decidir
+
+## Tres guías escritas para quien lleva una clínica.
+
+### Cuánto pierde tu clínica por las llamadas que no coge
+
+Con una calculadora para hacer la cuenta con tus números y un método para medirlo en una semana.
+
+### Recepcionista virtual para clínicas: qué hace y qué no
+
+Qué esperar de una recepcionista con IA, cómo se conecta a tu agenda y qué preguntar antes de contratarla.
+
+### Cómo dar citas por WhatsApp sin saturar recepción
+
+De las respuestas automáticas de WhatsApp Business a un asistente con IA que agenda solo: qué sirve en cada caso.
+
+Preguntas frecuentes
+
+## Lo que nos preguntan las clínicas.
+
+**¿Funciona con el programa de gestión de mi clínica?**
+Con la mayoría de programas de gestión de clínicas que permiten conectarse, y con Google Calendar y Outlook. En la primera llamada nos dices cuál usas y te confirmamos si encaja y cómo. Si tu programa no deja conectarse, te lo decimos antes de empezar, no después.
+
+**¿Tengo que cambiar de número de teléfono o de WhatsApp?**
+No. La recepcionista se conecta a tu número de siempre, y el asistente trabaja en el WhatsApp Business que ya usa la clínica. Puedes elegir que atiendan todo o solo lo que tu equipo no llega a coger.
+
+**¿Qué pasa con los datos de salud de mis pacientes?**
+El sistema no los necesita y no los pide: trabaja con lo justo para dar una cita (nombre, teléfono y servicio). Lo que el paciente cuente de más no se usa para nada. Todo se trata según el RGPD, con accesos controlados, y tu clínica sigue siendo la responsable del tratamiento, como con cualquier herramienta. Si manejas datos especialmente sensibles, lo revisamos con tu asesor.
+
+**¿Y si un paciente pregunta algo médico o llama con una urgencia?**
+No responde ni aconseja sobre nada clínico: lo reconoce, toma el recado con los datos y, si es urgente o la persona lo pide, pasa la llamada o avisa a tu equipo al instante. Las reglas de qué derivar y a quién las fijamos contigo antes de ponerlo en marcha.
+
+**¿Puedo empezar solo con una cosa?**
+Sí, y es lo habitual. La mayoría empieza por el teléfono o por el WhatsApp, según dónde pierda más, y añade el resto cuando el primero ya se paga solo. Los tres sistemas comparten la misma agenda y la misma información, así que ampliar después es sencillo.
+
+**¿Cuánto cuesta para una clínica?**
+Depende de cuántas llamadas y mensajes recibes, de cuántos profesionales y servicios hay que agendar y de la agenda a la que se conecta. Tras una primera llamada gratis te damos el precio cerrado del montaje y del mantenimiento mensual, por escrito, junto con la cuenta de lo que te cuesta hoy no tenerlo. En todos los casos, muy por debajo de un puesto de recepción.
+
+**¿Sirve para una clínica pequeña, con una sola persona en recepción?**
+Es donde más se nota. Cuando una sola persona lo hace todo, cada llamada que entra mientras atiende a un paciente es una decisión entre dos personas. El sistema le quita el teléfono y el WhatsApp de encima para que se dedique a quien tiene delante.
+
+**¿Cuánto se tarda en tenerlo funcionando?**
+Normalmente unos días desde que nos das tu información y los accesos a la agenda. Antes de atender a tus pacientes se prueba con llamadas y conversaciones reales hasta que responde como quieres.
+
+Empecemos
+
+## ¿Cuántos pacientes se quedaron sin respuesta esta semana?
+
+Sin compromiso. Cuéntale a nuestro asistente cómo es tu clínica y deja la cita agendada al momento, o pide que te llamemos.
+
+Reserva tu cita gratis
+contacto@anomalia.business
+
+---
+
+# Página: Recepcionista virtual para clínicas: la guía | Anomalia
+URL: https://anomalia.business/recepcionista-virtual-clinica
+Descripción: Qué hace una recepcionista virtual con IA en una clínica, qué no debe hacer, cómo se conecta a tu agenda y qué preguntar antes de contratarla. Guía práctica.
+
+Inicio / Recepcionista telefónica con IA / Guía
+
+Guía · Clínicas
+
+# Recepcionista virtual para clínicas: qué hace de verdad, qué no y cómo elegirla.
+
+«Recepcionista virtual» se usa para tres cosas distintas, y solo una de ellas coge el teléfono de tu clínica, entiende al paciente y le da cita en tu agenda. Esta guía explica cuál es, qué debe y qué no debe hacer en una clínica, y las preguntas que conviene hacer antes de contratar una.
+
+Por Marcos Mompeán , fundador de Anomalia · Publicada el 10 de octubre de 2026 · 7 minutos de lectura
+
+La respuesta corta
+
+Una recepcionista virtual con inteligencia artificial es un sistema que contesta las llamadas de la clínica con voz natural, informa de horarios, servicios y precios, reconoce al paciente, le da, cambia o anula cita en la agenda real con el profesional correcto, toma recados y pasa la llamada a una persona cuando hace falta. Funciona las 24 horas y deja un resumen de cada llamada. No es una centralita de «pulse 1», ni un contestador, ni un chatbot de botones. Lo que la hace útil en una clínica es lo que no hace: no opina de medicina, no inventa huecos ni precios y no retiene a nadie con una urgencia.
+
+## Tres cosas que se llaman «recepcionista virtual» y no son lo mismo.
+
+### 1. La centralita virtual (el «pulse 1 para citas»)
+
+Un menú de opciones grabado. Reparte llamadas y pone música de espera, pero no entiende lo que dice el paciente ni toca la agenda. Al final de cada opción sigue habiendo una persona que tiene que coger el teléfono, o un buzón. Es útil para ordenar el tráfico en una clínica grande; no resuelve la llamada que entra cuando nadie puede cogerla.
+
+### 2. La recepcionista externa (una persona, por horas)
+
+Un servicio de secretaría telefónica: personas reales que atienden en tu nombre y te pasan los avisos. Tiene la ventaja de ser humana. Tiene dos límites: el horario (fuera de él, buzón) y la agenda, porque muchas no pueden entrar en tu programa de gestión y se limitan a tomar el recado para que tu equipo llame después. Se paga por llamada o por minuto, así que cuanto más te llaman, más cuesta.
+
+### 3. La recepcionista con inteligencia artificial
+
+Un sistema que mantiene una conversación normal por teléfono: el paciente habla como hablaría con una persona, y la recepcionista entiende, responde con tu información y actúa sobre tu agenda real. Está disponible las 24 horas, el coste no sube con cada llamada y, cuando la conversación se sale de su terreno, pasa la llamada a tu equipo. Es de la que trata esta guía, y la que tiene sentido para una clínica que pierde llamadas por no poder cogerlas.
+
+## Qué hace en una clínica, llamada a llamada.
+
+- Descuelga siempre. Al primer tono, con la consulta llena, a las nueve de la noche o un domingo. Puede ser la primera línea o entrar solo cuando tu equipo no coge en unos segundos.
+
+- Informa con tus datos. Horarios, servicios, precios, cómo llegar, qué llevar a la primera visita. Solo lo que tú le has dado; si no lo sabe, lo dice.
+
+- Reconoce al paciente. Si ya está en tu sistema, lo identifica por su número y no le pide los datos otra vez.
+
+- Da cita con el profesional correcto. Mira los huecos libres de verdad en tu agenda, ofrece los que encajan con la especialidad y la duración de ese servicio, y deja la cita puesta. También la cambia o la anula.
+
+- Toma recados. Lo que no puede resolver lo apunta con nombre, teléfono y motivo, y se lo manda a tu equipo.
+
+- Pasa la llamada. Si la persona pide hablar con alguien, o si detecta una urgencia o una queja, transfiere la llamada o avisa al momento.
+
+- Deja un resumen. Al colgar, tu equipo recibe quién ha llamado, qué quería y qué se ha hecho. Nada se queda en el aire.
+
+Si quieres ver cómo suena una llamada típica y qué montamos nosotros, está explicado en la página de la recepcionista telefónica con IA .
+
+## Lo que no debe hacer nunca en una clínica.
+
+En una clínica, lo que separa una recepcionista con IA útil de una peligrosa no es lo que sabe hacer, sino lo que tiene prohibido:
+
+- Opinar de medicina. Ni diagnosticar, ni aconsejar sobre un tratamiento, ni decir «eso no es grave». Si el paciente pregunta algo clínico, toma el recado o pasa la llamada.
+
+- Retener una urgencia. Dolor fuerte, un paciente asustado, una complicación después de una intervención: lo detecta y lo deriva a una persona al instante. No intenta «gestionarlo».
+
+- Inventar. Ni huecos que no existen, ni precios que no le has dado, ni «sí, eso lo hacemos» cuando no lo sabe.
+
+- Ocultar que es una IA. Debe presentarse como asistente virtual al descolgar. Lo exige la normativa europea de inteligencia artificial y, además, los pacientes lo aceptan mejor cuando lo saben.
+
+- Pedir datos de más. Para dar una cita bastan nombre, teléfono y servicio. No necesita el historial, ni el motivo detallado, ni nada clínico. Lo que el paciente cuente de más no debe guardarse ni usarse.
+
+- Insistir. Si alguien no quiere cita, no quiere dar su nombre o quiere hablar con una persona, se le respeta.
+
+## Cómo se conecta a tu agenda (y qué pasa si no se puede).
+
+Esta es la pregunta que decide si la recepcionista da citas de verdad o solo toma recados. Hay tres situaciones:
+
+- Tu programa de gestión permite conectarse. La mayoría de programas de clínicas modernos tienen una forma de conectar sistemas externos. La recepcionista lee los huecos y escribe las citas directamente ahí, con el profesional, la duración y el servicio correctos. Es la situación ideal.
+
+- Usas Google Calendar u Outlook. Se conecta directamente. Si tienes un calendario por profesional, la recepcionista sabe cuál es cuál.
+
+- Tu programa no deja conectarse. Entonces la recepcionista no puede ver tus huecos. Puede informar, tomar recados completos y avisar a tu equipo para que ponga la cita a mano, pero no agendar sola. Hay que saberlo antes de contratar, no después.
+
+Pregunta siempre, con el nombre de tu programa delante, «¿podéis conectaros a esto y cómo?». Quien lo monte debe poder responderte con un sí, un no o un «lo comprobamos» en el primer contacto.
+
+## Cuánto cuesta y cómo saber si te compensa.
+
+Una recepcionista con IA suele tener dos costes: el montaje , que se paga una vez, y el mantenimiento mensual , que incluye el uso de la IA, la línea, las conexiones y los ajustes. El precio depende de cuántas llamadas recibes, de con cuántos profesionales y servicios tiene que agendar y de a qué agenda se conecta. En todos los casos queda muy por debajo de un puesto de recepción, y no sube por cada llamada como la externa humana.
+
+Lo útil es compararlo con lo que te cuesta hoy no cogerlas:
+
+Coste de no cogerlas = llamadas perdidas al mes × las que eran una cita × las que no vuelven a llamar × lo que vale un paciente nuevo
+
+Si ese número es claramente mayor que el mantenimiento mensual, compensa. Si no, no la contrates. Tenemos una calculadora para hacer esa cuenta con tus números y un método para medir tus llamadas perdidas en una semana.
+
+## Nueve preguntas antes de contratar una.
+
+01
+
+### ¿Se conecta a mi agenda real?
+
+Con el nombre de tu programa delante. Si la respuesta es «toma el recado y vosotros ponéis la cita», es otra cosa.
+
+02
+
+### ¿Qué hace con una urgencia?
+
+Debe poder decirte exactamente qué detecta y a quién lo pasa. «Lo gestiona» no es una respuesta.
+
+03
+
+### ¿Qué dice cuando no sabe algo?
+
+La respuesta correcta es «lo reconoce y toma el recado». Si «siempre responde», te va a inventar cosas.
+
+04
+
+### ¿Puedo leer o escuchar las llamadas?
+
+Resúmenes de cada llamada como mínimo. Sin eso no sabrás si funciona ni podrás corregirla.
+
+05
+
+### ¿Se presenta como IA?
+
+Tiene que hacerlo. Si te proponen que «parezca una persona», desconfía: es ilegal y, además, sale mal.
+
+06
+
+### ¿Dónde se guardan los datos y quién es el encargado del tratamiento?
+
+Te deben poder decir qué datos trata, dónde viven y durante cuánto tiempo, y firmar el contrato de encargado que exige el RGPD.
+
+07
+
+### ¿Qué pasa cuando cambio precios, horarios o profesionales?
+
+Cambia tu clínica, tiene que cambiar ella. Pregunta cómo se actualiza y si eso está incluido en el mantenimiento.
+
+08
+
+### ¿Se prueba con llamadas reales antes de atender pacientes?
+
+Con vuestras situaciones de verdad, incluidas las raras. Una recepcionista que sale sin probar se nota delante del paciente.
+
+09
+
+### ¿Quién la mantiene y responde si falla?
+
+Una persona con nombre, no un formulario de soporte. En una clínica, el teléfono no puede estar roto dos días.
+
+## Cómo se pone en marcha, en la práctica.
+
+Bien hecho, lleva días, no meses. Primero se hace la cuenta de las llamadas perdidas y se decide si entra como primera línea o solo como refuerzo cuando tu equipo no coge. Después se conecta a tu número y a tu agenda, se le da tu información (profesionales, servicios, precios, horarios) y, sobre todo, las reglas de lo que no debe hacer. Luego se prueba con llamadas reales hasta que responde como respondería tu recepción, y solo entonces empieza a atender pacientes. Las primeras semanas se revisan los resúmenes y se ajusta lo que haga falta.
+
+Si además quieres que el WhatsApp de la clínica se atienda igual, el asistente de WhatsApp con IA trabaja sobre la misma agenda y la misma información. Lo explicamos en la guía sobre cómo dar citas por WhatsApp en una clínica .
+
+## Preguntas frecuentes.
+
+**¿Qué es una recepcionista virtual para clínicas?**
+Un sistema con inteligencia artificial que contesta las llamadas de la clínica con voz natural, informa de horarios, servicios y precios, reconoce al paciente, le da cita en la agenda real con el profesional correcto, toma recados y pasa la llamada a una persona cuando hace falta. Funciona las 24 horas y deja un resumen de cada llamada.
+
+**¿Es lo mismo que una centralita virtual?**
+No. La centralita reparte llamadas con un menú de opciones grabado («pulse 1 para citas») y no entiende al paciente ni toca la agenda. La recepcionista con IA mantiene una conversación normal y actúa sobre tu agenda.
+
+**¿Los pacientes notan que es una inteligencia artificial?**
+Sí, porque se presenta como asistente virtual al descolgar, como exige la normativa europea. Aun así la voz es natural y la conversación fluye sin menús ni comandos. En la práctica, al paciente le importa más que le cojan el teléfono y le den cita que quién lo hace.
+
+**¿Puede dar cita con un profesional concreto?**
+Sí, si está conectada a tu agenda. Sabe qué profesional hace cada servicio, cuánto dura y qué huecos tiene libres, y ofrece solo los que encajan. Si el paciente pide a alguien en concreto, lo respeta.
+
+**¿Qué pasa si un paciente llama con dolor o con una urgencia?**
+No intenta resolverlo: lo detecta, toma los datos y pasa la llamada o avisa a tu equipo al instante, según las reglas que hayáis fijado. Nunca aconseja sobre nada clínico.
+
+**¿Cuánto cuesta una recepcionista virtual para una clínica?**
+Normalmente un coste de montaje más un mantenimiento mensual, que dependen de cuántas llamadas recibes, de con cuántos profesionales agenda y de a qué agenda se conecta. Queda muy por debajo de un puesto de recepción y no sube con cada llamada. Lo sensato es compararlo con lo que te cuestan hoy las llamadas que no coges.
+
+¿Hacemos la cuenta con tus llamadas?
+
+## Te decimos cuánto te cuesta hoy no cogerlas y qué montaríamos.
+
+En la primera cita, gratis y sin compromiso, hacemos la cuenta con los números de tu clínica y te decimos si una recepcionista con IA te compensa. Si no sale a cuenta, te lo decimos.
+
+Lo que montamos en clínicas
+
+---
+
+# Página: Citas por WhatsApp en una clínica: guía práctica | Anomalia
+URL: https://anomalia.business/citas-por-whatsapp-clinica
+Descripción: Cómo dar, cambiar y recordar citas por WhatsApp en una clínica sin saturar recepción: WhatsApp Business, respuestas automáticas o un asistente con IA.
+
+Inicio / Asistente de WhatsApp con IA / Guía
+
+Guía · Clínicas
+
+# Cómo dar citas por WhatsApp en una clínica sin que recepción se ahogue.
+
+Los pacientes prefieren escribir, y cada vez más lo hacen fuera de horario. El problema no es atender por WhatsApp: es que los mensajes se acumulan y se contestan tarde, mirando la agenda a mano, entre dos pacientes. Esta guía recorre las tres formas de resolverlo, de la más sencilla a la que agenda sola, y cuándo tiene sentido cada una.
+
+Por Marcos Mompeán , fundador de Anomalia · Publicada el 10 de octubre de 2026 · 8 minutos de lectura
+
+La respuesta corta
+
+Hay tres niveles, y conviene elegir por volumen y por horario, no por moda:
+
+- WhatsApp Business bien montado. Gratis. Perfil completo, horario, mensaje de ausencia, respuestas rápidas y etiquetas. Todo sigue siendo manual: una persona lee, mira la agenda y contesta.
+
+- Recordatorios y confirmaciones automáticas. La clínica manda solo el mensaje del día antes y el paciente confirma con un toque. Reduce las ausencias; no atiende las conversaciones.
+
+- Un asistente con IA que agenda solo. Contesta al momento, a cualquier hora, identifica al paciente, mira la agenda real y deja la cita puesta, cambiada o anulada. Deriva a una persona cuando hace falta.
+
+Con pocos mensajes al día y una persona que puede dedicarse, el nivel 1 vale. Cuando los mensajes entran fuera de horario, hay varios profesionales o recepción no llega, el que resuelve es el 3.
+
+## Por qué el WhatsApp de una clínica se convierte en un problema.
+
+Para el paciente, escribir es más cómodo que llamar: no interrumpe, no espera con música y puede hacerlo a las once de la noche desde el sofá. Para la clínica, ese mismo mensaje llega cuando no hay nadie, se junta con otros veinte y al día siguiente alguien tiene que leerlos todos, mirar la agenda, contestar uno por uno y volver a mirar si el hueco sigue libre cuando el paciente responde dos horas después.
+
+El resultado es conocido: respuestas tarde, huecos ofrecidos que ya no están, citas apuntadas en un sitio y no en otro, y pacientes que, mientras esperaban respuesta, han reservado en otra clínica. El WhatsApp no es el problema. El problema es que una conversación que necesita la agenda delante la lleva una persona que, además, tiene a un paciente delante.
+
+## Nivel 1: WhatsApp Business bien montado.
+
+Es gratis y muchas clínicas no lo tienen hecho del todo. Si hoy atendéis desde un móvil con el WhatsApp normal, este es el primer paso:
+
+- Un número de la clínica, no el móvil de alguien. Si esa persona se va, se va el WhatsApp con ella.
+
+- Perfil completo: nombre, dirección, horario, web, catálogo de servicios con precios si los publicas.
+
+- Mensaje de ausencia fuera de horario que diga qué va a pasar: «te contestamos mañana a partir de las 9» es mejor que el silencio. Y mejor aún si deja claro que para urgencias hay que llamar.
+
+- Respuestas rápidas para lo que se repite: cómo llegar, qué llevar a la primera visita, cuánto dura una sesión, cómo anular.
+
+- Etiquetas para no perder nada: «pendiente de hueco», «confirmada», «quiere cambiar».
+
+Su límite: todo sigue siendo manual. Alguien lee, mira la agenda, contesta y espera. Funciona cuando hay pocos mensajes y una persona que puede dedicarse. Deja de funcionar cuando los mensajes llegan de noche o cuando recepción ya va justa.
+
+## Nivel 2: recordatorios y confirmaciones automáticas.
+
+Aquí la clínica no atiende conversaciones: solo manda mensajes a partir de la agenda. El día antes de cada cita, el paciente recibe «Mañana a las 17:00 tienes cita con Laura. ¿Confirmas?» y responde con un toque. Si no viene a confirmar, recepción lo sabe con tiempo y puede llamar o dar el hueco a otro.
+
+Es de lo más agradecido que se puede montar: reduce las ausencias y las citas olvidadas, y quita a recepción la ronda de llamadas del día antes. Lo hacen muchos programas de gestión de clínicas y también se puede montar aparte, conectado a tu agenda.
+
+Dos cosas a tener en cuenta. La primera: para que la clínica pueda escribir primero al paciente, WhatsApp exige que el mensaje sea una plantilla aprobada y que el paciente haya dado su consentimiento para recibirlos, así que hay que pedírselo al tomar la cita. La segunda: según cómo se monte, tu número puede pasar de la aplicación de WhatsApp Business a la plataforma para empresas de WhatsApp; pregunta a quien lo monte cómo queda tu número y si tu equipo podrá seguir contestando a mano.
+
+Su límite: manda mensajes, no mantiene conversaciones. Si el paciente responde «¿y podría ser a las 18:00?», alguien tiene que leerlo.
+
+## Nivel 3: un asistente con IA que da citas solo.
+
+Es el único de los tres que atiende la conversación. El paciente escribe con sus palabras («¿tenéis algo el jueves por la tarde para mi hija?») y el asistente entiende, mira los huecos libres de verdad en tu agenda, ofrece los que encajan con ese servicio y ese profesional y deja la cita puesta. También la cambia o la anula, responde dudas con tu información, manda el recordatorio y, fuera de horario, hace lo mismo que a las cinco de la tarde.
+
+En una clínica, lo importante es lo que tiene prohibido: no opina de nada médico, no inventa huecos ni precios y, si el paciente escribe preocupado o con una urgencia, deja de intentar resolverlo y avisa a una persona. Y se presenta como asistente virtual, como exige la normativa europea de inteligencia artificial.
+
+Trabaja en el número de WhatsApp Business que ya tiene la clínica e identifica al paciente por su teléfono, así que a quien ya os conoce no le pide los datos otra vez. Lo que montamos nosotros está explicado en la página del asistente de WhatsApp con IA .
+
+Su límite: necesita poder leer y escribir en tu agenda. Si tu programa de gestión no permite conectarse, el asistente puede informar y tomar recados completos, pero no agendar solo. Hay que saberlo antes de empezar.
+
+## Lo que exigen WhatsApp y la ley.
+
+- Consentimiento para escribir primero. La clínica puede responder a quien le escribe, pero para iniciar ella la conversación (un recordatorio, un aviso) el paciente tiene que haber aceptado recibir mensajes. Pídelo al tomar la cita y guárdalo.
+
+- Plantillas aprobadas para esos mensajes que inicia la clínica. No valen para publicidad disfrazada de aviso.
+
+- Protección de datos. El teléfono y el nombre de un paciente ya son datos personales, y en una clínica se tratan con más cuidado. Trata solo lo necesario para dar la cita, no pidas información clínica por WhatsApp y cuenta en tu política de privacidad que atiendes por este canal. Si un sistema externo lo gestiona, debe firmar contigo el contrato de encargado del tratamiento.
+
+- Avisar de que es una IA. Si contesta un asistente automático, el paciente tiene que saberlo desde el primer mensaje.
+
+- Una persona disponible. Para urgencias, quejas y cualquier cosa delicada, el sistema debe poder pasar la conversación a alguien de tu equipo, y el mensaje de ausencia debe decir qué hacer si es urgente.
+
+Esto es una orientación general, no asesoramiento jurídico. Si tienes dudas, revísalo con tu asesor.
+
+## Los errores más habituales.
+
+- Atender desde el móvil personal de alguien. Se mezclan conversaciones, no hay horario y el día que esa persona no está, no hay WhatsApp.
+
+- Dejar el mensaje en «visto». Un paciente que ve el doble check azul y no recibe respuesta en horas ya está buscando otra clínica.
+
+- Ofrecer huecos sin mirar la agenda al momento. «Te confirmo en un rato» acaba en citas duplicadas o en huecos ofrecidos que ya no existen.
+
+- Apuntar la cita en el chat y olvidar pasarla a la agenda. El paciente viene y nadie le esperaba.
+
+- Mandar promociones a quien solo pidió una cita. Además de molestar, es un problema legal.
+
+- Poner un chatbot de botones. «Pulsa 1 para citas» por escrito es peor que por teléfono: el paciente quería escribir una frase, no navegar un menú.
+
+## Cómo saber qué nivel necesita tu clínica.
+
+01
+
+### Cuenta los mensajes de una semana
+
+Cuántos entran, a qué horas y cuántos piden, cambian o anulan una cita. Mira también cuánto tardáis en contestar de media y cuántos llegan fuera de horario.
+
+02
+
+### Pocos mensajes y una persona que puede dedicarse
+
+Nivel 1. Monta bien WhatsApp Business y, si hay ausencias, añade los recordatorios del nivel 2. Probablemente no necesitas más todavía.
+
+03
+
+### Mensajes fuera de horario, varios profesionales o recepción que no llega
+
+Nivel 3. Cada hora que un mensaje espera respuesta es un paciente que puede irse, y cada hueco mirado a mano es tiempo que recepción no tiene. Aquí el asistente se paga solo.
+
+04
+
+### Haz la cuenta antes de decidir
+
+Mensajes sin contestar a tiempo × los que eran una cita × lo que vale un paciente nuevo. Compáralo con lo que cuesta el sistema. Si no sale, no lo montes.
+
+## Preguntas frecuentes.
+
+**¿Se pueden dar citas por WhatsApp en una clínica?**
+Sí. Se puede hacer a mano con WhatsApp Business, con recordatorios automáticos a partir de la agenda o con un asistente con inteligencia artificial que mantiene la conversación, mira la agenda real y deja la cita puesta. Lo que cambia entre una opción y otra es cuánto trabajo le queda a recepción y qué pasa fuera de horario.
+
+**¿Puede la clínica escribir primero al paciente por WhatsApp?**
+Solo si el paciente ha aceptado recibir mensajes y usando una plantilla aprobada por WhatsApp (por ejemplo, el recordatorio del día antes). Responder a quien escribe a la clínica no necesita plantilla.
+
+**¿Tengo que cambiar el número de WhatsApp de la clínica?**
+Normalmente no: el asistente trabaja en el WhatsApp Business que ya usa la clínica. Según cómo se monte, el número puede pasar a la plataforma para empresas de WhatsApp; pregunta a quien lo monte cómo queda y si tu equipo podrá seguir contestando a mano cuando quiera.
+
+**¿Es seguro tratar datos de pacientes por WhatsApp?**
+Para dar una cita solo hacen falta nombre, teléfono y servicio, y eso se puede tratar cumpliendo el RGPD. Lo que no conviene es pedir ni guardar información clínica por este canal. Si un sistema externo gestiona el WhatsApp, debe firmar contigo el contrato de encargado del tratamiento.
+
+**¿Qué pasa si un paciente escribe algo urgente o médico?**
+Un asistente bien montado no responde sobre nada clínico: toma los datos y avisa a una persona de tu equipo al momento. Y el mensaje de ausencia de la clínica debe decir siempre qué hacer si es urgente.
+
+**¿Cuánto cuesta un asistente de WhatsApp para una clínica?**
+Suele tener un coste de montaje y un mantenimiento mensual, que dependen de cuántos mensajes recibes, de con cuántos profesionales agenda y de a qué agenda se conecta. Lo sensato es compararlo con lo que te cuestan hoy los mensajes que se contestan tarde o se quedan sin contestar.
+
+¿Vemos qué nivel necesita tu clínica?
+
+## Te decimos qué montar primero y cuánto te ahorraría.
+
+En la primera cita, gratis y sin compromiso, miramos cómo entra hoy el WhatsApp en tu clínica y hacemos la cuenta con tus números. Si con WhatsApp Business bien montado te vale, te lo decimos.
+
+Lo que montamos en clínicas
+
+---
+
+# Página: Llamadas perdidas en tu clínica: cuánto cuestan | Anomalia
+URL: https://anomalia.business/llamadas-perdidas-clinica
+Descripción: Calcula cuánto dinero pierde tu clínica por las llamadas que no coge, mide tus llamadas perdidas en una semana y descubre qué hacer para no perder más pacientes.
+
+Inicio / Clínicas / Guía
+
+Guía · Clínicas
+
+# Cuánto dinero pierde tu clínica por las llamadas que no coge (y cómo calcularlo).
+
+Una llamada que suena mientras recepción atiende a un paciente no parece gran cosa. Multiplicada por las de cada semana, y por los pacientes que no vuelven a llamar, es una de las fugas más grandes y menos visibles de una clínica. Aquí tienes la fórmula, una calculadora para hacerla con tus números y un método para medir tus llamadas perdidas en una semana.
+
+Por Marcos Mompeán , fundador de Anomalia · Publicada el 10 de octubre de 2026 · 6 minutos de lectura
+
+La respuesta corta
+
+El dinero que pierdes por llamadas sin coger se calcula así:
+
+Llamadas perdidas al mes × las que querían una cita × las que no vuelven a llamar × lo que vale un paciente nuevo
+
+No hay una cifra válida para todas las clínicas: depende de cuántas llamadas pierdes y de lo que vale una cita en tu especialidad. Por eso lo sensato es medirlo una semana y hacer la cuenta con tus números, no con los de una estadística.
+
+## Calcula lo que pierde tu clínica.
+
+Cambia los números por los tuyos. Los que vienen puestos son solo un ejemplo para que veas cómo funciona; no son datos de tu clínica ni de ninguna otra.
+
+## Cómo medir tus llamadas perdidas en una semana.
+
+01
+
+### Saca el registro de llamadas del teléfono
+
+Casi todas las centralitas y operadores tienen un listado de llamadas entrantes con las no contestadas. Si usáis un móvil, el registro del propio teléfono vale. Coge de lunes a sábado.
+
+02
+
+### Cuenta las que no se cogieron, por franja
+
+Dentro de horario y fuera de horario, por separado. Y dentro de horario, apunta en qué momentos se concentran: primera hora, mediodía, última hora, cuando recepción está sola.
+
+03
+
+### Mira cuántas volvieron a llamar
+
+Compara los números de las llamadas perdidas con los de las llamadas de los días siguientes. Las que no aparecen otra vez son las que, probablemente, se fueron a otro sitio. Ese es tu porcentaje real de «no vuelve a llamar».
+
+04
+
+### Pregunta a recepción qué piden los que sí llaman
+
+Qué parte de las llamadas atendidas en esa semana eran para pedir, cambiar o anular cita. Es la mejor estimación que vas a tener de qué querían las que no se cogieron.
+
+05
+
+### Pon el valor de una cita y haz la cuenta
+
+Lo que cobras de media por una primera cita y, si lo sabes, lo que gasta un paciente nuevo en un año. Mete todo en la calculadora de arriba. Ese número es lo que te cuesta hoy no coger el teléfono.
+
+## Por qué el paciente no vuelve a llamar.
+
+No es nada personal. Quien busca una clínica por primera vez suele llamar desde los resultados de Google o desde una recomendación, con dos o tres opciones abiertas. Si en la primera no le cogen, pasa a la siguiente, y si en esa le dan cita, el asunto está resuelto. No va a volver a intentarlo con la tuya a media tarde: ya tiene cita en otra parte.
+
+Con los pacientes que ya os conocen pasa menos, pero también pasa: una llamada sin coger para cambiar una cita acaba en una cita a la que no vienen, y una llamada sin coger para pedir una nueva se convierte en «ya llamaré», que a veces es nunca.
+
+Por eso el dato que más pesa en la fórmula es el porcentaje de los que no vuelven a llamar, y por eso merece la pena medirlo en vez de suponerlo.
+
+## Dónde se pierden más llamadas en una clínica.
+
+- Cuando recepción está sola y con un paciente delante. Es la situación más habitual y la más invisible: la llamada suena, se deja sonar, y nadie la apunta como perdida.
+
+- A primera y a última hora. Abrir, cerrar, cobrar, pasar consulta: el teléfono es lo primero que se deja.
+
+- A mediodía. Muchos pacientes llaman en su descanso de comer, justo cuando la clínica también está a medio gas.
+
+- Fuera de horario, sábados y festivos. Nadie lo coge y el buzón, si lo hay, rara vez se escucha a tiempo.
+
+- Cuando la línea está ocupada. Una sola línea y dos llamadas a la vez: la segunda oye el tono de comunicando y no vuelve.
+
+## Qué hacer para dejar de perderlas, de menos a más.
+
+- Un buzón que invite a escribir. Gratis. «Ahora mismo no podemos atenderte: escríbenos por WhatsApp al 6XX y te damos cita hoy mismo». Recupera una parte de las llamadas fuera de horario, si el WhatsApp se atiende de verdad.
+
+- Desvío al móvil cuando no se coge. Barato. Funciona hasta que la persona del móvil también está con un paciente, que es casi siempre.
+
+- Una segunda persona en recepción en las horas punta. Resuelve las franjas peores, pero no la noche ni el fin de semana, y es el coste más alto de la lista.
+
+- Un servicio de recepcionistas externas. Personas que atienden en tu nombre por horas. Humano y útil para los recados; con límites de horario y, a menudo, sin acceso a tu agenda, así que la cita la sigue poniendo tu equipo después.
+
+- Una recepcionista telefónica con IA. Coge todas las llamadas, a cualquier hora, informa, da cita en tu agenda real con el profesional correcto y pasa a una persona lo que no puede resolver. Es la única de la lista que atiende la llamada completa, de principio a cita, sin que nadie de tu equipo tenga que intervenir. Hemos escrito una guía sobre qué hace de verdad una recepcionista virtual en una clínica y cómo elegirla .
+
+La regla para elegir es la misma que para medir: compara lo que cuesta cada opción con lo que te cuestan hoy las llamadas perdidas. Si la calculadora te ha dado un número pequeño, con el buzón y el WhatsApp bien atendido vas bien. Si te ha dado uno grande, cada mes que pasa sin resolverlo cuesta más que la solución.
+
+Un caso real
+
+## Así salió la cuenta en una clínica.
+
+Una clínica que trabaja con nosotros tiene tres sistemas de Anomalia: recepcionista telefónica, asistente de WhatsApp y app de citas. Con sus propios números, la estimación es esta:
+
+≈ 20.000 € estimados el primer año
+
+≈ 70.000 € estimados en tres años
+
+0 llamadas sin contestar
+
+Sale de dos sitios: el trabajo de recepción que ya no hay que cubrir con plantilla y las citas que antes se iban a la clínica de al lado por no contestar a tiempo. Son cifras estimadas, no un resultado cerrado, y en otra clínica saldrán distintas: por eso se calculan antes de empezar.
+
+## Preguntas frecuentes.
+
+**¿Cuántas llamadas pierde una clínica normalmente?**
+No hay una cifra que valga para todas: depende de cuántas líneas tiene, de cuántas personas hay en recepción y de a qué horas llaman sus pacientes. Lo fiable es sacar el registro de llamadas de una semana y contar las no contestadas, dentro y fuera de horario. Casi siempre son más de las que se pensaba, porque las que suenan mientras recepción atiende a alguien no las apunta nadie.
+
+**¿Las llamadas fuera de horario cuentan como perdidas?**
+Sí, si quien llama quería una cita y no la consigue. Que la clínica esté cerrada no significa que el paciente vaya a esperar a mañana: muchos llaman a la siguiente de la lista o buscan dónde pueden reservar en ese momento.
+
+**¿Cómo sé si una llamada perdida era de un paciente nuevo?**
+Comparando el número con tu base de pacientes: si no está, era nuevo. Si no puedes hacerlo, usa la proporción de pacientes nuevos entre las llamadas que sí atendéis esa semana como estimación.
+
+**¿Es mejor desviar las llamadas al móvil o poner una recepcionista virtual?**
+El desvío es barato y vale como primer paso, pero mueve el problema de sitio: la persona del móvil también está ocupada. Una recepcionista telefónica con IA coge todas las llamadas, a cualquier hora, y da cita en la agenda real sin que nadie tenga que dejar lo que está haciendo. Cuál compensa depende de cuántas llamadas pierdes: por eso la calculadora.
+
+**¿Cuánto cuesta dejar de perder llamadas?**
+Desde cero (un buzón que invite a escribir por WhatsApp) hasta el sueldo de una persona más en recepción. Una recepcionista con IA está en medio: un coste de montaje y un mantenimiento mensual, muy por debajo de un puesto de recepción, que no sube con cada llamada. Lo sensato es compararlo con el número que te ha dado la calculadora.
+
+¿Hacemos la cuenta juntos?
+
+## Te decimos cuánto pierdes hoy y qué montaríamos para que no pase.
+
+En la primera cita, gratis y sin compromiso, hacemos esta misma cuenta con los números de tu clínica. Si el resultado no justifica montar nada, te lo decimos.
+
+Ver la recepcionista telefónica
 
