@@ -28,15 +28,15 @@ function leadDe(historial) {
 
 // Deduplicación: Upstash si existe (compartida entre instancias); si no, memoria.
 const recientes = new Map();
-async function yaAvisado(clave) {
+async function yaAvisado(clave, seg = DEDUP_SEG) {
   try {
-    const r = await comando([['SET', clave, '1', 'NX', 'EX', String(DEDUP_SEG)]]);
+    const r = await comando([['SET', clave, '1', 'NX', 'EX', String(seg)]]);
     if (r) return r[0].result == null; // null = la clave ya existía
   } catch { /* sin Redis: cae a memoria */ }
   const ahora = Date.now();
   for (const [k, v] of recientes) if (v < ahora) recientes.delete(k);
   if (recientes.has(clave)) return true;
-  recientes.set(clave, ahora + DEDUP_SEG * 1000);
+  recientes.set(clave, ahora + seg * 1000);
   return false;
 }
 
@@ -67,4 +67,4 @@ async function leadPerdido({ sessionId, historial = [], motivo } = {}) {
   return { ok: true, enviado };
 }
 
-module.exports = { leadPerdido, leadDe, MARCA_LEAD };
+module.exports = { leadPerdido, leadDe, yaAvisado, MARCA_LEAD };

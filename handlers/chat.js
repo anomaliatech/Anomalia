@@ -10,7 +10,25 @@ const email = require('../lib/email');
 const { reservar } = require('./reservar');
 
 const MARCA_HUECOS = '[HUECOS]'; // línea interna que viaja en el historial; el widget la oculta
-const { MARCA_LEAD, leadDe } = require('./lead-perdido'); // datos de un visitante que aún no ha reservado (firmados)
+const { MARCA_LEAD, leadDe, yaAvisado } = require('./lead-perdido'); // datos de un visitante que aún no ha reservado (firmados)
+
+// Fallos de la IA que no se arreglan solos (clave mala, sin saldo, límite de gasto
+// de la clave): el chat sigue contestando con el contacto humano, pero el equipo
+// tiene que enterarse. Un email cada 6 horas como mucho, no uno por visitante.
+async function avisarIaCaida(negocio, e) {
+  const permanente = [401, 402, 403].includes(e.status) || /^Falta /.test(e.message || '');
+  if (!permanente || await yaAvisado('aviso:ia-caida', 6 * 3600)) return;
+  const dest = process.env.EMAIL_AVISOS || negocio.emailAvisos;
+  if (!dest) return;
+  await email.enviar({
+    para: dest,
+    asunto: 'El chat de la web no puede responder - revisa la IA',
+    texto: 'El chat de ' + (negocio.nombre || 'la web') + ' está contestando con el mensaje de contacto porque la IA ha fallado:\n\n'
+      + String(e.message || '').slice(0, 500)
+      + '\n\nSi pone 402 o 403, suele ser saldo o límite de gasto de la clave en openrouter.ai (Credits / Keys). Si pone 401, la clave no es válida.'
+      + '\nNo se repetirá este aviso en 6 horas.',
+  });
+}
 
 let promptBase = null;
 function promptSistema(negocio) {
@@ -236,6 +254,7 @@ async function chat({ sessionId, historial = [], mensaje }) {
       resp = await ia.responder({ system, messages: mensajes, tools });
     } catch (e) {
       anota('error', { sessionId: id, donde: 'ia', msg: e.message });
+      pendientes.push(avisarIaCaida(negocio, e).catch(() => {}));
       // Si la cita YA se creó en esta vuelta, confirma igualmente (no dependas de la IA).
       let reply;
       if (citaHecha) reply = textoCitaHecha(citaHecha, conEmail);
