@@ -2,7 +2,7 @@
 // 200 = la web y el chat tienen lo que necesitan; 503 = algo falta y el chat
 // estaría contestando con el mensaje de "escríbenos a contacto@".
 // No llama a ninguna API de pago y no dice QUÉ falta: solo cuántas cosas.
-const CLAVE_IA = { groq: 'GROQ_API_KEY', openai: 'OPENAI_API_KEY', gemini: 'GEMINI_API_KEY', anthropic: 'ANTHROPIC_API_KEY' };
+const CLAVE_IA = { groq: 'GROQ_API_KEY', openai: 'OPENAI_API_KEY', gemini: 'GEMINI_API_KEY', anthropic: 'ANTHROPIC_API_KEY', openrouter: 'OPENROUTER_API_KEY' };
 
 function comprobar(env) {
   const proveedor = (env.IA_PROVEEDOR || 'gemini').toLowerCase();
