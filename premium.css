@@ -116,7 +116,9 @@ html{scrollbar-color:rgba(255,255,255,.16) transparent;scrollbar-width:thin}
 .mk-zshot:not([data-live]) *,.mk-zshot:not([data-live]) *::before,.mk-zshot:not([data-live]) *::after{animation-play-state:paused!important}
 /* fondo de las landings: las manchas desenfocadas y la rejilla con máscara se quedan quietas (animarlas era lo más caro de la página) */
 .site-bg i,.site-bg::before{animation:none}
-.mk-glow::before{animation:none}
+/* quieto, el brillo no necesita sobresalir un 20 %: con inset:0 su esquina no se mueve si la
+   cabecera cambia de alto (con inset:-20 % contaba como salto de maquetación). Mismo dibujo. */
+.mk-glow::before{animation:none;inset:0;background:radial-gradient(ellipse 84% 63% at 50% -20%,color-mix(in srgb,var(--mk-primario) 26%,transparent),transparent 70%)}
 
 /* ============================================================
    RESULTADOS: lo que montamos se mide en dinero

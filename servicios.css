@@ -183,6 +183,9 @@ main{position:relative;z-index:1}
 .hero-grid{display:grid;gap:2.2rem;align-items:center}
 @media(min-width:1000px){.hero-grid{grid-template-columns:1.05fr .95fr;gap:3rem}.hero-grid h1{max-width:16ch}}
 .hero-chat{position:relative;z-index:1}
+/* el chat lo pinta agchat.js después de cargar: en una columna, sin hueco reservado
+   la cabecera crecía ~570 px de golpe y movía el motivo y el brillo (CLS 0,35) */
+@media(max-width:999px){.hero-chat{min-height:570px}.hero-chat:has([data-agchat-demo]){min-height:625px}}
 .hero-chat .agchat{box-shadow:0 46px 130px -50px rgba(0,0,0,.8)}
 .hero-proof{display:flex;flex-wrap:wrap;gap:.5rem 1.4rem;margin-top:1.4rem;padding:0;list-style:none}
 .hero-proof li{display:inline-flex;align-items:center;gap:.45em;font-size:.9rem;color:var(--mist);font-weight:600}
