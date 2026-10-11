@@ -26,7 +26,7 @@
 .agchat-bar button:disabled{opacity:.55;cursor:default}
 .agchat-foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:.4rem .9rem;padding:.55rem 1.1rem .75rem;font-size:.76rem;color:var(--mist-dim,#9B9B9B);line-height:1.4}
 .agchat-foot a{color:var(--gold-light,#D9C08A);border-bottom:1px solid currentColor;text-decoration:none}
-.agchat-wa{display:inline-flex;align-items:center;gap:.4em;font-weight:600;color:var(--paper,#FDFDFC)!important;border:0!important;white-space:nowrap}
+.agchat-wa{display:inline-flex;align-items:center;gap:.4em;min-height:24px;padding:.3em 0;font-weight:600;color:var(--paper,#FDFDFC)!important;border:0!important;white-space:nowrap}
 .agchat-wa svg{width:15px;height:15px;color:#25D366}
 .agchat-wa:hover{color:var(--gold-light,#D9C08A)!important}
 @media(max-width:600px){.agchat{height:470px}.agchat-head strong{font-size:.92rem}}

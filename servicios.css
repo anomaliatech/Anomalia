@@ -104,7 +104,7 @@ p{text-wrap:pretty}
 .btn-ghost{
   display:inline-flex;align-items:center;gap:.5em;white-space:nowrap;
   font-weight:600;font-size:.95rem;padding:.62em 1.2em;border-radius:100px;
-  border:1px solid var(--line);color:var(--paper);
+  border:1px solid var(--line);color:var(--paper);background:transparent;
   transition:border-color .3s,background .3s;
 }
 .btn-ghost:hover{border-color:var(--gold-light);background:rgba(255,255,255,.05)}
