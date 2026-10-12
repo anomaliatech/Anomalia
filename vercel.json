@@ -21,6 +21,8 @@
       "destination": "https://anomalia.business/:path*",
       "permanent": true
     },
+    { "source": "/ig", "destination": "/?utm_source=instagram&utm_medium=bio", "permanent": false },
+    { "source": "/tiktok", "destination": "/?utm_source=tiktok&utm_medium=bio", "permanent": false },
     { "source": "/index.html", "destination": "/", "permanent": true },
     { "source": "/index", "destination": "/", "permanent": true },
     { "source": "/(lib|handlers|scripts)/:path*", "destination": "/", "permanent": false },
