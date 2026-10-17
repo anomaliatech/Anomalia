@@ -472,6 +472,12 @@ p{text-wrap:pretty}
 .modal-body li{margin-bottom:.5rem;list-style:disc}
 .modal-body a{color:var(--gold-light)}
 .modal-body .lead{color:var(--gold-light);font-family:var(--font-mono,monospace);font-size:.82rem;letter-spacing:.04em;margin-bottom:1.2rem}
+.modal-body .legal-tabla{overflow-x:auto;margin:0 0 1rem}
+.modal-body table{width:100%;border-collapse:collapse;font-size:.82rem;line-height:1.5;min-width:560px}
+.modal-body th,.modal-body td{text-align:left;vertical-align:top;padding:.55rem .6rem;border-bottom:1px solid var(--line)}
+.modal-body th{color:#fff;font-weight:600}
+.modal-body code{font-size:.8rem;color:var(--paper)}
+.modal-body .legal-btn{background:none;border:0;padding:0;font:inherit;color:var(--gold-light);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
 .modal-updated{font-size:.75rem;color:var(--mist-dim);margin-top:1.4rem}
 body.locked{overflow:hidden}
 
@@ -842,6 +848,7 @@ body.locked{overflow:hidden}
   <h5>Destinatarios de los datos personales</h5>
   <p>Los datos personales del Usuario serán compartidos con los siguientes destinatarios o categorías de destinatarios:</p>
   <p>Marcos Mompean Lopez: Avenida de la Deportista Miriam Blasco 14, bloque 9, piso 6.º D, 03540 Alicante</p>
+  <p>Google Ireland Limited, como encargado del tratamiento, solo si el Usuario acepta las cookies de analítica: recibe los datos de navegación necesarios para elaborar las estadísticas de uso del Sitio Web, tal como se explica en la Política de cookies. Google LLC puede tratarlos en Estados Unidos y está adherida al Marco de Privacidad de Datos UE-EE. UU., que cuenta con una decisión de adecuación de la Comisión Europea.</p>
   <p>En caso de que el Responsable del tratamiento tenga la intención de transferir datos personales a un tercer país u organización internacional, en el momento en que se obtengan los datos personales, se informará al Usuario acerca del tercer país u organización internacional al cual se tiene la intención de transferir los datos, así como de la existencia o ausencia de una decisión de adecuación de la Comisión.</p>
   <h5>Datos personales de menores de edad</h5>
   <p>Respetando lo establecido en los artículos 8 del RGPD y 7 de la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, solo los mayores de 14 años podrán otorgar su consentimiento para el tratamiento de sus datos personales de forma lícita por Anomalia. Si se trata de un menor de 14 años, será necesario el consentimiento de los padres o tutores para el tratamiento, y este solo se considerará lícito en la medida en la que los mismos lo hayan autorizado.</p>
@@ -883,23 +890,40 @@ body.locked{overflow:hidden}
 </template>
 
 <template id="legal-cookies">
-  <p class="lead">https://anomalia.business</p>
-  <p>El acceso a este Sitio Web puede implicar la utilización de cookies. Las cookies son pequeñas cantidades de información que se almacenan en el navegador utilizado por cada Usuario —en los distintos dispositivos que pueda utilizar para navegar— para que el servidor recuerde cierta información que posteriormente y únicamente el servidor que la implementó leerá. Las cookies facilitan la navegación, la hacen más amigable, y no dañan el dispositivo de navegación.</p>
-  <p>Las cookies son procedimientos automáticos de recogida de información relativa a las preferencias determinadas por el Usuario durante su visita al Sitio Web con el fin de reconocerlo como Usuario, y personalizar su experiencia y el uso del Sitio Web, y pueden también, por ejemplo, ayudar a identificar y resolver errores.</p>
-  <p>La información recabada a través de las cookies puede incluir la fecha y hora de visitas al Sitio Web, las páginas visionadas, el tiempo que ha estado en el Sitio Web y los sitios visitados justo antes y después del mismo. Sin embargo, ninguna cookie permite que esta misma pueda contactarse con el número de teléfono del Usuario o con cualquier otro medio de contacto personal. Ninguna cookie puede extraer información del disco duro del Usuario o robar información personal. La única manera de que la información privada del Usuario forme parte del archivo Cookie es que el usuario dé personalmente esa información al servidor.</p>
-  <p>Las cookies que permiten identificar a una persona se consideran datos personales. Por tanto, a las mismas les será de aplicación la Política de Privacidad anteriormente descrita. En este sentido, para la utilización de las mismas será necesario el consentimiento del Usuario. Este consentimiento será comunicado, en base a una elección auténtica, ofrecido mediante una decisión afirmativa y positiva, antes del tratamiento inicial, removible y documentado.</p>
-  <h4>Cookies propias</h4>
-  <p>Son aquellas cookies que son enviadas al ordenador o dispositivo del Usuario y gestionadas exclusivamente por Anomalia para el mejor funcionamiento del Sitio Web. La información que se recaba se emplea para mejorar la calidad del Sitio Web y su Contenido y su experiencia como Usuario. Estas cookies permiten reconocer al Usuario como visitante recurrente del Sitio Web y adaptar el contenido para ofrecerle contenidos que se ajusten a sus preferencias.</p>
-  <h4>Cookies de terceros (analítica y publicidad)</h4>
-  <p>Solo si el Usuario pulsa «Aceptar todas» en el aviso de cookies, el Sitio Web puede cargar herramientas de medición y publicidad de terceros que instalan sus propias cookies: Google Analytics y Google Tag Manager (para saber cómo se usa la web), Google Ads (para medir las conversiones de los anuncios) y el píxel de Meta. Mientras no se acepten, ninguna de estas herramientas se carga ni envía datos. El Sitio Web no incorpora plugins de redes sociales. Los titulares de estas herramientas disponen de sus propias políticas de privacidad y de cookies, que el Usuario puede consultar en:</p>
+  <p class="lead">https://anomalia.business · Actualizada el 17/10/2026</p>
+  <h4>Qué son las cookies</h4>
+  <p>Las cookies y las tecnologías parecidas (como el almacenamiento local del navegador) son pequeños datos que una web guarda en tu dispositivo para recordar información sobre tu visita. Algunas son necesarias para que la web funcione. Otras sirven para medir cómo se usa y solo se instalan si das tu consentimiento.</p>
+  <h4>Quién las usa</h4>
+  <p>El responsable es Marcos Mompeán López (Anomalia), con los datos que figuran en el Aviso legal. Puedes escribirnos a <a href="mailto:contacto@anomalia.business">contacto@anomalia.business</a>. Las cookies de analítica las instala Google, como tercero, por cuenta de Anomalia.</p>
+  <h4>Cookies que usa este sitio</h4>
+  <div class="legal-tabla">
+    <table>
+      <thead><tr><th>Nombre</th><th>Titular</th><th>Para qué sirve</th><th>Tipo</th><th>Duración</th></tr></thead>
+      <tbody>
+        <tr><td><code>anomaliaCookieConsent</code> (almacenamiento local)</td><td>Anomalia</td><td>Recordar si has aceptado, rechazado o configurado las cookies.</td><td>Técnica, necesaria. No requiere consentimiento.</td><td>12 meses</td></tr>
+        <tr><td><code>_ga</code></td><td>Google</td><td>Distinguir a un visitante de otro, con un identificador aleatorio, para las estadísticas.</td><td>Analítica. Solo con tu consentimiento.</td><td>2 años</td></tr>
+        <tr><td><code>_ga_FH2Z2Z473W</code></td><td>Google</td><td>Mantener el estado de la visita para las estadísticas.</td><td>Analítica. Solo con tu consentimiento.</td><td>2 años</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>El chat de reservas no instala cookies. No usamos cookies de publicidad ni plugins de redes sociales.</p>
+  <h4>Google Analytics</h4>
+  <p>Usamos Google Analytics 4, un servicio de Google Ireland Limited (Gordon House, Barrow Street, Dublín 4, Irlanda), para obtener estadísticas de uso: páginas vistas, duración de la visita, de dónde llega (por ejemplo, un buscador o nuestra ficha de Google), tipo de dispositivo y ubicación aproximada (país o ciudad). También medimos algunas acciones en la web, como empezar una conversación en el chat, reservar una cita o pulsar en WhatsApp, teléfono o correo. No enviamos a Google tu nombre, tu teléfono ni lo que escribes en el chat. Según Google, Google Analytics 4 no registra ni guarda direcciones IP.</p>
+  <p>Google puede tratar estos datos en Estados Unidos. Google LLC está adherida al <a href="https://www.dataprivacyframework.gov/" target="_blank" rel="noopener">Marco de Privacidad de Datos UE-EE. UU.</a>, que cuenta con una decisión de adecuación de la Comisión Europea. Más información en la <a href="https://policies.google.com/technologies/cookies?hl=es" target="_blank" rel="noopener">política de cookies de Google</a> y en su <a href="https://policies.google.com/privacy?hl=es" target="_blank" rel="noopener">política de privacidad</a>.</p>
+  <h4>Base legal</h4>
+  <p>La cookie técnica se usa porque es imprescindible para respetar tu elección (art. 22.2 de la LSSI). Las de analítica solo se instalan si las aceptas: la base legal es tu consentimiento (art. 6.1.a del RGPD). Mientras no las aceptes, Google Analytics no se carga ni recibe ningún dato.</p>
+  <h4>Cómo aceptar, rechazar o cambiar tu elección</h4>
+  <p>La primera vez que entras te mostramos un aviso con tres opciones: aceptar, rechazar o configurar. Rechazar es igual de fácil que aceptar y puedes seguir usando toda la web.</p>
+  <p>Puedes cambiar o retirar tu consentimiento en cualquier momento desde el enlace «Configurar cookies» del pie de cada página o desde aquí: <button type="button" class="legal-btn" data-cookies-config>Configurar cookies</button>. Si lo retiras, borramos las cookies de analítica de este sitio. Guardamos tu elección 12 meses; pasado ese tiempo, o si cambian las cookies que usamos, te la volveremos a pedir.</p>
+  <h4>Cómo borrar o bloquear cookies en el navegador</h4>
+  <p>También puedes borrar o bloquear las cookies desde tu navegador:</p>
   <ul>
-    <li>Google (Analytics, Tag Manager y Ads): <a href="https://policies.google.com/technologies/cookies?hl=es" target="_blank" rel="noopener">https://policies.google.com/technologies/cookies</a></li>
-    <li>Meta (píxel): <a href="https://www.facebook.com/policies/cookies/" target="_blank" rel="noopener">https://www.facebook.com/policies/cookies/</a></li>
+    <li><a href="https://support.google.com/chrome/answer/95647?hl=es" target="_blank" rel="noopener">Google Chrome</a></li>
+    <li><a href="https://support.mozilla.org/es/kb/Borrar%20cookies" target="_blank" rel="noopener">Mozilla Firefox</a></li>
+    <li><a href="https://support.apple.com/es-es/guide/safari/sfri11471/mac" target="_blank" rel="noopener">Safari</a></li>
+    <li><a href="https://support.microsoft.com/es-es/microsoft-edge/eliminar-las-cookies-en-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener">Microsoft Edge</a></li>
   </ul>
-  <p>El consentimiento se guarda en el navegador del Usuario (clave <code>anomaliaCookieConsent</code>) y puede cambiarse en cualquier momento borrando los datos del sitio en el navegador, lo que vuelve a mostrar el aviso.</p>
-  <h4>Deshabilitar, rechazar y eliminar cookies</h4>
-  <p>El Usuario puede deshabilitar, rechazar y eliminar las cookies —total o parcialmente— instaladas en su dispositivo mediante la configuración de su navegador (entre los que se encuentran, por ejemplo, Chrome, Firefox, Safari, Explorer). En este sentido, los procedimientos para rechazar y eliminar las cookies pueden diferir de un navegador de Internet a otro. En consecuencia, el Usuario debe acudir a las instrucciones facilitadas por el propio navegador de Internet que esté utilizando. En el supuesto de que rechace el uso de cookies —total o parcialmente— podrá seguir usando el Sitio Web, si bien podrá tener limitada la utilización de algunas de las prestaciones del mismo.</p>
-  <p>Este documento de Política de Cookies ha sido creado mediante el generador de plantilla de política de cookies web gratis online el día 03/08/2026.</p>
+  <p>Para todo lo relativo a tus datos personales y a tus derechos, consulta la <button type="button" class="legal-btn" data-legal="privacidad">Política de privacidad</button>.</p>
 </template>
 
 <script src="motion.js?v=e3e13b90"></script>

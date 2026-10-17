@@ -156,3 +156,30 @@ html{scrollbar-color:rgba(255,255,255,.16) transparent;scrollbar-width:thin}
 .foot-social a:hover{color:var(--gold-light);border-color:rgba(217,192,138,.6)}
 .foot-social svg{width:18px;height:18px}
 .foot-bottom .foot-social{margin-top:0}
+
+/* ============ COOKIES: banner, «Configurar cookies» del pie y panel (lo monta analitica.js) ============ */
+.foot-legal{flex-wrap:wrap}
+.foot-legal button{background:none;border:0;padding:0;font:inherit;font-size:.8rem;color:var(--mist-dim);cursor:pointer}
+.cookie .btn-ghost{background:rgba(255,255,255,.06);color:var(--paper)}
+.cookie .ck-link{background:none;border:0;padding:.6em .5em;font:inherit;font-size:.85rem;font-weight:600;color:var(--gold-light);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.ckp{position:fixed;inset:0;z-index:450;display:none;align-items:center;justify-content:center;padding:1.5rem 16px}
+.ckp.show{display:flex}
+.ckp-scrim{position:absolute;inset:0;background:rgba(0,0,0,.75)}
+.ckp-box{position:relative;background:var(--bg2);border:1px solid var(--line);border-radius:18px;max-width:560px;width:100%;max-height:86vh;overflow-y:auto;padding:1.7rem 1.6rem 1.5rem;color:var(--mist);font-size:.92rem;line-height:1.6}
+.ckp-box h2{font-family:var(--font-display);font-size:1.3rem;color:#fff;margin:0 2.6rem .6rem 0;font-weight:440;letter-spacing:0}
+.ckp-box p{margin:0 0 1rem}
+.ckp-box p a{color:var(--gold-light);border-bottom:1px solid currentColor}
+.ckp-x{position:absolute;top:1rem;right:1rem;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:none;color:var(--paper);font-size:1.3rem;line-height:1;cursor:pointer}
+.ckp-x:hover{border-color:var(--gold-light)}
+.ckp-row{display:flex;gap:1rem;align-items:center;justify-content:space-between;padding:1rem 0;border-top:1px solid var(--line);cursor:pointer}
+div.ckp-row{cursor:default}
+.ckp-txt b{display:block;color:#fff;font-size:.95rem;font-weight:600;margin-bottom:.2rem}
+.ckp-txt span{display:block;font-size:.85rem;color:var(--mist-dim)}
+.ckp-fija{font-size:.78rem;color:var(--gold-light);white-space:nowrap}
+.ckp-sw{appearance:none;-webkit-appearance:none;flex-shrink:0;margin:0;width:44px;height:24px;border-radius:24px;background:rgba(255,255,255,.16);position:relative;cursor:pointer;transition:background .2s}
+.ckp-sw::after{content:"";position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:#fff;transition:transform .2s}
+.ckp-sw:checked{background:#C6A15B}
+.ckp-sw:checked::after{transform:translateX(20px)}
+.ckp-sw:focus-visible{outline:2px solid var(--gold-light);outline-offset:2px}
+.ckp-act{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:.4rem;padding-top:1.2rem;border-top:1px solid var(--line)}
+.ckp-act .btn-ghost{flex:1 1 auto;padding:.65em 1em;font-size:.85rem;background:rgba(255,255,255,.06);color:var(--paper)}
