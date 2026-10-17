@@ -220,7 +220,7 @@
         '<div class="ckp-act">' +
           '<button type="button" class="btn-ghost" data-ckp="rechazar">Rechazar todas</button>' +
           '<button type="button" class="btn-ghost" data-ckp="guardar">Guardar selección</button>' +
-          '<button type="button" class="btn-ghost" data-ckp="aceptar">Aceptar todas</button>' +
+          '<button type="button" class="btn-gold" data-ckp="aceptar">Aceptar todas</button>' +
         '</div>' +
       '</div>';
     document.body.appendChild(panel);
@@ -259,7 +259,7 @@
     if (!t) return;
     if (t.closest('[data-cookies-config]')) { ev.preventDefault(); abrirPanel(); }
     else if (t.closest('#ckAccept')) decidir(todas(true));
-    else if (t.closest('#ckReject')) decidir(todas(false));
+    else if (t.closest('#ckReject, #ckNecesarias')) decidir(todas(false)); // «Rechazar» y «Solo necesarias» son lo mismo
   });
   document.addEventListener('keydown', function (ev) {
     if (ev.key === 'Escape' && panel && panel.classList.contains('show')) cerrarPanel();

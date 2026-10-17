@@ -161,7 +161,10 @@ html{scrollbar-color:rgba(255,255,255,.16) transparent;scrollbar-width:thin}
 .foot-legal{flex-wrap:wrap}
 .foot-legal button{background:none;border:0;padding:0;font:inherit;font-size:.8rem;color:var(--mist-dim);cursor:pointer}
 .cookie .btn-ghost{background:rgba(255,255,255,.06);color:var(--paper)}
-.cookie .ck-link{background:none;border:0;padding:.6em .5em;font:inherit;font-size:.85rem;font-weight:600;color:var(--gold-light);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.cookie .btn-gold{padding:.6em 1.2em;font-size:.85rem}
+.cookie .ck-link{background:none;border:0;padding:.6em .5em;font:inherit;font-size:.82rem;font-weight:500;color:var(--mist-dim);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.cookie .ck-link:hover{color:var(--gold-light)}
+@media(max-width:640px){.cookie-act{flex-wrap:wrap}.cookie .ck-link{flex:1 1 40%}.cookie .btn-ghost,.cookie .btn-gold{flex:1 1 100%}}
 .ckp{position:fixed;inset:0;z-index:450;display:none;align-items:center;justify-content:center;padding:1.5rem 16px}
 .ckp.show{display:flex}
 .ckp-scrim{position:absolute;inset:0;background:rgba(0,0,0,.75)}
@@ -182,4 +185,5 @@ div.ckp-row{cursor:default}
 .ckp-sw:checked::after{transform:translateX(20px)}
 .ckp-sw:focus-visible{outline:2px solid var(--gold-light);outline-offset:2px}
 .ckp-act{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:.4rem;padding-top:1.2rem;border-top:1px solid var(--line)}
-.ckp-act .btn-ghost{flex:1 1 auto;padding:.65em 1em;font-size:.85rem;background:rgba(255,255,255,.06);color:var(--paper)}
+.ckp-act .btn-ghost,.ckp-act .btn-gold{flex:1 1 auto;padding:.65em 1em;font-size:.85rem}
+.ckp-act .btn-ghost{background:rgba(255,255,255,.06);color:var(--paper)}
