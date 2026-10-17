@@ -148,7 +148,7 @@ function nodoOrganizacion(completo) {
     knowsLanguage: [o.idioma],
     knowsAbout: o.categorias,
     priceRange: '€€',
-    openingHours: 'Mo-Su 12:00-21:00',
+    openingHours: o.horarioSchema,
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'sales',
