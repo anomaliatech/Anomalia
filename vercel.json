@@ -27,6 +27,8 @@
     { "source": "/facebook", "destination": "/?utm_source=facebook&utm_medium=bio", "permanent": false },
     { "source": "/x", "destination": "/?utm_source=x&utm_medium=bio", "permanent": false },
     { "source": "/linkedin", "destination": "/?utm_source=linkedin&utm_medium=bio", "permanent": false },
+    { "source": "/tarjeta", "destination": "/?utm_source=tarjeta&utm_medium=qr", "permanent": false },
+    { "source": "/TARJETA", "destination": "/?utm_source=tarjeta&utm_medium=qr", "permanent": false },
     { "source": "/resena", "destination": "https://g.page/r/CckvvTctKv_zEBI/review", "permanent": false },
     { "source": "/index.html", "destination": "/", "permanent": true },
     { "source": "/index", "destination": "/", "permanent": true },

@@ -480,7 +480,7 @@ body.locked{overflow:hidden}
 }
 </style>
 <noscript><style>.mk-film{height:auto!important}.mk-film-stage{position:static!important;height:auto!important}.mk-zshot{position:relative!important;inset:auto!important;opacity:1!important;transform:none!important;min-height:100vh;pointer-events:auto!important}.hx-rings,.hx-glow{display:none}</style></noscript>
-<link rel="stylesheet" href="premium.css?v=7e227bb1">
+<link rel="stylesheet" href="premium.css?v=f487823d">
 </head>
 <body id="top">
 
@@ -726,6 +726,7 @@ body.locked{overflow:hidden}
         <button type="button" data-legal="aviso">Aviso legal</button>
         <button type="button" data-legal="privacidad">Privacidad</button>
         <button type="button" data-legal="cookies">Cookies</button>
+        <button type="button" data-cookies-config>Configurar cookies</button>
       </div>
     </div>
   </div>
@@ -734,10 +735,11 @@ body.locked{overflow:hidden}
 <!-- ===================== COOKIES ===================== -->
 <div class="cookie" id="cookie" role="dialog" aria-live="polite" aria-label="Configuración de cookies">
   <div class="cookie-in">
-    <p>Usamos cookies propias, necesarias para el funcionamiento del sitio, y cookies de analítica para entender cómo se usa la web y mejorarla. Puedes aceptarlas todas o rechazar las que no son esenciales. Más información en nuestra <button type="button" data-legal="cookies">Política de Cookies</button>.</p>
+    <p>Usamos cookies propias necesarias para que la web funcione y, solo si lo aceptas, cookies de Google Analytics para saber cuántas personas nos visitan y qué páginas ven. Puedes aceptarlas, rechazarlas o elegir en «Configurar». Más información en nuestra <button type="button" data-legal="cookies">Política de Cookies</button>.</p>
     <div class="cookie-act">
-      <button type="button" class="btn-ghost" id="ckReject">Rechazar no esenciales</button>
-      <button type="button" class="btn-gold" id="ckAccept">Aceptar todas</button>
+      <button type="button" class="ck-link" data-cookies-config>Configurar</button>
+      <button type="button" class="btn-ghost" id="ckReject">Rechazar</button>
+      <button type="button" class="btn-ghost" id="ckAccept">Aceptar</button>
     </div>
   </div>
 </div>
@@ -903,7 +905,7 @@ body.locked{overflow:hidden}
 <script src="motion.js?v=e3e13b90"></script>
 <script src="premium.js?v=2db69710" defer></script>
 <script src="agchat.js?v=2b4eb053" defer></script>
-<script src="analitica.js?v=a40b4a8d" defer></script>
+<script src="analitica.js?v=a5d3e63d" defer></script>
 <script>
 (function(){
   /* ---- barra: fondo más sólido al hacer scroll ---- */
@@ -953,22 +955,7 @@ body.locked{overflow:hidden}
   addEventListener('hashchange', openFromHash);
   openFromHash();
 
-  /* ---- cookies ---- */
-  var KEY = 'anomaliaCookieConsent';
-  var ck = document.getElementById('cookie');
-  function loadAnalytics(){ /* la carga real vive en analitica.js, que escucha este mismo banner */ }
-  var stored = null;
-  try { stored = localStorage.getItem(KEY); } catch(e){}
-  if(stored === 'accepted') loadAnalytics();
-  else if(stored !== 'rejected') setTimeout(function(){ ck.classList.add('show'); }, 800);
-  document.getElementById('ckAccept').addEventListener('click', function(){
-    try { localStorage.setItem(KEY,'accepted'); } catch(e){}
-    ck.classList.remove('show'); loadAnalytics();
-  });
-  document.getElementById('ckReject').addEventListener('click', function(){
-    try { localStorage.setItem(KEY,'rejected'); } catch(e){}
-    ck.classList.remove('show');
-  });
+  /* ---- cookies: banner y panel los gestiona analitica.js ---- */
 
   /* ---- hero: la luz y las órbitas siguen al cursor; el botón principal es magnético ---- */
   (function(){
