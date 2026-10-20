@@ -30,6 +30,7 @@ Anomalia (también escrito "Anomalía") es un estudio digital con sede en Españ
 - [Recepcionista virtual para clínicas](https://anomalia.business/recepcionista-virtual-clinica): Guía: qué hace de verdad una recepcionista virtual con IA en una clínica, qué no debe hacer, cómo se conecta a la agenda y qué preguntar antes de contratarla.
 - [Citas por WhatsApp en una clínica](https://anomalia.business/citas-por-whatsapp-clinica): Guía: cómo dar, cambiar y recordar citas por WhatsApp en una clínica sin saturar recepción, con WhatsApp Business, respuestas automáticas o un asistente con IA.
 - [Llamadas perdidas en una clínica](https://anomalia.business/llamadas-perdidas-clinica): Guía con calculadora: cuánto dinero pierde una clínica por las llamadas que no coge, cómo medirlo en una semana y qué hacer para dejar de perderlas.
+- [Recepcionista virtual para hoteles](https://anomalia.business/recepcionista-virtual-hoteles): Guía: las tres cosas que se venden como recepcionista virtual para hoteles (persona en remoto, check-in automático e IA al teléfono), qué problema resuelve cada una, la cuenta de las llamadas perdidas y qué preguntar antes de contratar.
 
 ## Por qué elegir Anomalia
 
@@ -120,6 +121,12 @@ Anomalia (también escrito "Anomalía") es un estudio digital con sede en Españ
 - **¿Cómo sé si una llamada perdida era de un paciente nuevo?** Comparando el número con tu base de pacientes: si no está, era nuevo. Si no puedes hacerlo, usa la proporción de pacientes nuevos entre las llamadas que sí atendéis esa semana como estimación.
 - **¿Es mejor desviar las llamadas al móvil o poner una recepcionista virtual?** El desvío es barato y vale como primer paso, pero mueve el problema de sitio: la persona del móvil también está ocupada. Una recepcionista telefónica con IA coge todas las llamadas, a cualquier hora, y da cita en la agenda real sin que nadie tenga que dejar lo que está haciendo. Cuál compensa depende de cuántas llamadas pierdes: por eso la calculadora.
 - **¿Cuánto cuesta dejar de perder llamadas?** Desde cero (un buzón que invite a escribir por WhatsApp) hasta el sueldo de una persona más en recepción. Una recepcionista con IA está en medio: un coste de montaje y un mantenimiento mensual, muy por debajo de un puesto de recepción, que no sube con cada llamada. Lo sensato es compararlo con el número que te ha dado la calculadora.
+- **¿Qué hace una recepcionista virtual en un hotel?** Depende de cuál contrates: una persona en remoto atiende en las franjas que elijas, un quiosco hace el check-in y una IA al teléfono coge cada llamada a cualquier hora.
+- **¿Es una persona o una inteligencia artificial?** Las dos se venden con el mismo nombre. La IA atiende todas las llamadas a la vez y a cualquier hora; la persona resuelve mejor lo imprevisto. Pregunta cuál es antes de pedir precio.
+- **¿Puede un hotel funcionar sin recepción 24 horas?** Eso lo decide la normativa turística de tu comunidad autónoma, porque la ordenación del turismo es competencia de las comunidades ( artículo 148.1.18.ª de la Constitución ). Mírala antes de quitar a nadie del mostrador. Una recepcionista virtual atiende cuando no hay nadie, pero no te exime de lo que tu norma exija.
+- **¿Atiende en inglés y en otros idiomas?** Depende del proveedor. Con una IA, pide una llamada de prueba en cada idioma de tus huéspedes y escúchala entera. Con una persona en remoto, pregunta qué idiomas cubre cada turno.
+- **¿Puede atender también por WhatsApp?** Sí, con un asistente para ese canal. El nuestro, el asistente de WhatsApp con IA , responde al momento con la misma información que la recepcionista.
+- **¿Hace el check-in automático?** La IA al teléfono, no. El check-in automático es otro producto: un quiosco, una tablet o un enlace previo que escanea el documento y da acceso a la habitación. Si lo necesitas, comprueba que resuelve también el parte de viajeros.
 
 ## Contacto
 

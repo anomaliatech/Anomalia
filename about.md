@@ -363,6 +363,30 @@ El desvío es barato y vale como primer paso, pero mueve el problema de sitio: l
 
 Desde cero (un buzón que invite a escribir por WhatsApp) hasta el sueldo de una persona más en recepción. Una recepcionista con IA está en medio: un coste de montaje y un mantenimiento mensual, muy por debajo de un puesto de recepción, que no sube con cada llamada. Lo sensato es compararlo con el número que te ha dado la calculadora.
 
+**¿Qué hace una recepcionista virtual en un hotel?**
+
+Depende de cuál contrates: una persona en remoto atiende en las franjas que elijas, un quiosco hace el check-in y una IA al teléfono coge cada llamada a cualquier hora.
+
+**¿Es una persona o una inteligencia artificial?**
+
+Las dos se venden con el mismo nombre. La IA atiende todas las llamadas a la vez y a cualquier hora; la persona resuelve mejor lo imprevisto. Pregunta cuál es antes de pedir precio.
+
+**¿Puede un hotel funcionar sin recepción 24 horas?**
+
+Eso lo decide la normativa turística de tu comunidad autónoma, porque la ordenación del turismo es competencia de las comunidades ( artículo 148.1.18.ª de la Constitución ). Mírala antes de quitar a nadie del mostrador. Una recepcionista virtual atiende cuando no hay nadie, pero no te exime de lo que tu norma exija.
+
+**¿Atiende en inglés y en otros idiomas?**
+
+Depende del proveedor. Con una IA, pide una llamada de prueba en cada idioma de tus huéspedes y escúchala entera. Con una persona en remoto, pregunta qué idiomas cubre cada turno.
+
+**¿Puede atender también por WhatsApp?**
+
+Sí, con un asistente para ese canal. El nuestro, el asistente de WhatsApp con IA , responde al momento con la misma información que la recepcionista.
+
+**¿Hace el check-in automático?**
+
+La IA al teléfono, no. El check-in automático es otro producto: un quiosco, una tablet o un enlace previo que escanea el documento y da acceso a la habitación. Si lo necesitas, comprueba que resuelve también el parte de viajeros.
+
 ## Cómo citar esta fuente
 
 Anomalia — estudio digital de diseño web, automatización e IA para negocios en España. https://anomalia.business/

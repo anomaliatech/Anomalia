@@ -1963,3 +1963,167 @@ En la primera cita, gratis y sin compromiso, hacemos esta misma cuenta con los n
 
 Ver la recepcionista telefónica
 
+---
+
+# Página: Recepcionista virtual para hoteles: cuál te sirve | Anomalia
+URL: https://anomalia.business/recepcionista-virtual-hoteles
+Descripción: Persona en remoto, quiosco de check-in o IA al teléfono: qué resuelve cada recepcionista virtual en un hotel y qué preguntar antes de contratarla.
+
+Inicio / Recepcionista telefónica con IA / Guía
+
+Guía · Hoteles
+
+# Recepcionista virtual para hoteles: tres cosas distintas con el mismo nombre.
+
+Son las once y media de la noche. Quien hace el turno está subiendo toallas a la 104, o no hay nadie de noche, y suena el teléfono.
+
+Es alguien que quería reservar dos noches contigo, sin intermediarios. Nadie lo coge, y esa reserva acaba en una plataforma que te cobra comisión o en el hotel de enfrente.
+
+Buscas una solución y todas las páginas dicen «recepcionista virtual», aunque vendan cosas que no se parecen. Aquí las separamos: qué agujero tapa cada una en un hotel pequeño o un aparthotel, y qué preguntar antes de firmar.
+
+Por Marcos Mompeán , fundador de Anomalia · Publicada el 20 de octubre de 2026 · 7 minutos de lectura
+
+La respuesta corta
+
+Con el nombre de recepcionista virtual para hoteles se venden tres servicios distintos:
+
+- Una persona en remoto que atiende por teléfono, por videollamada o desde una pantalla en el vestíbulo, en las franjas que contrates.
+
+- Un quiosco o check-in automático que identifica al huésped, cobra y le da acceso a la habitación.
+
+- Una inteligencia artificial al teléfono , y a veces en WhatsApp, que coge cada llamada a cualquier hora y toma la reserva o el recado.
+
+Si lo que pierdes son llamadas de reserva, te sirve la tercera. Si quieres que nadie tenga que estar en el mostrador de noche, la primera o la segunda.
+
+## Persona en remoto, quiosco o IA al teléfono: qué es cada una.
+
+### Una persona que atiende en remoto
+
+Recepcionistas que trabajan desde fuera y atienden por teléfono, por videollamada o con un tótem en recepción. Se contratan por franjas (la noche, el fin de semana) y se combinan con tu equipo de día. Al otro lado hay una persona, y eso ayuda con lo imprevisto. Pero el coste crece con las horas que cubres, y no todos tienen acceso a tu programa de gestión: algunos solo toman nota.
+
+### Un quiosco o check-in automático
+
+Una tablet, un tótem o un enlace que el huésped recibe antes de llegar. Escanea el documento, cobra y entrega un código o una tarjeta. Resuelve la llegada a deshoras. No coge el teléfono: quien llama para preguntar si tienes habitación el sábado sigue sin respuesta.
+
+### Una inteligencia artificial que coge el teléfono
+
+Contesta con voz natural y con la información de tu hotel (parking, desayuno, mascotas), y toma la reserva o el recado. No se satura porque entren tres llamadas a la vez. No hace el check-in ni abre puertas.
+
+## Qué agujero de tu hotel tapa cada una.
+
+Antes de pedir presupuestos, apunta una semana qué pasa cuando nadie puede atender. Casi siempre es una de estas situaciones:
+
+- Llamadas para reservar que nadie coge: de noche, a mediodía o cuando la única persona del turno está con un huésped. Aquí encaja la IA al teléfono.
+
+- Huéspedes que llegan de madrugada. Lo resuelve el check-in automático o una persona por videollamada. La IA le puede explicar cómo entrar, pero no le abre la puerta.
+
+- Las mismas preguntas una y otra vez: si hay parking, si se admiten perros, hasta qué hora se puede llegar. Las responde la IA, por teléfono o por WhatsApp .
+
+- El turno de noche entero. Eso es recepción remota o quiosco, y antes hay que mirar qué exige tu comunidad (abajo, en las preguntas frecuentes).
+
+No hace falta tener las tres. Empieza por la que tapa la fuga que más dinero te cuesta.
+
+## El parte de viajeros no lo hace el teléfono.
+
+Los establecimientos de hospedaje en España tienen que registrar a sus huéspedes y comunicar sus datos a las autoridades. Lo regula el Real Decreto 933/2021 .
+
+El parte de entrada lo firma toda persona mayor de catorce años (artículo 4). El registro es informático y se conserva tres años (artículo 5). Y los datos de cada reserva, anulación o inicio del servicio se comunican en un plazo no superior a 24 horas (artículo 6).
+
+Eso lo hacen el programa de gestión del hotel, el check-in online o el quiosco. Una recepcionista telefónica con IA no: si la eliges para las llamadas, el parte lo sigues haciendo con otra herramienta.
+
+## La cuenta de la llamada que nadie coge.
+
+Esto no va de estar a la última. Cualquiera de las tres se justifica si tapa una fuga de dinero mayor que lo que cuesta. Es matemática pura, y la cuenta la haces tú con tus números:
+
+Reservas perdidas al mes = llamadas sin coger × las que eran para reservar × las que no vuelven a llamar
+
+Lo que te cuestan = reservas perdidas × lo que vale una estancia media
+
+En un hotel hay una segunda fuga: la reserva que no se pierde, sino que se va a una plataforma. El huésped duerme en tu hotel, pero pagas la comisión. Esa comisión, por las reservas que podían haber sido directas, también entra en la cuenta.
+
+Si el total es claramente mayor que la cuota del servicio, compensa. Si no, no lo contrates. Cómo medir tus llamadas perdidas en una semana lo explicamos en la guía de llamadas perdidas : está escrita para clínicas, pero la cuenta es la misma.
+
+## Siete preguntas antes de contratar una para tu hotel.
+
+01
+
+### ¿Atiende en los idiomas de tus huéspedes?
+
+Pide una llamada de prueba en inglés, alemán o el idioma en que te llamen, no una promesa.
+
+02
+
+### ¿Ve tu disponibilidad y tus tarifas, o solo toma recados?
+
+Pregúntalo con el nombre de tu programa de gestión hotelera (PMS) o de tu motor de reservas delante. Valen tres respuestas: sí, no o «lo comprobamos». Si no se conecta, informa y apunta, y la reserva la cierra tu equipo.
+
+03
+
+### ¿Cierra la reserva o la manda a otro sitio?
+
+Unos la confirman en la llamada, otros mandan un enlace para pagar y otros te pasan el recado. Cualquiera vale si lo sabes antes de firmar.
+
+04
+
+### ¿Qué hace con el huésped que no puede entrar a las tres de la mañana?
+
+Tiene que saber a quién avisar y cómo. «Lo gestiona» no es una respuesta.
+
+05
+
+### ¿Cuándo pasa la llamada a una persona?
+
+Cuando el huésped lo pide, cuando hay una queja o cuando no sabe algo. La Ley 10/2025 de atención a la clientela prohíbe el contestador como único canal y obliga a que el cliente pueda pedir una persona desde el inicio (artículo 8). Pero se aplica a empresas grandes, a partir de 250 trabajadores o de ciertos umbrales de facturación (artículo 2). A un hotel pequeño normalmente no le obliga, aunque el criterio sirve igual.
+
+06
+
+### ¿Qué te queda de cada llamada?
+
+Como mínimo, un resumen con quién llamó, qué quería y qué se hizo. Sin eso no sabrás si funciona.
+
+07
+
+### ¿Quién la actualiza cuando cambia la temporada?
+
+Pregunta cómo se actualiza, cuánto tarda y si va en la cuota.
+
+## Lo que montamos nosotros, y lo que no.
+
+En Anomalia montamos la parte de las llamadas: una recepcionista telefónica con IA que coge cada llamada las 24 horas, con voz natural y en español. Informa con los datos que tú le das y te deja un resumen al colgar. Lo que no sabe no se lo inventa: toma el recado o pasa la llamada a tu equipo. Para los huéspedes que escriben, el asistente de WhatsApp con IA hace lo mismo por chat.
+
+No hacemos check-in en quiosco ni abrimos puertas.
+
+Antes de darte un precio miramos contigo si se puede conectar a tu programa de gestión y en qué idiomas te llaman de verdad. Sin eso no hay presupuesto honesto.
+
+El único caso con cifras que publicamos es de una clínica, no de un hotel: estima unos 20.000 € el primer año, sobre todo por el sueldo de recepción que se ahorra ( lo contamos aquí ). No lo trasladamos a tu hotel: tu cuenta se hace con tus números.
+
+Lo que una recepcionista con IA no debe hacer nunca está en la guía de recepcionista virtual para clínicas , y vale igual para un hotel.
+
+## Preguntas frecuentes.
+
+**¿Qué hace una recepcionista virtual en un hotel?**
+Depende de cuál contrates: una persona en remoto atiende en las franjas que elijas, un quiosco hace el check-in y una IA al teléfono coge cada llamada a cualquier hora.
+
+**¿Es una persona o una inteligencia artificial?**
+Las dos se venden con el mismo nombre. La IA atiende todas las llamadas a la vez y a cualquier hora; la persona resuelve mejor lo imprevisto. Pregunta cuál es antes de pedir precio.
+
+**¿Puede un hotel funcionar sin recepción 24 horas?**
+Eso lo decide la normativa turística de tu comunidad autónoma, porque la ordenación del turismo es competencia de las comunidades ( artículo 148.1.18.ª de la Constitución ). Mírala antes de quitar a nadie del mostrador. Una recepcionista virtual atiende cuando no hay nadie, pero no te exime de lo que tu norma exija.
+
+**¿Atiende en inglés y en otros idiomas?**
+Depende del proveedor. Con una IA, pide una llamada de prueba en cada idioma de tus huéspedes y escúchala entera. Con una persona en remoto, pregunta qué idiomas cubre cada turno.
+
+**¿Puede atender también por WhatsApp?**
+Sí, con un asistente para ese canal. El nuestro, el asistente de WhatsApp con IA , responde al momento con la misma información que la recepcionista.
+
+**¿Hace el check-in automático?**
+La IA al teléfono, no. El check-in automático es otro producto: un quiosco, una tablet o un enlace previo que escanea el documento y da acceso a la habitación. Si lo necesitas, comprueba que resuelve también el parte de viajeros.
+
+¿Hacemos la cuenta de tu hotel?
+
+## Miramos contigo qué llamadas se te escapan y si te compensa.
+
+En la primera cita, gratis y sin compromiso, miramos cómo entran hoy las llamadas en tu hotel y hacemos la cuenta con tus números. Si no te compensa, te lo decimos.
+
+Cómo funciona la recepcionista con IA
+
