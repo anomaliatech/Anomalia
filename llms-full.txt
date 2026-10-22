@@ -2127,3 +2127,177 @@ En la primera cita, gratis y sin compromiso, miramos cómo entran hoy las llamad
 
 Cómo funciona la recepcionista con IA
 
+---
+
+# Página: Cuánto cuesta un chatbot de WhatsApp | Anomalia
+URL: https://anomalia.business/cuanto-cuesta-chatbot-whatsapp
+Descripción: De qué se compone el precio de un chatbot de WhatsApp, qué cobra Meta por mensaje y la cuenta para saber si a tu negocio le compensa, con tus números.
+
+Inicio / Asistente de WhatsApp con IA / Guía
+
+Guía · WhatsApp
+
+# Cuánto cuesta un chatbot de WhatsApp y cómo saber si a tu negocio le compensa.
+
+Te escriben por WhatsApp a todas horas, contestas entre cliente y cliente y más de un mensaje se queda para el día siguiente. Alguien te ha dicho que un chatbot lo arregla. Buscas el precio y cada página te da una horquilla distinta, y todas acaban en la tarifa de quien la escribe.
+
+Aquí tienes de qué se compone el precio, qué cobra Meta (comprobado en su página oficial el 18 de octubre de 2026), la cuenta para saber si te compensa con tus números y las preguntas que conviene hacer antes de aceptar un presupuesto.
+
+Por Marcos Mompeán , fundador de Anomalia · Publicada el 22 de octubre de 2026 · 9 minutos de lectura
+
+La respuesta corta
+
+Cuánto cuesta un chatbot de WhatsApp depende de tres partidas, y solo una es igual para todos. Luego queda la cuenta que dice si te compensa:
+
+- El montaje , que se paga una vez y depende de lo que tenga que hacer (responder dudas o dar citas en tu agenda) y de a qué se conecte.
+
+- El mantenimiento mensual : plataforma o servidor, uso de la IA si la lleva y quien lo ajusta cuando cambian tus precios u horarios.
+
+- Los mensajes de Meta , que desde el 1 de julio de 2025 cobra por mensaje de plantilla entregado. Contestar a quien te escribe dentro de las 24 horas no cuesta nada ( Meta, consultado el 18/10/2026 ).
+
+- La cuenta : los clientes que hoy pierdes por contestar tarde, multiplicados por lo que te deja cada uno, frente a lo que cuesta el sistema en un año. Si no sale, no lo montes.
+
+## De qué se compone el precio de un chatbot de WhatsApp.
+
+El montaje es dejarlo funcionando: conectar tu número a la plataforma de WhatsApp para empresas, escribir lo que puede y no puede decir, conectarlo a tu agenda y probarlo con conversaciones reales. No cuesta lo mismo un bot que contesta el horario que uno que deja la cita puesta.
+
+El mantenimiento mensual cubre la plataforma o el servidor, el uso de la IA y las horas de alguien que revisa conversaciones y lo actualiza cuando cambias un precio. Un chatbot que nadie mantiene acaba dando información vieja.
+
+Los mensajes de Meta son la única partida que no depende de con quién lo hagas, y la que peor se suele explicar.
+
+Desconfía de una cifra cerrada que te den sin preguntarte cuántos mensajes recibes, qué tiene que hacer el chatbot con ellos y qué agenda usas.
+
+## Lo que cobra Meta por la API de WhatsApp Business.
+
+Según la página oficial de precios de Meta para desarrolladores , consultada el 18 de octubre de 2026:
+
+- Cobra por mensaje, no por conversación, desde el 1 de julio de 2025.
+
+- Solo se pagan los mensajes de plantilla, los que la empresa envía con un formato aprobado. Hay tres categorías (marketing, utilidad y autenticación) y el precio cambia según la categoría y el país de quien lo recibe.
+
+- Responder es gratis dentro de la ventana de 24 horas que se abre cuando el cliente te escribe. Dentro de esa ventana tampoco se pagan las plantillas de utilidad. Cuando se cierra, solo puedes escribirle con plantillas, y se pagan.
+
+- Solo se cobra lo entregado.
+
+- Hay una ventana gratuita de 72 horas si el cliente te escribe desde un anuncio que abre WhatsApp o desde el botón de tu página de Facebook, en el móvil, y respondes en menos de 24 horas.
+
+- Las tarifas por país están publicadas, también en euros. Para España, Meta anuncia una tarifa de marketing más alta desde el 1 de julio de 2026.
+
+Traducido: si tu chatbot sobre todo responde a quien te escribe, lo que pagas a Meta es poco o nada. Lo que se paga es lo que mandas tú fuera de esa ventana: un recordatorio de cita a quien no te ha escrito en el último día, o una campaña de promociones.
+
+Un error que todavía aparece en artículos bien posicionados: calcular el coste de Meta "por conversación". Ese modelo ya no existe. Si te presupuestan así, pide que lo rehagan con la tabla actual.
+
+## Lo que publican los proveedores, y por qué te sirve de poco.
+
+A 18 de octubre de 2026, dos de los proveedores que salen arriba publican esto:
+
+- Uno (neurotial.com, artículo del 27 de julio de 2026): la aplicación de WhatsApp Business a 0 €, plataformas de 30 a 300 € al mes y agencias con pago único de 300 a 2.000 €.
+
+- Otro (novachatia.com, artículo del 9 de agosto de 2026): plataformas de 50 a 300 € al mes y servicio gestionado de 1.500 a 3.500 € de implantación más desde 150 € al mes.
+
+Son horquillas enormes porque mezclan productos que no se parecen: un menú de botones, una plataforma que configuras tú y un asistente que trabaja sobre tu agenda. Y cada uno recomienda su tarifa, como haríamos nosotros. Antes de mirar horquillas, haz la cuenta con tus números.
+
+## Cuánto te cuesta hoy no tenerlo: la cuenta con tus números.
+
+01
+
+### Cuenta los mensajes de una semana
+
+Apunta cada conversación que entra por WhatsApp: a qué hora llegó, a qué hora contestasteis y en qué acabó. Multiplica por 4 para tener un mes aproximado.
+
+02
+
+### Separa los clientes que se perdieron
+
+¿Cuántos pedían cita, precio o disponibilidad, se contestaron tarde o nunca y no volvieron? Ese es tu número de clientes perdidos al mes. Si no lo sabes, ya tienes la primera conclusión.
+
+03
+
+### Ponle precio a un cliente
+
+Lo que te deja de beneficio, no lo que factura. Si repite, lo que te deja en un año. En un negocio de ticket alto bastan muy pocos clientes para que la cuenta cambie.
+
+04
+
+### Suma las horas que se van en contestar
+
+Horas a la semana contestando lo mismo una y otra vez, por 4, por lo que cuesta esa hora. Si eres tú, pon lo que vale tu hora trabajando.
+
+05
+
+### Compara con lo que cuesta el sistema en un año
+
+Montaje + 12 mensualidades + los mensajes de Meta que envíes fuera de la ventana. Es matemática pura: a ese total réstale lo que te cuestan en un año las horas del paso anterior, porque son las que el sistema deja de quitarte. Lo que quede, divídelo entre lo que te deja un cliente: ese es el número de clientes que el chatbot tiene que rescatar al año para pagarse. Si sale cero o menos, las horas ya lo pagan solas. Si sale más, mira tu semana de apuntes: si rescatar esos clientes te parece fácil, compensa. Si no, no lo montes.
+
+## Cuándo no necesitas un chatbot.
+
+Si recibes pocos mensajes, en horario, y alguien puede contestarlos al momento, probablemente no te hace falta. La aplicación de WhatsApp Business es gratis y trae mensajes de ausencia automáticos, respuestas rápidas, etiquetas y catálogo. Bien configurada, resuelve mucho.
+
+Los tres niveles, de la aplicación gratis al asistente con IA, están en la guía de citas por WhatsApp en una clínica , y valen para cualquier negocio que viva de la agenda.
+
+El chatbot tiene sentido cuando los mensajes entran fuera de horario, cuando contestarlos saca a alguien de su trabajo o cuando tu semana de apuntes dice que se te van clientes. Y si es de "pulsa 1 para citas", piénsalo dos veces: quien escribe quiere contarte lo que necesita con sus palabras, no ir pulsando números.
+
+## Las preguntas que tienes que hacer antes de aceptar un presupuesto.
+
+Son las que evitan sorpresas el día que algo falla o el día que quieres cambiar de proveedor:
+
+- ¿A nombre de quién está la cuenta de WhatsApp Business y el número? Tienen que ser tuyos.
+
+- ¿Puedo seguir usando mi número actual y contestar a mano cuando quiera?
+
+- ¿Quién paga los mensajes de Meta? ¿Me los pasáis a coste o con margen?
+
+- ¿Qué incluye el mantenimiento? ¿Cambiar precios y horarios, revisar conversaciones, arreglar fallos?
+
+- Si me voy, ¿me llevo el número, las conversaciones y la información con la que trabaja?
+
+- ¿Cuándo pasa la conversación a una persona de mi equipo y cómo me avisa?
+
+- ¿Se presenta como asistente virtual desde el primer mensaje?
+
+- ¿Agenda de verdad en mi agenda o solo toma recados?
+
+- ¿Firmáis conmigo el contrato de encargado del tratamiento de datos?
+
+- ¿Me dais el montaje y la mensualidad por separado y por escrito?
+
+Si a alguna te responden con evasivas, ya sabes algo del proveedor.
+
+## Cómo lo presupuestamos nosotros.
+
+En Anomalia el asistente de WhatsApp con IA va a presupuesto: montaje más mantenimiento mensual. No publicamos tarifa porque no cuesta lo mismo responder dudas que agendar con varios profesionales, ni atender veinte mensajes al día que quinientos.
+
+En una primera llamada gratis y sin compromiso hacemos la cuenta de arriba contigo y te damos el precio cerrado, por escrito. Si no te sale a cuenta, te lo decimos.
+
+Una clínica con tres sistemas nuestros (asistente de WhatsApp, recepcionista telefónica y app de reservas) estima unos 20.000 € el primer año, sobre todo por el sueldo de recepción que se ahorra. Es una estimación con sus números; en tu negocio saldrá otra.
+
+El método para cualquier proceso está en la guía de cómo automatizar procesos en una pyme con IA .
+
+## Preguntas frecuentes.
+
+**¿Cuánto cuesta hacer un chatbot en WhatsApp?**
+Lo que sumen el montaje, el mantenimiento mensual y los mensajes de Meta. Lo que publican los proveedores va de 0 € a varios miles el primer año, porque con el mismo nombre se venden productos muy distintos.
+
+**¿Cuánto cobra Meta por la API de WhatsApp Business?**
+Cobra cada mensaje de plantilla entregado, con un precio según la categoría y el país. Responder a quien te ha escrito en las últimas 24 horas es gratis. Las cifras en euros están en su página oficial de precios .
+
+**¿Hay chatbots de WhatsApp gratis para empresas?**
+La aplicación de WhatsApp Business es gratis, pero no mantiene una conversación ni da citas sola. Lo que se anuncia como chatbot gratis suele ser un plan de prueba o una herramienta que montas tú: la herramienta no cuesta, tu tiempo y los mensajes de plantilla sí.
+
+**¿Qué diferencia hay entre un chatbot de botones y uno con IA, y cuánto cambia el precio?**
+El de botones solo entiende su menú; el de IA entiende lo que el cliente escribe y puede actuar sobre tu agenda. El de IA suma a la mensualidad el uso de la IA y necesita más pruebas, así que suele costar más. Aun así, lo que más mueve el precio es lo que tiene que hacer.
+
+**¿Puedo montarlo yo gratis con n8n?**
+Puedes, si tienes algo de mano con herramientas de automatización como n8n, pero sigues pagando servidor, IA, mensajes de plantilla y tus horas. Lo difícil son las reglas y las pruebas para que no se invente un hueco o un precio delante de un cliente.
+
+**¿Cuánto cuesta mantenerlo al mes?**
+La mensualidad suele cubrir plataforma o servidor, IA y ajustes; aparte van los mensajes de Meta fuera de la ventana de 24 horas. Pregunta si incluye cambiar precios y horarios: si no, en unos meses informa mal.
+
+¿Hacemos la cuenta con tus números?
+
+## Te decimos si te compensa antes de que pagues nada.
+
+En la primera llamada, gratis y sin compromiso, miramos cuántos mensajes entran en tu WhatsApp, cuántos se contestan tarde y qué te deja un cliente. Si con WhatsApp Business bien montado te vale, te lo decimos.
+
+Cómo es nuestro asistente de WhatsApp
+

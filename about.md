@@ -387,6 +387,30 @@ Sí, con un asistente para ese canal. El nuestro, el asistente de WhatsApp con I
 
 La IA al teléfono, no. El check-in automático es otro producto: un quiosco, una tablet o un enlace previo que escanea el documento y da acceso a la habitación. Si lo necesitas, comprueba que resuelve también el parte de viajeros.
 
+**¿Cuánto cuesta hacer un chatbot en WhatsApp?**
+
+Lo que sumen el montaje, el mantenimiento mensual y los mensajes de Meta. Lo que publican los proveedores va de 0 € a varios miles el primer año, porque con el mismo nombre se venden productos muy distintos.
+
+**¿Cuánto cobra Meta por la API de WhatsApp Business?**
+
+Cobra cada mensaje de plantilla entregado, con un precio según la categoría y el país. Responder a quien te ha escrito en las últimas 24 horas es gratis. Las cifras en euros están en su página oficial de precios .
+
+**¿Hay chatbots de WhatsApp gratis para empresas?**
+
+La aplicación de WhatsApp Business es gratis, pero no mantiene una conversación ni da citas sola. Lo que se anuncia como chatbot gratis suele ser un plan de prueba o una herramienta que montas tú: la herramienta no cuesta, tu tiempo y los mensajes de plantilla sí.
+
+**¿Qué diferencia hay entre un chatbot de botones y uno con IA, y cuánto cambia el precio?**
+
+El de botones solo entiende su menú; el de IA entiende lo que el cliente escribe y puede actuar sobre tu agenda. El de IA suma a la mensualidad el uso de la IA y necesita más pruebas, así que suele costar más. Aun así, lo que más mueve el precio es lo que tiene que hacer.
+
+**¿Puedo montarlo yo gratis con n8n?**
+
+Puedes, si tienes algo de mano con herramientas de automatización como n8n, pero sigues pagando servidor, IA, mensajes de plantilla y tus horas. Lo difícil son las reglas y las pruebas para que no se invente un hueco o un precio delante de un cliente.
+
+**¿Cuánto cuesta mantenerlo al mes?**
+
+La mensualidad suele cubrir plataforma o servidor, IA y ajustes; aparte van los mensajes de Meta fuera de la ventana de 24 horas. Pregunta si incluye cambiar precios y horarios: si no, en unos meses informa mal.
+
 ## Cómo citar esta fuente
 
 Anomalia — estudio digital de diseño web, automatización e IA para negocios en España. https://anomalia.business/
