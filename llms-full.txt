@@ -6,16 +6,18 @@
 
 # Página: Diseño web y automatización con IA para negocios | Anomalia
 URL: https://anomalia.business/
-Descripción: Webs que traen clientes y agentes de IA que atienden y agendan solos. Una clínica estima +20.000 € el primer año. Reserva tu cita gratis en un minuto.
+Descripción: Agentes de IA que cogen el teléfono, contestan el WhatsApp y dan cita a cualquier hora. Una clínica estima +20.000 € el primer año. Reserva tu cita sin compromiso.
 
-Estudio digital · Web + IA
+Estudio digital · IA + Web
 
-# Webs y automatización que traen clientes .
+# Deja de perder clientes por no contestar .
 
-Diseño web, agentes de IA y auditoría para tu negocio. Listo en una semana.
+Cada llamada o mensaje sin contestar es un cliente que se lleva la competencia. Montamos agentes de IA que cogen el teléfono, contestan el WhatsApp y dan cita a cualquier hora. Y la web para que te encuentren.
 
 Reserva tu cita gratis
 o llámanos · 601 44 91 73
+
+El asistente que te atiende en esta web es el mismo sistema que instalamos en tu negocio. Pruébalo .
 
 - Una semana o menos
 - Precio cerrado
@@ -67,21 +69,21 @@ Seguimos a tu lado con soporte, mejoras y ajustes a medida que tu negocio crece.
 
 Lo que hacemos
 
-Servicio 01 · Páginas web
+Servicio 01 · Automatización e IA
+
+### Recupera las horas que pierdes en tareas repetitivas.
+
+Recepcionista telefónica, asistente de WhatsApp, citas, recordatorios y cualquier automatización que tu negocio necesite, hecha a medida.
+
+Ver automatización e IA
+
+Servicio 02 · Páginas web
 
 ### Tu web a medida: legal, segura y visible en Google.
 
 Diseño pensado para convertir visitas en clientes. Sin plantillas recicladas, con precio cerrado.
 
 Ver páginas web
-
-Servicio 02 · Automatización e IA
-
-### Recupera las horas que pierdes en tareas repetitivas.
-
-Automatización de procesos y la herramienta con IA que tu negocio necesite, hecha a medida.
-
-Ver automatización e IA
 
 Servicio 03 · Auditoría
 
@@ -95,13 +97,13 @@ Resultados
 
 ## Lo que montamos se mide en dinero .
 
-No vendemos tecnología. Vendemos que a final de año haya entrado en tu negocio más dinero del que nos pagaste. Así sale la cuenta en un caso real:
+No vendemos tecnología. Vendemos que a final de año haya entrado en tu negocio más dinero del que nos pagaste. Así sale la cuenta en un caso real: una clínica se quedó sin recepcionista y los especialistas atendían el teléfono y el WhatsApp entre paciente y paciente.
 
 ≈ 20.000 € estimados el primer año
 
 ≈ 70.000 € estimados en tres años
 
-3 sistemas trabajando 24/7
+10 reseñas en los primeros 4 días
 
 De dónde sale ese dinero
 
@@ -109,15 +111,15 @@ De dónde sale ese dinero
 
 - Citas que ya no se pierden. Cada llamada o mensaje sin contestar era un paciente que acababa reservando en la clínica de al lado. Ahora se le atiende y se le da cita al momento.
 
-Una clínica con tres sistemas de Anomalia. Cifras estimadas con los números de la propia clínica. En tu primera cita hacemos esta misma cuenta con los tuyos. ¿Tienes una clínica? Mira lo que montamos para clínicas →
+Una clínica con tres sistemas de Anomalia. Cifras estimadas con los números de la propia clínica: sobre todo, el sueldo de recepción que ya no necesita cubrir. Las reseñas pasaron de 1 o 2 a la semana a 10 en los primeros 4 días, porque ningún mensaje se queda sin contestar. En tu primera cita hacemos esta misma cuenta con los tuyos. ¿Tienes una clínica? Mira lo que montamos para clínicas → Calcula lo que te cuestan las llamadas que no coges →
 
 Los tres sistemas
 
 01
 
-### App de citas para clases de pilates
+### App de reservas para sus clases de pilates
 
-Los alumnos reservan, cambian y anulan su plaza desde el móvil. La clínica dejó de llevar la agenda a mano y de perder plazas por cancelaciones de última hora.
+La clínica también da clases de pilates. Los alumnos reservan, cambian y anulan su plaza desde el móvil: la agenda dejó de llevarse a mano y de perder plazas por cancelaciones de última hora.
 
 02
 
@@ -135,7 +137,7 @@ Coge las llamadas que antes se perdían, reserva en la agenda real con el profes
 
 Sin compromiso. Cuéntale a nuestro asistente qué necesita tu negocio y deja tu cita agendada al momento, o pide que te llamemos.
 
-Hablas directamente con quien construye tu proyecto, no con un departamento de atención al cliente. Respondemos en menos de 24 h laborables.
+Hablas con Marcos, que es quien construye tu proyecto, no con un departamento de atención al cliente. Respondemos en menos de 24 h laborables.
 
 contacto@anomalia.business
 +34 601 44 91 73
@@ -156,6 +158,9 @@ Sí. Muchos proyectos empiezan analizando lo que ya existe y mejorándolo — o 
 
 **¿La automatización es complicada de mantener?**
 No. Todo se diseña para funcionar solo, sin que tengas que revisarlo constantemente. Si algo necesita un ajuste, nosotros estamos para eso.
+
+**¿Y si el asistente se equivoca con un cliente?**
+Solo da la información que tú le has dado y solo ofrece huecos que existen en tu agenda. Si no sabe algo, no se lo inventa: lo dice, toma el recado o pasa con una persona. Y antes de salir se prueba con llamadas reales, con tus casos y tus excepciones, hasta que responde como responderías tú.
 
 **¿Qué pasa después del lanzamiento?**
 No desaparecemos. Seguimos disponibles para soporte, mejoras y para que tu proyecto crezca contigo a medida que lo necesites.

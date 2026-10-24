@@ -111,6 +111,10 @@ Sí. Muchos proyectos empiezan analizando lo que ya existe y mejorándolo — o 
 
 No. Todo se diseña para funcionar solo, sin que tengas que revisarlo constantemente. Si algo necesita un ajuste, nosotros estamos para eso.
 
+**¿Y si el asistente se equivoca con un cliente?**
+
+Solo da la información que tú le has dado y solo ofrece huecos que existen en tu agenda. Si no sabe algo, no se lo inventa: lo dice, toma el recado o pasa con una persona. Y antes de salir se prueba con llamadas reales, con tus casos y tus excepciones, hasta que responde como responderías tú.
+
 **¿Qué pasa después del lanzamiento?**
 
 No desaparecemos. Seguimos disponibles para soporte, mejoras y para que tu proyecto crezca contigo a medida que lo necesites.
