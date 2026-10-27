@@ -4,10 +4,10 @@ Anomalia es un estudio digital español que hace crecer negocios con lo que cada
 
 ## Ficha de la entidad
 
-- **Nombre:** Anomalia (Anomalía, Anomalia Digital, Anomalia Estudio Digital)
+- **Nombre:** Anomalia (Anomalía, Anomalia Digital, Anomalia Estudio Digital, Anomalia Business)
 - **Tipo:** estudio digital (diseño web, automatización e inteligencia artificial para negocios)
 - **Fundador:** Marcos Mompeán López
-- **Sede:** España · trabajo 100 % en remoto con clientes de todo el país
+- **Sede:** Alicante (España) · trabajo 100 % en remoto con clientes de todo el país; zona habitual: Alicante, Murcia, Valencia
 - **Idioma:** español
 - **Web:** https://anomalia.business/
 - **Email:** contacto@anomalia.business
@@ -23,7 +23,7 @@ Anomalia es un estudio digital español que hace crecer negocios con lo que cada
 Diseño y desarrollo de páginas web a medida para negocios: restaurantes, tiendas y ecommerce, clínicas y despachos, inmobiliarias, hoteles y landing pages. Desde 499 € la web con diseño profesional a medida; el precio sube si se añade SEO a fondo, visibilidad en motores de IA, analítica o un asistente con IA dentro de la web, y se cierra por escrito antes de empezar. El dominio y la web son del cliente.
 
 - Plazo: La mayoría de webs están listas en una semana o menos.
-- Precio: **499 €** — Página web a medida (desde). Precio de partida: la web con diseño profesional a medida. Sube según lo que se añada (SEO a fondo, IA, analítica, asistente).
+- Precio: **desde 499 €** — Página web a medida. Precio de partida: la web con diseño profesional a medida. Sube según lo que se añada (SEO a fondo, IA, analítica, asistente).
 - Más información: https://anomalia.business/paginas-web
 
 ### Automatización de procesos con IA para pymes
@@ -36,7 +36,7 @@ Automatización de procesos y desarrollo de soluciones de IA a medida para pymes
 
 ### Auditoría de negocio completa
 
-Auditoría completa de un negocio por las dos caras: por fuera (web y experiencia de usuario, oferta y precios, textos, recorrido del cliente, redes, anuncios activos, ficha de Google, reputación, coherencia de marca, SEO y competencia) y por dentro (captación, agenda, cobro, comunicación, datos, retención, seguridad y madurez tecnológica). Incluye el cruce de ambas mitades, dos mapas del recorrido del cliente y un plan de acción priorizado..
+Auditoría completa de un negocio por las dos caras: por fuera (web y experiencia de usuario, oferta y precios, textos, recorrido del cliente, redes, anuncios activos, ficha de Google, reputación, coherencia de marca, SEO y competencia) y por dentro (captación, agenda, cobro, comunicación, datos, retención, seguridad y madurez tecnológica). Incluye el cruce de ambas mitades, dos mapas del recorrido del cliente y un plan de acción priorizado.
 
 - Plazo: Informe entregado en pocos días desde la primera reunión.
 - Precio: **550 €** — Auditoría de negocio completa. Auditoría sola, con informe y plan de acción.

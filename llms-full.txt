@@ -93,6 +93,22 @@ Auditoría completa, por fuera y por dentro, con informe y plan de acción. 550 
 
 Ver auditoría de negocio
 
+## ¿Qué es Anomalia?
+
+En corto
+
+Anomalia es un estudio digital de Alicante que hace crecer negocios de toda España con páginas web a medida desde 499 €, asistentes y automatizaciones con IA, apps a medida y auditorías de negocio.
+
+| Dato | Detalle |
+| --- | --- |
+| Qué hacemos | Páginas web a medida · automatización e IA (recepcionista telefónica y asistente de WhatsApp, citas, recordatorios, seguimiento) · apps a medida · auditoría de negocio. |
+| Para quién | Pymes, autónomos y negocios locales: restaurantes, clínicas, gimnasios, inmobiliarias, hoteles, comercios y despachos. |
+| Precios | Webs desde 499 €. Auditoría: 550 € · 450 € si después contratas. Automatización: precio cerrado tras una primera cita gratuita. |
+| Plazos | La mayoría de webs, en una semana o menos. Los asistentes con IA, en marcha en días. |
+| Caso real | Una clínica con app de citas, asistente de WhatsApp y recepcionista telefónica de Anomalia: retorno estimado de unos 20.000 € el primer año y cerca de 70.000 € en tres, entre ahorro en personal de recepción y citas que ya no se pierden. Son estimaciones con los datos de la propia clínica. |
+| Dónde | Desde Alicante, en remoto con negocios de toda España. |
+| Cómo empezar | Primera cita gratuita, que reservas al momento con el asistente de esta web. |
+
 Resultados
 
 ## Lo que montamos se mide en dinero .
@@ -189,6 +205,22 @@ Nada de plantillas recicladas. Diseñamos y desarrollamos una web pensada para t
 - Precio cerrado por escrito
 
 Reserva tu cita gratis
+
+## ¿Cuánto cuesta y cuánto tarda una web con Anomalia?
+
+En corto
+
+En Anomalia diseñamos y desarrollamos páginas web a medida para negocios de toda España, desde 499 €. La mayoría están listas en una semana o menos, con precio cerrado por escrito, y el dominio y la web son tuyos.
+
+| Dato | Detalle |
+| --- | --- |
+| Qué es | Una web con diseño profesional a medida, sin plantillas recicladas, pensada para convertir visitas en clientes. |
+| Para quién | Negocios sin web, con una web anticuada o con una web que no les trae clientes. |
+| Precio | Desde 499 €. Sube si se añade SEO a fondo, visibilidad en motores de IA, analítica o un asistente con IA. El precio se cierra por escrito antes de empezar. |
+| Plazo | La mayoría, lista en una semana o menos. |
+| Propiedad | El dominio, la web y los accesos son tuyos. |
+| Legal | Sale cumpliendo el RGPD y la LSSI. |
+| Cómo empezar | Primera cita gratuita, que reservas al momento con el asistente de esta página. |
 
 Para quién
 
@@ -371,6 +403,22 @@ Si hay una tarea que repites cada día o un proceso que te come horas, casi siem
 
 Reserva tu cita gratis
 
+## ¿Qué puede automatizar Anomalia en tu negocio?
+
+En corto
+
+En Anomalia automatizamos con IA las tareas repetitivas de pymes y autónomos: asistentes que cogen el teléfono y el WhatsApp, dan citas en tu agenda, mandan recordatorios y hacen el seguimiento. El precio se cierra tras una primera cita gratuita.
+
+| Dato | Detalle |
+| --- | --- |
+| Qué automatizamos | Citas 24/7 desde la web o WhatsApp · recepcionista telefónica con IA · asistente de WhatsApp con IA · presupuestos y facturas · recordatorios y confirmaciones · seguimiento de clientes · cualquier tarea repetitiva que hoy se haga a mano. |
+| Para quién | Negocios que pierden horas cada semana en tareas repetitivas o que se dejan clientes por no contestar a tiempo. |
+| Caso real | Una clínica con app de citas, asistente de WhatsApp y recepcionista telefónica de Anomalia: retorno estimado de unos 20.000 € el primer año y cerca de 70.000 € en tres, entre ahorro en personal de recepción y citas que ya no se pierden. Son estimaciones con los datos de la propia clínica. |
+| Si la IA no sabe algo | Pasa a una persona. No se inventa precios ni huecos en la agenda. |
+| Precio | A presupuesto cerrado, según lo que resuelve y lo que te ahorra. No hay tarifa publicada. |
+| Plazo | Los asistentes, en marcha en días; se prueban con conversaciones reales antes de atender a clientes. |
+| Cómo empezar | Primera cita gratuita, que reservas al momento con el asistente de esta página. |
+
 Resultados
 
 ## Una automatización se mide en dinero .
@@ -542,6 +590,22 @@ Miramos tu negocio por las dos caras —lo que enseña al mundo y cómo funciona
 
 Reserva tu cita gratis
 Ver el precio
+
+## ¿Qué es la auditoría de negocio de Anomalia y cuánto cuesta?
+
+En corto
+
+La auditoría de negocio de Anomalia revisa tu negocio por fuera (web, reseñas, anuncios, competencia) y por dentro (captación, agenda, cobro) y te entrega un informe con plan de acción. Cuesta 550 € · 450 € si después contratas.
+
+| Dato | Detalle |
+| --- | --- |
+| Por fuera | Web y experiencia de usuario, oferta y precios, textos, recorrido del cliente, redes, anuncios activos, ficha de Google, reputación, coherencia de marca, SEO y competencia. |
+| Por dentro | Captación, agenda, cobro, comunicación, datos, retención, seguridad y madurez tecnológica. |
+| Qué recibes | Un informe con el cruce de las dos mitades, dos mapas del recorrido del cliente y un plan de acción priorizado. |
+| Precio | 550 € · 450 € si después contratas un servicio de Anomalia. |
+| Plazo | Informe en pocos días desde la primera reunión. |
+| Para quién | Quien sospecha que algo no funciona en su negocio pero no sabe el qué. |
+| Cómo empezar | Primera cita gratuita, que reservas al momento con el asistente de esta página. |
 
 Cómo se audita
 
@@ -726,6 +790,21 @@ Contesta todas las llamadas de tu negocio, las 24 horas, con voz natural y en es
 - Resumen de cada llamada
 
 Reserva tu cita gratis
+
+## ¿Qué hace la recepcionista telefónica con IA de Anomalia?
+
+En corto
+
+La recepcionista telefónica con IA de Anomalia coge todas las llamadas de tu negocio las 24 horas, con voz natural en español; informa, da, cambia y anula citas en tu agenda real y pasa a una persona cuando hace falta.
+
+| Dato | Detalle |
+| --- | --- |
+| Qué hace | Contesta cada llamada, informa de horarios, servicios y precios, reconoce al cliente, gestiona citas con el profesional correcto, toma recados fuera de horario y, al colgar, envía al equipo un resumen de la llamada. |
+| Qué no hace | Inventarse lo que no sabe: si la conversación se sale de su terreno, pasa la llamada a una persona. |
+| Para quién | Clínicas, despachos, talleres, inmobiliarias, gimnasios y cualquier negocio que pierde llamadas por no poder cogerlas. |
+| Precio | Coste de montaje más mantenimiento mensual, cerrado tras una primera llamada gratuita. |
+| Plazo | En marcha en días, con pruebas con llamadas reales antes de atender a clientes. |
+| Cómo empezar | Primera cita gratuita, que reservas al momento con el asistente de esta página. |
 
 Qué hace en cada llamada
 
@@ -1121,6 +1200,21 @@ Responde en segundos, a cualquier hora, en el número de WhatsApp de tu negocio.
 
 Reserva tu cita gratis
 
+## ¿Qué hace el asistente de WhatsApp con IA de Anomalia?
+
+En corto
+
+El asistente de WhatsApp con IA de Anomalia contesta al momento, las 24 horas, en el WhatsApp Business de tu negocio: identifica al cliente, da, cambia y anula citas en tu agenda y pasa a una persona cuando hace falta.
+
+| Dato | Detalle |
+| --- | --- |
+| Qué hace | Responde dudas de horarios, servicios y precios, gestiona citas en la agenda real, envía recordatorios y confirmaciones y toma recados fuera de horario. |
+| Dónde funciona | En el número de WhatsApp Business de tu propio negocio. |
+| Para quién | Clínicas, centros de estética, gimnasios y estudios de pilates, despachos, restaurantes e inmobiliarias. |
+| Precio | Coste de montaje más mantenimiento mensual, cerrado tras una primera llamada gratuita. Lo que cobra Meta por los mensajes, explicado en la guía de precios. |
+| Plazo | En marcha en días; se prueba con conversaciones reales antes de atender a clientes. |
+| Cómo empezar | Primera cita gratuita, que reservas al momento con el asistente de esta página. |
+
 Qué hace en cada conversación
 
 ## Atiende como lo harías tú. Pero contesta siempre y al momento.
@@ -1345,6 +1439,21 @@ Recepción está con un paciente y el teléfono suena. Los WhatsApps se contesta
 
 Reserva tu cita gratis
 
+## ¿Qué monta Anomalia en una clínica?
+
+En corto
+
+Anomalia monta en clínicas tres sistemas que se contratan por separado: recepcionista telefónica con IA, asistente de WhatsApp con IA y citas con recordatorios. Con los tres, el retorno estimado es de unos 20.000 € el primer año.
+
+| Dato | Detalle |
+| --- | --- |
+| Los tres sistemas | Recepcionista telefónica con IA · asistente de WhatsApp con IA · citas y recordatorios desde la web o una app propia. Los tres trabajan sobre la misma agenda. |
+| Caso real | Una clínica con app de citas, asistente de WhatsApp y recepcionista telefónica de Anomalia: retorno estimado de unos 20.000 € el primer año y cerca de 70.000 € en tres, entre ahorro en personal de recepción y citas que ya no se pierden. Son estimaciones con los datos de la propia clínica. |
+| Qué no hace | No opina de medicina, no se inventa huecos ni precios y pasa a una persona lo que no puede resolver. |
+| Precio | Cerrado tras una primera llamada gratuita, según lo que montes. |
+| Plazo | En marcha en días, con pruebas reales antes de atender a pacientes. |
+| Cómo empezar | Primera cita gratuita, que reservas al momento con el asistente de esta página. |
+
 Lo que pasa cada día en recepción
 
 ## Tu equipo no puede estar en dos sitios. Y el paciente no espera.
@@ -1541,6 +1650,13 @@ Un servicio de secretaría telefónica: personas reales que atienden en tu nombr
 ### 3. La recepcionista con inteligencia artificial
 
 Un sistema que mantiene una conversación normal por teléfono: el paciente habla como hablaría con una persona, y la recepcionista entiende, responde con tu información y actúa sobre tu agenda real. Está disponible las 24 horas, el coste no sube con cada llamada y, cuando la conversación se sale de su terreno, pasa la llamada a tu equipo. Es de la que trata esta guía, y la que tiene sentido para una clínica que pierde llamadas por no poder cogerlas.
+
+| Tipo | Centralita virtual | Recepcionista externa | Recepcionista con IA |
+| --- | --- | --- | --- |
+| Entiende al paciente | No: menú de opciones grabado | Sí: es una persona | Sí: conversación normal |
+| Da cita en tu agenda | No | Muchas no: toman el recado | Sí, en la agenda real |
+| Fuera de horario | Buzón, o alguien que tiene que cogerlo | Buzón | Atiende las 24 horas |
+| Cómo crece el coste | No atiende: reparte llamadas | Por llamada o por minuto | No sube con cada llamada |
 
 ## Qué hace en una clínica, llamada a llamada.
 
@@ -2018,6 +2134,13 @@ Una tablet, un tótem o un enlace que el huésped recibe antes de llegar. Escane
 ### Una inteligencia artificial que coge el teléfono
 
 Contesta con voz natural y con la información de tu hotel (parking, desayuno, mascotas), y toma la reserva o el recado. No se satura porque entren tres llamadas a la vez. No hace el check-in ni abre puertas.
+
+| Tipo | Persona en remoto | Quiosco o check-in automático | IA al teléfono |
+| --- | --- | --- | --- |
+| Qué resuelve | Atiende por teléfono, videollamada o tótem en las franjas que contrates | La llegada a deshoras: documento, cobro y código o tarjeta | Cada llamada: informa y toma la reserva o el recado |
+| Coge el teléfono | Sí, en sus franjas | No | Sí, a cualquier hora y varias a la vez |
+| Hace el check-in | Por videollamada o tótem | Sí | No |
+| Su límite | El coste crece con las horas que cubres | Quien llama sigue sin respuesta | No hace el check-in ni abre puertas |
 
 ## Qué agujero de tu hotel tapa cada una.
 

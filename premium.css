@@ -187,3 +187,24 @@ div.ckp-row{cursor:default}
 .ckp-act{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:.4rem;padding-top:1.2rem;border-top:1px solid var(--line)}
 .ckp-act .btn-ghost,.ckp-act .btn-gold{flex:1 1 auto;padding:.65em 1em;font-size:.85rem}
 .ckp-act .btn-ghost{background:rgba(255,255,255,.06);color:var(--paper)}
+
+/* ---- GEO: bloque «En corto» (respuesta directa + ficha) y tablas comparativas ---- */
+.geo-corto .resumen{margin-top:1.6rem;max-width:46rem;border:1px solid rgba(217,192,138,.35);border-radius:18px;padding:1.5rem 1.6rem;background:radial-gradient(120% 130% at 0% 0%,rgba(198,161,91,.1),transparent 60%),var(--bg2)}
+.geo-corto .resumen p:first-child{font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-light);margin-bottom:.7rem}
+.geo-corto .resumen p{color:var(--mist);font-size:1.06rem;line-height:1.6}
+.ficha{width:100%;max-width:46rem;margin-top:1.6rem;border-collapse:collapse}
+.ficha thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.ficha th,.ficha td{text-align:left;vertical-align:top;padding:.85rem 0;border-top:1px solid var(--line)}
+.ficha tbody th{width:12rem;padding-right:1.4rem;color:var(--gold-light);font-weight:700;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;line-height:1.9}
+.ficha td{color:var(--mist);font-size:1rem;line-height:1.6}
+.ficha td strong{color:var(--paper);font-weight:700}
+.ficha a,.comparativa a{color:var(--gold-light);border-bottom:1px solid rgba(217,192,138,.4)}
+@media (max-width:640px){.ficha tbody th,.ficha td{display:block;width:auto;padding-right:0}.ficha tbody th{padding-bottom:.15rem}.ficha td{border-top:0;padding-top:0}}
+.tabla-scroll{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;margin-top:1.4rem}
+.comparativa{width:100%;min-width:34rem;border-collapse:collapse;font-size:.95rem}
+.comparativa th,.comparativa td{text-align:left;vertical-align:top;padding:.75rem .9rem .75rem 0;border-top:1px solid var(--line);line-height:1.5}
+.comparativa thead th{border-top:0;color:var(--gold-light);font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.comparativa tbody th{color:var(--paper);font-weight:700}
+.comparativa td{color:var(--mist)}
+/* Botones de texto largo: en móvil parten línea en vez de salirse de la pantalla. */
+@media (max-width:640px){a.btn-ghost{white-space:normal;max-width:100%;text-align:center}}

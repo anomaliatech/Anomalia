@@ -69,7 +69,20 @@ function extraer(html) {
   let m;
   while ((m = re.exec(html))) faq.push({ pregunta: texto(m[1]), respuesta: texto(m[2]) });
   const main = (html.match(/<main[^>]*>([\s\S]*?)<\/main>/i) || [, ''])[1];
-  return { title, descripcion, h1, faq, main };
+  // «La respuesta corta» (bloque .resumen), sin su etiqueta: va al JSON-LD como abstract.
+  const bloque = (html.match(/<div class="resumen">([\s\S]*?)<\/div>/i) || [, ''])[1];
+  const resumen = texto(bloque.replace(/^\s*<p>[\s\S]*?<\/p>/i, '').replace(/<\/li>/gi, '; ')).replace(/;\s*$/, '.');
+  return { title, descripcion, h1, faq, main, resumen };
+}
+
+// <table> -> tabla markdown (la primera fila hace de cabecera).
+function tablaMarkdown(html) {
+  const filas = [...html.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/gi)]
+    .map((f) => [...f[1].matchAll(/<t[hd][^>]*>([\s\S]*?)<\/t[hd]>/gi)].map((c) => texto(c[1]).replace(/\|/g, '/').replace(/\s+([,.;:)])/g, '$1').replace(/\(\s+/g, '(')));
+  if (!filas.length) return '';
+  const L = [`| ${filas[0].join(' | ')} |`, `|${filas[0].map(() => ' --- ').join('|')}|`];
+  for (const f of filas.slice(1)) L.push(`| ${f.join(' | ')} |`);
+  return L.join('\n');
 }
 
 // HTML -> texto plano estructurado (markdown ligero) para llms-full.txt.
@@ -77,6 +90,7 @@ function aMarkdown(html) {
   let s = html
     .replace(/<(script|style|svg|template|form|noscript)[\s\S]*?<\/\1>/gi, ' ')
     .replace(/<!--[\s\S]*?-->/g, ' ')
+    .replace(/<table[^>]*>([\s\S]*?)<\/table>/gi, (_, t) => `\n\n${tablaMarkdown(t)}\n\n`)
     .replace(/<[^>]+aria-hidden="true"[^>]*>[\s\S]*?<\/(?:div|span)>/gi, ' ') // decoración
     .replace(/<br\s*\/?>/gi, ' ')
     .replace(/<h1[^>]*>([\s\S]*?)<\/h1>/gi, (_, t) => `\n\n# ${texto(t)}\n\n`)
@@ -99,7 +113,7 @@ const o = sitio.org;
 function perfiles() { return [...new Set([...sitio.redes.filter((r) => !r.persona).map((r) => r.url), ...o.sameAs])]; }
 function perfilesFundador() { return sitio.redes.filter((r) => r.persona).map((r) => r.url); }
 function fundador(extra) {
-  const p = { '@type': 'Person', name: o.fundador, ...extra };
+  const p = { '@type': 'Person', '@id': `${D}/#fundador`, name: o.fundador, jobTitle: 'Fundador de Anomalia', worksFor: { '@id': o.id }, ...extra };
   if (perfilesFundador().length) p.sameAs = perfilesFundador();
   return p;
 }
@@ -143,8 +157,9 @@ function nodoOrganizacion(completo) {
     alternateName: o.alias,
     description: o.descripcion,
     slogan: o.eslogan,
-    founder: fundador(),
-    areaServed: { '@type': 'Country', name: 'España', identifier: o.pais },
+    founder: fundador({ knowsAbout: o.categorias }),
+    address: { '@type': 'PostalAddress', addressLocality: o.ciudad, addressRegion: o.region, addressCountry: o.pais },
+    areaServed: [{ '@type': 'Country', name: 'España', identifier: o.pais }, ...o.zona.map((c) => ({ '@type': 'City', name: c }))],
     knowsLanguage: [o.idioma],
     knowsAbout: o.categorias,
     priceRange: '€€',
@@ -165,10 +180,17 @@ function nodoOrganizacion(completo) {
         '@type': 'Offer',
         url: D + s.ruta,
         itemOffered: { '@id': `${D}${s.ruta}#service` },
-        ...(s.precio ? { priceCurrency: s.precio.moneda, price: String(Math.min(...s.precio.ofertas.map((x) => x.precio))) } : {}),
+        ...(s.precio ? precioOferta(Math.min(...s.precio.ofertas.map((x) => x.precio)), s.precio.moneda, s.precio.ofertas.some((x) => x.desde)) : {}),
       })),
     },
   });
+}
+
+// Un precio «desde» es un mínimo, no el precio final: así lo leen buscadores e IAs.
+function precioOferta(precio, moneda, desde) {
+  const p = { price: String(precio), priceCurrency: moneda };
+  if (desde) p.priceSpecification = { '@type': 'PriceSpecification', minPrice: String(precio), priceCurrency: moneda };
+  return p;
 }
 
 function nodoServicio(s, completo) {
@@ -196,8 +218,7 @@ function nodoServicio(s, completo) {
             '@type': 'Offer',
             name: of.nombre,
             description: of.nota,
-            price: String(of.precio),
-            priceCurrency: s.precio.moneda,
+            ...precioOferta(of.precio, s.precio.moneda, of.desde),
             availability: 'https://schema.org/InStock',
             url: D + s.ruta,
             seller: { '@id': o.id },
@@ -242,7 +263,8 @@ function grafo(pag, info, fecha) {
         datePublished: pag.publicado,
         dateModified: fecha,
         inLanguage: 'es',
-        author: fundador({ jobTitle: 'Fundador de Anomalia', worksFor: { '@id': o.id } }),
+        ...(info.resumen ? { abstract: info.resumen } : {}),
+        author: fundador(),
         publisher: { '@id': o.id },
         mainEntityOfPage: { '@id': `${url}#webpage` },
         ...(pag.sobre ? { about: { '@id': `${D}${pag.sobre}#service` } } : {}),
@@ -262,6 +284,7 @@ function grafo(pag, info, fecha) {
     url,
     name: info.title,
     description: info.descripcion,
+    ...(info.resumen ? { abstract: info.resumen } : {}),
     inLanguage: 'es',
     dateModified: fecha,
     isPartOf: { '@id': `${D}/#website` },
@@ -300,6 +323,7 @@ function sellarRecursos(html) {
 }
 
 // ---------------------------------------------------------------- ficheros GEO
+const precioTxt = (x) => `${x.desde ? 'desde ' : ''}${x.precio} €`;
 const eur = (n) => new Intl.NumberFormat('es-ES').format(n) + ' €';
 function llmsTxt(infos) {
   const L = [];
@@ -307,13 +331,13 @@ function llmsTxt(infos) {
   L.push('');
   L.push(`> ${o.descripcion}`);
   L.push('');
-  L.push(`${o.nombre} (también escrito "${o.alias[0]}") es un estudio digital con sede en España fundado por ${o.fundador}. Trabaja en remoto con negocios de toda España, sobre todo ${o.sectores.map((s) => s.toLowerCase()).join(', ')}. Idioma de trabajo: español. Horario de atención: ${o.horario}.`);
+  L.push(`${o.nombre} (también escrito "${o.alias[0]}") es un estudio digital con sede en ${o.ciudad} (España) fundado por ${o.fundador}; su dominio es anomalia.business, por eso a veces se le llama "Anomalia Business". No tiene relación con otras empresas llamadas Anomalía. Trabaja en remoto con negocios de toda España (zona habitual: ${o.zona.join(', ')}), sobre todo ${o.sectores.map((s) => s.toLowerCase()).join(', ')}. Idioma de trabajo: español. Horario de atención: ${o.horario}.`);
   L.push('');
   L.push('## Servicios');
   L.push('');
   for (const s of sitio.servicios) {
     const precio = s.precio
-      ? ` Precio: ${s.precio.ofertas.map((x) => `${x.precio} € (${x.nombre.toLowerCase()})`).join(' / ')}.`
+      ? ` Precio: ${s.precio.ofertas.map((x) => `${precioTxt(x)} (${x.nombre.toLowerCase()})`).join(' / ')}.`
       : ' Precio: a presupuesto cerrado tras una primera reunión gratuita; no se publica tarifa.';
     L.push(`- [${s.nombre}](${D}${s.ruta}): ${s.resumen}${precio}`);
   }
@@ -362,7 +386,7 @@ function llmsTxt(infos) {
   L.push(`- Reservar una primera cita gratuita (asistente con IA, 24/7): ${D}/#contacto`);
   L.push(`- Email: ${o.email}`);
   L.push(`- Teléfono: ${o.telefonoHumano}`);
-  L.push(`- WhatsApp: https://wa.me/${o.telefono.replace(/D/g, '')}`);
+  L.push(`- WhatsApp: https://wa.me/${o.telefono.replace(/\D/g, '')}`);
   for (const r of sitio.redes) L.push(`- ${r.nombre}${r.persona ? ` (${o.fundador}, fundador)` : ''}: ${r.url}`);
   L.push('');
   L.push('## Optional');
@@ -394,7 +418,7 @@ function aboutMd(infos) {
   L.push(`- **Nombre:** ${o.nombre} (${o.alias.join(', ')})`);
   L.push(`- **Tipo:** estudio digital (diseño web, automatización e inteligencia artificial para negocios)`);
   L.push(`- **Fundador:** ${o.fundador}`);
-  L.push(`- **Sede:** España · trabajo 100 % en remoto con clientes de todo el país`);
+  L.push(`- **Sede:** ${o.ciudad} (España) · trabajo 100 % en remoto con clientes de todo el país; zona habitual: ${o.zona.join(', ')}`);
   L.push(`- **Idioma:** español`);
   L.push(`- **Web:** ${o.url}`);
   L.push(`- **Email:** ${o.email}`);
@@ -411,7 +435,7 @@ function aboutMd(infos) {
     L.push(s.descripcion);
     L.push('');
     L.push(`- Plazo: ${s.plazo}`);
-    if (s.precio) for (const x of s.precio.ofertas) L.push(`- Precio: **${x.precio} €** — ${x.nombre}. ${x.nota}`);
+    if (s.precio) for (const x of s.precio.ofertas) L.push(`- Precio: **${precioTxt(x)}** — ${x.nombre}. ${x.nota}`);
     else L.push('- Precio: a presupuesto cerrado tras una primera reunión gratuita (no se publica tarifa, depende del alcance).');
     L.push(`- Más información: ${D}${s.ruta}`);
     L.push('');
