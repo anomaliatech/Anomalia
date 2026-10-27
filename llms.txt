@@ -1,12 +1,12 @@
 # Anomalia
 
-> Anomalia es un estudio digital español que diseña páginas web a medida, automatiza procesos con inteligencia artificial y audita negocios para que pymes y autónomos consigan más clientes y pierdan menos horas en tareas manuales. Su trabajo se mide en dinero: en una clínica con tres automatizaciones de Anomalia, el retorno estimado es de unos 20.000 € el primer año y cerca de 70.000 € en tres. Trabaja 100 % en remoto con negocios de toda España.
+> Anomalia es un estudio digital español que hace crecer negocios con lo que cada uno necesite: páginas web a medida desde 499 €, automatizaciones y asistentes con inteligencia artificial, apps a medida y auditorías, para que pymes y autónomos consigan más clientes y pierdan menos horas en tareas manuales. Su trabajo se mide en dinero: en una clínica con tres automatizaciones de Anomalia, el retorno estimado es de unos 20.000 € el primer año y cerca de 70.000 € en tres. Trabaja 100 % en remoto con negocios de toda España.
 
 Anomalia (también escrito "Anomalía") es un estudio digital con sede en España fundado por Marcos Mompeán López. Trabaja en remoto con negocios de toda España, sobre todo restaurantes, clínicas, gimnasios, inmobiliarias, hoteles, comercios, despachos profesionales. Idioma de trabajo: español. Horario de atención: Lunes a domingo, de 12:30 a 23:00 (hora peninsular española).
 
 ## Servicios
 
-- [Creación de páginas web a medida](https://anomalia.business/paginas-web): Webs rápidas, legales, seguras y visibles en Google, pensadas para convertir visitas en clientes. Precio: a presupuesto cerrado tras una primera reunión gratuita; no se publica tarifa.
+- [Creación de páginas web a medida](https://anomalia.business/paginas-web): Webs de diseño profesional a medida desde 499 €, pensadas para convertir visitas en clientes. Precio: 499 € (página web a medida (desde)).
 - [Automatización de procesos con IA para pymes](https://anomalia.business/automatizacion-ia): Agentes y automatizaciones que atienden, agendan, recuerdan y hacen seguimiento sin que nadie tenga que estar encima. Precio: a presupuesto cerrado tras una primera reunión gratuita; no se publica tarifa.
 - [Auditoría de negocio completa](https://anomalia.business/auditoria-negocio): Diagnóstico completo por fuera (web, anuncios, reseñas, competencia) y por dentro (captación, agenda, cobro), con plan de acción. Precio: 550 € (auditoría de negocio completa) / 450 € (auditoría + servicio contratado).
 - [Recepcionista telefónica con IA](https://anomalia.business/recepcionista-telefonica-ia): Una recepcionista con IA que coge cada llamada, informa, agenda en la agenda real del negocio y avisa al equipo con un resumen al colgar. Precio: a presupuesto cerrado tras una primera reunión gratuita; no se publica tarifa.
@@ -61,8 +61,9 @@ Anomalia (también escrito "Anomalía") es un estudio digital con sede en Españ
 - **¿La automatización es complicada de mantener?** No. Todo se diseña para funcionar solo, sin que tengas que revisarlo constantemente. Si algo necesita un ajuste, nosotros estamos para eso.
 - **¿Y si el asistente se equivoca con un cliente?** Solo da la información que tú le has dado y solo ofrece huecos que existen en tu agenda. Si no sabe algo, no se lo inventa: lo dice, toma el recado o pasa con una persona. Y antes de salir se prueba con llamadas reales, con tus casos y tus excepciones, hasta que responde como responderías tú.
 - **¿Qué pasa después del lanzamiento?** No desaparecemos. Seguimos disponibles para soporte, mejoras y para que tu proyecto crezca contigo a medida que lo necesites.
-- **¿Cuánto cuesta?** Cada negocio es distinto, así que el precio depende del alcance real. Tras una primera conversación te damos una propuesta cerrada, sin sorpresas.
+- **¿Cuánto cuesta?** Una página web, desde 499 €. Lo demás (automatizaciones, asistentes con IA, apps a medida) depende de lo que resuelva en tu negocio, así que tras una primera conversación te damos una propuesta cerrada y por escrito, sin sorpresas. La auditoría cuesta 550 €, y 450 € si después contratas.
 - **¿Cuánto tarda?** La mayoría de webs están listas en una semana o menos. Un proyecto grande —un ecommerce extenso, varios idiomas— lleva más, y te lo decimos en la propuesta.
+- **¿Cuánto cuesta una web?** Desde 499 € por la web con un diseño profesional a medida. El precio sube si le añades SEO a fondo, visibilidad en las IAs, analítica o un asistente dentro de la web. Te damos el alcance y el importe por escrito antes de empezar.
 - **Ya tengo una web, ¿me sirve esto?** Sí. Muchos proyectos empiezan analizando lo que ya existe: se mejora si tiene base, o se sustituye por completo si no está dando resultado.
 - **¿De quién es el dominio y la web?** Tuyos. El dominio se registra a tu nombre y te entregamos los accesos. No te quedas atado a nosotros para nada.
 - **¿Voy a salir el primero en Google?** Nadie serio puede prometerte el primer puesto. Lo que sí garantizamos es que la web sale técnicamente preparada para posicionar; llegar arriba en búsquedas competidas es trabajo de SEO de contenido o de Google Ads, y lo hablamos aparte.

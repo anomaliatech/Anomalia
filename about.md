@@ -1,6 +1,6 @@
 # Sobre Anomalia
 
-Anomalia es un estudio digital español que diseña páginas web a medida, automatiza procesos con inteligencia artificial y audita negocios para que pymes y autónomos consigan más clientes y pierdan menos horas en tareas manuales. Su trabajo se mide en dinero: en una clínica con tres automatizaciones de Anomalia, el retorno estimado es de unos 20.000 € el primer año y cerca de 70.000 € en tres. Trabaja 100 % en remoto con negocios de toda España.
+Anomalia es un estudio digital español que hace crecer negocios con lo que cada uno necesite: páginas web a medida desde 499 €, automatizaciones y asistentes con inteligencia artificial, apps a medida y auditorías, para que pymes y autónomos consigan más clientes y pierdan menos horas en tareas manuales. Su trabajo se mide en dinero: en una clínica con tres automatizaciones de Anomalia, el retorno estimado es de unos 20.000 € el primer año y cerca de 70.000 € en tres. Trabaja 100 % en remoto con negocios de toda España.
 
 ## Ficha de la entidad
 
@@ -20,10 +20,10 @@ Anomalia es un estudio digital español que diseña páginas web a medida, autom
 
 ### Creación de páginas web a medida
 
-Diseño y desarrollo de páginas web a medida para negocios: restaurantes, tiendas y ecommerce, clínicas y despachos, inmobiliarias, hoteles y landing pages. Cada web sale con SEO técnico de base, textos legales (RGPD/LSSI), rendimiento optimizado y, si hace falta, campañas de Google Ads. El dominio y la web son del cliente.
+Diseño y desarrollo de páginas web a medida para negocios: restaurantes, tiendas y ecommerce, clínicas y despachos, inmobiliarias, hoteles y landing pages. Desde 499 € la web con diseño profesional a medida; el precio sube si se añade SEO a fondo, visibilidad en motores de IA, analítica o un asistente con IA dentro de la web, y se cierra por escrito antes de empezar. El dominio y la web son del cliente.
 
 - Plazo: La mayoría de webs están listas en una semana o menos.
-- Precio: a presupuesto cerrado tras una primera reunión gratuita (no se publica tarifa, depende del alcance).
+- Precio: **499 €** — Página web a medida (desde). Precio de partida: la web con diseño profesional a medida. Sube según lo que se añada (SEO a fondo, IA, analítica, asistente).
 - Más información: https://anomalia.business/paginas-web
 
 ### Automatización de procesos con IA para pymes
@@ -36,7 +36,7 @@ Automatización de procesos y desarrollo de soluciones de IA a medida para pymes
 
 ### Auditoría de negocio completa
 
-Auditoría completa de un negocio por las dos caras: por fuera (web y experiencia de usuario, oferta y precios, textos, recorrido del cliente, redes, anuncios activos, ficha de Google, reputación, coherencia de marca, SEO y competencia) y por dentro (captación, agenda, cobro, comunicación, datos, retención, seguridad y madurez tecnológica). Incluye el cruce de ambas mitades, dos mapas del recorrido del cliente y un plan de acción priorizado. Es el único servicio de Anomalia con precio cerrado.
+Auditoría completa de un negocio por las dos caras: por fuera (web y experiencia de usuario, oferta y precios, textos, recorrido del cliente, redes, anuncios activos, ficha de Google, reputación, coherencia de marca, SEO y competencia) y por dentro (captación, agenda, cobro, comunicación, datos, retención, seguridad y madurez tecnológica). Incluye el cruce de ambas mitades, dos mapas del recorrido del cliente y un plan de acción priorizado..
 
 - Plazo: Informe entregado en pocos días desde la primera reunión.
 - Precio: **550 €** — Auditoría de negocio completa. Auditoría sola, con informe y plan de acción.
@@ -121,11 +121,15 @@ No desaparecemos. Seguimos disponibles para soporte, mejoras y para que tu proye
 
 **¿Cuánto cuesta?**
 
-Cada negocio es distinto, así que el precio depende del alcance real. Tras una primera conversación te damos una propuesta cerrada, sin sorpresas.
+Una página web, desde 499 €. Lo demás (automatizaciones, asistentes con IA, apps a medida) depende de lo que resuelva en tu negocio, así que tras una primera conversación te damos una propuesta cerrada y por escrito, sin sorpresas. La auditoría cuesta 550 €, y 450 € si después contratas.
 
 **¿Cuánto tarda?**
 
 La mayoría de webs están listas en una semana o menos. Un proyecto grande —un ecommerce extenso, varios idiomas— lleva más, y te lo decimos en la propuesta.
+
+**¿Cuánto cuesta una web?**
+
+Desde 499 € por la web con un diseño profesional a medida. El precio sube si le añades SEO a fondo, visibilidad en las IAs, analítica o un asistente dentro de la web. Te damos el alcance y el importe por escrito antes de empezar.
 
 **Ya tengo una web, ¿me sirve esto?**
 
