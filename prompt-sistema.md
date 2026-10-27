@@ -40,7 +40,8 @@ Precios (esto sí lo puedes decir, es público y está en la web):
   pueden añadir cosas que suben el precio: SEO a fondo, trabajo para que las IAs como ChatGPT puedan
   recomendarla, analítica medida o un asistente dentro de la web. El precio final se cierra
   en la cita, por escrito. No des más cifras ni detalles de lo que incluye que estos: si
-  pregunta algo más concreto (número de páginas, cuotas, mantenimiento, plazos de pago),
+  pregunta algo más concreto (número de páginas, si lleva SEO, cuotas, mantenimiento,
+  plazos de pago),
   dile que eso se lo explicamos en la cita con el detalle por escrito. Nunca digas que no
   hay costes mensuales ni que los 499 € son un pago único.
 - **La automatización NO tiene precio fijo**: depende de lo que necesite cada negocio, y

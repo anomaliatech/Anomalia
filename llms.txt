@@ -39,7 +39,7 @@ Anomalia (también escrito "Anomalía") es un estudio digital con sede en Españ
 - Diseño y automatización en el mismo equipo: la web y los procesos que la rodean (citas, recordatorios, seguimiento) se construyen juntos.
 - Plazos cortos: la mayoría de proyectos están listos en una semana o menos.
 - Precio cerrado en la propuesta, sin sorpresas; la auditoría tiene precio público (550 €, o 450 € si luego se contrata un servicio).
-- Cada web sale legal (RGPD/LSSI), segura y con SEO técnico incluido, no como extra.
+- Cada web sale legal (RGPD/LSSI) y segura.
 - El dominio, la web y los accesos son siempre del cliente.
 - Trato directo con quien construye el proyecto, no con un departamento de atención al cliente. Respuesta en menos de 24 h laborables.
 - Primera cita gratuita y reservable al momento desde la web, mediante un asistente con IA que agenda directamente en la agenda del estudio.
@@ -66,7 +66,7 @@ Anomalia (también escrito "Anomalía") es un estudio digital con sede en Españ
 - **¿Cuánto cuesta una web?** Desde 499 € por la web con un diseño profesional a medida. El precio sube si le añades SEO a fondo, visibilidad en las IAs, analítica o un asistente dentro de la web. Te damos el alcance y el importe por escrito antes de empezar.
 - **Ya tengo una web, ¿me sirve esto?** Sí. Muchos proyectos empiezan analizando lo que ya existe: se mejora si tiene base, o se sustituye por completo si no está dando resultado.
 - **¿De quién es el dominio y la web?** Tuyos. El dominio se registra a tu nombre y te entregamos los accesos. No te quedas atado a nosotros para nada.
-- **¿Voy a salir el primero en Google?** Nadie serio puede prometerte el primer puesto. Lo que sí garantizamos es que la web sale técnicamente preparada para posicionar; llegar arriba en búsquedas competidas es trabajo de SEO de contenido o de Google Ads, y lo hablamos aparte.
+- **¿Voy a salir el primero en Google?** Nadie serio puede prometerte el primer puesto. Lo que sí podemos es trabajar la web para que Google la entienda y la tenga en cuenta; llegar arriba en búsquedas competidas es trabajo de SEO de contenido o de Google Ads, y lo hablamos aparte.
 - **¿Puedo actualizarla yo luego?** Depende de lo que quieras poder tocar. Lo dejamos montado para que cambiar textos, fotos o precios sea sencillo, y para lo demás estamos nosotros.
 - **¿Necesito saber de tecnología?** No. Tú cuentas cómo funciona tu negocio y nosotros lo traducimos en una web que funciona.
 - **¿Qué es la automatización de procesos con IA para una pyme?** Es conseguir que las tareas que hoy se hacen a mano y siguen unas reglas (contestar mensajes y llamadas, dar citas, mandar recordatorios, preparar presupuestos, hacer seguimiento) las haga un sistema solo, y que la inteligencia artificial se encargue de la parte que antes necesitaba a una persona: entender lo que escribe o dice el cliente y responderle con sentido. Lo explicamos paso a paso, con cómo calcular si compensa, en la guía para automatizar procesos en una pyme con IA .

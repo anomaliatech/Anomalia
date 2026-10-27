@@ -73,7 +73,7 @@ Servicio 01 · Páginas web
 
 ### Una web de diseño profesional, desde 499 €.
 
-Para el negocio con una web anticuada o sin web. Diseño a medida, sin plantillas recicladas. Y si quieres trabajarla para que te encuentren en Google y en las IAs, se añade aparte.
+Para el negocio con una web anticuada o sin web. Diseño a medida, sin plantillas recicladas. Y si quieres que te encuentren en Google y en las IAs, también lo trabajamos.
 
 Ver páginas web
 
@@ -182,7 +182,7 @@ Servicio · Páginas web
 
 «La web es el primer empleado que nunca duerme.»
 
-Nada de plantillas recicladas. Diseñamos y desarrollamos una web pensada para tu negocio y para lo que necesitas conseguir con ella: más llamadas, más reservas, más clientes. Rápida, legal, segura y visible en Google.
+Nada de plantillas recicladas. Diseñamos y desarrollamos una web pensada para tu negocio y para lo que necesitas conseguir con ella: más llamadas, más reservas, más clientes. Rápida, legal y segura.
 
 - Desde 499 €
 - Lista en una semana o menos
@@ -220,7 +220,7 @@ Disponibilidad, fotos y motor de reserva en un sitio que transmite lo que se va 
 
 Una sola página, un solo objetivo: validar una idea, lanzar un producto o sostener una campaña de anuncios.
 
-Qué incluye siempre
+Cómo la hacemos
 
 ## Bien hecha por dentro y por fuera.
 
@@ -256,9 +256,9 @@ Visible en Google
 
 ## Que exista no basta: que la encuentren.
 
-Toda web sale con la base de SEO técnico bien puesta. A partir de ahí, si quieres ir a por el primer puesto o traer clientes desde el primer día, tienes dos caminos que se complementan.
+Una web que nadie encuentra no trae clientes. Si quieres que Google te tenga en cuenta, o traer clientes desde el primer día, hay tres caminos que se complementan.
 
-### SEO técnico incluido
+### SEO técnico
 
 Metadatos y encabezados en orden, contenido que Google puede leer, sitemap.xml , robots.txt , datos estructurados, URL canónica y tarjetas para redes. Y te dejamos de alta en Google Search Console.
 
@@ -332,7 +332,7 @@ Sí. Muchos proyectos empiezan analizando lo que ya existe: se mejora si tiene b
 Tuyos. El dominio se registra a tu nombre y te entregamos los accesos. No te quedas atado a nosotros para nada.
 
 **¿Voy a salir el primero en Google?**
-Nadie serio puede prometerte el primer puesto. Lo que sí garantizamos es que la web sale técnicamente preparada para posicionar; llegar arriba en búsquedas competidas es trabajo de SEO de contenido o de Google Ads, y lo hablamos aparte.
+Nadie serio puede prometerte el primer puesto. Lo que sí podemos es trabajar la web para que Google la entienda y la tenga en cuenta; llegar arriba en búsquedas competidas es trabajo de SEO de contenido o de Google Ads, y lo hablamos aparte.
 
 **¿Puedo actualizarla yo luego?**
 Depende de lo que quieras poder tocar. Lo dejamos montado para que cambiar textos, fotos o precios sea sencillo, y para lo demás estamos nosotros.

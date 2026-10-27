@@ -84,7 +84,7 @@ Cifras estimadas con los datos de la propia clínica. En la primera cita se hace
 - Diseño y automatización en el mismo equipo: la web y los procesos que la rodean (citas, recordatorios, seguimiento) se construyen juntos.
 - Plazos cortos: la mayoría de proyectos están listos en una semana o menos.
 - Precio cerrado en la propuesta, sin sorpresas; la auditoría tiene precio público (550 €, o 450 € si luego se contrata un servicio).
-- Cada web sale legal (RGPD/LSSI), segura y con SEO técnico incluido, no como extra.
+- Cada web sale legal (RGPD/LSSI) y segura.
 - El dominio, la web y los accesos son siempre del cliente.
 - Trato directo con quien construye el proyecto, no con un departamento de atención al cliente. Respuesta en menos de 24 h laborables.
 - Primera cita gratuita y reservable al momento desde la web, mediante un asistente con IA que agenda directamente en la agenda del estudio.
@@ -141,7 +141,7 @@ Tuyos. El dominio se registra a tu nombre y te entregamos los accesos. No te que
 
 **¿Voy a salir el primero en Google?**
 
-Nadie serio puede prometerte el primer puesto. Lo que sí garantizamos es que la web sale técnicamente preparada para posicionar; llegar arriba en búsquedas competidas es trabajo de SEO de contenido o de Google Ads, y lo hablamos aparte.
+Nadie serio puede prometerte el primer puesto. Lo que sí podemos es trabajar la web para que Google la entienda y la tenga en cuenta; llegar arriba en búsquedas competidas es trabajo de SEO de contenido o de Google Ads, y lo hablamos aparte.
 
 **¿Puedo actualizarla yo luego?**
 
