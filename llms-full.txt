@@ -1,6 +1,6 @@
 # Anomalia — contenido completo del sitio
 
-> Anomalia es un estudio digital español que hace crecer negocios con lo que cada uno necesite: páginas web a medida desde 499 €, automatizaciones y asistentes con inteligencia artificial, apps a medida y auditorías, para que pymes y autónomos consigan más clientes y pierdan menos horas en tareas manuales. Su trabajo se mide en dinero: en una clínica con tres automatizaciones de Anomalia, el retorno estimado es de unos 20.000 € el primer año y cerca de 70.000 € en tres. Trabaja 100 % en remoto con negocios de toda España.
+> Anomalia es un estudio digital español que hace crecer negocios con lo que cada uno necesite: páginas web a medida desde 499 €, automatizaciones y asistentes con inteligencia artificial, apps a medida y auditorías, para que pymes y autónomos consigan más clientes y pierdan menos horas en tareas manuales. Su trabajo se mide en dinero: en una clínica con tres automatizaciones de Anomalia, el retorno estimado es de unos 20.000 € el primer año solo en ahorro de personal de recepción, y cerca de 70.000 € en tres. Trabaja 100 % en remoto con negocios de toda España.
 
 ---
 
@@ -105,7 +105,7 @@ Anomalia es un estudio digital de Alicante que hace crecer negocios de toda Espa
 | Para quién | Pymes, autónomos y negocios locales: restaurantes, clínicas, gimnasios, inmobiliarias, hoteles, comercios y despachos. |
 | Precios | Webs desde 499 €. Auditoría: 550 € · 450 € si después contratas. Automatización: precio cerrado tras una primera cita gratuita. |
 | Plazos | La mayoría de webs, en una semana o menos. Los asistentes con IA, en marcha en días. |
-| Caso real | Una clínica con app de citas, asistente de WhatsApp y recepcionista telefónica de Anomalia: retorno estimado de unos 20.000 € el primer año y cerca de 70.000 € en tres, entre ahorro en personal de recepción y citas que ya no se pierden. Son estimaciones con los datos de la propia clínica. |
+| Caso real | Una clínica con app de citas, asistente de WhatsApp y recepcionista telefónica de Anomalia: retorno estimado de unos 20.000 € el primer año, solo en ahorro de personal de recepción y sin contar las citas que ya no se pierden, y cerca de 70.000 € en tres. Son estimaciones con los datos de la propia clínica. |
 | Dónde | Desde Alicante, en remoto con negocios de toda España. |
 | Cómo empezar | Primera cita gratuita, que reservas al momento con el asistente de esta web. |
 
@@ -123,11 +123,11 @@ No vendemos tecnología. Vendemos que a final de año haya entrado en tu negocio
 
 De dónde sale ese dinero
 
-- Ahorro en personal. El teléfono, el WhatsApp y la agenda los atienden los agentes, las 24 horas: trabajo de recepción que la clínica ya no tiene que cubrir con plantilla.
+- Ahorro en personal. El teléfono, el WhatsApp y la agenda los atienden los agentes, las 24 horas: trabajo de recepción que la clínica ya no tiene que cubrir con plantilla. De aquí salen los 20.000 € del primer año.
 
-- Citas que ya no se pierden. Cada llamada o mensaje sin contestar era un paciente que acababa reservando en la clínica de al lado. Ahora se le atiende y se le da cita al momento.
+- Y sin contar: citas que ya no se pierden. Cada llamada o mensaje sin contestar era un paciente que acababa reservando en la clínica de al lado. Ahora se le atiende y se le da cita al momento. Ese dinero no está en la cifra.
 
-Una clínica con tres sistemas de Anomalia. Cifras estimadas con los números de la propia clínica: sobre todo, el sueldo de recepción que ya no necesita cubrir. Las reseñas pasaron de 1 o 2 a la semana a 10 en los primeros 4 días, porque ningún mensaje se queda sin contestar. Tu negocio no tiene por qué ser una clínica: en tu primera cita hacemos esta misma cuenta con tus números.
+Una clínica con tres sistemas de Anomalia. Cifras estimadas con los números de la propia clínica: solo el sueldo de recepción que ya no necesita cubrir, sin contar las citas recuperadas. Las reseñas pasaron de 1 o 2 a la semana a 10 en los primeros 4 días, porque ningún mensaje se queda sin contestar. Tu negocio no tiene por qué ser una clínica: en tu primera cita hacemos esta misma cuenta con tus números.
 
 Los tres sistemas
 
@@ -164,7 +164,7 @@ Trabajamos con negocios de toda España · 100 % en remoto
 Depende del alcance, pero la mayoría de proyectos están listos en una semana o menos. Las automatizaciones suelen integrarse en paralelo o justo después del lanzamiento.
 
 **¿Cuánto dinero puede ganar mi negocio con esto?**
-Depende de tu negocio, y por eso hacemos la cuenta antes de empezar. Como referencia: en una clínica con tres automatizaciones nuestras (app de citas, asistente de WhatsApp y recepcionista telefónica) la estimación es de unos 20.000 € el primer año y cerca de 70.000 € en tres. Sale de dos sitios: el ahorro en personal de recepción, porque el teléfono, el WhatsApp y la agenda los atienden los agentes, y las citas que dejan de irse a la competencia por no contestar a tiempo. En la primera cita calculamos ese número con tus datos.
+Depende de tu negocio, y por eso hacemos la cuenta antes de empezar. Como referencia: en una clínica con tres automatizaciones nuestras (app de citas, asistente de WhatsApp y recepcionista telefónica) la estimación es de unos 20.000 € el primer año y cerca de 70.000 € en tres. Los 20.000 € son solo el ahorro en personal de recepción, porque el teléfono, el WhatsApp y la agenda los atienden los agentes; las citas que dejan de irse a la competencia por no contestar a tiempo no están contadas. En la primera cita calculamos ese número con tus datos.
 
 **¿Necesito saber de tecnología para trabajar con vosotros?**
 No. Tú nos cuentas cómo funciona tu negocio y nosotros nos encargamos de traducirlo en soluciones que funcionan, sin que tengas que tocar nada técnico.
@@ -413,7 +413,7 @@ En Anomalia automatizamos con IA las tareas repetitivas de pymes y autónomos, d
 | --- | --- |
 | Qué automatizamos | Citas 24/7 desde la web o WhatsApp · recepcionista telefónica con IA · asistente de WhatsApp con IA · presupuestos y facturas · recordatorios y confirmaciones · seguimiento de clientes · cualquier tarea repetitiva que hoy se haga a mano. |
 | Para quién | Negocios que pierden horas cada semana en tareas repetitivas o que se dejan clientes por no contestar a tiempo. |
-| Caso real | Una clínica con app de citas, asistente de WhatsApp y recepcionista telefónica de Anomalia: retorno estimado de unos 20.000 € el primer año y cerca de 70.000 € en tres, entre ahorro en personal de recepción y citas que ya no se pierden. Son estimaciones con los datos de la propia clínica. |
+| Caso real | Una clínica con app de citas, asistente de WhatsApp y recepcionista telefónica de Anomalia: retorno estimado de unos 20.000 € el primer año, solo en ahorro de personal de recepción y sin contar las citas que ya no se pierden, y cerca de 70.000 € en tres. Son estimaciones con los datos de la propia clínica. |
 | Si la IA no sabe algo | Pasa a una persona. No se inventa precios ni huecos en la agenda. |
 | Precio | A presupuesto cerrado, según lo que resuelve y lo que te ahorra. No hay tarifa publicada. |
 | Plazo | Los asistentes, en marcha en días; se prueban con conversaciones reales antes de atender a clientes. |
@@ -433,9 +433,9 @@ No te vendemos un bot. Te montamos un sistema que hace entrar más dinero del qu
 
 De dónde sale ese dinero
 
-- Ahorro en personal. El teléfono, el WhatsApp y la agenda los atienden los agentes, las 24 horas: trabajo de recepción que la clínica ya no tiene que cubrir con plantilla.
+- Ahorro en personal. El teléfono, el WhatsApp y la agenda los atienden los agentes, las 24 horas: trabajo de recepción que la clínica ya no tiene que cubrir con plantilla. De aquí salen los 20.000 € del primer año.
 
-- Citas que ya no se pierden. Cada llamada o mensaje sin contestar era un paciente que acababa reservando en la clínica de al lado. Ahora se le atiende y se le da cita al momento.
+- Y sin contar: citas que ya no se pierden. Cada llamada o mensaje sin contestar era un paciente que acababa reservando en la clínica de al lado. Ahora se le atiende y se le da cita al momento. Ese dinero no está en la cifra.
 
 Una clínica con tres sistemas de Anomalia: app de citas, asistente de WhatsApp y recepcionista telefónica . Cifras estimadas con los números de la propia clínica. En tu primera cita hacemos esta misma cuenta con los tuyos.
 
@@ -542,7 +542,7 @@ Es conseguir que las tareas que hoy se hacen a mano y siguen unas reglas (contes
 No. Todo se diseña para funcionar solo, sin que tengas que revisarlo cada día. Si algo necesita un ajuste, para eso estamos nosotros.
 
 **¿Cuánto dinero puede ganar mi negocio con esto?**
-Depende de tu negocio, y por eso hacemos la cuenta antes de empezar. Como referencia: en una clínica con tres automatizaciones nuestras (app de citas, asistente de WhatsApp y recepcionista telefónica) la estimación es de unos 20.000 € el primer año y cerca de 70.000 € en tres. Sale de dos sitios: el ahorro en personal de recepción, porque el teléfono, el WhatsApp y la agenda los atienden los agentes, y las citas que dejan de irse a la competencia por no contestar a tiempo. En la primera cita calculamos ese número con tus datos.
+Depende de tu negocio, y por eso hacemos la cuenta antes de empezar. Como referencia: en una clínica con tres automatizaciones nuestras (app de citas, asistente de WhatsApp y recepcionista telefónica) la estimación es de unos 20.000 € el primer año y cerca de 70.000 € en tres. Los 20.000 € son solo el ahorro en personal de recepción, porque el teléfono, el WhatsApp y la agenda los atienden los agentes; las citas que dejan de irse a la competencia por no contestar a tiempo no están contadas. En la primera cita calculamos ese número con tus datos.
 
 **¿Necesito saber de tecnología?**
 No. Tú nos cuentas cómo funciona tu negocio y nosotros lo traducimos en algo que funciona sin que tengas que tocar nada técnico.
@@ -850,9 +850,9 @@ Haz la cuenta: cuántas llamadas no coges a la semana, cuántas de esas eran una
 
 De dónde sale ese dinero
 
-- Ahorro en personal. El teléfono lo atiende la recepcionista con IA las 24 horas: trabajo de recepción que la clínica ya no tiene que cubrir con plantilla.
+- Ahorro en personal. El teléfono lo atiende la recepcionista con IA las 24 horas: trabajo de recepción que la clínica ya no tiene que cubrir con plantilla. De aquí salen los 20.000 € del primer año.
 
-- Citas que ya no se pierden. Cada llamada sin contestar era un paciente que acababa reservando en la clínica de al lado. Ahora se le atiende y se le da cita al momento.
+- Y sin contar: citas que ya no se pierden. Cada llamada sin contestar era un paciente que acababa reservando en la clínica de al lado. Ahora se le atiende y se le da cita al momento. Ese dinero no está en la cifra.
 
 Una clínica con tres sistemas de Anomalia: recepcionista telefónica, asistente de WhatsApp y app de citas . Cifras estimadas con los números de la propia clínica. En tu primera cita hacemos esta misma cuenta con los tuyos.
 
@@ -1116,7 +1116,7 @@ Si ese número es claramente mayor que el mantenimiento mensual, y el montaje se
 
 ### Un caso real
 
-En una clínica con tres sistemas de Anomalia (asistente de WhatsApp, recepcionista telefónica y app de citas) la estimación, hecha con los números de la propia clínica, es de unos 20.000 € el primer año y cerca de 70.000 € en tres . Sale de dos sitios: el trabajo de recepción que ya no hay que cubrir con plantilla y las citas que antes se iban a la competencia por no contestar a tiempo. Son cifras estimadas, no un resultado cerrado, y en otro negocio saldrán distintas: por eso se calculan antes de empezar.
+En una clínica con tres sistemas de Anomalia (asistente de WhatsApp, recepcionista telefónica y app de citas) la estimación, hecha con los números de la propia clínica, es de unos 20.000 € el primer año y cerca de 70.000 € en tres . Los 20.000 € son solo el trabajo de recepción que ya no hay que cubrir con plantilla; las citas que antes se iban a la competencia por no contestar a tiempo no están contadas. Son cifras estimadas, no un resultado cerrado, y en otro negocio saldrán distintas: por eso se calculan antes de empezar.
 
 ## ¿Lo monto yo o lo encargo?
 
@@ -1259,9 +1259,9 @@ La gente escribe a tres negocios a la vez y se queda con el primero que responde
 
 De dónde sale ese dinero
 
-- Ahorro en personal. El WhatsApp y la agenda los atiende el asistente las 24 horas: trabajo de recepción que la clínica ya no tiene que cubrir con plantilla.
+- Ahorro en personal. El WhatsApp y la agenda los atiende el asistente las 24 horas: trabajo de recepción que la clínica ya no tiene que cubrir con plantilla. De aquí salen los 20.000 € del primer año.
 
-- Citas que ya no se pierden. Cada mensaje que quedaba sin contestar hasta el día siguiente era un paciente que acababa reservando en la clínica de al lado. Ahora se le atiende y se le da cita al momento.
+- Y sin contar: citas que ya no se pierden. Cada mensaje que quedaba sin contestar hasta el día siguiente era un paciente que acababa reservando en la clínica de al lado. Ahora se le atiende y se le da cita al momento. Ese dinero no está en la cifra.
 
 Una clínica con tres sistemas de Anomalia: asistente de WhatsApp, recepcionista telefónica y app de citas . Cifras estimadas con los números de la propia clínica. En tu primera cita hacemos esta misma cuenta con los tuyos.
 
@@ -1443,12 +1443,12 @@ Reserva tu cita gratis
 
 En corto
 
-Anomalia monta en clínicas tres sistemas que se pueden contratar por separado: recepcionista telefónica con IA, asistente de WhatsApp con IA y citas con recordatorios. Una clínica con los tres estima unos 20.000 € el primer año.
+Anomalia monta en clínicas tres sistemas que se pueden contratar por separado: recepcionista telefónica con IA, asistente de WhatsApp con IA y citas con recordatorios. Una clínica con los tres estima ahorrarse unos 20.000 € en recepción el primer año.
 
 | Dato | Detalle |
 | --- | --- |
 | Los tres sistemas | Recepcionista telefónica con IA · asistente de WhatsApp con IA · citas y recordatorios desde la web o una app propia. Los tres trabajan sobre la misma agenda. |
-| Caso real | Una clínica con app de citas, asistente de WhatsApp y recepcionista telefónica de Anomalia: retorno estimado de unos 20.000 € el primer año y cerca de 70.000 € en tres, entre ahorro en personal de recepción y citas que ya no se pierden. Son estimaciones con los datos de la propia clínica. |
+| Caso real | Una clínica con app de citas, asistente de WhatsApp y recepcionista telefónica de Anomalia: retorno estimado de unos 20.000 € el primer año, solo en ahorro de personal de recepción y sin contar las citas que ya no se pierden, y cerca de 70.000 € en tres. Son estimaciones con los datos de la propia clínica. |
 | Qué no hace | No opina de medicina, no se inventa huecos ni precios y pasa a una persona lo que no puede resolver. |
 | Precio | Cerrado por escrito tras la primera cita gratuita, según lo que montes. |
 | Plazo | En marcha en días, con pruebas reales antes de atender a pacientes. |
@@ -1486,9 +1486,9 @@ No vendemos tecnología. Vendemos que a final de año haya entrado en tu clínic
 
 De dónde sale ese dinero
 
-- Ahorro en personal. El teléfono, el WhatsApp y la agenda los atienden los agentes de IA las 24 horas: trabajo de recepción que la clínica ya no tiene que cubrir con plantilla.
+- Ahorro en personal. El teléfono, el WhatsApp y la agenda los atienden los agentes de IA las 24 horas: trabajo de recepción que la clínica ya no tiene que cubrir con plantilla. De aquí salen los 20.000 € del primer año.
 
-- Citas que ya no se pierden. Cada llamada o mensaje sin contestar era un paciente que acababa reservando en la clínica de al lado. Ahora se le atiende y se le da cita al momento.
+- Y sin contar: citas que ya no se pierden. Cada llamada o mensaje sin contestar era un paciente que acababa reservando en la clínica de al lado. Ahora se le atiende y se le da cita al momento. Ese dinero no está en la cifra.
 
 Una clínica con tres sistemas de Anomalia: recepcionista telefónica, asistente de WhatsApp y app de citas . Cifras estimadas con los números de la propia clínica, no una promesa. En tu primera cita hacemos esta misma cuenta con los tuyos.
 
@@ -2062,7 +2062,7 @@ Una clínica que trabaja con nosotros tiene tres sistemas de Anomalia: recepcion
 
 0 llamadas sin contestar
 
-Sale de dos sitios: el trabajo de recepción que ya no hay que cubrir con plantilla y las citas que antes se iban a la clínica de al lado por no contestar a tiempo. Son cifras estimadas, no un resultado cerrado, y en otra clínica saldrán distintas: por eso se calculan antes de empezar.
+Los 20.000 € son solo el trabajo de recepción que ya no hay que cubrir con plantilla; las citas que antes se iban a la clínica de al lado por no contestar a tiempo no están contadas. Son cifras estimadas, no un resultado cerrado, y en otra clínica saldrán distintas: por eso se calculan antes de empezar.
 
 ## Preguntas frecuentes.
 
@@ -2228,7 +2228,7 @@ No hacemos check-in en quiosco ni abrimos puertas.
 
 Antes de darte un precio miramos contigo si se puede conectar a tu programa de gestión y en qué idiomas te llaman de verdad. Sin eso no hay presupuesto honesto.
 
-El único caso con cifras que publicamos es de una clínica, no de un hotel: estima unos 20.000 € el primer año, sobre todo por el sueldo de recepción que se ahorra ( lo contamos aquí ). No lo trasladamos a tu hotel: tu cuenta se hace con tus números.
+El único caso con cifras que publicamos es de una clínica, no de un hotel: estima unos 20.000 € el primer año, solo por el sueldo de recepción que se ahorra, sin contar las citas recuperadas ( lo contamos aquí ). No lo trasladamos a tu hotel: tu cuenta se hace con tus números.
 
 Lo que una recepcionista con IA no debe hacer nunca está en la guía de recepcionista virtual para clínicas , y vale igual para un hotel.
 
@@ -2402,7 +2402,7 @@ En Anomalia el asistente de WhatsApp con IA va a presupuesto: montaje más mante
 
 En una primera llamada gratis y sin compromiso hacemos la cuenta de arriba contigo y te damos el precio cerrado, por escrito. Si no te sale a cuenta, te lo decimos.
 
-Una clínica con tres sistemas nuestros (asistente de WhatsApp, recepcionista telefónica y app de reservas) estima unos 20.000 € el primer año, sobre todo por el sueldo de recepción que se ahorra. Es una estimación con sus números; en tu negocio saldrá otra.
+Una clínica con tres sistemas nuestros (asistente de WhatsApp, recepcionista telefónica y app de reservas) estima unos 20.000 € el primer año, solo por el sueldo de recepción que se ahorra, sin contar las citas que ya no se pierden. Es una estimación con sus números; en tu negocio saldrá otra.
 
 El método para cualquier proceso está en la guía de cómo automatizar procesos en una pyme con IA .
 

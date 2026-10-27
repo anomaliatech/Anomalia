@@ -1,6 +1,6 @@
 # Sobre Anomalia
 
-Anomalia es un estudio digital español que hace crecer negocios con lo que cada uno necesite: páginas web a medida desde 499 €, automatizaciones y asistentes con inteligencia artificial, apps a medida y auditorías, para que pymes y autónomos consigan más clientes y pierdan menos horas en tareas manuales. Su trabajo se mide en dinero: en una clínica con tres automatizaciones de Anomalia, el retorno estimado es de unos 20.000 € el primer año y cerca de 70.000 € en tres. Trabaja 100 % en remoto con negocios de toda España.
+Anomalia es un estudio digital español que hace crecer negocios con lo que cada uno necesite: páginas web a medida desde 499 €, automatizaciones y asistentes con inteligencia artificial, apps a medida y auditorías, para que pymes y autónomos consigan más clientes y pierdan menos horas en tareas manuales. Su trabajo se mide en dinero: en una clínica con tres automatizaciones de Anomalia, el retorno estimado es de unos 20.000 € el primer año solo en ahorro de personal de recepción, y cerca de 70.000 € en tres. Trabaja 100 % en remoto con negocios de toda España.
 
 ## Ficha de la entidad
 
@@ -13,7 +13,7 @@ Anomalia es un estudio digital español que hace crecer negocios con lo que cada
 - **Email:** contacto@anomalia.business
 - **Teléfono:** +34 601 44 91 73
 - **Perfiles oficiales:** LinkedIn (https://www.linkedin.com/company/anomalia-business/), LinkedIn del fundador (https://www.linkedin.com/in/marcos-mompean-lopez-b9a086436/), Instagram (https://www.instagram.com/anomalia.business/), TikTok (https://www.tiktok.com/@anomalia.business), YouTube (https://www.youtube.com/@anomaliabusiness), X (https://x.com/EstudioAnomalia), Facebook (https://www.facebook.com/profile.php?id=61594508481121)
-- **Horario:** Lunes a domingo, de 12:30 a 23:00 (hora peninsular española)
+- **Horario:** Lunes a domingo, de 12:00 a 21:00 (hora peninsular española)
 - **Sectores habituales:** Restaurantes, Clínicas, Gimnasios, Inmobiliarias, Hoteles, Comercios, Despachos profesionales
 
 ## Qué hace
@@ -28,7 +28,7 @@ Diseño y desarrollo de páginas web a medida para negocios: restaurantes, tiend
 
 ### Automatización de procesos con IA para pymes
 
-Automatización de procesos y desarrollo de soluciones de IA a medida para pymes y autónomos: agente que agenda citas 24/7 desde la web o WhatsApp, recepcionista telefónica con IA, generación de presupuestos y facturas, recordatorios y confirmaciones automáticas, seguimiento de clientes y cualquier tarea repetitiva que hoy se haga a mano. Caso real: una clínica con app de citas, asistente de WhatsApp y recepcionista telefónica de Anomalia, con un retorno estimado de unos 20.000 € el primer año y cerca de 70.000 € en tres, entre el ahorro en personal de recepción y las citas que dejan de irse a la competencia.
+Automatización de procesos y desarrollo de soluciones de IA a medida para pymes y autónomos: agente que agenda citas 24/7 desde la web o WhatsApp, recepcionista telefónica con IA, generación de presupuestos y facturas, recordatorios y confirmaciones automáticas, seguimiento de clientes y cualquier tarea repetitiva que hoy se haga a mano. Caso real: una clínica con app de citas, asistente de WhatsApp y recepcionista telefónica de Anomalia, con un retorno estimado de unos 20.000 € el primer año solo en ahorro de personal de recepción (sin contar las citas que dejan de irse a la competencia) y cerca de 70.000 € en tres.
 
 - Plazo: Las automatizaciones se integran en paralelo a la web o justo después del lanzamiento.
 - Precio: a presupuesto cerrado tras una primera reunión gratuita (no se publica tarifa, depende del alcance).
@@ -65,8 +65,8 @@ Anomalia mide su trabajo en dinero para el cliente. En una clínica con tres sis
 
 De dónde sale ese dinero:
 
-- Ahorro en personal: el teléfono, el WhatsApp y la agenda los atienden los agentes de IA las 24 horas, trabajo de recepción que la clínica ya no tiene que cubrir con plantilla.
-- Citas que ya no se pierden: las llamadas y mensajes que antes quedaban sin contestar, y acababan en la clínica de al lado, ahora se atienden y se convierten en cita al momento.
+- Ahorro en personal: el teléfono, el WhatsApp y la agenda los atienden los agentes de IA las 24 horas, trabajo de recepción que la clínica ya no tiene que cubrir con plantilla. De aquí salen los 20.000 € del primer año.
+- Sin contar en la cifra: Citas que ya no se pierden: las llamadas y mensajes que antes quedaban sin contestar, y acababan en la clínica de al lado, ahora se atienden y se convierten en cita al momento.
 
 Cifras estimadas con los datos de la propia clínica. En la primera cita se hace la misma cuenta con los datos de cada negocio.
 
@@ -80,7 +80,7 @@ Cifras estimadas con los datos de la propia clínica. En la primera cita se hace
 
 ## Por qué Anomalia
 
-- El trabajo se mide en dinero para el cliente: en un caso real (una clínica con tres automatizaciones de Anomalia) el retorno estimado es de unos 20.000 € el primer año y cerca de 70.000 € en tres años, entre ahorro en personal y citas que ya no se pierden.
+- El trabajo se mide en dinero para el cliente: en un caso real (una clínica con tres automatizaciones de Anomalia) el retorno estimado es de unos 20.000 € el primer año y cerca de 70.000 € en tres años; los 20.000 € son solo ahorro en personal de recepción, sin contar las citas que ya no se pierden.
 - Diseño y automatización en el mismo equipo: la web y los procesos que la rodean (citas, recordatorios, seguimiento) se construyen juntos.
 - Plazos cortos: la mayoría de proyectos están listos en una semana o menos.
 - Precio cerrado en la propuesta, sin sorpresas; la auditoría tiene precio público (550 €, o 450 € si luego se contrata un servicio).
@@ -97,7 +97,7 @@ Depende del alcance, pero la mayoría de proyectos están listos en una semana o
 
 **¿Cuánto dinero puede ganar mi negocio con esto?**
 
-Depende de tu negocio, y por eso hacemos la cuenta antes de empezar. Como referencia: en una clínica con tres automatizaciones nuestras (app de citas, asistente de WhatsApp y recepcionista telefónica) la estimación es de unos 20.000 € el primer año y cerca de 70.000 € en tres. Sale de dos sitios: el ahorro en personal de recepción, porque el teléfono, el WhatsApp y la agenda los atienden los agentes, y las citas que dejan de irse a la competencia por no contestar a tiempo. En la primera cita calculamos ese número con tus datos.
+Depende de tu negocio, y por eso hacemos la cuenta antes de empezar. Como referencia: en una clínica con tres automatizaciones nuestras (app de citas, asistente de WhatsApp y recepcionista telefónica) la estimación es de unos 20.000 € el primer año y cerca de 70.000 € en tres. Los 20.000 € son solo el ahorro en personal de recepción, porque el teléfono, el WhatsApp y la agenda los atienden los agentes; las citas que dejan de irse a la competencia por no contestar a tiempo no están contadas. En la primera cita calculamos ese número con tus datos.
 
 **¿Necesito saber de tecnología para trabajar con vosotros?**
 

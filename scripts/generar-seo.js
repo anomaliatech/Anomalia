@@ -347,6 +347,7 @@ function llmsTxt(infos) {
   L.push(`- Cliente: ${sitio.caso.cliente} con tres sistemas de Anomalia: ${sitio.caso.sistemas.join('; ')}.`);
   L.push(`- Retorno estimado: unos ${eur(sitio.caso.primerAnio)} el primer año y cerca de ${eur(sitio.caso.tresAnios)} en tres años.`);
   for (const o2 of sitio.caso.origen) L.push(`- De dónde sale: ${o2}`);
+  if (sitio.caso.aparte) L.push(`- Sin contar en la cifra: ${sitio.caso.aparte}`);
   L.push(`- ${sitio.caso.nota}`);
   L.push('');
   const sectores = sitio.paginas.filter((p) => p.tipo === 'sector');
@@ -447,6 +448,7 @@ function aboutMd(infos) {
   L.push('De dónde sale ese dinero:');
   L.push('');
   for (const o2 of sitio.caso.origen) L.push(`- ${o2}`);
+  if (sitio.caso.aparte) L.push(`- Sin contar en la cifra: ${sitio.caso.aparte}`);
   L.push('');
   L.push(sitio.caso.nota);
   L.push('');
