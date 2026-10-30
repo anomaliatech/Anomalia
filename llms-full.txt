@@ -1647,11 +1647,12 @@ Anomalia monta apps de reservas a medida para estudios de pilates y gimnasios: e
 
 | Dato | Detalle |
 | --- | --- |
-| Qué es | Una app de reservas hecha a medida, con el nombre de tu estudio o gimnasio. |
+| Qué es | Una app de reservas hecha a medida por Anomalia, con el nombre de tu estudio o gimnasio. |
+| Dónde se usa | Puede ser una app web o estar en App Store y Google Play. |
 | Qué hace el alumno | Elige clase y plaza, reserva, cancela según tu política y paga dentro: clase suelta, bono o cuota. |
 | Para quién | Estudios de pilates (suelo, reformer y máquinas), yoga, spinning, crossfit y gimnasios con clases dirigidas. |
 | Caso real | Una clínica con la que trabajamos reserva y cobra sus clases de pilates con una app hecha por nosotros. Sus llamadas y sus WhatsApp los atienden, además, asistentes de IA. |
-| Precio | Cerrado por escrito tras la primera cita gratuita, según lo que lleve tu app. |
+| Precio | Montaje y cuota mensual según lo que lleve tu app, cerrados por escrito tras la primera cita gratuita. |
 | Si aún no quieres app | Un asistente de WhatsApp con IA que contesta y apunta las clases solo, o la reserva en tu propia web. |
 | Cómo empezar | Primera cita gratuita, que reservas al momento con el asistente de esta página. |
 
@@ -1711,14 +1712,14 @@ Antes de elegir
 
 Una plataforma ya está hecha y te das de alta en un día. Una app a medida tarda más en montarse. Lo que cambia es qué nombre lleva la app, si tus alumnos ven otros estudios y cómo se paga cada una.
 
-| Qué mirar | Plataformas de reservas (datos publicados) | App a medida de Anomalia |
+| Qué mirar | Plataformas de reservas | App a medida de Anomalia |
 | --- | --- | --- |
-| El nombre de la app | La app con tu marca va en planes altos o como extra: TeamUp la cobra a 79 £ al mes aparte; bsport la incluye desde su plan Engage, sin precio publicado. | Lleva el nombre de tu estudio. |
-| Escaparate con otros estudios | Mindbody cobra un 20 % (con un tope de 30 $, o 30 en moneda local) de la primera compra de cada cliente nuevo que llega por su app. Booksy, un 30 % (tope de 50 € + IVA) si activas Boost. Eversports te incluye en su marketplace. | Tus alumnos no aparecen junto a otros estudios. |
-| Precio | Varias no lo publican y piden una demo. Eversports Manager publica planes desde 29 € al mes + IVA (con el descuento del primer año, pago anual y 99 € de alta) y Booksy, 34,99 € al mes + IVA. | Cerrado por escrito tras la primera cita. |
-| Puesta en marcha | Inmediata: te das de alta y la configuras tú. | Hay que montarla. A cambio, funciona como tu estudio, no al revés. |
+| El nombre de la app | Tus alumnos suelen usar la app de la plataforma. En varias, la que lleva tu marca no entra en el plan de entrada: va en planes superiores o se paga aparte. | Lleva el nombre de tu estudio. Puede ser una app web o estar en App Store y Google Play. |
+| Escaparate con otros estudios | Algunas te incluyen en un escaparate junto a otros estudios y cobran una comisión por cada cliente nuevo que llega por ahí. | Tus alumnos no ven otros estudios. |
+| Precio | Varias no lo publican: hay que pedir presupuesto o una demo. Las que lo publican cobran una cuota mensual, y algunas, comisiones aparte por cada pago. | Montaje y cuota mensual, cerrados por escrito tras la primera cita. |
+| Puesta en marcha | Te das de alta y la configuras tú. No hay que construir nada. | Hay que montarla. A cambio, se adapta a tu forma de trabajar, y no al revés. |
 
-Fuentes, consultadas el 27/10/2026: páginas de precios de TeamUp , bsport , Mindbody , Booksy y Eversports Manager , y centro de ayuda de Eversports . Los precios cambian: compruébalos antes de decidir.
+Datos de las páginas de precios de las principales plataformas de reservas, consultadas el 27/10/2026. Los precios cambian: compruébalos antes de decidir.
 
 Mientras das la clase, la app reserva y cobra.
 
@@ -1754,7 +1755,7 @@ Reservas, pagos y cancelaciones de prueba hasta que todo cuadra.
 
 ### Tus alumnos, dentro
 
-Se la pasas a tus alumnos y empiezan a reservar. Las primeras semanas la ajustamos contigo.
+Se la pasas a tus alumnos y empiezan a reservar. Y no desaparecemos: seguimos ahí para lo que haya que ajustar.
 
 Para leer antes de decidir
 
@@ -1780,7 +1781,7 @@ Preguntas frecuentes
 Hay dos caminos. Darte de alta en una plataforma de reservas, que es rápido, pero tus alumnos suelen usar la app de esa empresa y en algunas compartes escaparate con otros estudios. O tener una app hecha a medida con el nombre de tu estudio. Anomalia monta la segunda, a medida: reserva de plaza, pago y cancelación dentro.
 
 **¿Hay apps gratis para reservar clases del gimnasio?**
-Entre las que publican precio en su web, las de entrada más bajas que hemos encontrado son Eversports Manager, desde 29 € al mes + IVA (con el descuento del primer año y pago anual), y Booksy, 34,99 € al mes + IVA (precios consultados el 27/10/2026). Antes de elegir, mira lo que se cobra aparte: la app con tu nombre, las comisiones por pago y las comisiones por cliente nuevo.
+En las páginas de precios que pudimos consultar el 27/10/2026, incluso el plan más básico se paga cada mes. Antes de elegir, mira lo que se cobra aparte: la app con tu nombre, las comisiones por pago y las comisiones por cliente nuevo.
 
 **¿Cómo crear una app para un gimnasio o un estudio?**
 Con una plataforma, configurando tu centro dentro de su sistema, o encargándola a medida. Si la encargas, ten claro qué tiene que poder hacer el alumno (reservar, pagar, cancelar), cómo cobras (clase suelta, bono o cuota) y qué reglas tiene tu estudio. Con eso te damos el precio cerrado por escrito tras la primera cita.

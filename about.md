@@ -309,7 +309,7 @@ Hay dos caminos. Darte de alta en una plataforma de reservas, que es rápido, pe
 
 **¿Hay apps gratis para reservar clases del gimnasio?**
 
-Entre las que publican precio en su web, las de entrada más bajas que hemos encontrado son Eversports Manager, desde 29 € al mes + IVA (con el descuento del primer año y pago anual), y Booksy, 34,99 € al mes + IVA (precios consultados el 27/10/2026). Antes de elegir, mira lo que se cobra aparte: la app con tu nombre, las comisiones por pago y las comisiones por cliente nuevo.
+En las páginas de precios que pudimos consultar el 27/10/2026, incluso el plan más básico se paga cada mes. Antes de elegir, mira lo que se cobra aparte: la app con tu nombre, las comisiones por pago y las comisiones por cliente nuevo.
 
 **¿Cómo crear una app para un gimnasio o un estudio?**
 
