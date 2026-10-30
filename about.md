@@ -303,6 +303,26 @@ Depende de cuántas llamadas y mensajes recibes, de cuántos profesionales y ser
 
 Es donde más se nota. Cuando una sola persona lo hace todo, cada llamada que entra mientras atiende a un paciente es una decisión entre dos personas. El sistema le quita el teléfono y el WhatsApp de encima para que se dedique a quien tiene delante.
 
+**¿Cuánto cuesta crear una página web en Alicante?**
+
+Con Anomalia, desde 499 € la web con diseño profesional a medida. El precio sube si quieres añadir SEO a fondo, trabajo para que las IAs puedan recomendarte, analítica o un asistente con IA dentro de la web. El precio exacto y las condiciones te los damos cerrados y por escrito en la cita, antes de empezar.
+
+**¿Hacéis páginas web corporativas para empresas?**
+
+Sí. Hacemos webs a medida para negocios y empresas: corporativas, de servicios, para restaurantes, clínicas, inmobiliarias u hoteles, y páginas para campañas. Sin plantillas recicladas: cada web se diseña para que quien entra acabe pidiendo cita o llamando.
+
+**¿Por qué elegir una agencia de diseño web de Alicante?**
+
+Por lo que hace, no por dónde está: una web se juzga por los clientes que trae. Lo que sí te da un estudio de aquí es una persona real y localizable, que contesta en menos de 24 h laborables. Y como trabajamos en remoto, da igual que tu negocio esté en Alicante o en Zaragoza.
+
+**¿Se puede automatizar con IA una pyme pequeña?**
+
+Sí, y suele ser donde más se nota. Se empieza por lo que hoy se hace a mano y se repite cada semana: contestar llamadas y WhatsApps, dar y recordar citas, hacer seguimiento de presupuestos. Te lo explicamos paso a paso en la guía para automatizar procesos en una pyme .
+
+**¿Cuánto cuesta un chatbot de WhatsApp con IA?**
+
+Depende de cuántos mensajes recibes, de lo que tiene que hacer (solo responder o también dar citas) y de la agenda a la que se conecta. Te damos el precio cerrado tras la primera cita gratuita: montaje y mantenimiento mensual, por escrito. En la guía del precio de un chatbot de WhatsApp tienes de qué se compone y cómo hacer la cuenta.
+
 **¿Qué es una recepcionista virtual para clínicas?**
 
 Un sistema con inteligencia artificial que contesta las llamadas de la clínica con voz natural, informa de horarios, servicios y precios, reconoce al paciente, le da cita en la agenda real con el profesional correcto, toma recados y pasa la llamada a una persona cuando hace falta. Funciona las 24 horas y deja un resumen de cada llamada.
