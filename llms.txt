@@ -33,6 +33,7 @@ Anomalia (también escrito "Anomalía") es un estudio digital con sede en Alican
 - [Llamadas perdidas en una clínica](https://anomalia.business/llamadas-perdidas-clinica): Guía con calculadora: cuánto dinero pierde una clínica por las llamadas que no coge, cómo medirlo en una semana y qué hacer para dejar de perderlas.
 - [Recepcionista virtual para hoteles](https://anomalia.business/recepcionista-virtual-hoteles): Guía: las tres cosas que se venden como recepcionista virtual para hoteles (persona en remoto, check-in automático e IA al teléfono), qué problema resuelve cada una, la cuenta de las llamadas perdidas y qué preguntar antes de contratar.
 - [Cuánto cuesta un chatbot de WhatsApp](https://anomalia.business/cuanto-cuesta-chatbot-whatsapp): Guía: de qué se compone el precio de un chatbot de WhatsApp, qué cobra Meta por la API, cómo calcular si compensa con tus números y qué preguntar antes de contratar.
+- [Cuánto cuesta una página web en España](https://anomalia.business/cuanto-cuesta-una-pagina-web): Guía: lo que cuesta crear y mantener una página web en España según directorios y agencias, qué se paga una vez y qué cada mes, y la cuenta para saber si la web se paga con los clientes que trae.
 
 ## Por qué elegir Anomalia
 
@@ -142,6 +143,12 @@ Anomalia (también escrito "Anomalía") es un estudio digital con sede en Alican
 - **¿Qué diferencia hay entre un chatbot de botones y uno con IA, y cuánto cambia el precio?** El de botones solo entiende su menú; el de IA entiende lo que el cliente escribe y puede actuar sobre tu agenda. El de IA suma a la mensualidad el uso de la IA y necesita más pruebas, así que suele costar más. Aun así, lo que más mueve el precio es lo que tiene que hacer.
 - **¿Puedo montarlo yo gratis con n8n?** Puedes, si tienes algo de mano con herramientas de automatización como n8n, pero sigues pagando servidor, IA, mensajes de plantilla y tus horas. Lo difícil son las reglas y las pruebas para que no se invente un hueco o un precio delante de un cliente.
 - **¿Cuánto cuesta mantenerlo al mes?** La mensualidad suele cubrir plataforma o servidor, IA y ajustes; aparte van los mensajes de Meta fuera de la ventana de 24 horas. Pregunta si incluye cambiar precios y horarios: si no, en unos meses informa mal.
+- **¿Cuánto cuesta crear una página web en España?** Según Trustlocal (septiembre de 2026), de 200 a 500 € una web sencilla, de 500 a 1.000 € una corporativa y de 800 a 2.000 € una tienda online. Agencias como GF Publicidad o takum.io publican cifras más altas, porque cada presupuesto incluye cosas distintas.
+- **¿Cuánto cuesta mantener una página web al mes?** Trustlocal sitúa el mantenimiento entre 30 y 100 € al mes, y takum.io entre 100 y 250 € para una tienda online. Pregunta qué incluye: si no entran cambios de precios y horarios, en unos meses la web informa mal.
+- **¿Cuánto cuesta mantener una página web al año?** Con las cifras de Trustlocal para una web corporativa, entre 420 y 1.380 € al año: mantenimiento, hosting y dominio. Si el mantenimiento ya incluye hosting y dominio, es menos.
+- **¿Cuánto cuesta el dominio de una página web en España?** Un .es cuesta en OVHcloud 5,99 € + IVA el primer año y 6,99 € + IVA al renovar, consultado el 27 de octubre de 2026. Trustlocal da una horquilla general de 10 a 30 € al año, según la extensión y el registrador.
+- **¿Cuánto cuesta una página web sencilla?** Entre 200 y 500 € según Trustlocal, más hosting, dominio y mantenimiento. Para un negocio que solo necesita que lo encuentren y lo llamen, puede bastar, siempre que esté bien escrita y se vea bien en el móvil.
+- **¿Cuánto cuesta una página web para un negocio?** Depende de lo que tenga que hacer: informar, dar citas o vender. En Anomalia parte de 499 € la web con diseño profesional a medida, y sube con lo que se añada. Antes de comparar precios, haz la cuenta: cuántos clientes tiene que traerte para pagarse.
 
 ## Contacto
 

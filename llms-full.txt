@@ -2626,3 +2626,183 @@ En la primera llamada, gratis y sin compromiso, miramos cuántos mensajes entran
 
 Cómo es nuestro asistente de WhatsApp
 
+---
+
+# Página: Cuánto cuesta una página web en España | Anomalia
+URL: https://anomalia.business/cuanto-cuesta-una-pagina-web
+Descripción: Lo que se paga una vez y lo que se paga cada mes por una web en España, con precios publicados y su fuente, y la cuenta para saber si se paga sola.
+
+Inicio / Páginas web / Guía
+
+Guía · Páginas web
+
+# Cuánto cuesta una página web en España y cuántos clientes tiene que traerte para pagarse.
+
+Tienes un negocio y una web que no te trae a nadie, o directamente no tienes web. Has pedido presupuestos y no se parecen en nada. Buscas el precio en Google y cada página te da una horquilla distinta, y todas acaban en la tarifa de quien la escribe.
+
+Aquí tienes los precios que publican directorios y agencias, con el nombre de quien da cada cifra, consultados el 27 de octubre de 2026. Separados en lo que se paga una vez y lo que se paga cada mes. Y después, la cuenta para saber si la web se paga con los clientes que trae.
+
+Por Marcos Mompeán , fundador de Anomalia · Publicada el 30 de octubre de 2026 · 9 minutos de lectura
+
+La respuesta corta
+
+En España, crear una web sencilla o corporativa cuesta de 200 a 1.000 € y mantenerla, de 30 a 100 € al mes, más hosting y dominio, según el directorio de profesionales Trustlocal (septiembre de 2026).
+
+Cuánto cuesta una página web en España depende de lo que tenga que hacer y de lo que se paga cada mes después. Las agencias publican cifras más altas que Trustlocal, y cada una acaba recomendando lo que vende. En Anomalia, las webs a medida van desde 499 €.
+
+| Tipo de web | Se paga una vez: crearla | Se paga cada mes o cada año | Quién lo publica |
+| --- | --- | --- | --- |
+| Sencilla o de una página | 200-500 € (en sus preguntas frecuentes, 300-600 €) | Mantenimiento: 30-100 € al mes | Trustlocal (15/09/2026) |
+| Corporativa, de 3 a 5 páginas | 500-1.000 € (Trustlocal) · 1.200-2.500 € (GF Publicidad) | Mantenimiento: 30-100 € al mes | Trustlocal (15/09/2026), GF Publicidad y takum.io (precios 2026, sin fecha) |
+| Tienda online | 800-2.000 € (Trustlocal) · 2.500-6.000 € (GF Publicidad) | Mantenimiento: 100-250 € al mes | Trustlocal, GF Publicidad, takum.io (precios 2026, sin fecha) |
+| A medida | Desde 1.500 € (Trustlocal) · 6.000-10.000 € (GoDaddy) | Sin cifra publicada | Trustlocal, GoDaddy (11/11/2025) |
+| Cualquiera | — | Hosting: 50-150 € al año · Dominio: 10-30 € al año | Trustlocal (15/09/2026) |
+
+- Una vez: el diseño, la programación, los textos y las fotos. Lo que más mueve el precio es lo que la web tiene que hacer: informar, dar citas o vender.
+
+- Cada año: el dominio y el hosting. Mira el precio de renovación, no el del primer año.
+
+- Cada mes: el mantenimiento (seguridad, copias, actualizaciones y cambios). Que te encuentren en Google suele ir aparte.
+
+- La cuenta: lo que cuesta la web en un año, dividido entre lo que te deja un cliente. Ese es el número de clientes al año que tiene que traerte para pagarse.
+
+## Lo que se paga una vez: crear la web.
+
+Es lo primero que pregunta todo el mundo, y por sí solo dice poco: bajo el mismo nombre se vende una plantilla rellenada en una tarde y un diseño hecho para tu negocio.
+
+El directorio Trustlocal , que pone en contacto con profesionales, desglosa así lo que entra en el precio (actualizado el 15 de septiembre de 2026):
+
+- Diseño de la experiencia y de las pantallas: de 300 a 800 €.
+
+- Desarrollo: de 500 a 1.500 €.
+
+- Textos: de 100 a 500 €.
+
+- Logo: de 100 a 400 €.
+
+- Hora de un diseñador web: de 25 a 60 €.
+
+Lo que más se olvida al comparar son los textos y las fotos. Si no van incluidos, los pones tú, y una web con textos de relleno convence poco aunque esté bien hecha.
+
+Lo que más sube el precio es lo que la web tiene que hacer. Una web que explica tus servicios no cuesta lo mismo que una que da citas en tu agenda o una que cobra pedidos con pasarela de pago.
+
+## Lo que se paga cada mes o cada año: mantenerla.
+
+Es la parte que menos aparece en los presupuestos, y de ahí vienen las sorpresas. Son cuatro partidas, y una puede salirte gratis.
+
+El dominio , tu dirección en internet. En OVHcloud, un .es cuesta 5,99 € + IVA el primer año y 6,99 € + IVA al renovar . Trustlocal da una horquilla general de 10 a 30 € al año.
+
+El hosting , el servidor donde vive la web. Trustlocal lo sitúa entre 50 y 150 € al año. En los planes de alojamiento de OVHcloud , el más básico cuesta 1,59 € + IVA al mes el primer año y 2,59 € después; otro plan pasa de 1,99 € a 9,99 € al mes al renovar.
+
+El certificado de seguridad , el candado de la barra del navegador. Puede salir gratis: Let's Encrypt lo emite sin coste y casi todos los hostings lo instalan.
+
+El mantenimiento : actualizar, vigilar la seguridad, hacer copias, arreglar lo que falla y cambiar un precio o un horario. Trustlocal lo pone entre 30 y 100 € al mes. La agencia takum.io da la misma horquilla para una web corporativa y de 100 a 250 € al mes para una tienda online.
+
+Un error habitual al comparar: mirar el precio del primer año. Los precios de entrada del dominio y del hosting suben al renovar, a veces a varias veces lo que pagabas el primer año. Pregunta siempre cuánto cuesta el segundo año.
+
+## Por qué cada página te da una horquilla distinta.
+
+Para una web corporativa de tres a cinco páginas, consultado el 27 de octubre de 2026:
+
+- Trustlocal: de 500 a 1.000 €.
+
+- GF Publicidad , una agencia de Sevilla: de 1.200 a 2.500 €, y la tienda online de 2.500 a 6.000 €.
+
+- takum.io: de 1.500 a 4.000 €.
+
+- GoDaddy , que vende dominios y alojamiento, en una guía de noviembre de 2025: en torno a 2.000 € para la web de una pyme y de 6.000 a 10.000 € a medida.
+
+Miden cosas distintas: presupuestos con textos y sin ellos, con plantilla y a medida. Ninguna de esas páginas explica de dónde salen sus cifras, y Trustlocal ni siquiera dice si llevan IVA.
+
+Además, quien publica una horquilla vende algo dentro de ella. Nosotros también. Antes de fijarte en la cifra, haz la cuenta de abajo.
+
+## La cuenta: cuántos clientes tiene que traerte la web para pagarse.
+
+01
+
+### Suma lo que cuesta el primer año
+
+Creación, más doce meses de mantenimiento, más hosting y dominio. Con las cifras de Trustlocal para una web corporativa: de 500 a 1.000 € de creación, de 360 a 1.200 € de mantenimiento al año, de 50 a 150 € de hosting y de 10 a 30 € de dominio. Total: entre 920 y 2.380 € el primer año. Si el mantenimiento que te ofrecen ya incluye hosting y dominio, no los sumes dos veces.
+
+02
+
+### Suma lo que cuesta cada año siguiente
+
+Lo mismo sin la creación. Con las mismas cifras, entre 420 y 1.380 € al año. Este es el gasto que se queda mientras tengas la web.
+
+03
+
+### Ponle precio a un cliente
+
+Lo que te deja de beneficio un cliente nuevo, no lo que factura. Si repite, lo que te deja en un año. Ese número solo lo tienes tú.
+
+04
+
+### Divide
+
+Lo que cuesta la web en un año, entre lo que te deja un cliente. Es matemática pura: ese es el número de clientes al año que la web tiene que traerte para pagarse. Si un solo trabajo tuyo deja más que la web entera, basta con uno.
+
+05
+
+### Mira cuántos te llegan hoy por internet
+
+Durante un mes, pregunta a cada cliente nuevo cómo te ha encontrado. Si la web no aparece en ninguna respuesta, el problema no es lo que cuesta. Es que nadie la ve o que no convence a quien entra.
+
+## Lo que tienes que preguntar antes de firmar.
+
+Son las preguntas que evitan disgustos el día que algo falla o el día que quieres cambiar de proveedor:
+
+- ¿El dominio se registra a mi nombre? Tiene que ser tuyo.
+
+- ¿El precio lleva IVA?
+
+- ¿Qué incluye el mantenimiento? ¿Copias, seguridad, cambios de textos y precios? ¿Cuántos cambios al mes?
+
+- ¿Cuánto cuestan el hosting y el dominio el segundo año?
+
+- ¿Los textos y las fotos los hacéis vosotros o los pongo yo?
+
+- ¿Que me encuentren en Google va incluido o es un servicio aparte? GF Publicidad, por ejemplo, lo trata como un servicio mensual aparte.
+
+- Si me voy, ¿me llevo la web, el dominio y los accesos?
+
+- ¿Me dais la creación y lo que se paga cada mes por separado y por escrito?
+
+Si a alguna te responden con evasivas, ya sabes algo del proveedor.
+
+## Cómo lo presupuestamos nosotros.
+
+En Anomalia la web parte de 499 €: la web con diseño profesional a medida, sin plantillas recicladas. El precio sube si le añades SEO a fondo, visibilidad en motores de IA, analítica bien medida o un asistente con IA dentro de la web. Te damos el alcance y el importe por escrito antes de empezar, y el dominio se registra a tu nombre. Lo explicamos en la página de páginas web .
+
+Como cualquier web, la nuestra necesita hosting, dominio y mantenimiento. El detalle de lo que cuesta al mes te lo damos por escrito en la cita, junto a la cuenta de arriba hecha con tus números. Si con la web que tienes te vale, te lo decimos.
+
+Y si lo que se te escapa no son visitas sino mensajes sin contestar, la cuenta es otra: la tienes en la guía de cuánto cuesta un chatbot de WhatsApp . Si no sabes por dónde se te van los clientes, eso es lo que mira la auditoría de negocio .
+
+## Preguntas frecuentes.
+
+**¿Cuánto cuesta crear una página web en España?**
+Según Trustlocal (septiembre de 2026), de 200 a 500 € una web sencilla, de 500 a 1.000 € una corporativa y de 800 a 2.000 € una tienda online. Agencias como GF Publicidad o takum.io publican cifras más altas, porque cada presupuesto incluye cosas distintas.
+
+**¿Cuánto cuesta mantener una página web al mes?**
+Trustlocal sitúa el mantenimiento entre 30 y 100 € al mes, y takum.io entre 100 y 250 € para una tienda online. Pregunta qué incluye: si no entran cambios de precios y horarios, en unos meses la web informa mal.
+
+**¿Cuánto cuesta mantener una página web al año?**
+Con las cifras de Trustlocal para una web corporativa, entre 420 y 1.380 € al año: mantenimiento, hosting y dominio. Si el mantenimiento ya incluye hosting y dominio, es menos.
+
+**¿Cuánto cuesta el dominio de una página web en España?**
+Un .es cuesta en OVHcloud 5,99 € + IVA el primer año y 6,99 € + IVA al renovar, consultado el 27 de octubre de 2026. Trustlocal da una horquilla general de 10 a 30 € al año, según la extensión y el registrador.
+
+**¿Cuánto cuesta una página web sencilla?**
+Entre 200 y 500 € según Trustlocal, más hosting, dominio y mantenimiento. Para un negocio que solo necesita que lo encuentren y lo llamen, puede bastar, siempre que esté bien escrita y se vea bien en el móvil.
+
+**¿Cuánto cuesta una página web para un negocio?**
+Depende de lo que tenga que hacer: informar, dar citas o vender. En Anomalia parte de 499 € la web con diseño profesional a medida, y sube con lo que se añada. Antes de comparar precios, haz la cuenta: cuántos clientes tiene que traerte para pagarse.
+
+¿Hacemos la cuenta con tu negocio?
+
+## Te decimos qué web necesitas y cuánto cuesta, por escrito.
+
+En la primera cita, gratis y sin compromiso, miramos qué tiene que hacer tu web y cuántos clientes tendría que traerte para pagarse. Te damos el precio de la web y el detalle de lo que cuesta al mes, por escrito. Si con la que tienes te vale, te lo decimos.
+
+Cómo hacemos las páginas web
+

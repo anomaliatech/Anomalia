@@ -439,6 +439,30 @@ Puedes, si tienes algo de mano con herramientas de automatización como n8n, per
 
 La mensualidad suele cubrir plataforma o servidor, IA y ajustes; aparte van los mensajes de Meta fuera de la ventana de 24 horas. Pregunta si incluye cambiar precios y horarios: si no, en unos meses informa mal.
 
+**¿Cuánto cuesta crear una página web en España?**
+
+Según Trustlocal (septiembre de 2026), de 200 a 500 € una web sencilla, de 500 a 1.000 € una corporativa y de 800 a 2.000 € una tienda online. Agencias como GF Publicidad o takum.io publican cifras más altas, porque cada presupuesto incluye cosas distintas.
+
+**¿Cuánto cuesta mantener una página web al mes?**
+
+Trustlocal sitúa el mantenimiento entre 30 y 100 € al mes, y takum.io entre 100 y 250 € para una tienda online. Pregunta qué incluye: si no entran cambios de precios y horarios, en unos meses la web informa mal.
+
+**¿Cuánto cuesta mantener una página web al año?**
+
+Con las cifras de Trustlocal para una web corporativa, entre 420 y 1.380 € al año: mantenimiento, hosting y dominio. Si el mantenimiento ya incluye hosting y dominio, es menos.
+
+**¿Cuánto cuesta el dominio de una página web en España?**
+
+Un .es cuesta en OVHcloud 5,99 € + IVA el primer año y 6,99 € + IVA al renovar, consultado el 27 de octubre de 2026. Trustlocal da una horquilla general de 10 a 30 € al año, según la extensión y el registrador.
+
+**¿Cuánto cuesta una página web sencilla?**
+
+Entre 200 y 500 € según Trustlocal, más hosting, dominio y mantenimiento. Para un negocio que solo necesita que lo encuentren y lo llamen, puede bastar, siempre que esté bien escrita y se vea bien en el móvil.
+
+**¿Cuánto cuesta una página web para un negocio?**
+
+Depende de lo que tenga que hacer: informar, dar citas o vender. En Anomalia parte de 499 € la web con diseño profesional a medida, y sube con lo que se añada. Antes de comparar precios, haz la cuenta: cuántos clientes tiene que traerte para pagarse.
+
 ## Cómo citar esta fuente
 
 Anomalia — estudio digital de diseño web, automatización e IA para negocios en España. https://anomalia.business/
