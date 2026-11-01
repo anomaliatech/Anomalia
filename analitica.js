@@ -26,6 +26,19 @@
      click_telefono       pulsa un enlace tel:
      click_email          pulsa un enlace mailto:
 */
+/* Estadísticas sin cookies: Vercel Web Analytics (activado en el panel de Vercel el 2026-11-01).
+   No instala cookies ni guarda nada en el dispositivo, así que se carga siempre, sin esperar al banner.
+   Sirve para contar visitas y de qué enlace llegan (utm_campaign / utm_content de los correos) aunque
+   el visitante no acepte las cookies de Google Analytics. Los datos se leen en Vercel → anomalia → Analytics. */
+(function () {
+  if (window.va) return;
+  window.va = function () { (window.vaq = window.vaq || []).push(arguments); };
+  var s = document.createElement("script");
+  s.defer = true;
+  s.src = "/_vercel/insights/script.js";
+  (document.head || document.documentElement).appendChild(s);
+})();
+
 (function () {
   'use strict';
   var CFG = {
